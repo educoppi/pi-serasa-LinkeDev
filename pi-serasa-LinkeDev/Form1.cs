@@ -1,5 +1,3 @@
-using System;
-
 namespace pi_serasa_LinkeDev
 {
     public partial class Form1 : Form
@@ -19,16 +17,14 @@ namespace pi_serasa_LinkeDev
             btnCriar.Location = new Point(ClientSize.Width - 120, 25);
 
             panelCentral.Size = new Size(ClientSize.Width - panelEsquerdo.Width - 70, ClientSize.Height - panelSup.Height - 20);
-            //panelEsquerdo.Size = new Size(panelEsquerdo.Width, ClientSize.Height - panelSup.Height - 20);
+            
 
             imgLogo.Size = new Size(125,115);   
             imgLogo.Location = new Point(25, -9);
 
             imgLogoALO.Location = new Point(ClientSize.Width -1120, 10);
             imgLogo2.Location = new Point(ClientSize.Width - 1910, 540);
-        }
-        private void wilBitButton3_Click(object sender, EventArgs e)
-        {
+
 
         }
 
@@ -41,12 +37,23 @@ namespace pi_serasa_LinkeDev
         {
 
         }
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            EntrarC entrar = new EntrarC();
+            entrar.Show();
+            
+           
+        }
 
         private void btnCriar_Click(object sender, EventArgs e)
         {
 
+            
             CriarC criar1 = new CriarC();
             criar1.Show();
+           
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)

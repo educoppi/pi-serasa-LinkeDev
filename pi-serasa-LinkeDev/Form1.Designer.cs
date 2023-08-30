@@ -40,7 +40,7 @@
             this.wilBitButton2 = new WiLBiT.WiLBiTButton();
             this.label1 = new System.Windows.Forms.Label();
             this.wilBitButton4 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton1 = new WiLBiT.WiLBiTButton();
+            this.btnAssine = new WiLBiT.WiLBiTButton();
             this.imgLogo2 = new System.Windows.Forms.PictureBox();
             this.panelSup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoALO)).BeginInit();
@@ -100,7 +100,7 @@
             this.btnEntrar.TabIndex = 6;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
-            this.btnEntrar.Click += new System.EventHandler(this.wilBitButton3_Click);
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // btnCriar
             // 
@@ -144,7 +144,7 @@
             this.panelEsquerdo.Controls.Add(this.wilBitButton2);
             this.panelEsquerdo.Controls.Add(this.label1);
             this.panelEsquerdo.Controls.Add(this.wilBitButton4);
-            this.panelEsquerdo.Controls.Add(this.wilBitButton1);
+            this.panelEsquerdo.Controls.Add(this.btnAssine);
             this.panelEsquerdo.ForeColor = System.Drawing.Color.White;
             this.panelEsquerdo.Location = new System.Drawing.Point(12, 95);
             this.panelEsquerdo.Name = "panelEsquerdo";
@@ -153,7 +153,7 @@
             // 
             // wilBitButton3
             // 
-            this.wilBitButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.wilBitButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(110)))), ((int)(((byte)(50)))));
             this.wilBitButton3.BorderColor = System.Drawing.Color.Black;
             this.wilBitButton3.BorderRadius = 6;
             this.wilBitButton3.BorderSize = 2;
@@ -170,7 +170,7 @@
             // 
             // wilBitButton2
             // 
-            this.wilBitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.wilBitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(90)))), ((int)(((byte)(0)))));
             this.wilBitButton2.BorderColor = System.Drawing.Color.Black;
             this.wilBitButton2.BorderRadius = 6;
             this.wilBitButton2.BorderSize = 2;
@@ -182,7 +182,7 @@
             this.wilBitButton2.Name = "wilBitButton2";
             this.wilBitButton2.Size = new System.Drawing.Size(137, 54);
             this.wilBitButton2.TabIndex = 9;
-            this.wilBitButton2.Text = "Mensal";
+            this.wilBitButton2.Text = "Semestral";
             this.wilBitButton2.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -197,7 +197,7 @@
             // 
             // wilBitButton4
             // 
-            this.wilBitButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.wilBitButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(74)))), ((int)(((byte)(10)))));
             this.wilBitButton4.BorderColor = System.Drawing.Color.Black;
             this.wilBitButton4.BorderRadius = 6;
             this.wilBitButton4.BorderSize = 2;
@@ -209,26 +209,26 @@
             this.wilBitButton4.Name = "wilBitButton4";
             this.wilBitButton4.Size = new System.Drawing.Size(137, 54);
             this.wilBitButton4.TabIndex = 7;
-            this.wilBitButton4.Text = "Mensal";
+            this.wilBitButton4.Text = "Anual";
             this.wilBitButton4.UseVisualStyleBackColor = false;
             // 
-            // wilBitButton1
+            // btnAssine
             // 
-            this.wilBitButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.wilBitButton1.BorderColor = System.Drawing.Color.Black;
-            this.wilBitButton1.BorderRadius = 20;
-            this.wilBitButton1.BorderSize = 2;
-            this.wilBitButton1.FlatAppearance.BorderSize = 0;
-            this.wilBitButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton1.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton1.Location = new System.Drawing.Point(16, 345);
-            this.wilBitButton1.Name = "wilBitButton1";
-            this.wilBitButton1.Size = new System.Drawing.Size(142, 44);
-            this.wilBitButton1.TabIndex = 4;
-            this.wilBitButton1.Text = "Assine Já";
-            this.wilBitButton1.UseVisualStyleBackColor = false;
-            this.wilBitButton1.Click += new System.EventHandler(this.wilBitButton1_Click);
+            this.btnAssine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.btnAssine.BorderColor = System.Drawing.Color.Black;
+            this.btnAssine.BorderRadius = 20;
+            this.btnAssine.BorderSize = 2;
+            this.btnAssine.FlatAppearance.BorderSize = 0;
+            this.btnAssine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAssine.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAssine.ForeColor = System.Drawing.Color.White;
+            this.btnAssine.Location = new System.Drawing.Point(16, 345);
+            this.btnAssine.Name = "btnAssine";
+            this.btnAssine.Size = new System.Drawing.Size(142, 44);
+            this.btnAssine.TabIndex = 4;
+            this.btnAssine.Text = "Assine Já";
+            this.btnAssine.UseVisualStyleBackColor = false;
+            this.btnAssine.Click += new System.EventHandler(this.wilBitButton1_Click);
             // 
             // imgLogo2
             // 
@@ -269,7 +269,7 @@
         private WiLBiT.WiLBiTPanel panelEsquerdo;
         private WiLBiT.WiLBiTButton btnEntrar;
         private WiLBiT.WiLBiTButton btnCriar;
-        private WiLBiT.WiLBiTButton wilBitButton1;
+        private WiLBiT.WiLBiTButton btnAssine;
         private PictureBox imgLogo;
         private PictureBox imgLogo2;
         private PictureBox imgLogoALO;

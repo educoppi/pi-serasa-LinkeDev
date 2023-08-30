@@ -21,5 +21,15 @@ namespace pi_serasa_LinkeDev
         {
             label2.Size = new Size(100, 15);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CriarC_Load(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

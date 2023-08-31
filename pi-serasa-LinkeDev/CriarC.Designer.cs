@@ -101,6 +101,7 @@
             this.wilBitButton21.Text = "Criar";
             this.wilBitButton21.TextColor = System.Drawing.Color.White;
             this.wilBitButton21.UseVisualStyleBackColor = false;
+            this.wilBitButton21.Click += new System.EventHandler(this.wilBitButton21_Click);
             // 
             // label6
             // 

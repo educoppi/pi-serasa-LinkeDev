@@ -31,5 +31,24 @@ namespace pi_serasa_LinkeDev
         {
            
         }
+
+        private void wilBitButton21_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail_CR.Texts;
+            string senha = txtSenha_CR.Texts;
+            string nome = txtUsuario_CR.Texts;
+
+            if (email == "" && senha == "" && nome == "" )
+            {
+                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Usuario usuario = new Usuario();
+            usuario.insere(email, senha);
+
+            Inicial i = new Inicial();
+            i.Show();
+        }
     }
 }

@@ -19,17 +19,21 @@ namespace pi_serasa_LinkeDev
 
         private void btnEntrar_LGClick(object sender, EventArgs e)
         {
-            string email  = "123";
-            string senha = "123";
+            string email = txtEmail_LG.Texts;
+            string senha = txtSenha_LG.Texts;
 
-            if(txtEmail_LG.Texts == email & txtSenha_LG.Texts == senha)
+            Usuario usuario = new Usuario();
+            bool confere = usuario.login(email, senha);
+
+            if (confere)
             {
-               Inicial i = new Inicial();
+                Inicial i = new Inicial();
                 i.Show();
-               
-                
             }
-            
+            else
+            {
+                MessageBox.Show("Email ou senha incorretos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

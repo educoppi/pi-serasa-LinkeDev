@@ -16,5 +16,20 @@ namespace pi_serasa_LinkeDev
         {
             InitializeComponent();
         }
+
+        private void btnEntrar_LGClick(object sender, EventArgs e)
+        {
+            string email  = "123";
+            string senha = "123";
+
+            if(txtEmail_LG.Texts == email & txtSenha_LG.Texts == senha)
+            {
+               Inicial i = new Inicial();
+                i.Show();
+               
+                
+            }
+            
+        }
     }
 }

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntrarC));
             this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
-            this.wilBitGradientButton1 = new WiLBiT.WiLBiTGradientButton();
+            this.btnEntrar_LG = new WiLBiT.WiLBiTGradientButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSenha_LG = new WiLBiT.WiLBiTTextBox();
@@ -50,7 +50,7 @@
             this.wilBitGradientPanel1.BorderColor = System.Drawing.Color.Black;
             this.wilBitGradientPanel1.BorderRadius = 6;
             this.wilBitGradientPanel1.BorderSize = 4;
-            this.wilBitGradientPanel1.Controls.Add(this.wilBitGradientButton1);
+            this.wilBitGradientPanel1.Controls.Add(this.btnEntrar_LG);
             this.wilBitGradientPanel1.Controls.Add(this.label3);
             this.wilBitGradientPanel1.Controls.Add(this.label2);
             this.wilBitGradientPanel1.Controls.Add(this.txtSenha_LG);
@@ -62,24 +62,25 @@
             this.wilBitGradientPanel1.Size = new System.Drawing.Size(371, 308);
             this.wilBitGradientPanel1.TabIndex = 0;
             // 
-            // wilBitGradientButton1
+            // btnEntrar_LG
             // 
-            this.wilBitGradientButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.wilBitGradientButton1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.wilBitGradientButton1.BorderColor = System.Drawing.Color.Black;
-            this.wilBitGradientButton1.BorderRadius = 6;
-            this.wilBitGradientButton1.BorderSize = 2;
-            this.wilBitGradientButton1.FlatAppearance.BorderSize = 0;
-            this.wilBitGradientButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitGradientButton1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitGradientButton1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientButton1.Location = new System.Drawing.Point(117, 240);
-            this.wilBitGradientButton1.Name = "wilBitGradientButton1";
-            this.wilBitGradientButton1.Size = new System.Drawing.Size(150, 40);
-            this.wilBitGradientButton1.TabIndex = 5;
-            this.wilBitGradientButton1.Text = "Entrar";
-            this.wilBitGradientButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.wilBitGradientButton1.UseVisualStyleBackColor = true;
+            this.btnEntrar_LG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.btnEntrar_LG.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.btnEntrar_LG.BorderColor = System.Drawing.Color.Black;
+            this.btnEntrar_LG.BorderRadius = 6;
+            this.btnEntrar_LG.BorderSize = 2;
+            this.btnEntrar_LG.FlatAppearance.BorderSize = 0;
+            this.btnEntrar_LG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar_LG.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEntrar_LG.ForeColor = System.Drawing.Color.White;
+            this.btnEntrar_LG.Location = new System.Drawing.Point(117, 240);
+            this.btnEntrar_LG.Name = "btnEntrar_LG";
+            this.btnEntrar_LG.Size = new System.Drawing.Size(150, 40);
+            this.btnEntrar_LG.TabIndex = 5;
+            this.btnEntrar_LG.Text = "Entrar";
+            this.btnEntrar_LG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEntrar_LG.UseVisualStyleBackColor = true;
+            this.btnEntrar_LG.Click += new System.EventHandler(this.btnEntrar_LGClick);
             // 
             // label3
             // 
@@ -200,7 +201,7 @@
 
         private WiLBiT.WiLBiTGradientPanel wilBitGradientPanel1;
         private Label label1;
-        private WiLBiT.WiLBiTGradientButton wilBitGradientButton1;
+        private WiLBiT.WiLBiTGradientButton btnEntrar_LG;
         private Label label3;
         private Label label2;
         private WiLBiT.WiLBiTTextBox txtSenha_LG;

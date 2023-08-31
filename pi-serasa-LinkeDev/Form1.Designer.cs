@@ -228,7 +228,7 @@
             this.btnAssine.TabIndex = 4;
             this.btnAssine.Text = "Assine Já";
             this.btnAssine.UseVisualStyleBackColor = false;
-            this.btnAssine.Click += new System.EventHandler(this.wilBitButton1_Click);
+            this.btnAssine.Click += new System.EventHandler(this.btnAssine_Click);
             // 
             // imgLogo2
             // 

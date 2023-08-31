@@ -11,7 +11,7 @@ namespace pi_serasa_LinkeDev
     internal class Conexao
     {
         const string host = "localhost";
-        const string banco = "linkedev";
+        const string banco = "bd_linkedev";
         const string usuario = "root";
         const string senha = "senac";
 
@@ -20,7 +20,6 @@ namespace pi_serasa_LinkeDev
 
         public static DataTable executaQuery(string query)
         {
-            // aaaaaaaaaaaaa
             try
             {
                 conexao.Open();

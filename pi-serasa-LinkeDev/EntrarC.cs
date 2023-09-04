@@ -16,9 +16,12 @@ namespace pi_serasa_LinkeDev
         {
             InitializeComponent();
         }
+        
 
         private void btnEntrar_LGClick(object sender, EventArgs e)
         {
+            
+            
             string email = txtEmail_LG.Texts;
             string senha = txtSenha_LG.Texts;
 
@@ -27,13 +30,27 @@ namespace pi_serasa_LinkeDev
 
             if (confere)
             {
-                Inicial i = new Inicial();
-                i.Show();
+
+
+               // CarregaBotoes(new trocaBotoes());
+
+
+
+                this.Close();
+
             }
             else
             {
                 MessageBox.Show("Email ou senha incorretos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        
+
+        private void EntrarC_Load(object sender, EventArgs e)
+        {
+          panelC.Location= new Point(ClientSize.Width -1050, ClientSize.Height-650);  
+           imgLogoE.Location = new Point(ClientSize.Width-140,ClientSize.Height - 910);
         }
     }
 }

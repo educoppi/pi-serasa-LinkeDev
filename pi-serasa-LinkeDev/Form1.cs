@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace pi_serasa_LinkeDev
 {
     public partial class Form1 : Form
@@ -15,8 +17,8 @@ namespace pi_serasa_LinkeDev
             panelSup.Location = new Point(0, -2);
             panelSup.Size = new Size(ClientSize.Width, 94);
         //botoes suepriores
-            btnEntrar.Location = new Point(ClientSize.Width - 230, 25);
-            btnCriar.Location = new Point(ClientSize.Width - 120, 25);
+            panel1.Location = new Point(ClientSize.Width - 230, 10);
+           // btnCriar.Location = new Point(ClientSize.Width - 120, 25);
          //painel central
             panelCentral.Size = new Size(ClientSize.Width - panelEsquerdo.Width - 70, ClientSize.Height - panelSup.Height - 20);
         //logos
@@ -31,6 +33,25 @@ namespace pi_serasa_LinkeDev
 
 
         }
+      
+        void CarregaBotoes(Form form)
+        {
+            form.TopLevel = false;
+            panel1.Controls.Clear();
+            panel1.Controls.Add(form);
+            form.Location = new Point(panel1.Width - 260, 22);
+            
+            form.Show();
+        }
+        void CarregaEntreTELAS(Form form)
+        {
+            form.TopLevel = false;
+            panelCentral.Controls.Clear();
+            panelCentral.Controls.Add(form);
+            form.Location = new Point(panelCentral.Location.X-193  , panelCentral.Location.Y-92) ;
+            form.Size = new Size(panelCentral.Width, panelCentral.Height);
+            form.Show();
+        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -43,11 +64,12 @@ namespace pi_serasa_LinkeDev
         }
         private void btnEntrar_Click(object sender, EventArgs e)
         {
-           
-            EntrarC entrar = new EntrarC();
-            entrar.Show();
-            
-           
+            CarregaEntreTELAS(new EntrarC());
+          
+          CarregaBotoes(new trocaBotoes());
+
+
+
         }
 
         private void btnCriar_Click(object sender, EventArgs e)
@@ -67,6 +89,11 @@ namespace pi_serasa_LinkeDev
         }
 
         private void btnAssine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       public  void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

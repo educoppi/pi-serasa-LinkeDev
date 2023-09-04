@@ -30,10 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelSup = new WiLBiT.WiLBiTPanel();
-            this.imgLogoALO = new System.Windows.Forms.PictureBox();
-            this.imgLogo = new System.Windows.Forms.PictureBox();
+           /** Form1 */ this.panel1 = new System.Windows.Forms.Panel();
             this.btnEntrar = new WiLBiT.WiLBiTButton();
             this.btnCriar = new WiLBiT.WiLBiTButton();
+            this.imgLogoALO = new System.Windows.Forms.PictureBox();
+            this.imgLogo = new System.Windows.Forms.PictureBox();
             this.panelCentral = new WiLBiT.WiLBiTGradientPanel();
             this.panelEsquerdo = new WiLBiT.WiLBiTPanel();
             this.wilBitButton3 = new WiLBiT.WiLBiTButton();
@@ -43,6 +44,7 @@
             this.btnAssine = new WiLBiT.WiLBiTButton();
             this.imgLogo2 = new System.Windows.Forms.PictureBox();
             this.panelSup.SuspendLayout();
+           /**Form1*/ this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoALO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
             this.panelEsquerdo.SuspendLayout();
@@ -55,15 +57,58 @@
             this.panelSup.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.panelSup.BorderRadius = 6;
             this.panelSup.BorderSize = 0;
+            this.panelSup.Controls.Add(this.panel1);
             this.panelSup.Controls.Add(this.imgLogoALO);
             this.panelSup.Controls.Add(this.imgLogo);
-            this.panelSup.Controls.Add(this.btnEntrar);
-            this.panelSup.Controls.Add(this.btnCriar);
             this.panelSup.ForeColor = System.Drawing.Color.White;
             this.panelSup.Location = new System.Drawing.Point(0, -18);
             this.panelSup.Name = "panelSup";
             this.panelSup.Size = new System.Drawing.Size(801, 107);
             this.panelSup.TabIndex = 0;
+            // 
+            // panel1
+            // 
+           /**Form1*/ this.panel1.Controls.Add(this.btnEntrar);
+          /** Form1*/ this.panel1.Controls.Add(this.btnCriar);
+          /** Form1*/ this.panel1.Location = new System.Drawing.Point(559, 27);
+          /** Form1*/ this.panel1.Name = "panel1";
+           /**Form1*/ this.panel1.Size = new System.Drawing.Size(239, 77);
+           /**Form1*/ this.panel1.TabIndex = 9;
+          /** Form1*/ this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnEntrar
+            // 
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.btnEntrar.BorderColor = System.Drawing.Color.Black;
+            this.btnEntrar.BorderRadius = 6;
+            this.btnEntrar.BorderSize = 2;
+            this.btnEntrar.FlatAppearance.BorderSize = 0;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar.ForeColor = System.Drawing.Color.White;
+            this.btnEntrar.Location = new System.Drawing.Point(3, 16);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(84, 47);
+            this.btnEntrar.TabIndex = 6;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
+            // 
+            // btnCriar
+            // 
+            this.btnCriar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.btnCriar.BorderColor = System.Drawing.Color.Black;
+            this.btnCriar.BorderRadius = 6;
+            this.btnCriar.BorderSize = 2;
+            this.btnCriar.FlatAppearance.BorderSize = 0;
+            this.btnCriar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCriar.ForeColor = System.Drawing.Color.White;
+            this.btnCriar.Location = new System.Drawing.Point(108, 16);
+            this.btnCriar.Name = "btnCriar";
+            this.btnCriar.Size = new System.Drawing.Size(84, 47);
+            this.btnCriar.TabIndex = 5;
+            this.btnCriar.Text = "Criar conta";
+            this.btnCriar.UseVisualStyleBackColor = false;
+            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
             // 
             // imgLogoALO
             // 
@@ -84,40 +129,6 @@
             this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgLogo.TabIndex = 7;
             this.imgLogo.TabStop = false;
-            // 
-            // btnEntrar
-            // 
-            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.btnEntrar.BorderColor = System.Drawing.Color.Black;
-            this.btnEntrar.BorderRadius = 6;
-            this.btnEntrar.BorderSize = 2;
-            this.btnEntrar.FlatAppearance.BorderSize = 0;
-            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEntrar.ForeColor = System.Drawing.Color.White;
-            this.btnEntrar.Location = new System.Drawing.Point(601, 30);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(84, 47);
-            this.btnEntrar.TabIndex = 6;
-            this.btnEntrar.Text = "Entrar";
-            this.btnEntrar.UseVisualStyleBackColor = false;
-            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
-            // 
-            // btnCriar
-            // 
-            this.btnCriar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.btnCriar.BorderColor = System.Drawing.Color.Black;
-            this.btnCriar.BorderRadius = 6;
-            this.btnCriar.BorderSize = 2;
-            this.btnCriar.FlatAppearance.BorderSize = 0;
-            this.btnCriar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCriar.ForeColor = System.Drawing.Color.White;
-            this.btnCriar.Location = new System.Drawing.Point(691, 30);
-            this.btnCriar.Name = "btnCriar";
-            this.btnCriar.Size = new System.Drawing.Size(84, 47);
-            this.btnCriar.TabIndex = 5;
-            this.btnCriar.Text = "Criar conta";
-            this.btnCriar.UseVisualStyleBackColor = false;
-            this.btnCriar.Click += new System.EventHandler(this.btnCriar_Click);
             // 
             // panelCentral
             // 
@@ -244,7 +255,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(1141, 667);
             this.Controls.Add(this.imgLogo2);
             this.Controls.Add(this.panelCentral);
@@ -254,6 +265,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelSup.ResumeLayout(false);
+           /**Form1*/ this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoALO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
             this.panelEsquerdo.ResumeLayout(false);
@@ -277,5 +289,6 @@
         private WiLBiT.WiLBiTButton wilBitButton4;
         private WiLBiT.WiLBiTButton wilBitButton3;
         private WiLBiT.WiLBiTButton wilBitButton2;
+        private Panel panel1;
     }
 }

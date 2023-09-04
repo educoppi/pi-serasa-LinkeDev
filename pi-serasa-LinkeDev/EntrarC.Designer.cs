@@ -29,38 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntrarC));
-            this.wilBitGradientPanel1 = new WiLBiT.WiLBiTGradientPanel();
+            this.panelC = new WiLBiT.WiLBiTGradientPanel();
             this.btnEntrar_LG = new WiLBiT.WiLBiTGradientButton();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSenha_LG = new WiLBiT.WiLBiTTextBox();
             this.txtEmail_LG = new WiLBiT.WiLBiTTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.wilBitGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.imgLogoE = new System.Windows.Forms.PictureBox();
+            this.panelC.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogoE)).BeginInit();
             this.SuspendLayout();
             // 
-            // wilBitGradientPanel1
+            // panelC
             // 
-            this.wilBitGradientPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.wilBitGradientPanel1.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.wilBitGradientPanel1.BorderColor = System.Drawing.Color.Black;
-            this.wilBitGradientPanel1.BorderRadius = 6;
-            this.wilBitGradientPanel1.BorderSize = 4;
-            this.wilBitGradientPanel1.Controls.Add(this.btnEntrar_LG);
-            this.wilBitGradientPanel1.Controls.Add(this.label3);
-            this.wilBitGradientPanel1.Controls.Add(this.label2);
-            this.wilBitGradientPanel1.Controls.Add(this.txtSenha_LG);
-            this.wilBitGradientPanel1.Controls.Add(this.txtEmail_LG);
-            this.wilBitGradientPanel1.Controls.Add(this.label1);
-            this.wilBitGradientPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitGradientPanel1.Location = new System.Drawing.Point(227, 62);
-            this.wilBitGradientPanel1.Name = "wilBitGradientPanel1";
-            this.wilBitGradientPanel1.Size = new System.Drawing.Size(371, 308);
-            this.wilBitGradientPanel1.TabIndex = 0;
+            this.panelC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.panelC.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.panelC.BorderColor = System.Drawing.Color.Black;
+            this.panelC.BorderRadius = 6;
+            this.panelC.BorderSize = 4;
+            this.panelC.Controls.Add(this.btnEntrar_LG);
+            this.panelC.Controls.Add(this.label3);
+            this.panelC.Controls.Add(this.label2);
+            this.panelC.Controls.Add(this.txtSenha_LG);
+            this.panelC.Controls.Add(this.txtEmail_LG);
+            this.panelC.Controls.Add(this.label1);
+            this.panelC.ForeColor = System.Drawing.Color.White;
+            this.panelC.Location = new System.Drawing.Point(227, 62);
+            this.panelC.Name = "panelC";
+            this.panelC.Size = new System.Drawing.Size(371, 308);
+            this.panelC.TabIndex = 0;
             // 
             // btnEntrar_LG
             // 
@@ -158,55 +156,44 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Seu login";
             // 
-            // pictureBox2
+            // imgLogoE
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-7, 226);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(101, 228);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(708, -3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(92, 228);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
+            this.imgLogoE.Image = ((System.Drawing.Image)(resources.GetObject("imgLogoE.Image")));
+            this.imgLogoE.Location = new System.Drawing.Point(732, 171);
+            this.imgLogoE.Name = "imgLogoE";
+            this.imgLogoE.Size = new System.Drawing.Size(133, 283);
+            this.imgLogoE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgLogoE.TabIndex = 7;
+            this.imgLogoE.TabStop = false;
             // 
             // EntrarC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.wilBitGradientPanel1);
+            this.ClientSize = new System.Drawing.Size(1172, 624);
+            this.Controls.Add(this.imgLogoE);
+            this.Controls.Add(this.panelC);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "EntrarC";
             this.Text = "EntrarC";
-            this.wilBitGradientPanel1.ResumeLayout(false);
-            this.wilBitGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Load += new System.EventHandler(this.EntrarC_Load);
+            this.panelC.ResumeLayout(false);
+            this.panelC.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogoE)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private WiLBiT.WiLBiTGradientPanel wilBitGradientPanel1;
+        private WiLBiT.WiLBiTGradientPanel panelC;
         private Label label1;
         private WiLBiT.WiLBiTGradientButton btnEntrar_LG;
         private Label label3;
         private Label label2;
         private WiLBiT.WiLBiTTextBox txtSenha_LG;
         private WiLBiT.WiLBiTTextBox txtEmail_LG;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private PictureBox imgLogoE;
     }
 }

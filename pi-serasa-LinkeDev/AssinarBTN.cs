@@ -10,12 +10,14 @@ using System.Windows.Forms;
 
 namespace pi_serasa_LinkeDev
 {
-    public partial class CriarC : Form
+    public partial class AssinarBTN : Form
     {
-        public CriarC()
+        public AssinarBTN()
         {
             InitializeComponent();
         }
+
+        
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -27,13 +29,7 @@ namespace pi_serasa_LinkeDev
 
         }
 
-        private void CriarC_Load(object sender, EventArgs e)
-        {
-            panelC.Location = new Point(ClientSize.Width - 1400, ClientSize.Height - 750);
-            
-            panelDES.Location = new Point(ClientSize.Width - 500, ClientSize.Height - 850);
-            imgLogo.Location = new Point(ClientSize.Width - 960, ClientSize.Height - 110);
-        }
+       
 
         private void wilBitButton21_Click(object sender, EventArgs e)
         {
@@ -41,7 +37,7 @@ namespace pi_serasa_LinkeDev
             string senha = txtSenha_CR.Texts;
             string nome = txtUsuario_CR.Texts;
 
-            if (email == "" && senha == "" && nome == "" )
+            if (email == "" && senha == "" && nome == "")
             {
                 MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -51,12 +47,33 @@ namespace pi_serasa_LinkeDev
             usuario.insere(email, senha);
 
             Inicial i = new Inicial();
+            Assinar assinar = new Assinar();
+            assinar.Show();
             i.Show();
         }
 
         private void panelC_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void AssinarBTN_Load_1(object sender, EventArgs e)
+        {
+            panelC2.Location = new Point(ClientSize.Width - 1400, ClientSize.Height - 750);
+
+            panelDES.Location = new Point(ClientSize.Width - 500, ClientSize.Height - 850);
+            imgLogo.Location = new Point(ClientSize.Width - 980, ClientSize.Height - 160);
+        }
+
+        private void wilBitButton21_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            EntrarC entra = new EntrarC();
+            entra.Show();
         }
     }
 }

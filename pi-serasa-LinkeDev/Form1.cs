@@ -4,7 +4,8 @@ namespace pi_serasa_LinkeDev
 {
     public partial class Form1 : Form
     {
-         
+        private object botaoEntrarAssinar;
+
         public Form1()
         {
             InitializeComponent();
@@ -48,7 +49,7 @@ namespace pi_serasa_LinkeDev
             form.TopLevel = false;
             panelCentral.Controls.Clear();
             panelCentral.Controls.Add(form);
-            form.Location = new Point(panelCentral.Location.X-193  , panelCentral.Location.Y-92) ;
+            form.Location = new Point(panelCentral.Location.X-193  , panelCentral.Location.Y-94) ;
             form.Size = new Size(panelCentral.Width, panelCentral.Height);
             form.Show();
         }
@@ -66,7 +67,7 @@ namespace pi_serasa_LinkeDev
         {
             CarregaEntreTELAS(new EntrarC());
           
-          CarregaBotoes(new trocaBotoes());
+         
 
 
 
@@ -76,8 +77,7 @@ namespace pi_serasa_LinkeDev
         {
 
 
-            CriarC criar1 = new CriarC();
-            criar1.Show();
+            CarregaEntreTELAS(new CriarC());
            
 
 
@@ -90,7 +90,11 @@ namespace pi_serasa_LinkeDev
 
         private void btnAssine_Click(object sender, EventArgs e)
         {
+           
 
+            CarregaEntreTELAS(new AssinarBTN());
+
+            
         }
 
        public  void panel1_Paint(object sender, PaintEventArgs e)

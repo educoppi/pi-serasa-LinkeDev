@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace pi_serasa_LinkeDev
+ namespace pi_serasa_LinkeDev
 {
     public partial class EntrarC : Form
     {
@@ -51,6 +51,16 @@ namespace pi_serasa_LinkeDev
         {
           panelC.Location= new Point(ClientSize.Width -1050, ClientSize.Height-650);  
            imgLogoE.Location = new Point(ClientSize.Width-140,ClientSize.Height - 910);
+        }
+
+        public void botaoEntrarAssinar_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+       public void panelC_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

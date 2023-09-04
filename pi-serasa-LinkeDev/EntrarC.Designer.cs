@@ -43,8 +43,8 @@
             // 
             // panelC
             // 
-            this.panelC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
-            this.panelC.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.panelC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.panelC.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
             this.panelC.BorderColor = System.Drawing.Color.Black;
             this.panelC.BorderRadius = 6;
             this.panelC.BorderSize = 4;
@@ -59,6 +59,7 @@
             this.panelC.Name = "panelC";
             this.panelC.Size = new System.Drawing.Size(371, 308);
             this.panelC.TabIndex = 0;
+            this.panelC.Paint += new System.Windows.Forms.PaintEventHandler(this.panelC_Paint);
             // 
             // btnEntrar_LG
             // 

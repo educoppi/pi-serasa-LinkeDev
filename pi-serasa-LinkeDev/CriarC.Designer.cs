@@ -86,8 +86,8 @@
             // 
             // wilBitButton21
             // 
-            this.wilBitButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.wilBitButton21.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.wilBitButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
+            this.wilBitButton21.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
             this.wilBitButton21.BorderColor = System.Drawing.Color.Black;
             this.wilBitButton21.BorderRadius = 10;
             this.wilBitButton21.BorderSize = 2;
@@ -107,6 +107,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(184, 189);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(101, 15);
@@ -116,6 +117,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(184, 141);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(42, 15);
@@ -125,6 +127,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(184, 89);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 15);
@@ -227,8 +230,8 @@
             // 
             // wilBitButton22
             // 
-            this.wilBitButton22.BackColor = System.Drawing.Color.Gray;
-            this.wilBitButton22.BackgroundColor = System.Drawing.Color.Gray;
+            this.wilBitButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
+            this.wilBitButton22.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
             this.wilBitButton22.BorderColor = System.Drawing.Color.Black;
             this.wilBitButton22.BorderRadius = 10;
             this.wilBitButton22.BorderSize = 2;
@@ -289,7 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1190, 816);
             this.Controls.Add(this.imgLogo);
             this.Controls.Add(this.panelDES);

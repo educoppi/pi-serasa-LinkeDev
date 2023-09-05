@@ -17,7 +17,6 @@ using System.Windows.Forms;
             InitializeComponent();
         }
         
-
         private void btnEntrar_LGClick(object sender, EventArgs e)
         {
             
@@ -30,14 +29,8 @@ using System.Windows.Forms;
 
             if (confere)
             {
-
-
-               // CarregaBotoes(new trocaBotoes());
-
-
-
+                Form1.CarregaBotoes(new trocaBotoes());   
                 this.Close();
-
             }
             else
             {
@@ -45,12 +38,10 @@ using System.Windows.Forms;
             }
         }
 
-        
-
         private void EntrarC_Load(object sender, EventArgs e)
         {
           panelC.Location= new Point(ClientSize.Width -1050, ClientSize.Height-650);  
-           imgLogoE.Location = new Point(ClientSize.Width-140,ClientSize.Height - 910);
+          imgLogoE.Location = new Point(ClientSize.Width-120,ClientSize.Height - 890);
         }
 
         public void botaoEntrarAssinar_Click(object sender, EventArgs e)

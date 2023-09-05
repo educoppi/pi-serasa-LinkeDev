@@ -10,32 +10,26 @@ namespace pi_serasa_LinkeDev
         {
             InitializeComponent();
         }
+        
         void renderizaInterface()
         {
-
             WindowState = FormWindowState.Maximized;
          //panel Superior
             panelSup.Location = new Point(0, -2);
             panelSup.Size = new Size(ClientSize.Width, 94);
-        //botoes suepriores
+         //botoes suepriores
             panel1.Location = new Point(ClientSize.Width - 230, 10);
-           // btnCriar.Location = new Point(ClientSize.Width - 120, 25);
+         //btnCriar.Location = new Point(ClientSize.Width - 120, 25);
          //painel central
-            panelCentral.Size = new Size(ClientSize.Width - panelEsquerdo.Width - 70, ClientSize.Height - panelSup.Height - 20);
-        //logos
+            panelCentral.Size = new Size(ClientSize.Width - panelEsquerdo.Width - 70, ClientSize.Height - panelSup.Height - 25);
+         //logos
             imgLogo.Size = new Size(125,115);   
             imgLogo.Location = new Point(25, -9);
-
             imgLogoALO.Location = new Point(ClientSize.Width -1120, 10);
-            imgLogo2.Location = new Point(ClientSize.Width - 1910, 540);
-
-            
-
-
-
+            imgLogo2.Location = new Point(ClientSize.Width - 1900, 650);
         }
       
-        void CarregaBotoes(Form form)
+        public static void CarregaBotoes(Form form)
         {
             form.TopLevel = false;
             panel1.Controls.Clear();
@@ -44,12 +38,13 @@ namespace pi_serasa_LinkeDev
             
             form.Show();
         }
+        
         void CarregaEntreTELAS(Form form)
         {
             form.TopLevel = false;
             panelCentral.Controls.Clear();
             panelCentral.Controls.Add(form);
-            form.Location = new Point(panelCentral.Location.X-193  , panelCentral.Location.Y-94) ;
+            form.Location = new Point(panelCentral.Location.X-202 , panelCentral.Location.Y-107) ;
             form.Size = new Size(panelCentral.Width, panelCentral.Height);
             form.Show();
         }
@@ -63,24 +58,15 @@ namespace pi_serasa_LinkeDev
         {
 
         }
+        
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             CarregaEntreTELAS(new EntrarC());
-          
-         
-
-
-
         }
 
         private void btnCriar_Click(object sender, EventArgs e)
         {
-
-
             CarregaEntreTELAS(new CriarC());
-           
-
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -90,11 +76,7 @@ namespace pi_serasa_LinkeDev
 
         private void btnAssine_Click(object sender, EventArgs e)
         {
-           
-
             CarregaEntreTELAS(new AssinarBTN());
-
-            
         }
 
        public  void panel1_Paint(object sender, PaintEventArgs e)

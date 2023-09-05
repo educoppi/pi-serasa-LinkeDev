@@ -44,7 +44,7 @@ namespace pi_serasa_LinkeDev
             }
 
             Usuario usuario = new Usuario();
-            usuario.insere(email, senha);
+            usuario.insereUsuario(email, senha);
 
             Inicial i = new Inicial();
             Assinar assinar = new Assinar();
@@ -67,7 +67,22 @@ namespace pi_serasa_LinkeDev
 
         private void wilBitButton21_Click_1(object sender, EventArgs e)
         {
-           
+            string email = txtEmail_CR.Texts;
+            string senha = txtSenha_CR.Texts;
+            string nome = txtUsuario_CR.Texts;
+
+            if (email == "" && senha == "" && nome == "")
+            {
+                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            Usuario usuario = new Usuario();
+            usuario.insereUsuario(email, senha);
+            usuario.insereAssinante(nome);
+
+            Inicial i = new Inicial();
+            i.Show();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

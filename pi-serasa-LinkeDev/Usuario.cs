@@ -51,26 +51,24 @@ namespace pi_serasa_LinkeDev
             return usuarios;
         }
 
-        public bool login(string email, string senha)
-        {
-            string query = $"SELECT id FROM usuario WHERE email = '{email}' AND senha = '{senha}';";
-
-            DataTable tabela = Conexao.executaQuery(query);
-
-            try
-            {
-                Usuario usuario = carregaDadosLogin(tabela.Rows[0]);
-            }
-            catch (Exception e)
-            {
-                return false;
-            }
-            return true;
-        }
-
-        public void insere(string email, string senha)
+        public void insereUsuario(string email, string senha)
         {
             string query = $"INSERT INTO usuario (email, senha) VALUES ('{email}', '{senha}');";
+            Conexao.executaQuery(query);
+        }
+
+        public void insereCliente(string nome)
+        {
+            Usuario usuario = retornaUltimoID();
+            string query = $"INSERT INTO cliente (id, nome) VALUES ({usuario.id}, '{nome}');";
+
+            Conexao.executaQuery(query);
+        }
+
+        public void insereAssinante(string nome)
+        {
+            Usuario usuario = retornaUltimoID();
+            string query = $"INSERT INTO assinante (id, nome) VALUES ( {usuario.id}, '{nome}');";
 
             Conexao.executaQuery(query);
         }
@@ -81,6 +79,41 @@ namespace pi_serasa_LinkeDev
             Usuario usuario = new Usuario(id);
 
             return usuario;
+        }
+
+        public Usuario retornaUltimoID()
+        {
+            string query = $"SELECT last_insert_id();";
+
+            DataTable tabela = Conexao.executaQuery(query);
+
+            Usuario usuario = carregaUltimoID(tabela.Rows[0]);
+
+            return usuario;
+        }
+        public Usuario carregaUltimoID(DataRow linha)
+        {
+            int id = int.Parse(linha["last_insert_id()"].ToString());
+            Usuario usuario = new Usuario(id);
+
+            return usuario;
+        }
+
+        public bool login(string email, string senha)
+        {
+            string query = $"SELECT id FROM usuario WHERE email = '{email}' AND senha = '{senha}';";
+
+            DataTable tabela = Conexao.executaQuery(query);
+
+            try
+            {
+                Usuario usuario = carregaDadosLogin(tabela.Rows[0]);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            return true;
         }
 
         public Usuario carregaDados(DataRow linha)

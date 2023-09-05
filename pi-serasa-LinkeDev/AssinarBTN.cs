@@ -90,5 +90,10 @@ namespace pi_serasa_LinkeDev
             EntrarC entra = new EntrarC();
             entra.Show();
         }
+
+        private void imgLogo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

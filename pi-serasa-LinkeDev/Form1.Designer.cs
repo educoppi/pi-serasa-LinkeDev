@@ -29,56 +29,56 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panelSup = new WiLBiT.WiLBiTPanel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            panelSup = new WiLBiT.WiLBiTPanel();
+            panel1 = new System.Windows.Forms.Panel();
             this.btnEntrar = new WiLBiT.WiLBiTButton();
             this.btnCriar = new WiLBiT.WiLBiTButton();
             this.imgLogoALO = new System.Windows.Forms.PictureBox();
             this.imgLogo = new System.Windows.Forms.PictureBox();
-            this.panelCentral = new WiLBiT.WiLBiTGradientPanel();
-            this.panelEsquerdo = new WiLBiT.WiLBiTPanel();
+            panelCentral = new WiLBiT.WiLBiTGradientPanel();
+            panelEsquerdo = new WiLBiT.WiLBiTPanel();
             this.wilBitButton3 = new WiLBiT.WiLBiTButton();
             this.wilBitButton2 = new WiLBiT.WiLBiTButton();
             this.label1 = new System.Windows.Forms.Label();
             this.wilBitButton4 = new WiLBiT.WiLBiTButton();
             this.btnAssine = new WiLBiT.WiLBiTButton();
             this.imgLogo2 = new System.Windows.Forms.PictureBox();
-            this.panelSup.SuspendLayout();
-            this.panel1.SuspendLayout();
+            panelSup.SuspendLayout();
+            panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoALO)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
-            this.panelEsquerdo.SuspendLayout();
+            panelEsquerdo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo2)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSup
             // 
-            this.panelSup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
-            this.panelSup.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.panelSup.BorderRadius = 6;
-            this.panelSup.BorderSize = 0;
-            this.panelSup.Controls.Add(this.panel1);
-            this.panelSup.Controls.Add(this.imgLogoALO);
-            this.panelSup.Controls.Add(this.imgLogo);
-            this.panelSup.ForeColor = System.Drawing.Color.White;
-            this.panelSup.Location = new System.Drawing.Point(0, -18);
-            this.panelSup.Name = "panelSup";
-            this.panelSup.Size = new System.Drawing.Size(801, 107);
-            this.panelSup.TabIndex = 0;
+            panelSup.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            panelSup.BorderColor = System.Drawing.Color.PaleVioletRed;
+            panelSup.BorderRadius = 6;
+            panelSup.BorderSize = 0;
+            panelSup.Controls.Add(panel1);
+            panelSup.Controls.Add(this.imgLogoALO);
+            panelSup.Controls.Add(this.imgLogo);
+            panelSup.ForeColor = System.Drawing.Color.White;
+            panelSup.Location = new System.Drawing.Point(0, -18);
+            panelSup.Name = "panelSup";
+            panelSup.Size = new System.Drawing.Size(801, 107);
+            panelSup.TabIndex = 0;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnEntrar);
-            this.panel1.Controls.Add(this.btnCriar);
-            this.panel1.Location = new System.Drawing.Point(559, 27);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(239, 77);
-            this.panel1.TabIndex = 9;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            panel1.Controls.Add(this.btnEntrar);
+            panel1.Controls.Add(this.btnCriar);
+            panel1.Location = new System.Drawing.Point(559, 27);
+            panel1.Name = "panel1";
+            panel1.Size = new System.Drawing.Size(239, 77);
+            panel1.TabIndex = 9;
+            panel1.Paint += new System.Windows.Forms.PaintEventHandler(panel1_Paint);
             // 
             // btnEntrar
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
             this.btnEntrar.BorderColor = System.Drawing.Color.Black;
             this.btnEntrar.BorderRadius = 6;
             this.btnEntrar.BorderSize = 2;
@@ -95,7 +95,7 @@
             // 
             // btnCriar
             // 
-            this.btnCriar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.btnCriar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
             this.btnCriar.BorderColor = System.Drawing.Color.Black;
             this.btnCriar.BorderRadius = 6;
             this.btnCriar.BorderSize = 2;
@@ -115,7 +115,7 @@
             this.imgLogoALO.Image = ((System.Drawing.Image)(resources.GetObject("imgLogoALO.Image")));
             this.imgLogoALO.Location = new System.Drawing.Point(242, 19);
             this.imgLogoALO.Name = "imgLogoALO";
-            this.imgLogoALO.Size = new System.Drawing.Size(319, 88);
+            this.imgLogoALO.Size = new System.Drawing.Size(319, 85);
             this.imgLogoALO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgLogoALO.TabIndex = 8;
             this.imgLogoALO.TabStop = false;
@@ -125,53 +125,53 @@
             this.imgLogo.Image = ((System.Drawing.Image)(resources.GetObject("imgLogo.Image")));
             this.imgLogo.Location = new System.Drawing.Point(12, 19);
             this.imgLogo.Name = "imgLogo";
-            this.imgLogo.Size = new System.Drawing.Size(123, 88);
+            this.imgLogo.Size = new System.Drawing.Size(116, 85);
             this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgLogo.TabIndex = 7;
             this.imgLogo.TabStop = false;
             // 
             // panelCentral
             // 
-            this.panelCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(78)))));
-            this.panelCentral.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
-            this.panelCentral.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.panelCentral.BorderRadius = 6;
-            this.panelCentral.BorderSize = 0;
-            this.panelCentral.ForeColor = System.Drawing.Color.White;
-            this.panelCentral.Location = new System.Drawing.Point(193, 95);
-            this.panelCentral.Name = "panelCentral";
-            this.panelCentral.Size = new System.Drawing.Size(582, 343);
-            this.panelCentral.TabIndex = 2;
-            this.panelCentral.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint);
+            panelCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(78)))), ((int)(((byte)(78)))));
+            panelCentral.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(121)))), ((int)(((byte)(121)))));
+            panelCentral.BorderColor = System.Drawing.Color.Black;
+            panelCentral.BorderRadius = 6;
+            panelCentral.BorderSize = 0;
+            panelCentral.ForeColor = System.Drawing.Color.White;
+            panelCentral.Location = new System.Drawing.Point(202, 107);
+            panelCentral.Name = "panelCentral";
+            panelCentral.Size = new System.Drawing.Size(573, 336);
+            panelCentral.TabIndex = 2;
+            panelCentral.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint);
             // 
             // panelEsquerdo
             // 
-            this.panelEsquerdo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.panelEsquerdo.BorderColor = System.Drawing.Color.White;
-            this.panelEsquerdo.BorderRadius = 6;
-            this.panelEsquerdo.BorderSize = 3;
-            this.panelEsquerdo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelEsquerdo.Controls.Add(this.wilBitButton3);
-            this.panelEsquerdo.Controls.Add(this.wilBitButton2);
-            this.panelEsquerdo.Controls.Add(this.label1);
-            this.panelEsquerdo.Controls.Add(this.wilBitButton4);
-            this.panelEsquerdo.Controls.Add(this.btnAssine);
-            this.panelEsquerdo.ForeColor = System.Drawing.Color.White;
-            this.panelEsquerdo.Location = new System.Drawing.Point(12, 95);
-            this.panelEsquerdo.Name = "panelEsquerdo";
-            this.panelEsquerdo.Size = new System.Drawing.Size(171, 405);
-            this.panelEsquerdo.TabIndex = 1;
+            panelEsquerdo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            panelEsquerdo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(219)))), ((int)(((byte)(186)))));
+            panelEsquerdo.BorderRadius = 6;
+            panelEsquerdo.BorderSize = 3;
+            panelEsquerdo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            panelEsquerdo.Controls.Add(this.wilBitButton3);
+            panelEsquerdo.Controls.Add(this.wilBitButton2);
+            panelEsquerdo.Controls.Add(this.label1);
+            panelEsquerdo.Controls.Add(this.wilBitButton4);
+            panelEsquerdo.Controls.Add(this.btnAssine);
+            panelEsquerdo.ForeColor = System.Drawing.Color.White;
+            panelEsquerdo.Location = new System.Drawing.Point(12, 107);
+            panelEsquerdo.Name = "panelEsquerdo";
+            panelEsquerdo.Size = new System.Drawing.Size(171, 404);
+            panelEsquerdo.TabIndex = 1;
             // 
             // wilBitButton3
             // 
-            this.wilBitButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.wilBitButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(175)))), ((int)(((byte)(219)))), ((int)(((byte)(186)))));
             this.wilBitButton3.BorderColor = System.Drawing.Color.Black;
             this.wilBitButton3.BorderRadius = 6;
             this.wilBitButton3.BorderSize = 2;
             this.wilBitButton3.FlatAppearance.BorderSize = 0;
             this.wilBitButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wilBitButton3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton3.ForeColor = System.Drawing.Color.White;
+            this.wilBitButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
             this.wilBitButton3.Location = new System.Drawing.Point(15, 18);
             this.wilBitButton3.Name = "wilBitButton3";
             this.wilBitButton3.Size = new System.Drawing.Size(137, 54);
@@ -181,14 +181,14 @@
             // 
             // wilBitButton2
             // 
-            this.wilBitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.wilBitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
             this.wilBitButton2.BorderColor = System.Drawing.Color.Black;
             this.wilBitButton2.BorderRadius = 6;
             this.wilBitButton2.BorderSize = 2;
             this.wilBitButton2.FlatAppearance.BorderSize = 0;
             this.wilBitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wilBitButton2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton2.ForeColor = System.Drawing.Color.White;
+            this.wilBitButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
             this.wilBitButton2.Location = new System.Drawing.Point(15, 77);
             this.wilBitButton2.Name = "wilBitButton2";
             this.wilBitButton2.Size = new System.Drawing.Size(137, 54);
@@ -199,24 +199,25 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(15, 206);
+            this.label1.Location = new System.Drawing.Point(15, 279);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 126);
+            this.label1.Size = new System.Drawing.Size(137, 110);
             this.label1.TabIndex = 8;
             this.label1.Text = "Assine para poder divulgar seus trabalhos, e trabalhar atraves do LinkeDev.";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // wilBitButton4
             // 
-            this.wilBitButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.wilBitButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(161)))), ((int)(((byte)(100)))));
             this.wilBitButton4.BorderColor = System.Drawing.Color.Black;
             this.wilBitButton4.BorderRadius = 6;
             this.wilBitButton4.BorderSize = 2;
             this.wilBitButton4.FlatAppearance.BorderSize = 0;
             this.wilBitButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.wilBitButton4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton4.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton4.Location = new System.Drawing.Point(16, 137);
+            this.wilBitButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.wilBitButton4.Location = new System.Drawing.Point(15, 137);
             this.wilBitButton4.Name = "wilBitButton4";
             this.wilBitButton4.Size = new System.Drawing.Size(137, 54);
             this.wilBitButton4.TabIndex = 7;
@@ -225,17 +226,17 @@
             // 
             // btnAssine
             // 
-            this.btnAssine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
-            this.btnAssine.BorderColor = System.Drawing.Color.Black;
+            this.btnAssine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(87)))), ((int)(((byte)(54)))));
+            this.btnAssine.BorderColor = System.Drawing.Color.White;
             this.btnAssine.BorderRadius = 20;
             this.btnAssine.BorderSize = 2;
             this.btnAssine.FlatAppearance.BorderSize = 0;
             this.btnAssine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAssine.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAssine.ForeColor = System.Drawing.Color.White;
-            this.btnAssine.Location = new System.Drawing.Point(16, 345);
+            this.btnAssine.Location = new System.Drawing.Point(15, 211);
             this.btnAssine.Name = "btnAssine";
-            this.btnAssine.Size = new System.Drawing.Size(142, 44);
+            this.btnAssine.Size = new System.Drawing.Size(137, 44);
             this.btnAssine.TabIndex = 4;
             this.btnAssine.Text = "Assine Já";
             this.btnAssine.UseVisualStyleBackColor = false;
@@ -244,9 +245,9 @@
             // imgLogo2
             // 
             this.imgLogo2.Image = ((System.Drawing.Image)(resources.GetObject("imgLogo2.Image")));
-            this.imgLogo2.Location = new System.Drawing.Point(720, 114);
+            this.imgLogo2.Location = new System.Drawing.Point(748, 164);
             this.imgLogo2.Name = "imgLogo2";
-            this.imgLogo2.Size = new System.Drawing.Size(163, 371);
+            this.imgLogo2.Size = new System.Drawing.Size(155, 347);
             this.imgLogo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgLogo2.TabIndex = 3;
             this.imgLogo2.TabStop = false;
@@ -258,17 +259,17 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1141, 667);
             this.Controls.Add(this.imgLogo2);
-            this.Controls.Add(this.panelCentral);
-            this.Controls.Add(this.panelEsquerdo);
-            this.Controls.Add(this.panelSup);
+            this.Controls.Add(panelCentral);
+            this.Controls.Add(panelEsquerdo);
+            this.Controls.Add(panelSup);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.panelSup.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            panelSup.ResumeLayout(false);
+            panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgLogoALO)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
-            this.panelEsquerdo.ResumeLayout(false);
+            panelEsquerdo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgLogo2)).EndInit();
             this.ResumeLayout(false);
 
@@ -289,6 +290,6 @@
         private WiLBiT.WiLBiTButton wilBitButton4;
         private WiLBiT.WiLBiTButton wilBitButton3;
         private WiLBiT.WiLBiTButton wilBitButton2;
-        private Panel panel1;
+        public static Panel panel1;
     }
 }

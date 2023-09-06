@@ -8,19 +8,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
- namespace pi_serasa_LinkeDev
+namespace pi_serasa_LinkeDev
 {
-    public partial class EntrarC : Form
+    public partial class lkJatenho1 : Form
     {
-        public EntrarC()
+        public lkJatenho1()
         {
             InitializeComponent();
         }
-        
+
+        private void lkJatenho1_Load(object sender, EventArgs e)
+        {
+            panelC.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 650);
+        }
         private void btnEntrar_LGClick(object sender, EventArgs e)
         {
-            
-            
+
+
+        }
+
+        private void EntrarC_Load(object sender, EventArgs e)
+        {
+           // panelC.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 650);
+            //imgLogoE.Location = new Point(ClientSize.Width - 120, ClientSize.Height - 890);
+        }
+
+        private void btnEntrar_LG_Click(object sender, EventArgs e)
+        {
             string email = txtEmail_LG.Texts;
             string senha = txtSenha_LG.Texts;
 
@@ -29,9 +43,7 @@ using System.Windows.Forms;
 
             if (confere)
             {
-                Form1.CarregaBotoes(new trocaBotoes());   
                
-                Form1.carregamenuESQ(new trocaMenuESQ());
                 this.Close();
             }
             else
@@ -40,24 +52,7 @@ using System.Windows.Forms;
             }
         }
 
-        private void EntrarC_Load(object sender, EventArgs e)
-        {
-          panelC.Location= new Point(ClientSize.Width -1050, ClientSize.Height-650);  
-          imgLogoE.Location = new Point(ClientSize.Width-120,ClientSize.Height - 890);
-            
-        }
-
-        public void botaoEntrarAssinar_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-       public void panelC_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void txtEmail_LG__TextChanged(object sender, EventArgs e)
+        private void panelC_Paint(object sender, PaintEventArgs e)
         {
 
         }

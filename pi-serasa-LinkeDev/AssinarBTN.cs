@@ -81,17 +81,21 @@ namespace pi_serasa_LinkeDev
             usuario.insereUsuario(email, senha);
             usuario.insereAssinante(nome);
 
-            Inicial i = new Inicial();
-            i.Show();
+          Assinar assin = new Assinar();
+            assin.Show();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            EntrarC entra = new EntrarC();
-            entra.Show();
+           Form1.CarregaEntreTELAS(new lkJatenho1());
         }
 
         private void imgLogo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
         {
 
         }

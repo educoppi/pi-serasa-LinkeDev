@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace pi_serasa_LinkeDev
 {
-    public partial class Formtroca1 : Form
+    public partial class trocaMenuESQ : Form
     {
-        public Formtroca1()
+        public trocaMenuESQ()
         {
             InitializeComponent();
+        }
+
+        private void panelEsquerdo2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace pi_serasa_LinkeDev
 {
-    partial class EntrarC
+    partial class lkJatenho1
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EntrarC));
             this.panelC = new WiLBiT.WiLBiTGradientPanel();
             this.btnEntrar_LG = new WiLBiT.WiLBiTGradientButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,9 +35,7 @@
             this.txtSenha_LG = new WiLBiT.WiLBiTTextBox();
             this.txtEmail_LG = new WiLBiT.WiLBiTTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.imgLogoE = new System.Windows.Forms.PictureBox();
             this.panelC.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogoE)).BeginInit();
             this.SuspendLayout();
             // 
             // panelC
@@ -55,10 +52,10 @@
             this.panelC.Controls.Add(this.txtEmail_LG);
             this.panelC.Controls.Add(this.label1);
             this.panelC.ForeColor = System.Drawing.Color.White;
-            this.panelC.Location = new System.Drawing.Point(227, 62);
+            this.panelC.Location = new System.Drawing.Point(215, 71);
             this.panelC.Name = "panelC";
             this.panelC.Size = new System.Drawing.Size(371, 308);
-            this.panelC.TabIndex = 0;
+            this.panelC.TabIndex = 1;
             this.panelC.Paint += new System.Windows.Forms.PaintEventHandler(this.panelC_Paint);
             // 
             // btnEntrar_LG
@@ -79,7 +76,7 @@
             this.btnEntrar_LG.Text = "Entrar";
             this.btnEntrar_LG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEntrar_LG.UseVisualStyleBackColor = true;
-            this.btnEntrar_LG.Click += new System.EventHandler(this.btnEntrar_LGClick);
+            this.btnEntrar_LG.Click += new System.EventHandler(this.btnEntrar_LG_Click);
             // 
             // label3
             // 
@@ -122,7 +119,7 @@
             this.txtSenha_LG.PlaceholderText = "";
             this.txtSenha_LG.Size = new System.Drawing.Size(250, 29);
             this.txtSenha_LG.TabIndex = 2;
-            this.txtSenha_LG.Texts = "adm";
+            this.txtSenha_LG.Texts = "";
             this.txtSenha_LG.UnderlinedStyle = false;
             // 
             // txtEmail_LG
@@ -144,9 +141,8 @@
             this.txtEmail_LG.PlaceholderText = "";
             this.txtEmail_LG.Size = new System.Drawing.Size(250, 29);
             this.txtEmail_LG.TabIndex = 1;
-            this.txtEmail_LG.Texts = "adm";
+            this.txtEmail_LG.Texts = "";
             this.txtEmail_LG.UnderlinedStyle = false;
-            this.txtEmail_LG._TextChanged += new System.EventHandler(this.txtEmail_LG__TextChanged);
             // 
             // label1
             // 
@@ -160,31 +156,19 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Seu login";
             // 
-            // imgLogoE
-            // 
-            this.imgLogoE.Image = ((System.Drawing.Image)(resources.GetObject("imgLogoE.Image")));
-            this.imgLogoE.Location = new System.Drawing.Point(732, 171);
-            this.imgLogoE.Name = "imgLogoE";
-            this.imgLogoE.Size = new System.Drawing.Size(133, 283);
-            this.imgLogoE.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgLogoE.TabIndex = 7;
-            this.imgLogoE.TabStop = false;
-            // 
-            // EntrarC
+            // lkJatenho1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1172, 624);
-            this.Controls.Add(this.imgLogoE);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panelC);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "EntrarC";
-            this.Text = "EntrarC";
-            this.Load += new System.EventHandler(this.EntrarC_Load);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Name = "lkJatenho1";
+            this.Text = "lkJatenho1";
+            this.Load += new System.EventHandler(this.lkJatenho1_Load);
             this.panelC.ResumeLayout(false);
             this.panelC.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgLogoE)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -192,12 +176,11 @@
         #endregion
 
         private WiLBiT.WiLBiTGradientPanel panelC;
-        private Label label1;
         private WiLBiT.WiLBiTGradientButton btnEntrar_LG;
         private Label label3;
         private Label label2;
         private WiLBiT.WiLBiTTextBox txtSenha_LG;
         private WiLBiT.WiLBiTTextBox txtEmail_LG;
-        private PictureBox imgLogoE;
+        private Label label1;
     }
 }

@@ -42,9 +42,9 @@
             this.btnAssine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAssine.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAssine.ForeColor = System.Drawing.Color.White;
-            this.btnAssine.Location = new System.Drawing.Point(12, 12);
+            this.btnAssine.Location = new System.Drawing.Point(38, 6);
             this.btnAssine.Name = "btnAssine";
-            this.btnAssine.Size = new System.Drawing.Size(156, 44);
+            this.btnAssine.Size = new System.Drawing.Size(119, 46);
             this.btnAssine.TabIndex = 8;
             this.btnAssine.Text = "Assine Já";
             this.btnAssine.UseVisualStyleBackColor = false;
@@ -59,7 +59,7 @@
             this.perfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.perfil.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.perfil.ForeColor = System.Drawing.Color.White;
-            this.perfil.Location = new System.Drawing.Point(174, 4);
+            this.perfil.Location = new System.Drawing.Point(163, -1);
             this.perfil.Name = "perfil";
             this.perfil.Size = new System.Drawing.Size(73, 67);
             this.perfil.TabIndex = 9;
@@ -70,13 +70,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(63)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(326, 101);
             this.Controls.Add(this.perfil);
             this.Controls.Add(this.btnAssine);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "trocaBotoes";
             this.Text = "trocaBotoes";
+            this.Load += new System.EventHandler(this.trocaBotoes_Load);
             this.ResumeLayout(false);
 
         }

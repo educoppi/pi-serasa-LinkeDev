@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AssinarBTN));
             this.imgLogo = new System.Windows.Forms.PictureBox();
             this.panelDES = new WiLBiT.WiLBiTGradientPanel();
-            this.wilBitButton22 = new WiLBiT.WiLBiTButton2();
             this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -63,12 +62,11 @@
             // 
             // panelDES
             // 
-            this.panelDES.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
-            this.panelDES.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.panelDES.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
+            this.panelDES.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.panelDES.BorderColor = System.Drawing.Color.Black;
             this.panelDES.BorderRadius = 6;
             this.panelDES.BorderSize = 2;
-            this.panelDES.Controls.Add(this.wilBitButton22);
             this.panelDES.Controls.Add(this.label7);
             this.panelDES.Controls.Add(this.label2);
             this.panelDES.Controls.Add(this.label1);
@@ -78,28 +76,9 @@
             this.panelDES.Size = new System.Drawing.Size(442, 779);
             this.panelDES.TabIndex = 4;
             // 
-            // wilBitButton22
-            // 
-            this.wilBitButton22.BackColor = System.Drawing.Color.Gray;
-            this.wilBitButton22.BackgroundColor = System.Drawing.Color.Gray;
-            this.wilBitButton22.BorderColor = System.Drawing.Color.Black;
-            this.wilBitButton22.BorderRadius = 10;
-            this.wilBitButton22.BorderSize = 2;
-            this.wilBitButton22.FlatAppearance.BorderSize = 0;
-            this.wilBitButton22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton22.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton22.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton22.Location = new System.Drawing.Point(150, 365);
-            this.wilBitButton22.Name = "wilBitButton22";
-            this.wilBitButton22.Size = new System.Drawing.Size(76, 28);
-            this.wilBitButton22.TabIndex = 11;
-            this.wilBitButton22.Text = "Assine já!";
-            this.wilBitButton22.TextColor = System.Drawing.Color.White;
-            this.wilBitButton22.UseVisualStyleBackColor = false;
-            // 
             // label7
             // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(16, 494);
             this.label7.Name = "label7";
@@ -109,13 +88,16 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(16, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(423, 404);
             this.label2.TabIndex = 1;
-            this.label2.Text = resources.GetString("label2.Text");
+            this.label2.Text = "PARA QUEM BUSCA EVOLUIR   E  TRABALHAR.\r\n\r\nNossos site foi criado com a intençao " +
+    "de ajudar \r\no ramo de T.I a encontrar um caminho para \r\nentender aonde trabalhar" +
+    " e saber por onde começar .\r\n\r\n\r\n\r\n";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label1
             // 
@@ -129,8 +111,8 @@
             // 
             // panelC2
             // 
-            this.panelC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
-            this.panelC2.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.panelC2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
+            this.panelC2.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.panelC2.BorderColor = System.Drawing.Color.Black;
             this.panelC2.BorderRadius = 6;
             this.panelC2.BorderSize = 2;
@@ -280,11 +262,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(248, 52);
+            this.label3.Location = new System.Drawing.Point(165, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 32);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Criar conta";
+            this.label3.Text = "Criar conta para assinar";
             // 
             // AssinarBTN
             // 
@@ -312,7 +294,6 @@
 
         private PictureBox imgLogo;
         private WiLBiT.WiLBiTGradientPanel panelDES;
-        private WiLBiT.WiLBiTButton2 wilBitButton22;
         private Label label7;
         private Label label2;
         private Label label1;

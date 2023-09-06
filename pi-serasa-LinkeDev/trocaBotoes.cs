@@ -16,5 +16,10 @@ namespace pi_serasa_LinkeDev
         {
             InitializeComponent();
         }
+
+        private void trocaBotoes_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

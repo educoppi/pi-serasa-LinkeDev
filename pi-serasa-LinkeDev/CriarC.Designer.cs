@@ -52,8 +52,8 @@
             // 
             // panelC
             // 
-            this.panelC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
-            this.panelC.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.panelC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
+            this.panelC.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.panelC.BorderColor = System.Drawing.Color.Black;
             this.panelC.BorderRadius = 6;
             this.panelC.BorderSize = 2;
@@ -77,6 +77,7 @@
             // 
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Lime;
             this.linkLabel1.AutoSize = true;
+            this.linkLabel1.LinkColor = System.Drawing.Color.Lime;
             this.linkLabel1.Location = new System.Drawing.Point(248, 330);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(114, 15);
@@ -86,8 +87,8 @@
             // 
             // wilBitButton21
             // 
-            this.wilBitButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
-            this.wilBitButton21.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
+            this.wilBitButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.wilBitButton21.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
             this.wilBitButton21.BorderColor = System.Drawing.Color.Black;
             this.wilBitButton21.BorderRadius = 10;
             this.wilBitButton21.BorderSize = 2;
@@ -213,8 +214,8 @@
             // 
             // panelDES
             // 
-            this.panelDES.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
-            this.panelDES.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.panelDES.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
+            this.panelDES.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.panelDES.BorderColor = System.Drawing.Color.Black;
             this.panelDES.BorderRadius = 6;
             this.panelDES.BorderSize = 2;
@@ -258,7 +259,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(212)))), ((int)(((byte)(133)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(16, 47);
             this.label2.Name = "label2";
@@ -292,7 +293,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(89)))), ((int)(((byte)(76)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(1190, 816);
             this.Controls.Add(this.imgLogo);
             this.Controls.Add(this.panelDES);

@@ -51,6 +51,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.wilBitPanel3 = new WiLBiT.WiLBiTPanel();
+            this.wilBitRadioButton6 = new WiLBiT.WiLBiTRadioButton();
+            this.wilBitRadioButton5 = new WiLBiT.WiLBiTRadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -59,8 +61,6 @@
             this.wilBitButton6 = new WiLBiT.WiLBiTButton();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.wilBitRadioButton5 = new WiLBiT.WiLBiTRadioButton();
-            this.wilBitRadioButton6 = new WiLBiT.WiLBiTRadioButton();
             this.wilBitPanel1.SuspendLayout();
             this.wilBitPanel2.SuspendLayout();
             this.wilBitPanel3.SuspendLayout();
@@ -68,7 +68,7 @@
             // 
             // wilBitButton1
             // 
-            this.wilBitButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(110)))), ((int)(((byte)(50)))));
+            this.wilBitButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.wilBitButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
             this.wilBitButton1.BorderRadius = 6;
             this.wilBitButton1.BorderSize = 0;
@@ -85,7 +85,7 @@
             // 
             // wilBitButton2
             // 
-            this.wilBitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(90)))), ((int)(((byte)(0)))));
+            this.wilBitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.wilBitButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
             this.wilBitButton2.BorderRadius = 6;
             this.wilBitButton2.BorderSize = 0;
@@ -102,7 +102,7 @@
             // 
             // wilBitButton3
             // 
-            this.wilBitButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(74)))), ((int)(((byte)(10)))));
+            this.wilBitButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(204)))));
             this.wilBitButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
             this.wilBitButton3.BorderRadius = 6;
             this.wilBitButton3.BorderSize = 0;
@@ -153,7 +153,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(110)))), ((int)(((byte)(50)))));
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(48, 149);
@@ -165,7 +165,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(90)))), ((int)(((byte)(0)))));
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(316, 145);
@@ -177,7 +177,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(74)))), ((int)(((byte)(10)))));
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(204)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(599, 145);
@@ -188,7 +188,7 @@
             // 
             // wilBitPanel1
             // 
-            this.wilBitPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(110)))), ((int)(((byte)(50)))));
+            this.wilBitPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(159)))), ((int)(((byte)(255)))));
             this.wilBitPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.wilBitPanel1.BorderRadius = 6;
             this.wilBitPanel1.BorderSize = 0;
@@ -239,7 +239,7 @@
             // 
             // wilBitPanel2
             // 
-            this.wilBitPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(90)))), ((int)(((byte)(0)))));
+            this.wilBitPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.wilBitPanel2.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.wilBitPanel2.BorderRadius = 6;
             this.wilBitPanel2.BorderSize = 0;
@@ -352,7 +352,7 @@
             // 
             // wilBitPanel3
             // 
-            this.wilBitPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(74)))), ((int)(((byte)(10)))));
+            this.wilBitPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(204)))));
             this.wilBitPanel3.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.wilBitPanel3.BorderRadius = 6;
             this.wilBitPanel3.BorderSize = 0;
@@ -371,6 +371,36 @@
             this.wilBitPanel3.Name = "wilBitPanel3";
             this.wilBitPanel3.Size = new System.Drawing.Size(247, 198);
             this.wilBitPanel3.TabIndex = 15;
+            // 
+            // wilBitRadioButton6
+            // 
+            this.wilBitRadioButton6.AutoSize = true;
+            this.wilBitRadioButton6.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.wilBitRadioButton6.Location = new System.Drawing.Point(184, 47);
+            this.wilBitRadioButton6.MinimumSize = new System.Drawing.Size(0, 21);
+            this.wilBitRadioButton6.Name = "wilBitRadioButton6";
+            this.wilBitRadioButton6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.wilBitRadioButton6.Size = new System.Drawing.Size(54, 21);
+            this.wilBitRadioButton6.TabIndex = 10;
+            this.wilBitRadioButton6.TabStop = true;
+            this.wilBitRadioButton6.Text = "10X";
+            this.wilBitRadioButton6.UnCheckedColor = System.Drawing.Color.Gray;
+            this.wilBitRadioButton6.UseVisualStyleBackColor = true;
+            // 
+            // wilBitRadioButton5
+            // 
+            this.wilBitRadioButton5.AutoSize = true;
+            this.wilBitRadioButton5.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.wilBitRadioButton5.Location = new System.Drawing.Point(130, 47);
+            this.wilBitRadioButton5.MinimumSize = new System.Drawing.Size(0, 21);
+            this.wilBitRadioButton5.Name = "wilBitRadioButton5";
+            this.wilBitRadioButton5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.wilBitRadioButton5.Size = new System.Drawing.Size(48, 21);
+            this.wilBitRadioButton5.TabIndex = 9;
+            this.wilBitRadioButton5.TabStop = true;
+            this.wilBitRadioButton5.Text = "6X";
+            this.wilBitRadioButton5.UnCheckedColor = System.Drawing.Color.Gray;
+            this.wilBitRadioButton5.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -464,36 +494,6 @@
             this.label18.Size = new System.Drawing.Size(72, 32);
             this.label18.TabIndex = 0;
             this.label18.Text = "Valor:";
-            // 
-            // wilBitRadioButton5
-            // 
-            this.wilBitRadioButton5.AutoSize = true;
-            this.wilBitRadioButton5.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitRadioButton5.Location = new System.Drawing.Point(130, 47);
-            this.wilBitRadioButton5.MinimumSize = new System.Drawing.Size(0, 21);
-            this.wilBitRadioButton5.Name = "wilBitRadioButton5";
-            this.wilBitRadioButton5.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.wilBitRadioButton5.Size = new System.Drawing.Size(48, 21);
-            this.wilBitRadioButton5.TabIndex = 9;
-            this.wilBitRadioButton5.TabStop = true;
-            this.wilBitRadioButton5.Text = "6X";
-            this.wilBitRadioButton5.UnCheckedColor = System.Drawing.Color.Gray;
-            this.wilBitRadioButton5.UseVisualStyleBackColor = true;
-            // 
-            // wilBitRadioButton6
-            // 
-            this.wilBitRadioButton6.AutoSize = true;
-            this.wilBitRadioButton6.CheckedColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitRadioButton6.Location = new System.Drawing.Point(184, 47);
-            this.wilBitRadioButton6.MinimumSize = new System.Drawing.Size(0, 21);
-            this.wilBitRadioButton6.Name = "wilBitRadioButton6";
-            this.wilBitRadioButton6.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.wilBitRadioButton6.Size = new System.Drawing.Size(54, 21);
-            this.wilBitRadioButton6.TabIndex = 10;
-            this.wilBitRadioButton6.TabStop = true;
-            this.wilBitRadioButton6.Text = "10X";
-            this.wilBitRadioButton6.UnCheckedColor = System.Drawing.Color.Gray;
-            this.wilBitRadioButton6.UseVisualStyleBackColor = true;
             // 
             // Assinar
             // 

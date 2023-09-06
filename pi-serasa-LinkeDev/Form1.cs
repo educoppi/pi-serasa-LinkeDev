@@ -54,22 +54,39 @@ namespace pi_serasa_LinkeDev
 
         public static void CarregaBotoes(Form form)
         {
+            
             form.TopLevel = false;
             panel1.Controls.Clear();
             panel1.Controls.Add(form);
-            form.Location = new Point(panel1.Width - 260, 22);
+            form.Location = new Point(panel1.Width - 268, 8);
+            
+            form.Show();
+            
+        }
+        public static void carregamenuESQ(Form form)
+        {
+            
+            form.TopLevel = false;
+            p.Controls.Clear();
+            p.Controls.Add(form);
+            form.Location = new Point(p.Width - 177, 0);
+           // p.Size = new Size(p.Width+2, p.Height+900);
+            imgLogo2.Visible = false;
 
             form.Show();
+            
         }
-
-        void CarregaEntreTELAS(Form form)
+        
+        public static void CarregaEntreTELAS(Form form)
         {
+            
             form.TopLevel = false;
             panelCentral.Controls.Clear();
             panelCentral.Controls.Add(form);
-            form.Location = new Point(panelCentral.Location.X - 202, panelCentral.Location.Y - 107);
+            form.Location = new Point(panelCentral.Location.X-202 , panelCentral.Location.Y-109) ;
             form.Size = new Size(panelCentral.Width, panelCentral.Height);
             form.Show();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)

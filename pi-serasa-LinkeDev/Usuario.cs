@@ -51,9 +51,9 @@ namespace pi_serasa_LinkeDev
             return usuarios;
         }
 
-        public void insereUsuario(string email, string senha)
+        public void insereUsuario(string email, string senha, bool assinante)
         {
-            string query = $"INSERT INTO usuario (email, senha) VALUES ('{email}', '{senha}');";
+            string query = $"INSERT INTO usuario (email, senha, assinante) VALUES ('{email}', '{senha}', {assinante});";
             Conexao.executaQuery(query);
         }
 

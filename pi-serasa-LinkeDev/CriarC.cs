@@ -41,14 +41,14 @@ namespace pi_serasa_LinkeDev
             string senha = txtSenha_CR.Texts;
             string nome = txtUsuario_CR.Texts;
 
-            if (email == "" && senha == "" && nome == "" )
+            if (email == "" || senha == "" || nome == "" )
             {
                 MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             Usuario usuario = new Usuario();
-            usuario.insereUsuario(email, senha);
+            usuario.insereUsuario(email, senha, false);
             usuario.insereCliente(nome);
 
             Inicial i = new Inicial();

@@ -7,28 +7,51 @@ namespace pi_serasa_LinkeDev
         public Form1()
         {
             InitializeComponent();
-        } 
+        }
+
+        int x = 50;
+        int y = 30;
+        int quebraLinha;
+        void geraImagens(string imagem)
+        {
+
+            PictureBox pic = new PictureBox();
+            pic.LoadAsync(imagem);
+            pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pic.Size = new Size(350, 150);
+            pic.Location = new Point(x, y);
+
+            x = x + 380;
+            quebraLinha++;
+            panelCentral.Controls.Add(pic);
+            
+            if (quebraLinha == 5)
+            {
+                x = 50;
+                y = 300;
+                pic.Location = new Point(x, y);
+            }
+
+        }
 
         void renderizaInterface()
         {
             WindowState = FormWindowState.Maximized;
-         //panel Superior
+            //panel Superior
             panelSup.Location = new Point(0, -2);
             panelSup.Size = new Size(ClientSize.Width, 94);
-         //botoes suepriores
+            //botoes suepriores
             panel1.Location = new Point(ClientSize.Width - 230, 10);
-         //btnCriar.Location = new Point(ClientSize.Width - 120, 25);
-         //painel central
+            //btnCriar.Location = new Point(ClientSize.Width - 120, 25);
+            //painel central
             panelCentral.Size = new Size(ClientSize.Width - panelEsquerdo.Width - 70, ClientSize.Height - panelSup.Height - 25);
-            p.Size = new Size(p.Width-10,ClientSize.Height);
-         
-         //logos
-            imgLogo.Size = new Size(125,115);   
+            //logos
+            imgLogo.Size = new Size(125, 115);
             imgLogo.Location = new Point(25, -9);
-            imgLogoALO.Location = new Point(ClientSize.Width -1120, 10);
+            imgLogoALO.Location = new Point(ClientSize.Width - 1120, 10);
             imgLogo2.Location = new Point(ClientSize.Width - 1900, 650);
         }
-      
+
         public static void CarregaBotoes(Form form)
         {
             
@@ -69,13 +92,32 @@ namespace pi_serasa_LinkeDev
         private void Form1_Load(object sender, EventArgs e)
         {
             renderizaInterface();
+
+
+            for (int i = 22; i < 24; i++)
+            {
+                List<string> imagens = new List<string>();
+                Servico servico = new Servico();
+                servico = servico.buscaImagensTelaVisitante(i);
+
+                imagens.Add(servico.getImagem_1);
+                imagens.Add(servico.getImagem_2);
+                imagens.Add(servico.getImagem_3);
+
+                foreach (string imagem in imagens)
+                {
+                    geraImagens(imagem);
+                }
+            }
+
+
         }
 
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
-        
+
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             CarregaEntreTELAS(new EntrarC());
@@ -96,7 +138,7 @@ namespace pi_serasa_LinkeDev
             CarregaEntreTELAS(new AssinarBTN());
         }
 
-       public  void panel1_Paint(object sender, PaintEventArgs e)
+        public void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -30,7 +30,7 @@ namespace pi_serasa_LinkeDev
         }
 
        
-
+        
         private void wilBitButton21_Click(object sender, EventArgs e)
         {
             string email = txtEmail_CR.Texts;
@@ -44,13 +44,14 @@ namespace pi_serasa_LinkeDev
             }
 
             Usuario usuario = new Usuario();
-            usuario.insereUsuario(email, senha);
+            usuario.insereUsuario(email, senha, true);
 
             Inicial i = new Inicial();
             Assinar assinar = new Assinar();
             assinar.Show();
             i.Show();
         }
+         
 
         private void panelC_Paint(object sender, PaintEventArgs e)
         {
@@ -71,17 +72,22 @@ namespace pi_serasa_LinkeDev
             string senha = txtSenha_CR.Texts;
             string nome = txtUsuario_CR.Texts;
 
-            if (email == "" && senha == "" && nome == "")
+            if (email == "" || senha == "" || nome == "")
             {
                 MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             Usuario usuario = new Usuario();
-            usuario.insereUsuario(email, senha);
+            usuario.insereUsuario(email, senha, true);
             usuario.insereAssinante(nome);
 
+
             Form1.CarregaEntreTELAS(new Assinar());
+
+
+           
+
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilCliente));
             this.picturePerfil = new System.Windows.Forms.PictureBox();
             this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.wilBitButton1 = new WiLBiT.WiLBiTButton();
@@ -38,8 +39,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.wilBitPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,13 +67,26 @@
             this.wilBitPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.wilBitPanel1.BorderRadius = 6;
             this.wilBitPanel1.BorderSize = 0;
+            this.wilBitPanel1.Controls.Add(this.label9);
             this.wilBitPanel1.Controls.Add(this.pictureBox2);
+            this.wilBitPanel1.Controls.Add(this.label8);
+            this.wilBitPanel1.Controls.Add(this.label7);
+            this.wilBitPanel1.Controls.Add(this.label6);
             this.wilBitPanel1.Controls.Add(this.pictureBox1);
             this.wilBitPanel1.ForeColor = System.Drawing.Color.White;
             this.wilBitPanel1.Location = new System.Drawing.Point(35, 193);
             this.wilBitPanel1.Name = "wilBitPanel1";
-            this.wilBitPanel1.Size = new System.Drawing.Size(270, 230);
+            this.wilBitPanel1.Size = new System.Drawing.Size(320, 230);
             this.wilBitPanel1.TabIndex = 11;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pictureBox1.Location = new System.Drawing.Point(178, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(116, 60);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // wilBitPanel2
             // 
@@ -154,23 +171,50 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "njdnfvnwjobnwo\r\ngbnojgb gbbfgwb";
             // 
-            // pictureBox1
+            // label6
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pictureBox1.Location = new System.Drawing.Point(148, 21);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(74, 171);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 15);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "label6";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(15, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 15);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "Produto:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(15, 171);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(53, 15);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Produto:";
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.pictureBox2.Location = new System.Drawing.Point(85, 90);
+            this.pictureBox2.Location = new System.Drawing.Point(178, 126);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.Size = new System.Drawing.Size(116, 60);
+            this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(74, 36);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 15);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "label9";
             // 
             // PerfilCliente
             // 
@@ -191,6 +235,7 @@
             this.Text = "PerfilCliente";
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
             this.wilBitPanel1.ResumeLayout(false);
+            this.wilBitPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -208,8 +253,12 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private PictureBox pictureBox2;
         private PictureBox pictureBox1;
         private Label label5;
+        private Label label9;
+        private PictureBox pictureBox2;
+        private Label label8;
+        private Label label7;
+        private Label label6;
     }
 }

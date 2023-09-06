@@ -262,11 +262,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(160, 52);
+            this.label3.Location = new System.Drawing.Point(248, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 32);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Criar conta para assinar";
+            this.label3.Text = "Criar conta";
             // 
             // AssinarBTN
             // 

@@ -269,7 +269,7 @@
             p.ForeColor = System.Drawing.Color.White;
             p.Location = new System.Drawing.Point(12, 107);
             p.Name = "p";
-            p.Size = new System.Drawing.Size(184, 548);
+            p.Size = new System.Drawing.Size(184, 934);
             p.TabIndex = 4;
             // 
             // Form1
@@ -277,7 +277,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(1141, 667);
+            this.ClientSize = new System.Drawing.Size(1141, 981);
             this.Controls.Add(p);
             this.Controls.Add(imgLogo2);
             this.Controls.Add(panelCentral);

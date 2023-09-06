@@ -501,10 +501,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(842, 507);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.wilBitPanel3);
             this.Controls.Add(this.wilBitPanel2);
             this.Controls.Add(this.wilBitPanel1);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);

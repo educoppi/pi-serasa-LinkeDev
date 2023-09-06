@@ -125,6 +125,7 @@
             this.imgLogoALO.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLogoALO.TabIndex = 8;
             this.imgLogoALO.TabStop = false;
+            this.imgLogoALO.Click += new System.EventHandler(this.imgLogoALO_Click);
             // 
             // imgLogo
             // 
@@ -135,6 +136,7 @@
             this.imgLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgLogo.TabIndex = 7;
             this.imgLogo.TabStop = false;
+            this.imgLogo.Click += new System.EventHandler(this.imgLogo_Click);
             // 
             // panelCentral
             // 
@@ -297,7 +299,6 @@
         #endregion
 
         private WiLBiT.WiLBiTPanel panelSup;
-        private static WiLBiT.WiLBiTGradientPanel panelCentral;
         private WiLBiT.WiLBiTButton btnEntrar;
         private WiLBiT.WiLBiTButton btnCriar;
         private WiLBiT.WiLBiTButton btnAssine;
@@ -307,9 +308,10 @@
         private WiLBiT.WiLBiTButton wilBitButton4;
         private WiLBiT.WiLBiTButton wilBitButton3;
         private WiLBiT.WiLBiTButton wilBitButton2;
-        private  static WiLBiT.WiLBiTPanel p;//
-        public static PictureBox imgLogo2;//
-        public static WiLBiT.WiLBiTPanel panelEsquerdo;//
-        public static Panel panel1;//
+        private static WiLBiT.WiLBiTGradientPanel panelCentral;
+        private static WiLBiT.WiLBiTPanel p;
+        public static PictureBox imgLogo2;
+        public static WiLBiT.WiLBiTPanel panelEsquerdo;
+        public static Panel panel1;
     }
 }

@@ -47,7 +47,7 @@ namespace pi_serasa_LinkeDev
             p.Controls.Clear();
             p.Controls.Add(form);
             form.Location = new Point(p.Width - 177, 0);
-           // p.Size = new Size(p.Width+2, p.Height+900);
+           
             imgLogo2.Visible = false;
 
             form.Show();
@@ -99,6 +99,15 @@ namespace pi_serasa_LinkeDev
        public  void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void imgLogoALO_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imgLogo_Click(object sender, EventArgs e)
+        {
         }
     }
 }

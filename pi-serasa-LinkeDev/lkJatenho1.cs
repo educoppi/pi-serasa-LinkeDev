@@ -43,7 +43,7 @@ namespace pi_serasa_LinkeDev
 
             if (confere)
             {
-               
+                Form1.CarregaEntreTELAS(new Assinar());
                 this.Close();
             }
             else

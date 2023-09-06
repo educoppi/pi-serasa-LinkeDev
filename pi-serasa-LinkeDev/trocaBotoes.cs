@@ -21,5 +21,13 @@ namespace pi_serasa_LinkeDev
         {
 
         }
+
+       
+
+        private void picturePerfil_Click(object sender, EventArgs e)
+        {
+            PerfilCliente p = new PerfilCliente();
+            p.Show();
+        }
     }
 }

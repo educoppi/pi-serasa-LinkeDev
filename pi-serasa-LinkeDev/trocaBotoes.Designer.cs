@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(trocaBotoes));
             this.btnAssine = new WiLBiT.WiLBiTButton();
-            this.perfil = new WiLBiT.WiLBiTButton();
+            this.picturePerfil = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAssine
@@ -49,22 +51,16 @@
             this.btnAssine.Text = "Assine Já";
             this.btnAssine.UseVisualStyleBackColor = false;
             // 
-            // perfil
+            // picturePerfil
             // 
-            this.perfil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.perfil.BorderColor = System.Drawing.Color.Black;
-            this.perfil.BorderRadius = 33;
-            this.perfil.BorderSize = 0;
-            this.perfil.FlatAppearance.BorderSize = 0;
-            this.perfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.perfil.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.perfil.ForeColor = System.Drawing.Color.White;
-            this.perfil.Location = new System.Drawing.Point(163, -1);
-            this.perfil.Name = "perfil";
-            this.perfil.Size = new System.Drawing.Size(73, 67);
-            this.perfil.TabIndex = 9;
-            this.perfil.Text = "Perfil";
-            this.perfil.UseVisualStyleBackColor = false;
+            this.picturePerfil.Image = ((System.Drawing.Image)(resources.GetObject("picturePerfil.Image")));
+            this.picturePerfil.Location = new System.Drawing.Point(163, 6);
+            this.picturePerfil.Name = "picturePerfil";
+            this.picturePerfil.Size = new System.Drawing.Size(100, 62);
+            this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturePerfil.TabIndex = 9;
+            this.picturePerfil.TabStop = false;
+            this.picturePerfil.Click += new System.EventHandler(this.picturePerfil_Click);
             // 
             // trocaBotoes
             // 
@@ -72,12 +68,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(326, 101);
-            this.Controls.Add(this.perfil);
+            this.Controls.Add(this.picturePerfil);
             this.Controls.Add(this.btnAssine);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "trocaBotoes";
             this.Text = "trocaBotoes";
             this.Load += new System.EventHandler(this.trocaBotoes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -85,6 +82,6 @@
         #endregion
 
         private WiLBiT.WiLBiTButton btnAssine;
-        private WiLBiT.WiLBiTButton perfil;
+        private PictureBox picturePerfil;
     }
 }

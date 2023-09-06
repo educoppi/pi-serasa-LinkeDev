@@ -81,8 +81,7 @@ namespace pi_serasa_LinkeDev
             usuario.insereUsuario(email, senha);
             usuario.insereAssinante(nome);
 
-          Assinar assin = new Assinar();
-            assin.Show();
+            Form1.CarregaEntreTELAS(new Assinar());
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

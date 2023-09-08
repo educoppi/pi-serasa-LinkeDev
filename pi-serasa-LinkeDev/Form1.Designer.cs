@@ -308,7 +308,7 @@
         private WiLBiT.WiLBiTButton wilBitButton4;
         private WiLBiT.WiLBiTButton wilBitButton3;
         private WiLBiT.WiLBiTButton wilBitButton2;
-        private static WiLBiT.WiLBiTGradientPanel panelCentral;
+        public static WiLBiT.WiLBiTGradientPanel panelCentral;
         private static WiLBiT.WiLBiTPanel p;
         public static PictureBox imgLogo2;
         public static WiLBiT.WiLBiTPanel panelEsquerdo;

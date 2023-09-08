@@ -57,9 +57,54 @@ namespace pi_serasa_LinkeDev
 
         }
 
+        void carregaImagens()
+        {
+            for (int i = 22; i < 24; i++)
+            {
+                List<string> imagens = new List<string>();
+                Servico servico = new Servico();
+                servico = servico.buscaImagensTelaVisitante(i);
+
+                imagens.Add(servico.getImagem_1);
+                imagens.Add(servico.getImagem_2);
+                imagens.Add(servico.getImagem_3);
+
+                foreach (string imagem in imagens)
+                {
+                    geraImagens(imagem);
+                }
+            }
+        }
+
+        int x = 50;
+        int y = 30;
+        int quebraLinha;
+        void geraImagens(string imagem)
+        {
+
+            PictureBox pic = new PictureBox();
+            pic.LoadAsync(imagem);
+            pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pic.Size = new Size(350, 150);
+            pic.Location = new Point(x, y);
+
+            x = x + 380;
+            quebraLinha++;
+            Form1.panelCentral.Controls.Add(pic);
+
+            if (quebraLinha == 5)
+            {
+                x = 50;
+                y = 300;
+                pic.Location = new Point(x, y);
+            }
+
+        }
+
         private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
+            carregaImagens();
         }
     }
 }

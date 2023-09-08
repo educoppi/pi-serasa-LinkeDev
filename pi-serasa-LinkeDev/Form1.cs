@@ -9,6 +9,25 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
+        void carregaImagens()
+        {
+            for (int i = 22; i < 24; i++)
+            {
+                List<string> imagens = new List<string>();
+                Servico servico = new Servico();
+                servico = servico.buscaImagensTelaVisitante(i);
+
+                imagens.Add(servico.getImagem_1);
+                imagens.Add(servico.getImagem_2);
+                imagens.Add(servico.getImagem_3);
+
+                foreach (string imagem in imagens)
+                {
+                    geraImagens(imagem);
+                }
+            }
+        }
+
         int x = 50;
         int y = 30;
         int quebraLinha;
@@ -92,25 +111,7 @@ namespace pi_serasa_LinkeDev
         private void Form1_Load(object sender, EventArgs e)
         {
             renderizaInterface();
-
-
-            for (int i = 22; i < 24; i++)
-            {
-                List<string> imagens = new List<string>();
-                Servico servico = new Servico();
-                servico = servico.buscaImagensTelaVisitante(i);
-
-                imagens.Add(servico.getImagem_1);
-                imagens.Add(servico.getImagem_2);
-                imagens.Add(servico.getImagem_3);
-
-                foreach (string imagem in imagens)
-                {
-                    geraImagens(imagem);
-                }
-            }
-
-
+            carregaImagens();
         }
 
         private void wilBitGradientPanel1_Paint(object sender, PaintEventArgs e)

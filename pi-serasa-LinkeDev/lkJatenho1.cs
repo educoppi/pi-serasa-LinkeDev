@@ -53,7 +53,7 @@ namespace pi_serasa_LinkeDev
                 return;            
             }
 
-            Program.usuario = usuario.alteraClienteParaAssinante(usuario);
+            //Program.usuario = usuario.alteraClienteParaAssinante(usuario);
 
             
 

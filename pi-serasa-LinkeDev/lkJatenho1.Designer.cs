@@ -28,149 +28,167 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelC = new WiLBiT.WiLBiTGradientPanel();
-            this.btnEntrar_LG = new WiLBiT.WiLBiTGradientButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSenha_LG = new WiLBiT.WiLBiTTextBox();
-            this.txtEmail_LG = new WiLBiT.WiLBiTTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelC.SuspendLayout();
-            this.SuspendLayout();
+            panelC = new WiLBiT.WiLBiTGradientPanel();
+            btnEntrar_LG = new WiLBiT.WiLBiTGradientButton();
+            label3 = new Label();
+            label2 = new Label();
+            txtSenha_LG = new WiLBiT.WiLBiTTextBox();
+            txtEmail_LG = new WiLBiT.WiLBiTTextBox();
+            label1 = new Label();
+            btnFechar = new WiLBiT.WiLBiTButton();
+            panelC.SuspendLayout();
+            SuspendLayout();
             // 
             // panelC
             // 
-            this.panelC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.panelC.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.panelC.BorderColor = System.Drawing.Color.Black;
-            this.panelC.BorderRadius = 6;
-            this.panelC.BorderSize = 4;
-            this.panelC.Controls.Add(this.btnEntrar_LG);
-            this.panelC.Controls.Add(this.label3);
-            this.panelC.Controls.Add(this.label2);
-            this.panelC.Controls.Add(this.txtSenha_LG);
-            this.panelC.Controls.Add(this.txtEmail_LG);
-            this.panelC.Controls.Add(this.label1);
-            this.panelC.ForeColor = System.Drawing.Color.White;
-            this.panelC.Location = new System.Drawing.Point(215, 71);
-            this.panelC.Name = "panelC";
-            this.panelC.Size = new System.Drawing.Size(371, 308);
-            this.panelC.TabIndex = 1;
-            this.panelC.Paint += new System.Windows.Forms.PaintEventHandler(this.panelC_Paint);
+            panelC.BackColor = Color.FromArgb(18, 112, 254);
+            panelC.BackColor2 = Color.FromArgb(18, 112, 254);
+            panelC.BorderColor = Color.Black;
+            panelC.BorderRadius = 6;
+            panelC.BorderSize = 4;
+            panelC.Controls.Add(btnEntrar_LG);
+            panelC.Controls.Add(label3);
+            panelC.Controls.Add(label2);
+            panelC.Controls.Add(txtSenha_LG);
+            panelC.Controls.Add(txtEmail_LG);
+            panelC.Controls.Add(label1);
+            panelC.ForeColor = Color.White;
+            panelC.Location = new Point(215, 71);
+            panelC.Name = "panelC";
+            panelC.Size = new Size(371, 308);
+            panelC.TabIndex = 1;
+            panelC.Paint += panelC_Paint;
             // 
             // btnEntrar_LG
             // 
-            this.btnEntrar_LG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.btnEntrar_LG.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.btnEntrar_LG.BorderColor = System.Drawing.Color.Black;
-            this.btnEntrar_LG.BorderRadius = 6;
-            this.btnEntrar_LG.BorderSize = 2;
-            this.btnEntrar_LG.FlatAppearance.BorderSize = 0;
-            this.btnEntrar_LG.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEntrar_LG.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEntrar_LG.ForeColor = System.Drawing.Color.White;
-            this.btnEntrar_LG.Location = new System.Drawing.Point(117, 240);
-            this.btnEntrar_LG.Name = "btnEntrar_LG";
-            this.btnEntrar_LG.Size = new System.Drawing.Size(150, 40);
-            this.btnEntrar_LG.TabIndex = 5;
-            this.btnEntrar_LG.Text = "Entrar";
-            this.btnEntrar_LG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnEntrar_LG.UseVisualStyleBackColor = true;
-            this.btnEntrar_LG.Click += new System.EventHandler(this.btnEntrar_LG_Click);
+            btnEntrar_LG.BackColor = Color.FromArgb(49, 57, 60);
+            btnEntrar_LG.BackColor2 = Color.FromArgb(49, 57, 60);
+            btnEntrar_LG.BorderColor = Color.Black;
+            btnEntrar_LG.BorderRadius = 6;
+            btnEntrar_LG.BorderSize = 2;
+            btnEntrar_LG.FlatAppearance.BorderSize = 0;
+            btnEntrar_LG.FlatStyle = FlatStyle.Flat;
+            btnEntrar_LG.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnEntrar_LG.ForeColor = Color.White;
+            btnEntrar_LG.Location = new Point(117, 240);
+            btnEntrar_LG.Name = "btnEntrar_LG";
+            btnEntrar_LG.Size = new Size(150, 40);
+            btnEntrar_LG.TabIndex = 5;
+            btnEntrar_LG.Text = "Entrar";
+            btnEntrar_LG.TextAlign = ContentAlignment.MiddleCenter;
+            btnEntrar_LG.UseVisualStyleBackColor = true;
+            btnEntrar_LG.Click += btnEntrar_LG_Click;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(63, 141);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Senha:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.Black;
+            label3.Location = new Point(63, 141);
+            label3.Name = "label3";
+            label3.Size = new Size(52, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Senha:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(63, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Email:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.Black;
+            label2.Location = new Point(63, 73);
+            label2.Name = "label2";
+            label2.Size = new Size(49, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Email:";
             // 
             // txtSenha_LG
             // 
-            this.txtSenha_LG.BackColor = System.Drawing.SystemColors.Window;
-            this.txtSenha_LG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSenha_LG.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtSenha_LG.BorderRadius = 4;
-            this.txtSenha_LG.BorderSize = 2;
-            this.txtSenha_LG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtSenha_LG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtSenha_LG.Location = new System.Drawing.Point(63, 165);
-            this.txtSenha_LG.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSenha_LG.Multiline = false;
-            this.txtSenha_LG.Name = "txtSenha_LG";
-            this.txtSenha_LG.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtSenha_LG.PasswordChar = false;
-            this.txtSenha_LG.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtSenha_LG.PlaceholderText = "";
-            this.txtSenha_LG.Size = new System.Drawing.Size(250, 29);
-            this.txtSenha_LG.TabIndex = 2;
-            this.txtSenha_LG.Texts = "";
-            this.txtSenha_LG.UnderlinedStyle = false;
+            txtSenha_LG.BackColor = SystemColors.Window;
+            txtSenha_LG.BorderColor = Color.FromArgb(64, 64, 64);
+            txtSenha_LG.BorderFocusColor = Color.Black;
+            txtSenha_LG.BorderRadius = 4;
+            txtSenha_LG.BorderSize = 2;
+            txtSenha_LG.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSenha_LG.ForeColor = Color.FromArgb(64, 64, 64);
+            txtSenha_LG.Location = new Point(63, 165);
+            txtSenha_LG.Margin = new Padding(4);
+            txtSenha_LG.Multiline = false;
+            txtSenha_LG.Name = "txtSenha_LG";
+            txtSenha_LG.Padding = new Padding(10, 7, 10, 7);
+            txtSenha_LG.PasswordChar = false;
+            txtSenha_LG.PlaceholderColor = Color.DarkGray;
+            txtSenha_LG.PlaceholderText = "";
+            txtSenha_LG.Size = new Size(250, 29);
+            txtSenha_LG.TabIndex = 2;
+            txtSenha_LG.Texts = "";
+            txtSenha_LG.UnderlinedStyle = false;
             // 
             // txtEmail_LG
             // 
-            this.txtEmail_LG.BackColor = System.Drawing.SystemColors.Window;
-            this.txtEmail_LG.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtEmail_LG.BorderFocusColor = System.Drawing.Color.Black;
-            this.txtEmail_LG.BorderRadius = 4;
-            this.txtEmail_LG.BorderSize = 2;
-            this.txtEmail_LG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtEmail_LG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtEmail_LG.Location = new System.Drawing.Point(63, 92);
-            this.txtEmail_LG.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail_LG.Multiline = false;
-            this.txtEmail_LG.Name = "txtEmail_LG";
-            this.txtEmail_LG.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtEmail_LG.PasswordChar = false;
-            this.txtEmail_LG.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtEmail_LG.PlaceholderText = "";
-            this.txtEmail_LG.Size = new System.Drawing.Size(250, 29);
-            this.txtEmail_LG.TabIndex = 1;
-            this.txtEmail_LG.Texts = "";
-            this.txtEmail_LG.UnderlinedStyle = false;
+            txtEmail_LG.BackColor = SystemColors.Window;
+            txtEmail_LG.BorderColor = Color.FromArgb(64, 64, 64);
+            txtEmail_LG.BorderFocusColor = Color.Black;
+            txtEmail_LG.BorderRadius = 4;
+            txtEmail_LG.BorderSize = 2;
+            txtEmail_LG.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEmail_LG.ForeColor = Color.FromArgb(64, 64, 64);
+            txtEmail_LG.Location = new Point(63, 92);
+            txtEmail_LG.Margin = new Padding(4);
+            txtEmail_LG.Multiline = false;
+            txtEmail_LG.Name = "txtEmail_LG";
+            txtEmail_LG.Padding = new Padding(10, 7, 10, 7);
+            txtEmail_LG.PasswordChar = false;
+            txtEmail_LG.PlaceholderColor = Color.DarkGray;
+            txtEmail_LG.PlaceholderText = "";
+            txtEmail_LG.Size = new Size(250, 29);
+            txtEmail_LG.TabIndex = 1;
+            txtEmail_LG.Texts = "";
+            txtEmail_LG.UnderlinedStyle = false;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(117, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 37);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Seu login";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(117, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(136, 37);
+            label1.TabIndex = 0;
+            label1.Text = "Seu login";
+            // 
+            // btnFechar
+            // 
+            btnFechar.BackColor = Color.FromArgb(72, 116, 245);
+            btnFechar.BorderColor = Color.FromArgb(72, 116, 245);
+            btnFechar.BorderRadius = 6;
+            btnFechar.BorderSize = 0;
+            btnFechar.FlatAppearance.BorderSize = 0;
+            btnFechar.FlatStyle = FlatStyle.Flat;
+            btnFechar.ForeColor = Color.White;
+            btnFechar.Location = new Point(710, 37);
+            btnFechar.Name = "btnFechar";
+            btnFechar.Size = new Size(60, 40);
+            btnFechar.TabIndex = 21;
+            btnFechar.Text = "X";
+            btnFechar.UseVisualStyleBackColor = false;
+            btnFechar.Click += btnFechar_Click;
             // 
             // lkJatenho1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panelC);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "lkJatenho1";
-            this.Text = "lkJatenho1";
-            this.Load += new System.EventHandler(this.lkJatenho1_Load);
-            this.panelC.ResumeLayout(false);
-            this.panelC.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(49, 57, 60);
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnFechar);
+            Controls.Add(panelC);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "lkJatenho1";
+            Text = "lkJatenho1";
+            Load += lkJatenho1_Load;
+            panelC.ResumeLayout(false);
+            panelC.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -182,5 +200,6 @@
         private WiLBiT.WiLBiTTextBox txtSenha_LG;
         private WiLBiT.WiLBiTTextBox txtEmail_LG;
         private Label label1;
+        private WiLBiT.WiLBiTButton btnFechar;
     }
 }

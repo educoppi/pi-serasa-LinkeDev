@@ -16,5 +16,34 @@ namespace pi_serasa_LinkeDev
         {
             InitializeComponent();
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnComprarSE_Click(object sender, EventArgs e)
+        {
+            Form1.CarregaBotoes(new TrocaPerfil());
+            Form1.carregamenuESQ(new trocaMenuESQ());
+            this.Close();
+        }
+
+        private void btnAssinarAnu_Click(object sender, EventArgs e)
+        {
+            Form1.CarregaBotoes(new TrocaPerfil());
+            Form1.carregamenuESQ(new trocaMenuESQ());
+            this.Close();
+        }
+
+        private void btnAssinarMen_Click(object sender, EventArgs e)
+        {
+            Form1.CarregaBotoes(new TrocaPerfil());
+            Form1.carregamenuESQ(new trocaMenuESQ());
+            this.Close();
+        }
+
+
+
     }
 }

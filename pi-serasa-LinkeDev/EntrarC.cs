@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
- namespace pi_serasa_LinkeDev
+namespace pi_serasa_LinkeDev
 {
     public partial class EntrarC : Form
     {
@@ -16,11 +16,11 @@ using System.Windows.Forms;
         {
             InitializeComponent();
         }
-        
+
         private void btnEntrar_LGClick(object sender, EventArgs e)
         {
-            
-            
+
+
             string email = txtEmail_LG.Texts;
             string senha = txtSenha_LG.Texts;
 
@@ -29,8 +29,8 @@ using System.Windows.Forms;
 
             if (confere)
             {
-                Form1.CarregaBotoes(new trocaBotoes());   
-               
+                Form1.CarregaBotoes(new trocaBotoes());
+
                 Form1.carregamenuESQ(new trocaMenuESQ());
                 this.Close();
             }
@@ -42,17 +42,17 @@ using System.Windows.Forms;
 
         private void EntrarC_Load(object sender, EventArgs e)
         {
-          panelC.Location= new Point(ClientSize.Width -1050, ClientSize.Height-650);  
-          imgLogoE.Location = new Point(ClientSize.Width-120,ClientSize.Height - 890);
-            
+            panelC.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 650);
+            imgLogoE.Location = new Point(ClientSize.Width - 120, ClientSize.Height - 890);
+
         }
 
         public void botaoEntrarAssinar_Click(object sender, EventArgs e)
         {
-           
+
         }
 
-       public void panelC_Paint(object sender, PaintEventArgs e)
+        public void panelC_Paint(object sender, PaintEventArgs e)
         {
 
         }
@@ -63,6 +63,11 @@ using System.Windows.Forms;
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
         {
             this.Close();
         }

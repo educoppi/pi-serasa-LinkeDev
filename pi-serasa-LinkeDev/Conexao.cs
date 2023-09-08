@@ -10,7 +10,7 @@ namespace pi_serasa_LinkeDev
 {
     internal class Conexao
     {
-        const string host = "10.60.45.29";
+        const string host = "localhost";
         const string banco = "bd_linkedev";
         const string usuario = "senac";
         const string senha = "senac";

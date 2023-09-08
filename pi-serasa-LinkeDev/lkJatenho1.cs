@@ -29,7 +29,7 @@ namespace pi_serasa_LinkeDev
 
         private void EntrarC_Load(object sender, EventArgs e)
         {
-           // panelC.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 650);
+            // panelC.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 650);
             //imgLogoE.Location = new Point(ClientSize.Width - 120, ClientSize.Height - 890);
         }
 
@@ -55,6 +55,11 @@ namespace pi_serasa_LinkeDev
         private void panelC_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

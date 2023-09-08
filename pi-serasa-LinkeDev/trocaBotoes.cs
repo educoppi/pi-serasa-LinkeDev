@@ -22,12 +22,16 @@ namespace pi_serasa_LinkeDev
 
         }
 
-       
 
-        private void picturePerfil_Click(object sender, EventArgs e)
+
+        public void picturePerfil_Click(object sender, EventArgs e)
         {
-            PerfilCliente p = new PerfilCliente();
-            p.Show();
+            Form1.CarregaEntreTELAS(new PerfilCliente());
+        }
+
+        private void btnAssine_Click(object sender, EventArgs e)
+        {
+            Form1.CarregaEntreTELAS(new Assinar());
         }
     }
 }

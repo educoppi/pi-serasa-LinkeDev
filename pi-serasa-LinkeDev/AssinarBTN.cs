@@ -17,7 +17,7 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
-        
+
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -29,8 +29,8 @@ namespace pi_serasa_LinkeDev
 
         }
 
-       
-        
+
+
         private void wilBitButton21_Click(object sender, EventArgs e)
         {
             string email = txtEmail_CR.Texts;
@@ -51,7 +51,7 @@ namespace pi_serasa_LinkeDev
             assinar.Show();
             i.Show();
         }
-         
+
 
         private void panelC_Paint(object sender, PaintEventArgs e)
         {
@@ -86,13 +86,13 @@ namespace pi_serasa_LinkeDev
             Form1.CarregaEntreTELAS(new Assinar());
 
 
-           
+
 
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           Form1.CarregaEntreTELAS(new lkJatenho1());
+            Form1.CarregaEntreTELAS(new lkJatenho1());
         }
 
         private void imgLogo_Click(object sender, EventArgs e)
@@ -103,6 +103,11 @@ namespace pi_serasa_LinkeDev
         private void label2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

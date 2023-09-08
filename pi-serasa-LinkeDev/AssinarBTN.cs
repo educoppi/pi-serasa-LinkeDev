@@ -80,13 +80,12 @@ namespace pi_serasa_LinkeDev
 
             Usuario usuario = new Usuario();
             usuario.insereUsuario(email, senha, true);
-            usuario.insereAssinante(nome);
+            Program.usuario = usuario.login(email, senha);
+            usuario.insereAssinante(Program.usuario.id,nome);
+
 
 
             Form1.CarregaEntreTELAS(new Assinar());
-
-
-
 
         }
 

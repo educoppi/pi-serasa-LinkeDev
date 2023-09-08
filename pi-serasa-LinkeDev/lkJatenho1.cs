@@ -38,18 +38,27 @@ namespace pi_serasa_LinkeDev
             string email = txtEmail_LG.Texts;
             string senha = txtSenha_LG.Texts;
 
-            Usuario usuario = new Usuario();
-            bool confere = usuario.login(email, senha);
-
-            if (confere)
+            if (email == "" || senha == "")
             {
-                Form1.CarregaEntreTELAS(new Assinar());
-                this.Close();
+                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            Usuario usuario = new Usuario();
+            usuario = usuario.login(email, senha);
+
+            if (usuario == null)
             {
                 MessageBox.Show("Email ou senha incorretos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;            
             }
+
+            Program.usuario = usuario.alteraClienteParaAssinante(usuario);
+
+            
+
+            Form1.CarregaEntreTELAS(new Assinar());
+            this.Close();
         }
 
         private void panelC_Paint(object sender, PaintEventArgs e)

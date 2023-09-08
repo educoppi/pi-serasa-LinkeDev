@@ -49,7 +49,10 @@ namespace pi_serasa_LinkeDev
 
             Usuario usuario = new Usuario();
             usuario.insereUsuario(email, senha, false);
-            usuario.insereCliente(nome);
+            Program.usuario = usuario.login(email, senha);
+            usuario.insereCliente(Program.usuario.id,nome);
+
+
 
             Inicial i = new Inicial();
             i.Show();

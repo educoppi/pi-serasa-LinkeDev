@@ -51,8 +51,6 @@ namespace pi_serasa_LinkeDev
 
 
             Program.usuario = usuario;
-            MessageBox.Show("" + Program.usuario.id);
-            MessageBox.Show("" + Program.usuario.isAssinante);
 
             if (Program.usuario.isAssinante)
             {

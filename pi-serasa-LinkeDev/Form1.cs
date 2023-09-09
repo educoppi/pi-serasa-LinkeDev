@@ -43,7 +43,9 @@ namespace pi_serasa_LinkeDev
             x = x + 380;
             quebraLinha++;
             panelCentral.Controls.Add(pic);
-            
+
+            pic.MouseClick += new MouseEventHandler(pictureBox1_Click);
+
             if (quebraLinha == 5)
             {
                 x = 50;
@@ -51,6 +53,11 @@ namespace pi_serasa_LinkeDev
                 pic.Location = new Point(x, y);
             }
 
+        }
+
+        public static void pictureBox1_Click(object sender, EventArgs e)
+        {
+            CarregaEntreTELAS(new CriarC());
         }
 
         void renderizaInterface()

@@ -83,10 +83,7 @@ namespace pi_serasa_LinkeDev
             Program.usuario = usuario.login(email, senha);
             usuario.insereAssinante(Program.usuario.id,nome);
 
-
-
             Form1.CarregaEntreTELAS(new Assinar());
-
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -138,6 +135,8 @@ namespace pi_serasa_LinkeDev
             x = x + 380;
             quebraLinha++;
             Form1.panelCentral.Controls.Add(pic);
+
+            //pic.MouseClick += new MouseEventHandler(Form1.pictureBox1_Click);
 
             if (quebraLinha == 5)
             {

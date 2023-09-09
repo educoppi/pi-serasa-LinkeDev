@@ -98,6 +98,8 @@ namespace pi_serasa_LinkeDev
             quebraLinha++;
             Form1.panelCentral.Controls.Add(pic);
 
+            pic.MouseClick += new MouseEventHandler(Form1.pictureBox1_Click);
+
             if (quebraLinha == 5)
             {
                 x = 50;

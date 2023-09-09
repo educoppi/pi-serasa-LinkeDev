@@ -28,207 +28,207 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panelEsquerdo2 = new WiLBiT.WiLBiTPanel();
-            this.wilBitButton12 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton11 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton9 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton8 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton4 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton3 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton2 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton1 = new WiLBiT.WiLBiTButton();
-            this.wilBitButton5 = new WiLBiT.WiLBiTButton();
-            this.panelEsquerdo2.SuspendLayout();
-            this.SuspendLayout();
+            panelEsquerdo2 = new WiLBiT.WiLBiTPanel();
+            wilBitButton12 = new WiLBiT.WiLBiTButton();
+            wilBitButton11 = new WiLBiT.WiLBiTButton();
+            wilBitButton9 = new WiLBiT.WiLBiTButton();
+            wilBitButton8 = new WiLBiT.WiLBiTButton();
+            wilBitButton4 = new WiLBiT.WiLBiTButton();
+            wilBitButton3 = new WiLBiT.WiLBiTButton();
+            wilBitButton2 = new WiLBiT.WiLBiTButton();
+            wilBitButton1 = new WiLBiT.WiLBiTButton();
+            wilBitButton5 = new WiLBiT.WiLBiTButton();
+            panelEsquerdo2.SuspendLayout();
+            SuspendLayout();
             // 
             // panelEsquerdo2
             // 
-            this.panelEsquerdo2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.panelEsquerdo2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panelEsquerdo2.BorderRadius = 6;
-            this.panelEsquerdo2.BorderSize = 0;
-            this.panelEsquerdo2.Controls.Add(this.wilBitButton12);
-            this.panelEsquerdo2.Controls.Add(this.wilBitButton11);
-            this.panelEsquerdo2.Controls.Add(this.wilBitButton9);
-            this.panelEsquerdo2.Controls.Add(this.wilBitButton8);
-            this.panelEsquerdo2.Controls.Add(this.wilBitButton4);
-            this.panelEsquerdo2.Controls.Add(this.wilBitButton3);
-            this.panelEsquerdo2.Controls.Add(this.wilBitButton2);
-            this.panelEsquerdo2.Controls.Add(this.wilBitButton1);
-            this.panelEsquerdo2.Controls.Add(this.wilBitButton5);
-            this.panelEsquerdo2.ForeColor = System.Drawing.Color.White;
-            this.panelEsquerdo2.Location = new System.Drawing.Point(0, 1);
-            this.panelEsquerdo2.Name = "panelEsquerdo2";
-            this.panelEsquerdo2.Size = new System.Drawing.Size(179, 881);
-            this.panelEsquerdo2.TabIndex = 3;
-            this.panelEsquerdo2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelEsquerdo2_Paint);
+            panelEsquerdo2.BackColor = Color.FromArgb(49, 57, 60);
+            panelEsquerdo2.BorderColor = Color.FromArgb(0, 192, 0);
+            panelEsquerdo2.BorderRadius = 6;
+            panelEsquerdo2.BorderSize = 0;
+            panelEsquerdo2.Controls.Add(wilBitButton12);
+            panelEsquerdo2.Controls.Add(wilBitButton11);
+            panelEsquerdo2.Controls.Add(wilBitButton9);
+            panelEsquerdo2.Controls.Add(wilBitButton8);
+            panelEsquerdo2.Controls.Add(wilBitButton4);
+            panelEsquerdo2.Controls.Add(wilBitButton3);
+            panelEsquerdo2.Controls.Add(wilBitButton2);
+            panelEsquerdo2.Controls.Add(wilBitButton1);
+            panelEsquerdo2.Controls.Add(wilBitButton5);
+            panelEsquerdo2.ForeColor = Color.White;
+            panelEsquerdo2.Location = new Point(0, 1);
+            panelEsquerdo2.Name = "panelEsquerdo2";
+            panelEsquerdo2.Size = new Size(179, 881);
+            panelEsquerdo2.TabIndex = 3;
+            panelEsquerdo2.Paint += panelEsquerdo2_Paint;
             // 
             // wilBitButton12
             // 
-            this.wilBitButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.wilBitButton12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton12.BorderRadius = 6;
-            this.wilBitButton12.BorderSize = 0;
-            this.wilBitButton12.FlatAppearance.BorderSize = 0;
-            this.wilBitButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton12.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton12.Location = new System.Drawing.Point(7, 119);
-            this.wilBitButton12.Name = "wilBitButton12";
-            this.wilBitButton12.Size = new System.Drawing.Size(163, 61);
-            this.wilBitButton12.TabIndex = 16;
-            this.wilBitButton12.Text = "Mobile";
-            this.wilBitButton12.UseVisualStyleBackColor = false;
+            wilBitButton12.BackColor = Color.FromArgb(18, 112, 254);
+            wilBitButton12.BorderColor = Color.FromArgb(72, 116, 245);
+            wilBitButton12.BorderRadius = 6;
+            wilBitButton12.BorderSize = 0;
+            wilBitButton12.FlatAppearance.BorderSize = 0;
+            wilBitButton12.FlatStyle = FlatStyle.Flat;
+            wilBitButton12.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitButton12.ForeColor = Color.White;
+            wilBitButton12.Location = new Point(7, 119);
+            wilBitButton12.Name = "wilBitButton12";
+            wilBitButton12.Size = new Size(163, 61);
+            wilBitButton12.TabIndex = 16;
+            wilBitButton12.Text = "Mobile";
+            wilBitButton12.UseVisualStyleBackColor = false;
             // 
             // wilBitButton11
             // 
-            this.wilBitButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.wilBitButton11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton11.BorderRadius = 6;
-            this.wilBitButton11.BorderSize = 0;
-            this.wilBitButton11.FlatAppearance.BorderSize = 0;
-            this.wilBitButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton11.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton11.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton11.Location = new System.Drawing.Point(8, 203);
-            this.wilBitButton11.Name = "wilBitButton11";
-            this.wilBitButton11.Size = new System.Drawing.Size(163, 61);
-            this.wilBitButton11.TabIndex = 15;
-            this.wilBitButton11.Text = " Web";
-            this.wilBitButton11.UseVisualStyleBackColor = false;
+            wilBitButton11.BackColor = Color.FromArgb(18, 112, 254);
+            wilBitButton11.BorderColor = Color.FromArgb(72, 116, 245);
+            wilBitButton11.BorderRadius = 6;
+            wilBitButton11.BorderSize = 0;
+            wilBitButton11.FlatAppearance.BorderSize = 0;
+            wilBitButton11.FlatStyle = FlatStyle.Flat;
+            wilBitButton11.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitButton11.ForeColor = Color.White;
+            wilBitButton11.Location = new Point(8, 203);
+            wilBitButton11.Name = "wilBitButton11";
+            wilBitButton11.Size = new Size(163, 61);
+            wilBitButton11.TabIndex = 15;
+            wilBitButton11.Text = " Web";
+            wilBitButton11.UseVisualStyleBackColor = false;
             // 
             // wilBitButton9
             // 
-            this.wilBitButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.wilBitButton9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton9.BorderRadius = 6;
-            this.wilBitButton9.BorderSize = 0;
-            this.wilBitButton9.FlatAppearance.BorderSize = 0;
-            this.wilBitButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton9.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton9.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton9.Location = new System.Drawing.Point(8, 708);
-            this.wilBitButton9.Name = "wilBitButton9";
-            this.wilBitButton9.Size = new System.Drawing.Size(163, 61);
-            this.wilBitButton9.TabIndex = 12;
-            this.wilBitButton9.Text = "Desktop";
-            this.wilBitButton9.UseVisualStyleBackColor = false;
+            wilBitButton9.BackColor = Color.FromArgb(18, 112, 254);
+            wilBitButton9.BorderColor = Color.FromArgb(72, 116, 245);
+            wilBitButton9.BorderRadius = 6;
+            wilBitButton9.BorderSize = 0;
+            wilBitButton9.FlatAppearance.BorderSize = 0;
+            wilBitButton9.FlatStyle = FlatStyle.Flat;
+            wilBitButton9.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitButton9.ForeColor = Color.White;
+            wilBitButton9.Location = new Point(8, 708);
+            wilBitButton9.Name = "wilBitButton9";
+            wilBitButton9.Size = new Size(163, 61);
+            wilBitButton9.TabIndex = 12;
+            wilBitButton9.Text = "Desktop";
+            wilBitButton9.UseVisualStyleBackColor = false;
             // 
             // wilBitButton8
             // 
-            this.wilBitButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.wilBitButton8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton8.BorderRadius = 6;
-            this.wilBitButton8.BorderSize = 0;
-            this.wilBitButton8.FlatAppearance.BorderSize = 0;
-            this.wilBitButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton8.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton8.Location = new System.Drawing.Point(7, 623);
-            this.wilBitButton8.Name = "wilBitButton8";
-            this.wilBitButton8.Size = new System.Drawing.Size(163, 61);
-            this.wilBitButton8.TabIndex = 11;
-            this.wilBitButton8.Text = "Full-strack";
-            this.wilBitButton8.UseVisualStyleBackColor = false;
+            wilBitButton8.BackColor = Color.FromArgb(18, 112, 254);
+            wilBitButton8.BorderColor = Color.FromArgb(72, 116, 245);
+            wilBitButton8.BorderRadius = 6;
+            wilBitButton8.BorderSize = 0;
+            wilBitButton8.FlatAppearance.BorderSize = 0;
+            wilBitButton8.FlatStyle = FlatStyle.Flat;
+            wilBitButton8.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitButton8.ForeColor = Color.White;
+            wilBitButton8.Location = new Point(7, 623);
+            wilBitButton8.Name = "wilBitButton8";
+            wilBitButton8.Size = new Size(163, 61);
+            wilBitButton8.TabIndex = 11;
+            wilBitButton8.Text = "Full-strack";
+            wilBitButton8.UseVisualStyleBackColor = false;
             // 
             // wilBitButton4
             // 
-            this.wilBitButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.wilBitButton4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton4.BorderRadius = 6;
-            this.wilBitButton4.BorderSize = 0;
-            this.wilBitButton4.FlatAppearance.BorderSize = 0;
-            this.wilBitButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton4.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton4.Location = new System.Drawing.Point(7, 536);
-            this.wilBitButton4.Name = "wilBitButton4";
-            this.wilBitButton4.Size = new System.Drawing.Size(163, 61);
-            this.wilBitButton4.TabIndex = 10;
-            this.wilBitButton4.Text = "Front-end";
-            this.wilBitButton4.UseVisualStyleBackColor = false;
+            wilBitButton4.BackColor = Color.FromArgb(18, 112, 254);
+            wilBitButton4.BorderColor = Color.FromArgb(72, 116, 245);
+            wilBitButton4.BorderRadius = 6;
+            wilBitButton4.BorderSize = 0;
+            wilBitButton4.FlatAppearance.BorderSize = 0;
+            wilBitButton4.FlatStyle = FlatStyle.Flat;
+            wilBitButton4.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitButton4.ForeColor = Color.White;
+            wilBitButton4.Location = new Point(7, 536);
+            wilBitButton4.Name = "wilBitButton4";
+            wilBitButton4.Size = new Size(163, 61);
+            wilBitButton4.TabIndex = 10;
+            wilBitButton4.Text = "Front-end";
+            wilBitButton4.UseVisualStyleBackColor = false;
             // 
             // wilBitButton3
             // 
-            this.wilBitButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.wilBitButton3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton3.BorderRadius = 6;
-            this.wilBitButton3.BorderSize = 0;
-            this.wilBitButton3.FlatAppearance.BorderSize = 0;
-            this.wilBitButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton3.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton3.Location = new System.Drawing.Point(7, 287);
-            this.wilBitButton3.Name = "wilBitButton3";
-            this.wilBitButton3.Size = new System.Drawing.Size(163, 61);
-            this.wilBitButton3.TabIndex = 9;
-            this.wilBitButton3.Text = "Games";
-            this.wilBitButton3.UseVisualStyleBackColor = false;
+            wilBitButton3.BackColor = Color.FromArgb(18, 112, 254);
+            wilBitButton3.BorderColor = Color.FromArgb(72, 116, 245);
+            wilBitButton3.BorderRadius = 6;
+            wilBitButton3.BorderSize = 0;
+            wilBitButton3.FlatAppearance.BorderSize = 0;
+            wilBitButton3.FlatStyle = FlatStyle.Flat;
+            wilBitButton3.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitButton3.ForeColor = Color.White;
+            wilBitButton3.Location = new Point(7, 287);
+            wilBitButton3.Name = "wilBitButton3";
+            wilBitButton3.Size = new Size(163, 61);
+            wilBitButton3.TabIndex = 9;
+            wilBitButton3.Text = "Games";
+            wilBitButton3.UseVisualStyleBackColor = false;
             // 
             // wilBitButton2
             // 
-            this.wilBitButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.wilBitButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton2.BorderRadius = 6;
-            this.wilBitButton2.BorderSize = 0;
-            this.wilBitButton2.FlatAppearance.BorderSize = 0;
-            this.wilBitButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton2.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton2.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton2.Location = new System.Drawing.Point(7, 35);
-            this.wilBitButton2.Name = "wilBitButton2";
-            this.wilBitButton2.Size = new System.Drawing.Size(163, 61);
-            this.wilBitButton2.TabIndex = 8;
-            this.wilBitButton2.Text = "Templates";
-            this.wilBitButton2.UseVisualStyleBackColor = false;
+            wilBitButton2.BackColor = Color.FromArgb(18, 112, 254);
+            wilBitButton2.BorderColor = Color.FromArgb(72, 116, 245);
+            wilBitButton2.BorderRadius = 6;
+            wilBitButton2.BorderSize = 0;
+            wilBitButton2.FlatAppearance.BorderSize = 0;
+            wilBitButton2.FlatStyle = FlatStyle.Flat;
+            wilBitButton2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitButton2.ForeColor = Color.White;
+            wilBitButton2.Location = new Point(7, 35);
+            wilBitButton2.Name = "wilBitButton2";
+            wilBitButton2.Size = new Size(163, 61);
+            wilBitButton2.TabIndex = 8;
+            wilBitButton2.Text = "Templates";
+            wilBitButton2.UseVisualStyleBackColor = false;
+            wilBitButton2.Click += wilBitButton2_Click;
             // 
             // wilBitButton1
             // 
-            this.wilBitButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.wilBitButton1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton1.BorderRadius = 6;
-            this.wilBitButton1.BorderSize = 0;
-            this.wilBitButton1.FlatAppearance.BorderSize = 0;
-            this.wilBitButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton1.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton1.Location = new System.Drawing.Point(7, 451);
-            this.wilBitButton1.Name = "wilBitButton1";
-            this.wilBitButton1.Size = new System.Drawing.Size(163, 61);
-            this.wilBitButton1.TabIndex = 7;
-            this.wilBitButton1.Text = "Back-end";
-            this.wilBitButton1.UseVisualStyleBackColor = false;
+            wilBitButton1.BackColor = Color.FromArgb(18, 112, 254);
+            wilBitButton1.BorderColor = Color.FromArgb(72, 116, 245);
+            wilBitButton1.BorderRadius = 6;
+            wilBitButton1.BorderSize = 0;
+            wilBitButton1.FlatAppearance.BorderSize = 0;
+            wilBitButton1.FlatStyle = FlatStyle.Flat;
+            wilBitButton1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitButton1.ForeColor = Color.White;
+            wilBitButton1.Location = new Point(7, 451);
+            wilBitButton1.Name = "wilBitButton1";
+            wilBitButton1.Size = new Size(163, 61);
+            wilBitButton1.TabIndex = 7;
+            wilBitButton1.Text = "Back-end";
+            wilBitButton1.UseVisualStyleBackColor = false;
             // 
             // wilBitButton5
             // 
-            this.wilBitButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.wilBitButton5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
-            this.wilBitButton5.BorderRadius = 6;
-            this.wilBitButton5.BorderSize = 0;
-            this.wilBitButton5.FlatAppearance.BorderSize = 0;
-            this.wilBitButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.wilBitButton5.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitButton5.ForeColor = System.Drawing.Color.White;
-            this.wilBitButton5.Location = new System.Drawing.Point(7, 367);
-            this.wilBitButton5.Name = "wilBitButton5";
-            this.wilBitButton5.Size = new System.Drawing.Size(163, 61);
-            this.wilBitButton5.TabIndex = 4;
-            this.wilBitButton5.Text = "Banco de Dados";
-            this.wilBitButton5.UseVisualStyleBackColor = false;
+            wilBitButton5.BackColor = Color.FromArgb(18, 112, 254);
+            wilBitButton5.BorderColor = Color.FromArgb(72, 116, 245);
+            wilBitButton5.BorderRadius = 6;
+            wilBitButton5.BorderSize = 0;
+            wilBitButton5.FlatAppearance.BorderSize = 0;
+            wilBitButton5.FlatStyle = FlatStyle.Flat;
+            wilBitButton5.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitButton5.ForeColor = Color.White;
+            wilBitButton5.Location = new Point(7, 367);
+            wilBitButton5.Name = "wilBitButton5";
+            wilBitButton5.Size = new Size(163, 61);
+            wilBitButton5.TabIndex = 4;
+            wilBitButton5.Text = "Banco de Dados";
+            wilBitButton5.UseVisualStyleBackColor = false;
             // 
             // trocaMenuESQ
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(182, 894);
-            this.Controls.Add(this.panelEsquerdo2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "trocaMenuESQ";
-            this.Text = "trocaMenuESQ";
-            this.panelEsquerdo2.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(49, 57, 60);
+            ClientSize = new Size(182, 788);
+            Controls.Add(panelEsquerdo2);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "trocaMenuESQ";
+            Text = "trocaMenuESQ";
+            panelEsquerdo2.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion

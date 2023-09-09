@@ -58,10 +58,22 @@ namespace pi_serasa_LinkeDev
             return usuarios;
         }
 
-                                    //INSERE NAS TABELAS:
-                                   //USUARIO
-                                  //CLIENTE
-                                 //ASSINANTE
+        public Usuario carregaDados(DataRow linha)
+        {
+            int id = int.Parse(linha["id"].ToString());
+            string email = linha["email"].ToString();
+            string senha = linha["senha"].ToString();
+            bool assinante = linha["assinante"].ToString() == "1" ? true : false;
+
+            Usuario usuario = new Usuario(id, email, senha, assinante);
+
+            return usuario;
+        }
+
+        //INSERE NAS TABELAS:
+        //USUARIO
+        //CLIENTE
+        //ASSINANTE
 
         public void insereUsuario(string email, string senha, bool assinante)
         {
@@ -79,6 +91,13 @@ namespace pi_serasa_LinkeDev
         public void insereAssinante(int id, string nome)
         {
             string query = $"INSERT INTO assinante (id, nome) VALUES ( {id}, '{nome}');";
+
+            Conexao.executaQuery(query);
+        }
+
+        public void insereAssinante(int id, string nome, string descricao, string imagem_icon)
+        {
+            string query = $"INSERT INTO assinante (id, nome, descricao, imagem_icon) VALUES ( {id}, '{nome}', '{descricao}', '{imagem_icon}');";
 
             Conexao.executaQuery(query);
         }
@@ -108,26 +127,22 @@ namespace pi_serasa_LinkeDev
             return usuario;
         }
 
-        public Usuario carregaDados(DataRow linha)
-        {
-            int id = int.Parse(linha["id"].ToString());
-            string email = linha["email"].ToString();
-            string senha = linha["senha"].ToString();
-            bool assinante = linha["assinante"].ToString() == "1" ? true : false;
-
-            Usuario usuario = new Usuario(id, email, senha, assinante);
-
-            return usuario;
-        }
-
         //TRANSFORMA CLIENTE EM ASSINANTE, NA TABELA DE USUARIOS E DELETA 
         //DA TABELA CLIENTES AQUELE QUE SE TORNOU UM NOVO ASSINANTE
-        /*
-        public Usuario alteraClienteParaAssinante(Usuario usuario)
+        
+        public void alteraClienteParaAssinante(Usuario usuario)
         {
-            string query1 = "UPDATE usuario SET assinante = 1 WHERE id = {usuario.id};";
-            string query2 = "DELETE FROM cliente WHERE id = {usuario.id};";
+            Cliente cliente = new Cliente();
+            cliente = cliente.retornaCliente(usuario.id);
+
+            insereAssinante(usuario.id, cliente.nome, cliente.descricao, cliente.imagem_icon);
+            string query1 = $"UPDATE usuario SET assinante = 1 WHERE id = {usuario.id};";
+            string query2 = $"DELETE FROM cliente WHERE id = {usuario.id};";
+
+
+            Conexao.executaQuery(query1);
+            Conexao.executaQuery(query2);
         }
-        */
+        
     }
 }

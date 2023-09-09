@@ -3,6 +3,7 @@ namespace pi_serasa_LinkeDev
     internal static class Program
     {
         public static Usuario usuario;
+        public static Servico servico;
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

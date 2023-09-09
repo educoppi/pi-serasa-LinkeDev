@@ -52,8 +52,8 @@ namespace pi_serasa_LinkeDev
                 MessageBox.Show("Email ou senha incorretos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;            
             }
-
-            //Program.usuario = usuario.alteraClienteParaAssinante(usuario);
+            usuario.alteraClienteParaAssinante(usuario);
+            Program.usuario = usuario;
 
             
 
@@ -100,6 +100,8 @@ namespace pi_serasa_LinkeDev
             x = x + 380;
             quebraLinha++;
             Form1.panelCentral.Controls.Add(pic);
+
+            pic.MouseClick += new MouseEventHandler(Form1.pictureBox1_Click);
 
             if (quebraLinha == 5)
             {

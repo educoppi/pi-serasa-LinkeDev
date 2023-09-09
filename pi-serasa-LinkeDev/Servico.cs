@@ -106,7 +106,7 @@ namespace pi_serasa_LinkeDev
             int curtidas = int.Parse(linha["curtidas"].ToString());
             int qtd_favoritados = int.Parse(linha["qtd_favoritados"].ToString());
 
-            Servico servico = new Servico(id, id_assinante, nome, nome_assinante, descricao, tipo, publicado_em,
+            Servico servico = new Servico(id, id_assinante, nome_assinante, nome, descricao, tipo, publicado_em,
                 valor, imagem_1, imagem_2, imagem_3, vendidos, curtidas, qtd_favoritados);
 
             return servico;

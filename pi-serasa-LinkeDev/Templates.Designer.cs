@@ -39,18 +39,19 @@
             lblPreco1 = new Label();
             btnComprar = new WiLBiT.WiLBiTButton();
             lblVendido = new Label();
-            lblRecomendado = new Label();
             lblNumeroVendido = new Label();
             lblPreco2 = new Label();
-            panel1 = new WiLBiT.WiLBiTPanel();
-            panel3 = new WiLBiT.WiLBiTPanel();
-            panel4 = new WiLBiT.WiLBiTPanel();
             lblSifrao1 = new Label();
             lblSifrao2 = new Label();
             btnFechar = new WiLBiT.WiLBiTButton();
             picturePerfil = new PictureBox();
-            panel2 = new WiLBiT.WiLBiTPanel();
+            imagem1 = new PictureBox();
+            imagem2 = new PictureBox();
+            imagem3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)picturePerfil).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imagem1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imagem2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imagem3).BeginInit();
             SuspendLayout();
             // 
             // lblProduto
@@ -72,7 +73,6 @@
             lblProdutoTXT.Name = "lblProdutoTXT";
             lblProdutoTXT.Size = new Size(149, 63);
             lblProdutoTXT.TabIndex = 1;
-            lblProdutoTXT.Text = "blablablalbal";
             // 
             // lblProgamador
             // 
@@ -93,7 +93,6 @@
             lblProgamadorTXT.Name = "lblProgamadorTXT";
             lblProgamadorTXT.Size = new Size(199, 73);
             lblProgamadorTXT.TabIndex = 3;
-            lblProgamadorTXT.Text = "vitor";
             // 
             // lblDescricao
             // 
@@ -114,7 +113,6 @@
             lblDescricaoTXT.Name = "lblDescricaoTXT";
             lblDescricaoTXT.Size = new Size(173, 102);
             lblDescricaoTXT.TabIndex = 5;
-            lblDescricaoTXT.Text = "dhgdmnmhgdmjhmyhmjrhmryjmjhmhmremjyrmjyrmyjmjyr";
             // 
             // lblValor
             // 
@@ -134,9 +132,8 @@
             lblPreco1.ForeColor = Color.White;
             lblPreco1.Location = new Point(682, 73);
             lblPreco1.Name = "lblPreco1";
-            lblPreco1.Size = new Size(62, 30);
+            lblPreco1.Size = new Size(0, 30);
             lblPreco1.TabIndex = 7;
-            lblPreco1.Text = "70,30";
             // 
             // btnComprar
             // 
@@ -167,17 +164,6 @@
             lblVendido.TabIndex = 9;
             lblVendido.Text = "Vendidos:";
             // 
-            // lblRecomendado
-            // 
-            lblRecomendado.AutoSize = true;
-            lblRecomendado.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblRecomendado.ForeColor = Color.FromArgb(0, 192, 0);
-            lblRecomendado.Location = new Point(323, 97);
-            lblRecomendado.Name = "lblRecomendado";
-            lblRecomendado.Size = new Size(127, 21);
-            lblRecomendado.TabIndex = 10;
-            lblRecomendado.Text = "Recomendado*";
-            // 
             // lblNumeroVendido
             // 
             lblNumeroVendido.AutoSize = true;
@@ -185,9 +171,8 @@
             lblNumeroVendido.ForeColor = Color.White;
             lblNumeroVendido.Location = new Point(525, 103);
             lblNumeroVendido.Name = "lblNumeroVendido";
-            lblNumeroVendido.Size = new Size(56, 20);
+            lblNumeroVendido.Size = new Size(0, 20);
             lblNumeroVendido.TabIndex = 11;
-            lblNumeroVendido.Text = "1200+";
             // 
             // lblPreco2
             // 
@@ -196,45 +181,8 @@
             lblPreco2.ForeColor = Color.White;
             lblPreco2.Location = new Point(716, 401);
             lblPreco2.Name = "lblPreco2";
-            lblPreco2.Size = new Size(87, 40);
+            lblPreco2.Size = new Size(0, 40);
             lblPreco2.TabIndex = 12;
-            lblPreco2.Text = "70,30";
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(205, 225, 252);
-            panel1.BorderColor = Color.PaleVioletRed;
-            panel1.BorderRadius = 0;
-            panel1.BorderSize = 0;
-            panel1.ForeColor = Color.White;
-            panel1.Location = new Point(24, 121);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(476, 243);
-            panel1.TabIndex = 13;
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(205, 225, 252);
-            panel3.BorderColor = Color.PaleVioletRed;
-            panel3.BorderRadius = 0;
-            panel3.BorderSize = 0;
-            panel3.ForeColor = Color.White;
-            panel3.Location = new Point(182, 330);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(206, 162);
-            panel3.TabIndex = 15;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.FromArgb(205, 225, 252);
-            panel4.BorderColor = Color.PaleVioletRed;
-            panel4.BorderRadius = 0;
-            panel4.BorderSize = 0;
-            panel4.ForeColor = Color.White;
-            panel4.Location = new Point(340, 121);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(282, 419);
-            panel4.TabIndex = 14;
             // 
             // lblSifrao1
             // 
@@ -288,17 +236,29 @@
             picturePerfil.TabStop = false;
             picturePerfil.Click += picturePerfil_Click;
             // 
-            // panel2
+            // imagem1
             // 
-            panel2.BackColor = Color.FromArgb(205, 225, 252);
-            panel2.BorderColor = Color.PaleVioletRed;
-            panel2.BorderRadius = 0;
-            panel2.BorderSize = 0;
-            panel2.ForeColor = Color.White;
-            panel2.Location = new Point(12, 333);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(257, 162);
-            panel2.TabIndex = 16;
+            imagem1.Location = new Point(12, 122);
+            imagem1.Name = "imagem1";
+            imagem1.Size = new Size(296, 174);
+            imagem1.TabIndex = 24;
+            imagem1.TabStop = false;
+            // 
+            // imagem2
+            // 
+            imagem2.Location = new Point(12, 313);
+            imagem2.Name = "imagem2";
+            imagem2.Size = new Size(296, 174);
+            imagem2.TabIndex = 25;
+            imagem2.TabStop = false;
+            // 
+            // imagem3
+            // 
+            imagem3.Location = new Point(323, 222);
+            imagem3.Name = "imagem3";
+            imagem3.Size = new Size(301, 174);
+            imagem3.TabIndex = 26;
+            imagem3.TabStop = false;
             // 
             // Templates
             // 
@@ -306,17 +266,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(900, 552);
-            Controls.Add(panel2);
+            Controls.Add(imagem3);
+            Controls.Add(imagem2);
+            Controls.Add(imagem1);
             Controls.Add(picturePerfil);
             Controls.Add(btnFechar);
             Controls.Add(lblSifrao2);
             Controls.Add(lblSifrao1);
-            Controls.Add(panel4);
-            Controls.Add(panel3);
-            Controls.Add(panel1);
             Controls.Add(lblPreco2);
             Controls.Add(lblNumeroVendido);
-            Controls.Add(lblRecomendado);
             Controls.Add(lblVendido);
             Controls.Add(btnComprar);
             Controls.Add(lblPreco1);
@@ -332,6 +290,9 @@
             Text = "Templates";
             Load += Templates_Load;
             ((System.ComponentModel.ISupportInitialize)picturePerfil).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imagem1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imagem2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imagem3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -348,16 +309,14 @@
         private Label lblPreco1;
         private WiLBiT.WiLBiTButton btnComprar;
         private Label lblVendido;
-        private Label lblRecomendado;
         private Label lblNumeroVendido;
         private Label lblPreco2;
-        private WiLBiT.WiLBiTPanel panel1;
-        private WiLBiT.WiLBiTPanel panel3;
-        private WiLBiT.WiLBiTPanel panel4;
         private Label lblSifrao1;
         private Label lblSifrao2;
         private WiLBiT.WiLBiTButton btnFechar;
         private PictureBox picturePerfil;
-        private WiLBiT.WiLBiTPanel panel2;
+        private PictureBox imagem1;
+        private PictureBox imagem2;
+        private PictureBox imagem3;
     }
 }

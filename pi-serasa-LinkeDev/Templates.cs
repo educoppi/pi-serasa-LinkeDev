@@ -39,7 +39,7 @@ namespace pi_serasa_LinkeDev
 
 
 
-            //label
+            //label posições
             lblPreco1.Location = new Point(ClientSize.Width - 110, ClientSize.Height - 480);
             lblSifrao1.Location = new Point(ClientSize.Width - 140, ClientSize.Height - 478);
             lblValor.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 476);
@@ -51,15 +51,22 @@ namespace pi_serasa_LinkeDev
 
             lblNumeroVendido.Location = new Point(ClientSize.Width - 350, ClientSize.Height - 476);
             lblVendido.Location = new Point(ClientSize.Width - 430, ClientSize.Height - 476);
-            lblRecomendado.Location = new Point(ClientSize.Width - 560, ClientSize.Height - 476);
 
+            //label conteúdo
+            lblProdutoTXT.Text = Program.servico.nome;
+            lblProgamadorTXT.Text = Program.servico.nome_assinante;
+            lblDescricaoTXT.Text = Program.servico.descricao;
+            lblNumeroVendido.Text = (Program.servico.vendidos).ToString();
+            lblPreco1.Text = (Program.servico.valor).ToString();
+            lblPreco2.Text = (Program.servico.valor).ToString();
 
-            //panel
-            panel4.Location = new Point(ClientSize.Width - 550, ClientSize.Height - 456);
-            panel1.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 456);
-            panel3.Location = new Point(ClientSize.Width - 780, ClientSize.Height - 200);
-            panel2.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 200);
-
+            //imagens
+            imagem1.LoadAsync(Program.servico.imagem_1);
+            imagem1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            imagem2.LoadAsync(Program.servico.imagem_2);
+            imagem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            imagem3.LoadAsync(Program.servico.imagem_3);
+            imagem3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
         }
 
         private void btnComprar_Click(object sender, EventArgs e)

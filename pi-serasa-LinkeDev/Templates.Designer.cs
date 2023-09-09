@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Templates));
             lblProduto = new Label();
             lblProdutoTXT = new Label();
             lblProgamador = new Label();
@@ -44,14 +43,14 @@
             lblSifrao1 = new Label();
             lblSifrao2 = new Label();
             btnFechar = new WiLBiT.WiLBiTButton();
-            picturePerfil = new PictureBox();
             imagem1 = new PictureBox();
             imagem2 = new PictureBox();
             imagem3 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)picturePerfil).BeginInit();
+            imagemPerfil = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)imagem1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imagem2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imagem3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imagemPerfil).BeginInit();
             SuspendLayout();
             // 
             // lblProduto
@@ -224,18 +223,6 @@
             btnFechar.UseVisualStyleBackColor = false;
             btnFechar.Click += btnFechar_Click;
             // 
-            // picturePerfil
-            // 
-            picturePerfil.BorderStyle = BorderStyle.FixedSingle;
-            picturePerfil.Image = (Image)resources.GetObject("picturePerfil.Image");
-            picturePerfil.Location = new Point(12, 12);
-            picturePerfil.Name = "picturePerfil";
-            picturePerfil.Size = new Size(100, 80);
-            picturePerfil.SizeMode = PictureBoxSizeMode.StretchImage;
-            picturePerfil.TabIndex = 23;
-            picturePerfil.TabStop = false;
-            picturePerfil.Click += picturePerfil_Click;
-            // 
             // imagem1
             // 
             imagem1.Location = new Point(12, 122);
@@ -260,16 +247,25 @@
             imagem3.TabIndex = 26;
             imagem3.TabStop = false;
             // 
+            // imagemPerfil
+            // 
+            imagemPerfil.Location = new Point(12, 9);
+            imagemPerfil.Name = "imagemPerfil";
+            imagemPerfil.Size = new Size(100, 92);
+            imagemPerfil.TabIndex = 27;
+            imagemPerfil.TabStop = false;
+            imagemPerfil.Click += imagemPerfil_Click;
+            // 
             // Templates
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(900, 552);
+            Controls.Add(imagemPerfil);
             Controls.Add(imagem3);
             Controls.Add(imagem2);
             Controls.Add(imagem1);
-            Controls.Add(picturePerfil);
             Controls.Add(btnFechar);
             Controls.Add(lblSifrao2);
             Controls.Add(lblSifrao1);
@@ -289,10 +285,10 @@
             Name = "Templates";
             Text = "Templates";
             Load += Templates_Load;
-            ((System.ComponentModel.ISupportInitialize)picturePerfil).EndInit();
             ((System.ComponentModel.ISupportInitialize)imagem1).EndInit();
             ((System.ComponentModel.ISupportInitialize)imagem2).EndInit();
             ((System.ComponentModel.ISupportInitialize)imagem3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imagemPerfil).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -314,9 +310,9 @@
         private Label lblSifrao1;
         private Label lblSifrao2;
         private WiLBiT.WiLBiTButton btnFechar;
-        private PictureBox picturePerfil;
         private PictureBox imagem1;
         private PictureBox imagem2;
         private PictureBox imagem3;
+        private PictureBox imagemPerfil;
     }
 }

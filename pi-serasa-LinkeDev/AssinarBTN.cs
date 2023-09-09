@@ -17,6 +17,12 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
+        void limpaText()
+        {
+            txtEmail_CR.Texts = "";
+            txtSenha_CR.Texts = "";
+            txtUsuario_CR.Texts = "";
+        }
 
 
         private void label2_Click(object sender, EventArgs e)
@@ -33,6 +39,7 @@ namespace pi_serasa_LinkeDev
 
         private void wilBitButton21_Click(object sender, EventArgs e)
         {
+            /*
             string email = txtEmail_CR.Texts;
             string senha = txtSenha_CR.Texts;
             string nome = txtUsuario_CR.Texts;
@@ -40,6 +47,7 @@ namespace pi_serasa_LinkeDev
             if (email == "" && senha == "" && nome == "")
             {
                 MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limpaText();
                 return;
             }
 
@@ -50,6 +58,7 @@ namespace pi_serasa_LinkeDev
             Assinar assinar = new Assinar();
             assinar.Show();
             i.Show();
+            */
         }
 
 
@@ -75,6 +84,7 @@ namespace pi_serasa_LinkeDev
             if (email == "" || senha == "" || nome == "")
             {
                 MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limpaText();
                 return;
             }
 
@@ -136,7 +146,7 @@ namespace pi_serasa_LinkeDev
             quebraLinha++;
             Form1.panelCentral.Controls.Add(pic);
 
-            //pic.MouseClick += new MouseEventHandler(Form1.pictureBox1_Click);
+            pic.MouseClick += new MouseEventHandler(Form1.pictureBox1_Click);
 
             if (quebraLinha == 5)
             {

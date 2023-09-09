@@ -23,21 +23,11 @@ namespace pi_serasa_LinkeDev
             Form1.CarregaEntreTELAS(new PerfilCliente());
         }
 
-        private void picturePerfil_Click(object sender, EventArgs e)
-        {
-            Form1.CarregaEntreTELAS(new PerfilAssinante());
-
-
-        }
-
         private void Templates_Load(object sender, EventArgs e)
         {
             //botao
             btnFechar.Location = new Point(ClientSize.Width - 80, ClientSize.Height - 570);
             btnComprar.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 530);
-
-
-
 
             //label posições
             lblPreco1.Location = new Point(ClientSize.Width - 110, ClientSize.Height - 480);
@@ -67,11 +57,22 @@ namespace pi_serasa_LinkeDev
             imagem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             imagem3.LoadAsync(Program.servico.imagem_3);
             imagem3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+
+            //icone do programador
+            Assinante assinante = new Assinante();
+            Program.assinante = assinante.retornaAssinante(Program.servico.id_assinante);
+            imagemPerfil.LoadAsync(Program.assinante.imagem_icon);
+            imagemPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
         }
 
         private void btnComprar_Click(object sender, EventArgs e)
         {
             MessageBox.Show("comprado");
+        }
+
+        private void imagemPerfil_Click(object sender, EventArgs e)
+        {
+            Form1.CarregaEntreTELAS(new PerfilAssinante());
         }
     }
 }

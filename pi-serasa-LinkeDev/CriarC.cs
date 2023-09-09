@@ -17,6 +17,13 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
+        void limpaText()
+        {
+            txtEmail_CR.Texts = "";
+            txtSenha_CR.Texts = "";
+            txtUsuario_CR.Texts = "";
+        }
+
         private void label2_Click(object sender, EventArgs e)
         {
             label2.Size = new Size(100, 15);
@@ -44,6 +51,7 @@ namespace pi_serasa_LinkeDev
             if (email == "" || senha == "" || nome == "")
             {
                 MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limpaText();
                 return;
             }
 
@@ -54,8 +62,11 @@ namespace pi_serasa_LinkeDev
 
 
 
-            Inicial i = new Inicial();
-            i.Show();
+            Form1.CarregaBotoes(new trocaBotoes());
+
+            Form1.carregamenuESQ(new trocaMenuESQ());
+            this.Close();
+            carregaTemplates();
         }
 
         private void panelC_Paint(object sender, PaintEventArgs e)
@@ -113,6 +124,46 @@ namespace pi_serasa_LinkeDev
         {
             this.Close();
             carregaImagens();
+        }
+
+        //CARREGA TEMPLATES APOS ENTRAR NA TELA INICIAL DO SITE
+
+        void carregaTemplates()
+        {
+            Servico servico = new Servico();
+            List<Servico> servicos = new List<Servico>();
+            servicos = servico.buscaImagensTemplates();
+
+            foreach (Servico s in servicos)
+            {
+                geraimagens(s);
+            }
+        }
+
+        void geraimagens(Servico servico)
+        {
+
+            PictureBox pic = new PictureBox();
+            pic.LoadAsync(servico.imagem_1);
+            pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pic.Size = new Size(350, 150);
+            pic.Location = new Point(x, y);
+
+            x = x + 380;
+            quebraLinha++;
+            Form1.panelCentral.Controls.Add(pic);
+
+
+            //pic.MouseClick += new MouseEventHandler(pictureBox1_Click);//função utilizada anteriomente
+            pic.MouseClick += new MouseEventHandler((o, a) => Program.servicoClicado(servico));
+
+
+            if (quebraLinha == 5)
+            {
+                x = 50;
+                y = 300;
+                pic.Location = new Point(x, y);
+            }
         }
     }
 }

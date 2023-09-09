@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WiLBiT;
 
 namespace pi_serasa_LinkeDev
 {
@@ -18,17 +19,25 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
+        void carregaEstiloBotoes(WiLBiTButton button)
+        {
+            button.BackColor = Color.FromArgb(21, 154, 235);
+            button.ForeColor = Color.Black;
+            button.BorderColor = Color.White;
+            button.BorderSize = 2;
+        }
+
         private void panelEsquerdo2_Paint(object sender, PaintEventArgs e)
         {
-
+            carregaEstiloBotoes(wilBitButton2);
         }
 
         private void wilBitButton2_Click(object sender, EventArgs e)
         {
-            carregaImagens();
+            carregaTemplates();
         }
 
-        void carregaImagens()
+        void carregaTemplates()
         {
             Servico servico = new Servico();
             List<Servico> servicos = new List<Servico>();
@@ -36,14 +45,14 @@ namespace pi_serasa_LinkeDev
 
             foreach (Servico s in servicos)
             {
-                geraTemplates(s);
+                geraimagens(s);
             }
         }
 
         int x = 50;
         int y = 30;
         int quebraLinha;
-        void geraTemplates(Servico servico)
+        void geraimagens(Servico servico)
         {
 
             PictureBox pic = new PictureBox();
@@ -58,7 +67,7 @@ namespace pi_serasa_LinkeDev
 
 
             //pic.MouseClick += new MouseEventHandler(pictureBox1_Click);//função utilizada anteriomente
-            pic.MouseClick += new MouseEventHandler((o, a) => servicoClicado(servico));//
+            pic.MouseClick += new MouseEventHandler((o, a) => Program.servicoClicado(servico));//
 
             if (quebraLinha == 5)
             {
@@ -66,12 +75,6 @@ namespace pi_serasa_LinkeDev
                 y = 300;
                 pic.Location = new Point(x, y);
             }
-        }
-
-        void servicoClicado(Servico servico)
-        {
-            Program.servico = servico;
-            CarregaEntreTELAS(new Templates());
         }
 
         public static void CarregaEntreTELAS(Form form)

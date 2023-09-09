@@ -4,6 +4,14 @@ namespace pi_serasa_LinkeDev
     {
         public static Usuario usuario;
         public static Servico servico;
+        public static Assinante assinante;
+
+        public static void servicoClicado(Servico servico)
+        {
+            Program.servico = servico;
+            trocaMenuESQ.CarregaEntreTELAS(new Templates());
+        }
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>

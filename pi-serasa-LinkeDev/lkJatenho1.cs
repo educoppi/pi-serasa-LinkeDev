@@ -17,6 +17,12 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
+        void limparText()
+        {
+            txtEmail_LG.Texts = "";
+            txtSenha_LG.Texts = "";
+        }
+
         private void lkJatenho1_Load(object sender, EventArgs e)
         {
             panelC.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 650);
@@ -41,6 +47,7 @@ namespace pi_serasa_LinkeDev
             if (email == "" || senha == "")
             {
                 MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limparText();
                 return;
             }
 
@@ -50,12 +57,23 @@ namespace pi_serasa_LinkeDev
             if (usuario == null)
             {
                 MessageBox.Show("Email ou senha incorretos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limparText();
                 return;            
             }
-            usuario.alteraClienteParaAssinante(usuario);
+            // o metodo | usuario.alteraClienteParaAssinante(usuario) | tenta encontrar um cliente 
+            //na tabela de clientes, para transforma-lo em assinante, se não for encontrado
+            //o metodo lança um erro, por isso utilizei o Try Catch.
+            try
+            {
+                usuario.alteraClienteParaAssinante(usuario);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Perfil não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limparText();
+                return;
+            }
             Program.usuario = usuario;
-
-            
 
             Form1.CarregaEntreTELAS(new Assinar());
             this.Close();

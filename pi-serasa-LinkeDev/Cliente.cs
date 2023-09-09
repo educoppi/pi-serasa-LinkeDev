@@ -29,6 +29,8 @@ namespace pi_serasa_LinkeDev
             string query = $"SELECT * FROM cliente WHERE id = {id};";
 
             DataTable tabela = Conexao.executaQuery(query);
+            if (tabela.Rows.Count == 0)
+                return null;
 
             Cliente cliente = carregaDados(tabela.Rows[0]);
 

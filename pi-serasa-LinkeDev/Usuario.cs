@@ -12,7 +12,7 @@ namespace pi_serasa_LinkeDev
         public int id;
         private string email;
         private string senha;
-        private bool assinante;
+        public bool isAssinante;
 
         public Usuario() { }
 
@@ -23,7 +23,7 @@ namespace pi_serasa_LinkeDev
         public Usuario(int id, bool assinante)
         {
             this.id = id;
-            this.assinante = assinante;
+            this.isAssinante = assinante;
         }
 
         public Usuario(string email, string senha)
@@ -32,12 +32,12 @@ namespace pi_serasa_LinkeDev
             this.senha = senha;
         }
 
-        public Usuario(int id, string email, string senha, bool assinante)
+        public Usuario(int id, string email, string senha, bool isAssinante)
         {
             this.id = id;
             this.email = email;
             this.senha = senha;
-            this.assinante = assinante;
+            this.isAssinante = isAssinante;
         }
 
         public List<Usuario> buscaTodos()
@@ -120,9 +120,9 @@ namespace pi_serasa_LinkeDev
         public Usuario carregaDadosLogin(DataRow linha)
         {
             int id = int.Parse(linha["id"].ToString());
-            bool assinante = linha["assinante"].ToString() == "1" ? true : false;
+            bool isAssinante = Convert.ToBoolean(linha["assinante"].ToString());
 
-            Usuario usuario = new Usuario(id, assinante);
+            Usuario usuario = new Usuario(id, isAssinante);
 
             return usuario;
         }
@@ -139,10 +139,8 @@ namespace pi_serasa_LinkeDev
             string query1 = $"UPDATE usuario SET assinante = 1 WHERE id = {usuario.id};";
             string query2 = $"DELETE FROM cliente WHERE id = {usuario.id};";
 
-
             Conexao.executaQuery(query1);
             Conexao.executaQuery(query2);
         }
-        
     }
 }

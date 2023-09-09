@@ -57,7 +57,7 @@
             picturePerfil.Image = (Image)resources.GetObject("picturePerfil.Image");
             picturePerfil.Location = new Point(163, 6);
             picturePerfil.Name = "picturePerfil";
-            picturePerfil.Size = new Size(100, 62);
+            picturePerfil.Size = new Size(78, 62);
             picturePerfil.SizeMode = PictureBoxSizeMode.StretchImage;
             picturePerfil.TabIndex = 9;
             picturePerfil.TabStop = false;

@@ -47,10 +47,28 @@ namespace pi_serasa_LinkeDev
                 return;
             }
 
+            //MESSAGEBOX CRIADA PARA SABER SE O USUARIO QUE ENTROU É ASSINANTE (TRUE) OU CLIENTE (FALSE)
+
+
+            Program.usuario = usuario;
+            MessageBox.Show("" + Program.usuario.id);
+            MessageBox.Show("" + Program.usuario.isAssinante);
+
+            if (Program.usuario.isAssinante)
+            {
+                Assinante assinante = new Assinante();
+                Program.assinante = assinante.retornaAssinante(Program.usuario.id);
+            }
+            else
+            {
+                Cliente cliente = new Cliente();
+                Program.cliente = cliente.retornaCliente(Program.usuario.id);
+            }
             Form1.CarregaBotoes(new trocaBotoes());
             
             Form1.carregamenuESQ(new trocaMenuESQ());
             this.Close();
+
             carregaTemplates();
         }
 

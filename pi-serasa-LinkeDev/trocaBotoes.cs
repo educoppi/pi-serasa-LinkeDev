@@ -19,10 +19,21 @@ namespace pi_serasa_LinkeDev
 
         private void trocaBotoes_Load(object sender, EventArgs e)
         {
-
+            if (Program.usuario.isAssinante)
+            {
+                btnAssine.Enabled = false;
+                btnAssine.Visible = false;
+                picturePerfil.LoadAsync(Program.assinante.imagem_icon);
+                picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            }
+            else
+            {
+                btnAssine.Enabled = true;
+                btnAssine.Visible = true;
+                picturePerfil.LoadAsync(Program.cliente.imagem_icon);
+                picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            }
         }
-
-
 
         public void picturePerfil_Click(object sender, EventArgs e)
         {

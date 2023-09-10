@@ -181,7 +181,6 @@ namespace pi_serasa_LinkeDev
             //pic.MouseClick += new MouseEventHandler(pictureBox1_Click);//função utilizada anteriomente
             pic.MouseClick += new MouseEventHandler((o, a) => Program.servicoClicado(servico));
 
-
             if (quebraLinha == 5)
             {
                 x = 50;

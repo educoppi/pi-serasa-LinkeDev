@@ -28,16 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilAssinante));
-            panelASS = new WiLBiT.WiLBiTPanel();
             btnADD = new WiLBiT.WiLBiTButton();
             picturePerfil = new PictureBox();
-            btnCurriculo = new WiLBiT.WiLBiTButton();
             lblNome = new Label();
-            lblProfissao = new Label();
             descricao = new Label();
             label4 = new Label();
-            label11 = new Label();
+            lblVendidos = new Label();
             label9 = new Label();
             panelCompradosASS = new WiLBiT.WiLBiTPanel();
             pictureBox1 = new PictureBox();
@@ -54,34 +50,21 @@
             lblComprados = new Label();
             btnFechar = new WiLBiT.WiLBiTButton();
             btnEditar = new WiLBiT.WiLBiTButton();
-            panelEditar = new WiLBiT.WiLBiTPanel();
-            pictureBox2 = new PictureBox();
-            btnEditar2 = new WiLBiT.WiLBiTButton();
-            label3 = new Label();
+            panelEditar = new Panel();
+            btnEditar2 = new Button();
+            txtEditImagemIcon = new TextBox();
             label6 = new Label();
-            txtEditDescricao = new WiLBiT.WiLBiTTextBox();
-            txtEditNome = new WiLBiT.WiLBiTTextBox();
-            txtProfissao = new WiLBiT.WiLBiTTextBox();
+            txtEditDescricao = new TextBox();
             label5 = new Label();
+            txtEditNome = new TextBox();
+            label3 = new Label();
+            panelASS = new Panel();
             ((System.ComponentModel.ISupportInitialize)picturePerfil).BeginInit();
             panelCompradosASS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panelEditar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // panelASS
-            // 
-            panelASS.BackColor = Color.FromArgb(49, 57, 60);
-            panelASS.BorderColor = Color.PaleVioletRed;
-            panelASS.BorderRadius = 6;
-            panelASS.BorderSize = 0;
-            panelASS.ForeColor = Color.White;
-            panelASS.Location = new Point(47, 237);
-            panelASS.Name = "panelASS";
-            panelASS.Size = new Size(552, 244);
-            panelASS.TabIndex = 0;
             // 
             // btnADD
             // 
@@ -103,30 +86,12 @@
             // picturePerfil
             // 
             picturePerfil.BackColor = Color.White;
-            picturePerfil.Image = (Image)resources.GetObject("picturePerfil.Image");
             picturePerfil.Location = new Point(344, 12);
             picturePerfil.Name = "picturePerfil";
             picturePerfil.Size = new Size(131, 96);
             picturePerfil.SizeMode = PictureBoxSizeMode.StretchImage;
             picturePerfil.TabIndex = 11;
             picturePerfil.TabStop = false;
-            // 
-            // btnCurriculo
-            // 
-            btnCurriculo.BackColor = Color.FromArgb(72, 116, 245);
-            btnCurriculo.BorderColor = Color.FromArgb(72, 116, 245);
-            btnCurriculo.BorderRadius = 20;
-            btnCurriculo.BorderSize = 0;
-            btnCurriculo.FlatAppearance.BorderSize = 0;
-            btnCurriculo.FlatStyle = FlatStyle.Flat;
-            btnCurriculo.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCurriculo.ForeColor = Color.White;
-            btnCurriculo.Location = new Point(665, 84);
-            btnCurriculo.Name = "btnCurriculo";
-            btnCurriculo.Size = new Size(124, 48);
-            btnCurriculo.TabIndex = 12;
-            btnCurriculo.Text = "Curriculo";
-            btnCurriculo.UseVisualStyleBackColor = false;
             // 
             // lblNome
             // 
@@ -135,20 +100,8 @@
             lblNome.ForeColor = Color.White;
             lblNome.Location = new Point(387, 111);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(44, 21);
+            lblNome.Size = new Size(0, 21);
             lblNome.TabIndex = 13;
-            lblNome.Text = "Vitor";
-            // 
-            // lblProfissao
-            // 
-            lblProfissao.AutoSize = true;
-            lblProfissao.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProfissao.ForeColor = Color.White;
-            lblProfissao.Location = new Point(345, 142);
-            lblProfissao.Name = "lblProfissao";
-            lblProfissao.Size = new Size(130, 21);
-            lblProfissao.TabIndex = 14;
-            lblProfissao.Text = "Progamador web";
             // 
             // descricao
             // 
@@ -156,9 +109,8 @@
             descricao.ForeColor = Color.White;
             descricao.Location = new Point(102, 50);
             descricao.Name = "descricao";
-            descricao.Size = new Size(163, 113);
+            descricao.Size = new Size(213, 113);
             descricao.TabIndex = 20;
-            descricao.Text = "njdnfvnwjobnwo\r\ngbnojgb gbbfgwb";
             // 
             // label4
             // 
@@ -171,16 +123,15 @@
             label4.TabIndex = 19;
             label4.Text = "Descrição:";
             // 
-            // label11
+            // lblVendidos
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(85, 12);
-            label11.Name = "label11";
-            label11.Size = new Size(56, 20);
-            label11.TabIndex = 22;
-            label11.Text = "1200+";
+            lblVendidos.AutoSize = true;
+            lblVendidos.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblVendidos.ForeColor = Color.White;
+            lblVendidos.Location = new Point(85, 12);
+            lblVendidos.Name = "lblVendidos";
+            lblVendidos.Size = new Size(0, 20);
+            lblVendidos.TabIndex = 22;
             // 
             // label9
             // 
@@ -364,150 +315,91 @@
             // panelEditar
             // 
             panelEditar.BackColor = Color.FromArgb(49, 57, 60);
-            panelEditar.BorderColor = Color.PaleVioletRed;
-            panelEditar.BorderRadius = 6;
-            panelEditar.BorderSize = 0;
-            panelEditar.Controls.Add(label5);
-            panelEditar.Controls.Add(txtProfissao);
-            panelEditar.Controls.Add(pictureBox2);
             panelEditar.Controls.Add(btnEditar2);
-            panelEditar.Controls.Add(label3);
+            panelEditar.Controls.Add(txtEditImagemIcon);
             panelEditar.Controls.Add(label6);
             panelEditar.Controls.Add(txtEditDescricao);
+            panelEditar.Controls.Add(label5);
             panelEditar.Controls.Add(txtEditNome);
-            panelEditar.ForeColor = Color.White;
-            panelEditar.Location = new Point(169, 166);
+            panelEditar.Controls.Add(label3);
+            panelEditar.Location = new Point(172, 166);
             panelEditar.Name = "panelEditar";
-            panelEditar.Size = new Size(488, 304);
-            panelEditar.TabIndex = 26;
+            panelEditar.Size = new Size(329, 342);
+            panelEditar.TabIndex = 27;
             panelEditar.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.White;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(322, 55);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(131, 96);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 27;
-            pictureBox2.TabStop = false;
             // 
             // btnEditar2
             // 
             btnEditar2.BackColor = Color.FromArgb(72, 116, 245);
-            btnEditar2.BorderColor = Color.FromArgb(72, 116, 245);
-            btnEditar2.BorderRadius = 6;
-            btnEditar2.BorderSize = 0;
-            btnEditar2.FlatAppearance.BorderSize = 0;
-            btnEditar2.FlatStyle = FlatStyle.Flat;
             btnEditar2.ForeColor = Color.White;
-            btnEditar2.Location = new Point(230, 246);
+            btnEditar2.Location = new Point(126, 299);
             btnEditar2.Name = "btnEditar2";
-            btnEditar2.Size = new Size(50, 40);
-            btnEditar2.TabIndex = 22;
+            btnEditar2.Size = new Size(75, 34);
+            btnEditar2.TabIndex = 34;
             btnEditar2.Text = "Editar";
             btnEditar2.UseVisualStyleBackColor = false;
-            btnEditar2.Click += btnEditar2_Click;
+            btnEditar2.Click += btnEditar2_Click_1;
             // 
-            // label3
+            // txtEditImagemIcon
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(56, 99);
-            label3.Name = "label3";
-            label3.Size = new Size(106, 30);
-            label3.TabIndex = 22;
-            label3.Text = "Descrição";
+            txtEditImagemIcon.Location = new Point(15, 266);
+            txtEditImagemIcon.Name = "txtEditImagemIcon";
+            txtEditImagemIcon.Size = new Size(292, 23);
+            txtEditImagemIcon.TabIndex = 33;
             // 
             // label6
             // 
-            label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.White;
-            label6.Location = new Point(56, 21);
+            label6.Location = new Point(15, 197);
             label6.Name = "label6";
-            label6.Size = new Size(73, 30);
-            label6.TabIndex = 22;
-            label6.Text = "Nome";
+            label6.Size = new Size(292, 64);
+            label6.TabIndex = 32;
+            label6.Text = "Insira o endereço de uma imagem (utilize o imgur):";
             // 
             // txtEditDescricao
             // 
-            txtEditDescricao.BackColor = SystemColors.Window;
-            txtEditDescricao.BorderColor = Color.FromArgb(72, 116, 245);
-            txtEditDescricao.BorderFocusColor = Color.DeepSkyBlue;
-            txtEditDescricao.BorderRadius = 4;
-            txtEditDescricao.BorderSize = 2;
-            txtEditDescricao.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEditDescricao.ForeColor = Color.FromArgb(64, 64, 64);
-            txtEditDescricao.Location = new Point(56, 133);
-            txtEditDescricao.Margin = new Padding(4);
-            txtEditDescricao.Multiline = false;
+            txtEditDescricao.Location = new Point(15, 144);
             txtEditDescricao.Name = "txtEditDescricao";
-            txtEditDescricao.Padding = new Padding(10, 7, 10, 7);
-            txtEditDescricao.PasswordChar = false;
-            txtEditDescricao.PlaceholderColor = Color.DarkGray;
-            txtEditDescricao.PlaceholderText = "";
-            txtEditDescricao.Size = new Size(250, 29);
-            txtEditDescricao.TabIndex = 1;
-            txtEditDescricao.Texts = "";
-            txtEditDescricao.UnderlinedStyle = false;
-            // 
-            // txtEditNome
-            // 
-            txtEditNome.BackColor = SystemColors.Window;
-            txtEditNome.BorderColor = Color.FromArgb(72, 116, 245);
-            txtEditNome.BorderFocusColor = Color.DeepSkyBlue;
-            txtEditNome.BorderRadius = 4;
-            txtEditNome.BorderSize = 2;
-            txtEditNome.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEditNome.ForeColor = Color.FromArgb(64, 64, 64);
-            txtEditNome.Location = new Point(56, 55);
-            txtEditNome.Margin = new Padding(4);
-            txtEditNome.Multiline = false;
-            txtEditNome.Name = "txtEditNome";
-            txtEditNome.Padding = new Padding(10, 7, 10, 7);
-            txtEditNome.PasswordChar = false;
-            txtEditNome.PlaceholderColor = Color.DarkGray;
-            txtEditNome.PlaceholderText = "";
-            txtEditNome.Size = new Size(250, 29);
-            txtEditNome.TabIndex = 0;
-            txtEditNome.Texts = "";
-            txtEditNome.UnderlinedStyle = false;
-            // 
-            // txtProfissao
-            // 
-            txtProfissao.BackColor = SystemColors.Window;
-            txtProfissao.BorderColor = Color.FromArgb(72, 116, 245);
-            txtProfissao.BorderFocusColor = Color.DeepSkyBlue;
-            txtProfissao.BorderRadius = 4;
-            txtProfissao.BorderSize = 2;
-            txtProfissao.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            txtProfissao.ForeColor = Color.FromArgb(64, 64, 64);
-            txtProfissao.Location = new Point(56, 203);
-            txtProfissao.Margin = new Padding(4);
-            txtProfissao.Multiline = false;
-            txtProfissao.Name = "txtProfissao";
-            txtProfissao.Padding = new Padding(10, 7, 10, 7);
-            txtProfissao.PasswordChar = false;
-            txtProfissao.PlaceholderColor = Color.DarkGray;
-            txtProfissao.PlaceholderText = "";
-            txtProfissao.Size = new Size(250, 29);
-            txtProfissao.TabIndex = 28;
-            txtProfissao.Texts = "";
-            txtProfissao.UnderlinedStyle = false;
+            txtEditDescricao.Size = new Size(292, 23);
+            txtEditDescricao.TabIndex = 31;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(56, 169);
+            label5.Location = new Point(15, 106);
             label5.Name = "label5";
-            label5.Size = new Size(103, 30);
-            label5.TabIndex = 29;
-            label5.Text = "Profissao";
+            label5.Size = new Size(112, 30);
+            label5.TabIndex = 30;
+            label5.Text = "Descrição:";
+            // 
+            // txtEditNome
+            // 
+            txtEditNome.Location = new Point(15, 53);
+            txtEditNome.Name = "txtEditNome";
+            txtEditNome.Size = new Size(292, 23);
+            txtEditNome.TabIndex = 29;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(15, 19);
+            label3.Name = "label3";
+            label3.Size = new Size(79, 30);
+            label3.TabIndex = 28;
+            label3.Text = "Nome:";
+            // 
+            // panelASS
+            // 
+            panelASS.BackColor = Color.FromArgb(49, 57, 60);
+            panelASS.Location = new Point(69, 237);
+            panelASS.Name = "panelASS";
+            panelASS.Size = new Size(549, 241);
+            panelASS.TabIndex = 28;
             // 
             // PerfilAssinante
             // 
@@ -515,21 +407,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(819, 507);
+            Controls.Add(panelASS);
             Controls.Add(panelEditar);
             Controls.Add(btnEditar);
             Controls.Add(btnFechar);
             Controls.Add(lblComprados);
             Controls.Add(panelCompradosASS);
-            Controls.Add(label11);
+            Controls.Add(lblVendidos);
             Controls.Add(label9);
             Controls.Add(descricao);
             Controls.Add(label4);
-            Controls.Add(lblProfissao);
             Controls.Add(lblNome);
-            Controls.Add(btnCurriculo);
             Controls.Add(picturePerfil);
             Controls.Add(btnADD);
-            Controls.Add(panelASS);
             FormBorderStyle = FormBorderStyle.None;
             Name = "PerfilAssinante";
             Text = "PerfilAssinante";
@@ -541,22 +431,17 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panelEditar.ResumeLayout(false);
             panelEditar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private WiLBiT.WiLBiTPanel panelASS;
         private WiLBiT.WiLBiTButton btnADD;
         private PictureBox picturePerfil;
-        private WiLBiT.WiLBiTButton btnCurriculo;
         private Label lblNome;
-        private Label lblProfissao;
         private Label descricao;
         private Label label4;
-        private Label label11;
+        private Label lblVendidos;
         private Label label9;
         private WiLBiT.WiLBiTPanel panelCompradosASS;
         private Label lblComprados;
@@ -573,14 +458,14 @@
         private Label label1;
         private PictureBox pictureBox1;
         private WiLBiT.WiLBiTButton btnEditar;
-        private WiLBiT.WiLBiTPanel panelEditar;
-        private PictureBox pictureBox2;
-        private WiLBiT.WiLBiTButton btnEditar2;
+        private Panel panelEditar;
+        private TextBox txtEditNome;
         private Label label3;
         private Label label6;
-        private WiLBiT.WiLBiTTextBox txtEditDescricao;
-        private WiLBiT.WiLBiTTextBox txtEditNome;
+        private TextBox txtEditDescricao;
         private Label label5;
-        private WiLBiT.WiLBiTTextBox txtProfissao;
+        private Button btnEditar2;
+        private TextBox txtEditImagemIcon;
+        private Panel panelASS;
     }
 }

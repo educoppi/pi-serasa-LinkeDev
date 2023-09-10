@@ -36,29 +36,39 @@ namespace pi_serasa_LinkeDev
 
             Conexao.executaQuery(query);
         }
-        /*
+
+        public void remove(int id_usuario, int id_servico)
+        {
+            string query = $"DELETE FROM servicos_favoritados WHERE id_usuario = {id_usuario} AND id_servico = {id_servico};";
+
+            Conexao.executaQuery(query);
+        }
+
+        public ServicosFavoritados retorna(int id_usuario, int id_servico)
+        {
+            string query = $"SELECT * FROM servicos_favoritados WHERE id_usuario = {id_usuario} AND id_servico = {id_servico};";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            if (tabela.Rows.Count == 0)
+                return null;
+
+            ServicosFavoritados sf = carregaDados(tabela.Rows[0]);
+            return sf;
+        }
+
+        
         public ServicosFavoritados carregaDados(DataRow linha)
         {
             int id = int.Parse(linha["id"].ToString());
-            int id_assinante = int.Parse(linha["id_assinante"].ToString());
-            string nome_assinante = linha["nome_assinante"].ToString();
-            string nome = linha["nome"].ToString();
-            string descricao = linha["descricao"].ToString();
+            int id_usuario = int.Parse(linha["id_usuario"].ToString());
+            int id_servico = int.Parse(linha["id_servico"].ToString());
+            string nome_servico = linha["nome_servico"].ToString();
             string tipo = linha["tipo"].ToString();
-            string publicado_em = (linha["publicado_em"].ToString());
-            double valor = double.Parse(linha["valor"].ToString());
             string imagem_1 = linha["imagem_1"].ToString();
-            string imagem_2 = linha["imagem_2"].ToString();
-            string imagem_3 = linha["imagem_3"].ToString();
-            int vendidos = int.Parse(linha["vendidos"].ToString());
-            int curtidas = int.Parse(linha["curtidas"].ToString());
-            int qtd_favoritados = int.Parse(linha["qtd_favoritados"].ToString());
 
-            Servico servico = new Servico(id, id_assinante, nome_assinante, nome, descricao, tipo, publicado_em,
-                valor, imagem_1, imagem_2, imagem_3, vendidos, curtidas, qtd_favoritados);
+            ServicosFavoritados sf = new ServicosFavoritados(id, id_usuario, id_servico, nome_servico, tipo, imagem_1);
 
-            return servico;
+            return sf;
         }
-        */
     }
 }

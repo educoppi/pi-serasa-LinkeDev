@@ -54,7 +54,7 @@
             btnCurtir = new Button();
             btnFavoritar = new Button();
             lblDesfazerCurtida = new Label();
-            lblDesfazerFavoritado = new Label();
+            lblPublicadoEm = new Label();
             ((System.ComponentModel.ISupportInitialize)imagem1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imagem2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imagem3).BeginInit();
@@ -98,7 +98,7 @@
             lblProgamadorTXT.ForeColor = Color.White;
             lblProgamadorTXT.Location = new Point(118, 36);
             lblProgamadorTXT.Name = "lblProgamadorTXT";
-            lblProgamadorTXT.Size = new Size(199, 73);
+            lblProgamadorTXT.Size = new Size(231, 73);
             lblProgamadorTXT.TabIndex = 3;
             // 
             // lblDescricao
@@ -343,18 +343,16 @@
             lblDesfazerCurtida.Visible = false;
             lblDesfazerCurtida.Click += lblDesfazerCurtida_Click;
             // 
-            // lblDesfazerFavoritado
+            // lblPublicadoEm
             // 
-            lblDesfazerFavoritado.AutoSize = true;
-            lblDesfazerFavoritado.Enabled = false;
-            lblDesfazerFavoritado.ForeColor = Color.White;
-            lblDesfazerFavoritado.Location = new Point(723, 249);
-            lblDesfazerFavoritado.Name = "lblDesfazerFavoritado";
-            lblDesfazerFavoritado.Size = new Size(51, 15);
-            lblDesfazerFavoritado.TabIndex = 35;
-            lblDesfazerFavoritado.Text = "Desfazer";
-            lblDesfazerFavoritado.Visible = false;
-            lblDesfazerFavoritado.Click += lblDesfazerFavoritado_Click;
+            lblPublicadoEm.AutoSize = true;
+            lblPublicadoEm.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPublicadoEm.ForeColor = Color.White;
+            lblPublicadoEm.Location = new Point(431, 55);
+            lblPublicadoEm.Name = "lblPublicadoEm";
+            lblPublicadoEm.Size = new Size(103, 20);
+            lblPublicadoEm.TabIndex = 35;
+            lblPublicadoEm.Text = "publicado em";
             // 
             // Templates
             // 
@@ -362,7 +360,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(900, 552);
-            Controls.Add(lblDesfazerFavoritado);
+            Controls.Add(lblPublicadoEm);
             Controls.Add(lblDesfazerCurtida);
             Controls.Add(btnFavoritar);
             Controls.Add(btnCurtir);
@@ -429,6 +427,6 @@
         private Button btnCurtir;
         private Button btnFavoritar;
         private Label lblDesfazerCurtida;
-        private Label lblDesfazerFavoritado;
+        private Label lblPublicadoEm;
     }
 }

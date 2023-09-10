@@ -44,6 +44,18 @@ namespace pi_serasa_LinkeDev
             this.qtd_favoritados = qtd_favoritados;
         }
 
+        public Servico(int id, int id_assinante, string nome, string tipo, string publicado_em, double valor, string imagem_1, int vendidos)
+        {
+            this.id = id;
+            this.id_assinante = id_assinante;
+            this.nome = nome;
+            this.tipo = tipo;
+            this.publicado_em = publicado_em;
+            this.valor = valor;
+            this.imagem_1 = imagem_1;
+            this.vendidos = vendidos;
+        }
+
         public Servico(int id, string imagem_1)
         {
             this.id = id;
@@ -66,6 +78,39 @@ namespace pi_serasa_LinkeDev
         public string getImagem_1 { get { return imagem_1; } }
         public string getImagem_2 { get { return imagem_2; } }
         public string getImagem_3 { get { return imagem_3; } }
+
+        public List<Servico> buscaServicosDeAssinante(int id)
+        {
+            string query = $"SELECT id, id_assinante, nome, tipo, publicado_em, valor, imagem_1, vendidos FROM servicos WHERE id_assinante = {id};";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDadosServicoDeAssinante(linha);
+                servicos.Add(servico);
+            }
+
+            return servicos;
+        }
+
+        public Servico carregaDadosServicoDeAssinante(DataRow linha)
+        {
+            int id = int.Parse(linha["id"].ToString());
+            int id_assinante = int.Parse(linha["id_assinante"].ToString());
+            string nome = linha["nome"].ToString();
+            string tipo = linha["tipo"].ToString();
+            string publicado_em = (linha["publicado_em"].ToString());
+            double valor = double.Parse(linha["valor"].ToString());
+            string imagem_1 = linha["imagem_1"].ToString();
+            int vendidos = int.Parse(linha["vendidos"].ToString());
+
+            Servico servico = new Servico(id, id_assinante, nome, tipo, publicado_em,
+                valor, imagem_1, vendidos);
+
+            return servico;
+        }
 
         public List<Servico> buscaImagensTemplates()
         {
@@ -127,14 +172,31 @@ namespace pi_serasa_LinkeDev
             return servico;
         }
 
-        public Servico atualizaNumeros(int numeroCurtidas, int id)
+        public void atualizaCurtida(int numeroCurtidas, int id)
         {
-            string query1 = $"UPDATE servicos SET curtidas = {numeroCurtidas} WHERE id = {id};";
-            string query2 = $"SELECT vendidos, curtidas, qtd_favoritados FROM servicos WHERE id = {id};";
+            string query = $"UPDATE servicos SET curtidas = {numeroCurtidas} WHERE id = {id};";
 
-            Conexao.executaQuery(query1);
+            Conexao.executaQuery(query);
+        }
 
-            DataTable tabela = Conexao.executaQuery(query2);
+        public void atualizaFavoritado(int numeroFavoritados, int id)
+        {
+            string query = $"UPDATE servicos SET qtd_favoritados = {numeroFavoritados} WHERE id = {id};";
+
+            Conexao.executaQuery(query);
+        }
+        public void atualizaVendidos(int numeroFavoritados, int id)
+        {
+            string query = $"UPDATE servicos SET vendidos = {numeroFavoritados} WHERE id = {id};";
+
+            Conexao.executaQuery(query);
+        }
+
+        public Servico retornaNumeros(int id)
+        {
+            string query = $"SELECT vendidos, curtidas, qtd_favoritados FROM servicos WHERE id = {id};";
+
+            DataTable tabela = Conexao.executaQuery(query);
 
             Servico servico = carregaDadosNumericos(tabela.Rows[0]);
             return servico;

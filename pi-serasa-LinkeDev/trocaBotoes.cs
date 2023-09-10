@@ -37,7 +37,15 @@ namespace pi_serasa_LinkeDev
 
         public void picturePerfil_Click(object sender, EventArgs e)
         {
-            Form1.CarregaEntreTELAS(new PerfilCliente());
+            if (Program.usuario.isAssinante)
+            {
+                Form1.CarregaEntreTELAS(new PerfilAssinante());
+            }
+            else
+            {
+                Form1.CarregaEntreTELAS(new PerfilCliente());
+            }
+
         }
 
         private void btnAssine_Click(object sender, EventArgs e)

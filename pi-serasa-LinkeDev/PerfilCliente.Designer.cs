@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PerfilCliente));
             picturePerfil = new PictureBox();
             labelNome = new Label();
             lblFavoritos = new Label();
@@ -47,6 +46,14 @@
             label13 = new Label();
             label12 = new Label();
             label11 = new Label();
+            panelEditar = new Panel();
+            btnEditar2 = new Button();
+            label5 = new Label();
+            label3 = new Label();
+            label1 = new Label();
+            txtImagemIcone = new TextBox();
+            txtEditDescricao = new TextBox();
+            txtEditNome = new TextBox();
             lblComprados = new Label();
             panelFavoritos = new WiLBiT.WiLBiTPanel();
             label10 = new Label();
@@ -57,31 +64,22 @@
             label21 = new Label();
             label24 = new Label();
             btnEditar = new WiLBiT.WiLBiTButton();
-            panelEditar = new WiLBiT.WiLBiTPanel();
-            pictureBox2 = new PictureBox();
-            btnEditar2 = new WiLBiT.WiLBiTButton();
-            label3 = new Label();
-            label1 = new Label();
-            txtEditDescricao = new WiLBiT.WiLBiTTextBox();
-            txtEditNome = new WiLBiT.WiLBiTTextBox();
             ((System.ComponentModel.ISupportInitialize)picturePerfil).BeginInit();
             panelComprados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            panelEditar.SuspendLayout();
             panelFavoritos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            panelEditar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // picturePerfil
             // 
             picturePerfil.BackColor = Color.White;
-            picturePerfil.Image = (Image)resources.GetObject("picturePerfil.Image");
             picturePerfil.Location = new Point(319, 12);
             picturePerfil.Name = "picturePerfil";
-            picturePerfil.Size = new Size(131, 96);
+            picturePerfil.Size = new Size(131, 104);
             picturePerfil.SizeMode = PictureBoxSizeMode.StretchImage;
             picturePerfil.TabIndex = 10;
             picturePerfil.TabStop = false;
@@ -93,9 +91,8 @@
             labelNome.ForeColor = Color.White;
             labelNome.Location = new Point(358, 111);
             labelNome.Name = "labelNome";
-            labelNome.Size = new Size(53, 21);
+            labelNome.Size = new Size(0, 21);
             labelNome.TabIndex = 13;
-            labelNome.Text = "Nome";
             labelNome.Click += labelNome_Click;
             // 
             // lblFavoritos
@@ -126,9 +123,8 @@
             descricao.ForeColor = Color.White;
             descricao.Location = new Point(130, 27);
             descricao.Name = "descricao";
-            descricao.Size = new Size(163, 113);
+            descricao.Size = new Size(228, 113);
             descricao.TabIndex = 18;
-            descricao.Text = "njdnfvnwjobnwo\r\ngbnojgb gbbfgwb";
             // 
             // btnFechar
             // 
@@ -271,6 +267,89 @@
             label11.TabIndex = 9;
             label11.Text = "12/03/23";
             // 
+            // panelEditar
+            // 
+            panelEditar.BackColor = Color.FromArgb(49, 57, 60);
+            panelEditar.Controls.Add(btnEditar2);
+            panelEditar.Controls.Add(label5);
+            panelEditar.Controls.Add(label3);
+            panelEditar.Controls.Add(label1);
+            panelEditar.Controls.Add(txtImagemIcone);
+            panelEditar.Controls.Add(txtEditDescricao);
+            panelEditar.Controls.Add(txtEditNome);
+            panelEditar.ForeColor = Color.White;
+            panelEditar.Location = new Point(402, 143);
+            panelEditar.Name = "panelEditar";
+            panelEditar.Size = new Size(324, 311);
+            panelEditar.TabIndex = 19;
+            panelEditar.Visible = false;
+            // 
+            // btnEditar2
+            // 
+            btnEditar2.BackColor = Color.FromArgb(72, 116, 245);
+            btnEditar2.FlatAppearance.BorderSize = 0;
+            btnEditar2.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            btnEditar2.Location = new Point(122, 265);
+            btnEditar2.Name = "btnEditar2";
+            btnEditar2.Size = new Size(80, 35);
+            btnEditar2.TabIndex = 24;
+            btnEditar2.Text = "Editar";
+            btnEditar2.UseVisualStyleBackColor = false;
+            btnEditar2.Click += btnEditar2_Click_1;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(30, 9);
+            label5.Name = "label5";
+            label5.Size = new Size(79, 30);
+            label5.TabIndex = 23;
+            label5.Text = "Nome:";
+            // 
+            // label3
+            // 
+            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(30, 164);
+            label3.Name = "label3";
+            label3.Size = new Size(278, 62);
+            label3.TabIndex = 22;
+            label3.Text = "Insira um endereço de imagem (utilize o imgur):";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(30, 85);
+            label1.Name = "label1";
+            label1.Size = new Size(112, 30);
+            label1.TabIndex = 21;
+            label1.Text = "Descrição:";
+            // 
+            // txtImagemIcone
+            // 
+            txtImagemIcone.Location = new Point(32, 234);
+            txtImagemIcone.Name = "txtImagemIcone";
+            txtImagemIcone.Size = new Size(258, 23);
+            txtImagemIcone.TabIndex = 2;
+            // 
+            // txtEditDescricao
+            // 
+            txtEditDescricao.Location = new Point(32, 123);
+            txtEditDescricao.Name = "txtEditDescricao";
+            txtEditDescricao.Size = new Size(258, 23);
+            txtEditDescricao.TabIndex = 1;
+            // 
+            // txtEditNome
+            // 
+            txtEditNome.Location = new Point(30, 45);
+            txtEditNome.Name = "txtEditNome";
+            txtEditNome.Size = new Size(258, 23);
+            txtEditNome.TabIndex = 0;
+            // 
             // lblComprados
             // 
             lblComprados.AutoSize = true;
@@ -382,119 +461,6 @@
             btnEditar.UseVisualStyleBackColor = false;
             btnEditar.Click += btnEditar_Click;
             // 
-            // panelEditar
-            // 
-            panelEditar.BackColor = Color.FromArgb(49, 57, 60);
-            panelEditar.BorderColor = Color.PaleVioletRed;
-            panelEditar.BorderRadius = 6;
-            panelEditar.BorderSize = 0;
-            panelEditar.Controls.Add(pictureBox2);
-            panelEditar.Controls.Add(btnEditar2);
-            panelEditar.Controls.Add(label3);
-            panelEditar.Controls.Add(label1);
-            panelEditar.Controls.Add(txtEditDescricao);
-            panelEditar.Controls.Add(txtEditNome);
-            panelEditar.ForeColor = Color.White;
-            panelEditar.Location = new Point(205, 180);
-            panelEditar.Name = "panelEditar";
-            panelEditar.Size = new Size(488, 266);
-            panelEditar.TabIndex = 21;
-            panelEditar.Visible = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.White;
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(334, 55);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(131, 96);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 22;
-            pictureBox2.TabStop = false;
-            // 
-            // btnEditar2
-            // 
-            btnEditar2.BackColor = Color.FromArgb(72, 116, 245);
-            btnEditar2.BorderColor = Color.FromArgb(72, 116, 245);
-            btnEditar2.BorderRadius = 6;
-            btnEditar2.BorderSize = 0;
-            btnEditar2.FlatAppearance.BorderSize = 0;
-            btnEditar2.FlatStyle = FlatStyle.Flat;
-            btnEditar2.ForeColor = Color.White;
-            btnEditar2.Location = new Point(227, 215);
-            btnEditar2.Name = "btnEditar2";
-            btnEditar2.Size = new Size(50, 40);
-            btnEditar2.TabIndex = 22;
-            btnEditar2.Text = "Editar";
-            btnEditar2.UseVisualStyleBackColor = false;
-            btnEditar2.Click += btnEditar2_Click;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(56, 99);
-            label3.Name = "label3";
-            label3.Size = new Size(112, 30);
-            label3.TabIndex = 22;
-            label3.Text = "Descrição:";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(56, 21);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 30);
-            label1.TabIndex = 22;
-            label1.Text = "Nome";
-            // 
-            // txtEditDescricao
-            // 
-            txtEditDescricao.BackColor = SystemColors.Window;
-            txtEditDescricao.BorderColor = Color.FromArgb(72, 116, 245);
-            txtEditDescricao.BorderFocusColor = Color.DeepSkyBlue;
-            txtEditDescricao.BorderRadius = 4;
-            txtEditDescricao.BorderSize = 2;
-            txtEditDescricao.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEditDescricao.ForeColor = Color.FromArgb(64, 64, 64);
-            txtEditDescricao.Location = new Point(56, 133);
-            txtEditDescricao.Margin = new Padding(4);
-            txtEditDescricao.Multiline = false;
-            txtEditDescricao.Name = "txtEditDescricao";
-            txtEditDescricao.Padding = new Padding(10, 7, 10, 7);
-            txtEditDescricao.PasswordChar = false;
-            txtEditDescricao.PlaceholderColor = Color.DarkGray;
-            txtEditDescricao.PlaceholderText = "";
-            txtEditDescricao.Size = new Size(250, 29);
-            txtEditDescricao.TabIndex = 1;
-            txtEditDescricao.Texts = "";
-            txtEditDescricao.UnderlinedStyle = false;
-            // 
-            // txtEditNome
-            // 
-            txtEditNome.BackColor = SystemColors.Window;
-            txtEditNome.BorderColor = Color.FromArgb(72, 116, 245);
-            txtEditNome.BorderFocusColor = Color.DeepSkyBlue;
-            txtEditNome.BorderRadius = 4;
-            txtEditNome.BorderSize = 2;
-            txtEditNome.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEditNome.ForeColor = Color.FromArgb(64, 64, 64);
-            txtEditNome.Location = new Point(56, 55);
-            txtEditNome.Margin = new Padding(4);
-            txtEditNome.Multiline = false;
-            txtEditNome.Name = "txtEditNome";
-            txtEditNome.Padding = new Padding(10, 7, 10, 7);
-            txtEditNome.PasswordChar = false;
-            txtEditNome.PlaceholderColor = Color.DarkGray;
-            txtEditNome.PlaceholderText = "";
-            txtEditNome.Size = new Size(250, 29);
-            txtEditNome.TabIndex = 0;
-            txtEditNome.Texts = "";
-            txtEditNome.UnderlinedStyle = false;
-            // 
             // PerfilCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -521,13 +487,12 @@
             panelComprados.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            panelEditar.ResumeLayout(false);
+            panelEditar.PerformLayout();
             panelFavoritos.ResumeLayout(false);
             panelFavoritos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            panelEditar.ResumeLayout(false);
-            panelEditar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -562,12 +527,13 @@
         private Label label21;
         private Label label24;
         private WiLBiT.WiLBiTButton btnEditar;
-        private WiLBiT.WiLBiTPanel panelEditar;
-        private WiLBiT.WiLBiTButton btnEditar2;
+        private Panel panelEditar;
+        private Button btnEditar2;
+        private Label label5;
         private Label label3;
         private Label label1;
-        private WiLBiT.WiLBiTTextBox txtEditDescricao;
-        private WiLBiT.WiLBiTTextBox txtEditNome;
-        private PictureBox pictureBox2;
+        private TextBox txtImagemIcone;
+        private TextBox txtEditDescricao;
+        private TextBox txtEditNome;
     }
 }

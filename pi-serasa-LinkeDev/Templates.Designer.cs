@@ -47,6 +47,14 @@
             imagem2 = new PictureBox();
             imagem3 = new PictureBox();
             imagemPerfil = new PictureBox();
+            lblCurtidas = new Label();
+            lblNumeroCurtidas = new Label();
+            lblFavoritados = new Label();
+            lblNumeroFavoritados = new Label();
+            btnCurtir = new Button();
+            btnFavoritar = new Button();
+            lblDesfazerCurtida = new Label();
+            lblDesfazerFavoritado = new Label();
             ((System.ComponentModel.ISupportInitialize)imagem1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imagem2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imagem3).BeginInit();
@@ -157,7 +165,7 @@
             lblVendido.AutoSize = true;
             lblVendido.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblVendido.ForeColor = Color.White;
-            lblVendido.Location = new Point(452, 103);
+            lblVendido.Location = new Point(431, 103);
             lblVendido.Name = "lblVendido";
             lblVendido.Size = new Size(77, 20);
             lblVendido.TabIndex = 9;
@@ -168,7 +176,7 @@
             lblNumeroVendido.AutoSize = true;
             lblNumeroVendido.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblNumeroVendido.ForeColor = Color.White;
-            lblNumeroVendido.Location = new Point(525, 103);
+            lblNumeroVendido.Location = new Point(511, 104);
             lblNumeroVendido.Name = "lblNumeroVendido";
             lblNumeroVendido.Size = new Size(0, 20);
             lblNumeroVendido.TabIndex = 11;
@@ -256,12 +264,112 @@
             imagemPerfil.TabStop = false;
             imagemPerfil.Click += imagemPerfil_Click;
             // 
+            // lblCurtidas
+            // 
+            lblCurtidas.AutoSize = true;
+            lblCurtidas.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCurtidas.ForeColor = Color.White;
+            lblCurtidas.Location = new Point(437, 138);
+            lblCurtidas.Name = "lblCurtidas";
+            lblCurtidas.Size = new Size(71, 20);
+            lblCurtidas.TabIndex = 28;
+            lblCurtidas.Text = "Curtidas:";
+            // 
+            // lblNumeroCurtidas
+            // 
+            lblNumeroCurtidas.AutoSize = true;
+            lblNumeroCurtidas.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNumeroCurtidas.ForeColor = Color.White;
+            lblNumeroCurtidas.Location = new Point(504, 138);
+            lblNumeroCurtidas.Name = "lblNumeroCurtidas";
+            lblNumeroCurtidas.Size = new Size(0, 20);
+            lblNumeroCurtidas.TabIndex = 29;
+            // 
+            // lblFavoritados
+            // 
+            lblFavoritados.AutoSize = true;
+            lblFavoritados.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFavoritados.ForeColor = Color.White;
+            lblFavoritados.Location = new Point(409, 169);
+            lblFavoritados.Name = "lblFavoritados";
+            lblFavoritados.Size = new Size(95, 20);
+            lblFavoritados.TabIndex = 30;
+            lblFavoritados.Text = "Favoritados:";
+            // 
+            // lblNumeroFavoritados
+            // 
+            lblNumeroFavoritados.AutoSize = true;
+            lblNumeroFavoritados.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNumeroFavoritados.ForeColor = Color.White;
+            lblNumeroFavoritados.Location = new Point(500, 169);
+            lblNumeroFavoritados.Name = "lblNumeroFavoritados";
+            lblNumeroFavoritados.Size = new Size(0, 20);
+            lblNumeroFavoritados.TabIndex = 31;
+            // 
+            // btnCurtir
+            // 
+            btnCurtir.BackColor = Color.FromArgb(72, 116, 245);
+            btnCurtir.ForeColor = Color.White;
+            btnCurtir.Location = new Point(612, 165);
+            btnCurtir.Name = "btnCurtir";
+            btnCurtir.Size = new Size(91, 43);
+            btnCurtir.TabIndex = 32;
+            btnCurtir.Text = "Curtir";
+            btnCurtir.UseVisualStyleBackColor = false;
+            btnCurtir.Click += btnCurtir_Click;
+            // 
+            // btnFavoritar
+            // 
+            btnFavoritar.BackColor = Color.FromArgb(72, 116, 245);
+            btnFavoritar.ForeColor = Color.White;
+            btnFavoritar.Location = new Point(612, 235);
+            btnFavoritar.Name = "btnFavoritar";
+            btnFavoritar.Size = new Size(91, 43);
+            btnFavoritar.TabIndex = 33;
+            btnFavoritar.Text = "Favoritar";
+            btnFavoritar.UseVisualStyleBackColor = false;
+            btnFavoritar.Click += btnFavoritar_Click;
+            // 
+            // lblDesfazerCurtida
+            // 
+            lblDesfazerCurtida.AutoSize = true;
+            lblDesfazerCurtida.Enabled = false;
+            lblDesfazerCurtida.ForeColor = Color.White;
+            lblDesfazerCurtida.Location = new Point(723, 177);
+            lblDesfazerCurtida.Name = "lblDesfazerCurtida";
+            lblDesfazerCurtida.Size = new Size(51, 15);
+            lblDesfazerCurtida.TabIndex = 34;
+            lblDesfazerCurtida.Text = "Desfazer";
+            lblDesfazerCurtida.Visible = false;
+            lblDesfazerCurtida.Click += lblDesfazerCurtida_Click;
+            // 
+            // lblDesfazerFavoritado
+            // 
+            lblDesfazerFavoritado.AutoSize = true;
+            lblDesfazerFavoritado.Enabled = false;
+            lblDesfazerFavoritado.ForeColor = Color.White;
+            lblDesfazerFavoritado.Location = new Point(723, 249);
+            lblDesfazerFavoritado.Name = "lblDesfazerFavoritado";
+            lblDesfazerFavoritado.Size = new Size(51, 15);
+            lblDesfazerFavoritado.TabIndex = 35;
+            lblDesfazerFavoritado.Text = "Desfazer";
+            lblDesfazerFavoritado.Visible = false;
+            lblDesfazerFavoritado.Click += lblDesfazerFavoritado_Click;
+            // 
             // Templates
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(900, 552);
+            Controls.Add(lblDesfazerFavoritado);
+            Controls.Add(lblDesfazerCurtida);
+            Controls.Add(btnFavoritar);
+            Controls.Add(btnCurtir);
+            Controls.Add(lblNumeroFavoritados);
+            Controls.Add(lblFavoritados);
+            Controls.Add(lblNumeroCurtidas);
+            Controls.Add(lblCurtidas);
             Controls.Add(imagemPerfil);
             Controls.Add(imagem3);
             Controls.Add(imagem2);
@@ -314,5 +422,13 @@
         private PictureBox imagem2;
         private PictureBox imagem3;
         private PictureBox imagemPerfil;
+        private Label lblCurtidas;
+        private Label lblNumeroCurtidas;
+        private Label lblFavoritados;
+        private Label lblNumeroFavoritados;
+        private Button btnCurtir;
+        private Button btnFavoritar;
+        private Label lblDesfazerCurtida;
+        private Label lblDesfazerFavoritado;
     }
 }

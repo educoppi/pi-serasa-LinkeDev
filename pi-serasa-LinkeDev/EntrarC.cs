@@ -47,9 +47,6 @@ namespace pi_serasa_LinkeDev
                 return;
             }
 
-            //MESSAGEBOX CRIADA PARA SABER SE O USUARIO QUE ENTROU É ASSINANTE (TRUE) OU CLIENTE (FALSE)
-
-
             Program.usuario = usuario;
 
             if (Program.usuario.isAssinante)

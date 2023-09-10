@@ -56,6 +56,12 @@ namespace pi_serasa_LinkeDev
             this.imagem_2 = imagem_2;
             this.imagem_3 = imagem_3;
         }
+        public Servico (int curtidas, int vendidos, int qtd_favoritados)
+        {
+            this.curtidas = curtidas;
+            this.vendidos = vendidos;
+            this.qtd_favoritados = qtd_favoritados;
+        }
 
         public string getImagem_1 { get { return imagem_1; } }
         public string getImagem_2 { get { return imagem_2; } }
@@ -121,6 +127,27 @@ namespace pi_serasa_LinkeDev
             return servico;
         }
 
+        public Servico atualizaNumeros(int numeroCurtidas, int id)
+        {
+            string query1 = $"UPDATE servicos SET curtidas = {numeroCurtidas} WHERE id = {id};";
+            string query2 = $"SELECT vendidos, curtidas, qtd_favoritados FROM servicos WHERE id = {id};";
 
+            Conexao.executaQuery(query1);
+
+            DataTable tabela = Conexao.executaQuery(query2);
+
+            Servico servico = carregaDadosNumericos(tabela.Rows[0]);
+            return servico;
+        }
+        public Servico carregaDadosNumericos(DataRow linha)
+        {
+            int vendidos = int.Parse(linha["vendidos"].ToString());
+            int curtidas = int.Parse(linha["curtidas"].ToString());
+            int qtd_favoritados = int.Parse(linha["qtd_favoritados"].ToString());
+
+            Servico servico = new Servico(curtidas, vendidos, qtd_favoritados);
+
+            return servico;
+        }
     }
 }

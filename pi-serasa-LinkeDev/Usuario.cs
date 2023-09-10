@@ -10,7 +10,7 @@ namespace pi_serasa_LinkeDev
     internal class Usuario
     {
         public int id;
-        private string email;
+        public string email;
         private string senha;
         public bool isAssinante;
 
@@ -38,6 +38,10 @@ namespace pi_serasa_LinkeDev
             this.email = email;
             this.senha = senha;
             this.isAssinante = isAssinante;
+        }
+        public Usuario(string email)
+        {
+            this.email = email;
         }
 
         public List<Usuario> buscaTodos()
@@ -141,6 +145,25 @@ namespace pi_serasa_LinkeDev
 
             Conexao.executaQuery(query1);
             Conexao.executaQuery(query2);
+        }
+
+        public Usuario retornaEmailUsuario(int id)
+        {
+            string query = $"SELECT email FROM usuario WHERE id = {id};";
+
+            DataTable tabela = Conexao.executaQuery(query);
+
+            Usuario usuario = carregaDadosEmail(tabela.Rows[0]);
+            return usuario;
+        }
+
+        public Usuario carregaDadosEmail(DataRow linha)
+        {
+            string email = linha["email"].ToString();
+
+            Usuario usuario = new Usuario(email);
+
+            return usuario;
         }
     }
 }

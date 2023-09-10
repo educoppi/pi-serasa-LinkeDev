@@ -33,7 +33,19 @@ namespace pi_serasa_LinkeDev
                 return null;
 
             Cliente cliente = carregaDados(tabela.Rows[0]);
+            return cliente;
+        }
 
+        public Cliente editaCliente(string nome, string descricao, string imagem_icon, int id)
+        {
+            string query1 = $"UPDATE cliente SET nome = '{nome}', descricao = '{descricao}', imagem_icon = '{imagem_icon}' WHERE id = {id};";
+            string query2 = $"SELECT * FROM cliente WHERE id = {id}";
+
+            Conexao.executaQuery(query1);
+
+            DataTable tabela = Conexao.executaQuery(query2);
+
+            Cliente cliente = carregaDados(tabela.Rows[0]);
             return cliente;
         }
 

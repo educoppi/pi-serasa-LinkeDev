@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(trocaBotoes));
             btnAssine = new WiLBiT.WiLBiTButton();
             picturePerfil = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)picturePerfil).BeginInit();
@@ -54,10 +53,9 @@
             // 
             // picturePerfil
             // 
-            picturePerfil.Image = (Image)resources.GetObject("picturePerfil.Image");
-            picturePerfil.Location = new Point(163, 6);
+            picturePerfil.Location = new Point(163, -3);
             picturePerfil.Name = "picturePerfil";
-            picturePerfil.Size = new Size(78, 62);
+            picturePerfil.Size = new Size(78, 71);
             picturePerfil.SizeMode = PictureBoxSizeMode.StretchImage;
             picturePerfil.TabIndex = 9;
             picturePerfil.TabStop = false;

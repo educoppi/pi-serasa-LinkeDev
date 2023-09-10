@@ -6,6 +6,8 @@ namespace pi_serasa_LinkeDev
         public static Servico servico;
         public static Assinante assinante;
         public static Cliente cliente;
+        public static int idUsuarioCurtiu;
+        public static int idUsuarioFavoritou;
 
         public static void servicoClicado(Servico servico)
         {

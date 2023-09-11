@@ -28,603 +28,604 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnADD = new WiLBiT.WiLBiTButton();
-            picturePerfil = new PictureBox();
-            lblNome = new Label();
-            descricao = new Label();
-            label4 = new Label();
-            lblVendidos = new Label();
-            label9 = new Label();
-            lblComprados = new Label();
-            btnFechar = new WiLBiT.WiLBiTButton();
-            btnEditar = new WiLBiT.WiLBiTButton();
-            panelEditar = new Panel();
-            lblFechar = new Label();
-            btnEditar2 = new Button();
-            txtEditImagemIcon = new TextBox();
-            label6 = new Label();
-            txtEditDescricao = new TextBox();
-            label5 = new Label();
-            txtEditNome = new TextBox();
-            label3 = new Label();
-            panelASS = new Panel();
-            panelPostagem = new Panel();
-            btnEnviar = new Button();
-            txtImagem3 = new TextBox();
-            txtImagem2 = new TextBox();
-            txtImagem1 = new TextBox();
-            label19 = new Label();
-            label11 = new Label();
-            numericValor = new NumericUpDown();
-            panel2 = new Panel();
-            rbDesktop = new RadioButton();
-            rbFullStack = new RadioButton();
-            rbFrontEnd = new RadioButton();
-            rbBackEnd = new RadioButton();
-            rbBancoDeDados = new RadioButton();
-            rbGames = new RadioButton();
-            rbWeb = new RadioButton();
-            rbMobile = new RadioButton();
-            rbTemplates = new RadioButton();
-            label10 = new Label();
-            txtDescricaoServico = new TextBox();
-            label8 = new Label();
-            txtNomeServico = new TextBox();
-            label7 = new Label();
-            panelCompradosASS = new Panel();
-            panelASS2 = new Panel();
-            label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)picturePerfil).BeginInit();
-            panelEditar.SuspendLayout();
-            panelPostagem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numericValor).BeginInit();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            this.btnADD = new WiLBiT.WiLBiTButton();
+            this.picturePerfil = new System.Windows.Forms.PictureBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.descricao = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.lblVendidos = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblComprados = new System.Windows.Forms.Label();
+            this.btnFechar = new WiLBiT.WiLBiTButton();
+            this.btnEditar = new WiLBiT.WiLBiTButton();
+            this.panelEditar = new System.Windows.Forms.Panel();
+            this.lblFechar = new System.Windows.Forms.Label();
+            this.btnEditar2 = new System.Windows.Forms.Button();
+            this.txtEditImagemIcon = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtEditDescricao = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtEditNome = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panelASS = new System.Windows.Forms.Panel();
+            this.panelPostagem = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnEnviar = new System.Windows.Forms.Button();
+            this.txtImagem3 = new System.Windows.Forms.TextBox();
+            this.txtImagem2 = new System.Windows.Forms.TextBox();
+            this.txtImagem1 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.numericValor = new System.Windows.Forms.NumericUpDown();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.rbDesktop = new System.Windows.Forms.RadioButton();
+            this.rbFullStack = new System.Windows.Forms.RadioButton();
+            this.rbFrontEnd = new System.Windows.Forms.RadioButton();
+            this.rbBackEnd = new System.Windows.Forms.RadioButton();
+            this.rbBancoDeDados = new System.Windows.Forms.RadioButton();
+            this.rbGames = new System.Windows.Forms.RadioButton();
+            this.rbWeb = new System.Windows.Forms.RadioButton();
+            this.rbMobile = new System.Windows.Forms.RadioButton();
+            this.rbTemplates = new System.Windows.Forms.RadioButton();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtDescricaoServico = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtNomeServico = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.panelCompradosASS = new System.Windows.Forms.Panel();
+            this.panelASS2 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
+            this.panelEditar.SuspendLayout();
+            this.panelPostagem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericValor)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // btnADD
             // 
-            btnADD.BackColor = Color.FromArgb(72, 116, 245);
-            btnADD.BorderColor = Color.FromArgb(72, 116, 245);
-            btnADD.BorderRadius = 30;
-            btnADD.BorderSize = 0;
-            btnADD.FlatAppearance.BorderSize = 0;
-            btnADD.FlatStyle = FlatStyle.Flat;
-            btnADD.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            btnADD.ForeColor = Color.White;
-            btnADD.Location = new Point(54, 166);
-            btnADD.Name = "btnADD";
-            btnADD.Size = new Size(63, 58);
-            btnADD.TabIndex = 1;
-            btnADD.Text = "+";
-            btnADD.UseVisualStyleBackColor = false;
-            btnADD.Click += btnADD_Click;
+            this.btnADD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnADD.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnADD.BorderRadius = 30;
+            this.btnADD.BorderSize = 0;
+            this.btnADD.FlatAppearance.BorderSize = 0;
+            this.btnADD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnADD.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnADD.ForeColor = System.Drawing.Color.White;
+            this.btnADD.Location = new System.Drawing.Point(54, 166);
+            this.btnADD.Name = "btnADD";
+            this.btnADD.Size = new System.Drawing.Size(63, 58);
+            this.btnADD.TabIndex = 1;
+            this.btnADD.Text = "+";
+            this.btnADD.UseVisualStyleBackColor = false;
+            this.btnADD.Click += new System.EventHandler(this.btnADD_Click_1);
             // 
             // picturePerfil
             // 
-            picturePerfil.BackColor = Color.White;
-            picturePerfil.Location = new Point(344, 12);
-            picturePerfil.Name = "picturePerfil";
-            picturePerfil.Size = new Size(131, 96);
-            picturePerfil.SizeMode = PictureBoxSizeMode.StretchImage;
-            picturePerfil.TabIndex = 11;
-            picturePerfil.TabStop = false;
+            this.picturePerfil.BackColor = System.Drawing.Color.White;
+            this.picturePerfil.Location = new System.Drawing.Point(344, 12);
+            this.picturePerfil.Name = "picturePerfil";
+            this.picturePerfil.Size = new System.Drawing.Size(131, 96);
+            this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturePerfil.TabIndex = 11;
+            this.picturePerfil.TabStop = false;
             // 
             // lblNome
             // 
-            lblNome.AutoSize = true;
-            lblNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblNome.ForeColor = Color.White;
-            lblNome.Location = new Point(387, 111);
-            lblNome.Name = "lblNome";
-            lblNome.Size = new Size(0, 21);
-            lblNome.TabIndex = 13;
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblNome.ForeColor = System.Drawing.Color.White;
+            this.lblNome.Location = new System.Drawing.Point(387, 111);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(0, 21);
+            this.lblNome.TabIndex = 13;
             // 
             // descricao
             // 
-            descricao.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            descricao.ForeColor = Color.White;
-            descricao.Location = new Point(102, 50);
-            descricao.Name = "descricao";
-            descricao.Size = new Size(213, 113);
-            descricao.TabIndex = 20;
+            this.descricao.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.descricao.ForeColor = System.Drawing.Color.White;
+            this.descricao.Location = new System.Drawing.Point(102, 50);
+            this.descricao.Name = "descricao";
+            this.descricao.Size = new System.Drawing.Size(213, 113);
+            this.descricao.TabIndex = 20;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(5, 46);
-            label4.Name = "label4";
-            label4.Size = new Size(112, 30);
-            label4.TabIndex = 19;
-            label4.Text = "Descrição:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(5, 46);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 30);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Descrição:";
             // 
             // lblVendidos
             // 
-            lblVendidos.AutoSize = true;
-            lblVendidos.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblVendidos.ForeColor = Color.White;
-            lblVendidos.Location = new Point(85, 12);
-            lblVendidos.Name = "lblVendidos";
-            lblVendidos.Size = new Size(0, 20);
-            lblVendidos.TabIndex = 22;
+            this.lblVendidos.AutoSize = true;
+            this.lblVendidos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblVendidos.ForeColor = System.Drawing.Color.White;
+            this.lblVendidos.Location = new System.Drawing.Point(85, 12);
+            this.lblVendidos.Name = "lblVendidos";
+            this.lblVendidos.Size = new System.Drawing.Size(0, 20);
+            this.lblVendidos.TabIndex = 22;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.ForeColor = Color.White;
-            label9.Location = new Point(12, 12);
-            label9.Name = "label9";
-            label9.Size = new Size(77, 20);
-            label9.TabIndex = 21;
-            label9.Text = "Vendidos:";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(12, 12);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 20);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Vendidos:";
             // 
             // lblComprados
             // 
-            lblComprados.AutoSize = true;
-            lblComprados.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblComprados.ForeColor = Color.White;
-            lblComprados.Location = new Point(532, 204);
-            lblComprados.Name = "lblComprados";
-            lblComprados.Size = new Size(170, 30);
-            lblComprados.TabIndex = 23;
-            lblComprados.Text = "Itens Comprados";
+            this.lblComprados.AutoSize = true;
+            this.lblComprados.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblComprados.ForeColor = System.Drawing.Color.White;
+            this.lblComprados.Location = new System.Drawing.Point(532, 204);
+            this.lblComprados.Name = "lblComprados";
+            this.lblComprados.Size = new System.Drawing.Size(170, 30);
+            this.lblComprados.TabIndex = 23;
+            this.lblComprados.Text = "Itens Comprados";
             // 
             // btnFechar
             // 
-            btnFechar.BackColor = Color.FromArgb(72, 116, 245);
-            btnFechar.BorderColor = Color.FromArgb(72, 116, 245);
-            btnFechar.BorderRadius = 6;
-            btnFechar.BorderSize = 0;
-            btnFechar.FlatAppearance.BorderSize = 0;
-            btnFechar.FlatStyle = FlatStyle.Flat;
-            btnFechar.ForeColor = Color.White;
-            btnFechar.Location = new Point(729, 12);
-            btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(60, 40);
-            btnFechar.TabIndex = 24;
-            btnFechar.Text = "X";
-            btnFechar.UseVisualStyleBackColor = false;
-            btnFechar.Click += btnFechar_Click;
+            this.btnFechar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnFechar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnFechar.BorderRadius = 6;
+            this.btnFechar.BorderSize = 0;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.ForeColor = System.Drawing.Color.White;
+            this.btnFechar.Location = new System.Drawing.Point(729, 12);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(60, 40);
+            this.btnFechar.TabIndex = 24;
+            this.btnFechar.Text = "X";
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
             // 
             // btnEditar
             // 
-            btnEditar.BackColor = Color.FromArgb(72, 116, 245);
-            btnEditar.BorderColor = Color.FromArgb(72, 116, 245);
-            btnEditar.BorderRadius = 6;
-            btnEditar.BorderSize = 0;
-            btnEditar.FlatAppearance.BorderSize = 0;
-            btnEditar.FlatStyle = FlatStyle.Flat;
-            btnEditar.ForeColor = Color.White;
-            btnEditar.Location = new Point(665, 38);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(50, 40);
-            btnEditar.TabIndex = 25;
-            btnEditar.Text = "Editar";
-            btnEditar.UseVisualStyleBackColor = false;
-            btnEditar.Click += btnEditar_Click;
+            this.btnEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnEditar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnEditar.BorderRadius = 6;
+            this.btnEditar.BorderSize = 0;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.ForeColor = System.Drawing.Color.White;
+            this.btnEditar.Location = new System.Drawing.Point(665, 38);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(50, 40);
+            this.btnEditar.TabIndex = 25;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click_1);
             // 
             // panelEditar
             // 
-            panelEditar.BackColor = Color.FromArgb(49, 57, 60);
-            panelEditar.Controls.Add(lblFechar);
-            panelEditar.Controls.Add(btnEditar2);
-            panelEditar.Controls.Add(txtEditImagemIcon);
-            panelEditar.Controls.Add(label6);
-            panelEditar.Controls.Add(txtEditDescricao);
-            panelEditar.Controls.Add(label5);
-            panelEditar.Controls.Add(txtEditNome);
-            panelEditar.Controls.Add(label3);
-            panelEditar.Location = new Point(407, 24);
-            panelEditar.Name = "panelEditar";
-            panelEditar.Size = new Size(329, 342);
-            panelEditar.TabIndex = 27;
-            panelEditar.Visible = false;
+            this.panelEditar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.panelEditar.Controls.Add(this.lblFechar);
+            this.panelEditar.Controls.Add(this.btnEditar2);
+            this.panelEditar.Controls.Add(this.txtEditImagemIcon);
+            this.panelEditar.Controls.Add(this.label6);
+            this.panelEditar.Controls.Add(this.txtEditDescricao);
+            this.panelEditar.Controls.Add(this.label5);
+            this.panelEditar.Controls.Add(this.txtEditNome);
+            this.panelEditar.Controls.Add(this.label3);
+            this.panelEditar.Location = new System.Drawing.Point(146, 128);
+            this.panelEditar.Name = "panelEditar";
+            this.panelEditar.Size = new System.Drawing.Size(329, 342);
+            this.panelEditar.TabIndex = 27;
+            this.panelEditar.Visible = false;
             // 
             // lblFechar
             // 
-            lblFechar.AutoSize = true;
-            lblFechar.Font = new Font("Segoe UI", 20.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblFechar.ForeColor = Color.IndianRed;
-            lblFechar.Location = new Point(289, 4);
-            lblFechar.Name = "lblFechar";
-            lblFechar.Size = new Size(35, 38);
-            lblFechar.TabIndex = 29;
-            lblFechar.Text = "X";
-            lblFechar.Click += lblFechar_Click;
+            this.lblFechar.AutoSize = true;
+            this.lblFechar.Font = new System.Drawing.Font("Segoe UI", 20.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblFechar.ForeColor = System.Drawing.Color.IndianRed;
+            this.lblFechar.Location = new System.Drawing.Point(289, 4);
+            this.lblFechar.Name = "lblFechar";
+            this.lblFechar.Size = new System.Drawing.Size(35, 38);
+            this.lblFechar.TabIndex = 29;
+            this.lblFechar.Text = "X";
+            this.lblFechar.Click += new System.EventHandler(this.lblFechar_Click_1);
             // 
             // btnEditar2
             // 
-            btnEditar2.BackColor = Color.FromArgb(72, 116, 245);
-            btnEditar2.ForeColor = Color.White;
-            btnEditar2.Location = new Point(126, 299);
-            btnEditar2.Name = "btnEditar2";
-            btnEditar2.Size = new Size(75, 34);
-            btnEditar2.TabIndex = 34;
-            btnEditar2.Text = "Editar";
-            btnEditar2.UseVisualStyleBackColor = false;
-            btnEditar2.Click += btnEditar2_Click_1;
+            this.btnEditar2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnEditar2.ForeColor = System.Drawing.Color.White;
+            this.btnEditar2.Location = new System.Drawing.Point(126, 299);
+            this.btnEditar2.Name = "btnEditar2";
+            this.btnEditar2.Size = new System.Drawing.Size(75, 34);
+            this.btnEditar2.TabIndex = 34;
+            this.btnEditar2.Text = "Editar";
+            this.btnEditar2.UseVisualStyleBackColor = false;
+            this.btnEditar2.Click += new System.EventHandler(this.btnEditar2_Click_2);
             // 
             // txtEditImagemIcon
             // 
-            txtEditImagemIcon.Location = new Point(15, 266);
-            txtEditImagemIcon.Name = "txtEditImagemIcon";
-            txtEditImagemIcon.Size = new Size(292, 23);
-            txtEditImagemIcon.TabIndex = 33;
+            this.txtEditImagemIcon.Location = new System.Drawing.Point(15, 266);
+            this.txtEditImagemIcon.Name = "txtEditImagemIcon";
+            this.txtEditImagemIcon.Size = new System.Drawing.Size(292, 23);
+            this.txtEditImagemIcon.TabIndex = 33;
             // 
             // label6
             // 
-            label6.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(15, 197);
-            label6.Name = "label6";
-            label6.Size = new Size(292, 64);
-            label6.TabIndex = 32;
-            label6.Text = "Insira o endereço de uma imagem (utilize o imgur):";
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(15, 197);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(292, 64);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "Insira o endereço de uma imagem (utilize o imgur):";
             // 
             // txtEditDescricao
             // 
-            txtEditDescricao.Location = new Point(15, 144);
-            txtEditDescricao.Name = "txtEditDescricao";
-            txtEditDescricao.Size = new Size(292, 23);
-            txtEditDescricao.TabIndex = 31;
+            this.txtEditDescricao.Location = new System.Drawing.Point(15, 144);
+            this.txtEditDescricao.Name = "txtEditDescricao";
+            this.txtEditDescricao.Size = new System.Drawing.Size(292, 23);
+            this.txtEditDescricao.TabIndex = 31;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.White;
-            label5.Location = new Point(15, 106);
-            label5.Name = "label5";
-            label5.Size = new Size(112, 30);
-            label5.TabIndex = 30;
-            label5.Text = "Descrição:";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(15, 106);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(112, 30);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Descrição:";
             // 
             // txtEditNome
             // 
-            txtEditNome.Location = new Point(15, 53);
-            txtEditNome.Name = "txtEditNome";
-            txtEditNome.Size = new Size(292, 23);
-            txtEditNome.TabIndex = 29;
+            this.txtEditNome.Location = new System.Drawing.Point(15, 53);
+            this.txtEditNome.Name = "txtEditNome";
+            this.txtEditNome.Size = new System.Drawing.Size(292, 23);
+            this.txtEditNome.TabIndex = 29;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(15, 19);
-            label3.Name = "label3";
-            label3.Size = new Size(79, 30);
-            label3.TabIndex = 28;
-            label3.Text = "Nome:";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(15, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(79, 30);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Nome:";
             // 
             // panelASS
             // 
-            panelASS.BackColor = Color.FromArgb(49, 57, 60);
-            panelASS.Location = new Point(379, 208);
-            panelASS.Name = "panelASS";
-            panelASS.Size = new Size(549, 241);
-            panelASS.TabIndex = 28;
+            this.panelASS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.panelASS.Location = new System.Drawing.Point(379, 208);
+            this.panelASS.Name = "panelASS";
+            this.panelASS.Size = new System.Drawing.Size(549, 241);
+            this.panelASS.TabIndex = 28;
             // 
             // panelPostagem
             // 
-            panelPostagem.BackColor = Color.FromArgb(49, 57, 60);
-            panelPostagem.Controls.Add(label1);
-            panelPostagem.Controls.Add(btnEnviar);
-            panelPostagem.Controls.Add(panelASS);
-            panelPostagem.Controls.Add(txtImagem3);
-            panelPostagem.Controls.Add(txtImagem2);
-            panelPostagem.Controls.Add(txtImagem1);
-            panelPostagem.Controls.Add(label19);
-            panelPostagem.Controls.Add(label11);
-            panelPostagem.Controls.Add(numericValor);
-            panelPostagem.Controls.Add(panel2);
-            panelPostagem.Controls.Add(label10);
-            panelPostagem.Controls.Add(txtDescricaoServico);
-            panelPostagem.Controls.Add(label8);
-            panelPostagem.Controls.Add(txtNomeServico);
-            panelPostagem.Controls.Add(label7);
-            panelPostagem.Location = new Point(26, 50);
-            panelPostagem.Name = "panelPostagem";
-            panelPostagem.Size = new Size(375, 493);
-            panelPostagem.TabIndex = 29;
-            panelPostagem.Visible = false;
-            // 
-            // btnEnviar
-            // 
-            btnEnviar.BackColor = Color.FromArgb(72, 116, 245);
-            btnEnviar.ForeColor = Color.White;
-            btnEnviar.Location = new Point(146, 465);
-            btnEnviar.Name = "btnEnviar";
-            btnEnviar.Size = new Size(75, 23);
-            btnEnviar.TabIndex = 47;
-            btnEnviar.Text = "Enviar";
-            btnEnviar.UseVisualStyleBackColor = false;
-            btnEnviar.Click += button1_Click;
-            // 
-            // txtImagem3
-            // 
-            txtImagem3.Location = new Point(34, 437);
-            txtImagem3.Name = "txtImagem3";
-            txtImagem3.Size = new Size(320, 23);
-            txtImagem3.TabIndex = 46;
-            // 
-            // txtImagem2
-            // 
-            txtImagem2.Location = new Point(34, 398);
-            txtImagem2.Name = "txtImagem2";
-            txtImagem2.Size = new Size(320, 23);
-            txtImagem2.TabIndex = 45;
-            // 
-            // txtImagem1
-            // 
-            txtImagem1.Location = new Point(34, 360);
-            txtImagem1.Name = "txtImagem1";
-            txtImagem1.Size = new Size(320, 23);
-            txtImagem1.TabIndex = 44;
-            // 
-            // label19
-            // 
-            label19.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label19.ForeColor = Color.White;
-            label19.Location = new Point(35, 291);
-            label19.Name = "label19";
-            label19.Size = new Size(290, 66);
-            label19.TabIndex = 43;
-            label19.Text = "Insira o Endereço de três imagens (utilize o imgur):";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.ForeColor = Color.White;
-            label11.Location = new Point(34, 257);
-            label11.Name = "label11";
-            label11.Size = new Size(70, 30);
-            label11.TabIndex = 42;
-            label11.Text = "Valor:";
-            // 
-            // numericValor
-            // 
-            numericValor.Location = new Point(114, 264);
-            numericValor.Name = "numericValor";
-            numericValor.Size = new Size(120, 23);
-            numericValor.TabIndex = 41;
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(rbDesktop);
-            panel2.Controls.Add(rbFullStack);
-            panel2.Controls.Add(rbFrontEnd);
-            panel2.Controls.Add(rbBackEnd);
-            panel2.Controls.Add(rbBancoDeDados);
-            panel2.Controls.Add(rbGames);
-            panel2.Controls.Add(rbWeb);
-            panel2.Controls.Add(rbMobile);
-            panel2.Controls.Add(rbTemplates);
-            panel2.Location = new Point(25, 150);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(300, 106);
-            panel2.TabIndex = 40;
-            // 
-            // rbDesktop
-            // 
-            rbDesktop.AutoSize = true;
-            rbDesktop.ForeColor = Color.White;
-            rbDesktop.Location = new Point(227, 9);
-            rbDesktop.Name = "rbDesktop";
-            rbDesktop.Size = new Size(67, 19);
-            rbDesktop.TabIndex = 8;
-            rbDesktop.TabStop = true;
-            rbDesktop.Text = "desktop";
-            rbDesktop.UseVisualStyleBackColor = true;
-            // 
-            // rbFullStack
-            // 
-            rbFullStack.AutoSize = true;
-            rbFullStack.ForeColor = Color.White;
-            rbFullStack.Location = new Point(110, 83);
-            rbFullStack.Name = "rbFullStack";
-            rbFullStack.Size = new Size(74, 19);
-            rbFullStack.TabIndex = 7;
-            rbFullStack.TabStop = true;
-            rbFullStack.Text = "full-stack";
-            rbFullStack.UseVisualStyleBackColor = true;
-            // 
-            // rbFrontEnd
-            // 
-            rbFrontEnd.AutoSize = true;
-            rbFrontEnd.ForeColor = Color.White;
-            rbFrontEnd.Location = new Point(111, 58);
-            rbFrontEnd.Name = "rbFrontEnd";
-            rbFrontEnd.Size = new Size(76, 19);
-            rbFrontEnd.TabIndex = 6;
-            rbFrontEnd.TabStop = true;
-            rbFrontEnd.Text = "front-end";
-            rbFrontEnd.UseVisualStyleBackColor = true;
-            // 
-            // rbBackEnd
-            // 
-            rbBackEnd.AutoSize = true;
-            rbBackEnd.ForeColor = Color.White;
-            rbBackEnd.Location = new Point(111, 33);
-            rbBackEnd.Name = "rbBackEnd";
-            rbBackEnd.Size = new Size(75, 19);
-            rbBackEnd.TabIndex = 5;
-            rbBackEnd.TabStop = true;
-            rbBackEnd.Text = "back-end";
-            rbBackEnd.UseVisualStyleBackColor = true;
-            // 
-            // rbBancoDeDados
-            // 
-            rbBancoDeDados.AutoSize = true;
-            rbBancoDeDados.ForeColor = Color.White;
-            rbBancoDeDados.Location = new Point(111, 8);
-            rbBancoDeDados.Name = "rbBancoDeDados";
-            rbBancoDeDados.Size = new Size(109, 19);
-            rbBancoDeDados.TabIndex = 4;
-            rbBancoDeDados.TabStop = true;
-            rbBancoDeDados.Text = "banco de dados";
-            rbBancoDeDados.UseVisualStyleBackColor = true;
-            // 
-            // rbGames
-            // 
-            rbGames.AutoSize = true;
-            rbGames.ForeColor = Color.White;
-            rbGames.Location = new Point(18, 83);
-            rbGames.Name = "rbGames";
-            rbGames.Size = new Size(60, 19);
-            rbGames.TabIndex = 3;
-            rbGames.TabStop = true;
-            rbGames.Text = "games";
-            rbGames.UseVisualStyleBackColor = true;
-            // 
-            // rbWeb
-            // 
-            rbWeb.AutoSize = true;
-            rbWeb.ForeColor = Color.White;
-            rbWeb.Location = new Point(18, 58);
-            rbWeb.Name = "rbWeb";
-            rbWeb.Size = new Size(47, 19);
-            rbWeb.TabIndex = 2;
-            rbWeb.TabStop = true;
-            rbWeb.Text = "web";
-            rbWeb.UseVisualStyleBackColor = true;
-            // 
-            // rbMobile
-            // 
-            rbMobile.AutoSize = true;
-            rbMobile.ForeColor = Color.White;
-            rbMobile.Location = new Point(18, 32);
-            rbMobile.Name = "rbMobile";
-            rbMobile.Size = new Size(62, 19);
-            rbMobile.TabIndex = 1;
-            rbMobile.TabStop = true;
-            rbMobile.Text = "mobile";
-            rbMobile.UseVisualStyleBackColor = true;
-            // 
-            // rbTemplates
-            // 
-            rbTemplates.AutoSize = true;
-            rbTemplates.ForeColor = Color.White;
-            rbTemplates.Location = new Point(18, 8);
-            rbTemplates.Name = "rbTemplates";
-            rbTemplates.Size = new Size(77, 19);
-            rbTemplates.TabIndex = 0;
-            rbTemplates.TabStop = true;
-            rbTemplates.Text = "templates";
-            rbTemplates.UseVisualStyleBackColor = true;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.ForeColor = Color.White;
-            label10.Location = new Point(25, 124);
-            label10.Name = "label10";
-            label10.Size = new Size(63, 30);
-            label10.TabIndex = 39;
-            label10.Text = "Tipo:";
-            // 
-            // txtDescricaoServico
-            // 
-            txtDescricaoServico.Location = new Point(25, 99);
-            txtDescricaoServico.Name = "txtDescricaoServico";
-            txtDescricaoServico.Size = new Size(320, 23);
-            txtDescricaoServico.TabIndex = 38;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.White;
-            label8.Location = new Point(25, 65);
-            label8.Name = "label8";
-            label8.Size = new Size(112, 30);
-            label8.TabIndex = 37;
-            label8.Text = "Descricao:";
-            // 
-            // txtNomeServico
-            // 
-            txtNomeServico.Location = new Point(25, 42);
-            txtNomeServico.Name = "txtNomeServico";
-            txtNomeServico.Size = new Size(320, 23);
-            txtNomeServico.TabIndex = 36;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.White;
-            label7.Location = new Point(25, 9);
-            label7.Name = "label7";
-            label7.Size = new Size(189, 30);
-            label7.TabIndex = 35;
-            label7.Text = "Nome do projeto:";
-            // 
-            // panelCompradosASS
-            // 
-            panelCompradosASS.BackColor = Color.FromArgb(49, 57, 60);
-            panelCompradosASS.Location = new Point(393, 238);
-            panelCompradosASS.Name = "panelCompradosASS";
-            panelCompradosASS.Size = new Size(472, 261);
-            panelCompradosASS.TabIndex = 30;
-            // 
-            // panelASS2
-            // 
-            panelASS2.BackColor = Color.FromArgb(49, 57, 60);
-            panelASS2.Location = new Point(5, 234);
-            panelASS2.Name = "panelASS2";
-            panelASS2.Size = new Size(549, 265);
-            panelASS2.TabIndex = 31;
+            this.panelPostagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.panelPostagem.Controls.Add(this.label1);
+            this.panelPostagem.Controls.Add(this.btnEnviar);
+            this.panelPostagem.Controls.Add(this.panelASS);
+            this.panelPostagem.Controls.Add(this.txtImagem3);
+            this.panelPostagem.Controls.Add(this.txtImagem2);
+            this.panelPostagem.Controls.Add(this.txtImagem1);
+            this.panelPostagem.Controls.Add(this.label19);
+            this.panelPostagem.Controls.Add(this.label11);
+            this.panelPostagem.Controls.Add(this.numericValor);
+            this.panelPostagem.Controls.Add(this.panel2);
+            this.panelPostagem.Controls.Add(this.label10);
+            this.panelPostagem.Controls.Add(this.txtDescricaoServico);
+            this.panelPostagem.Controls.Add(this.label8);
+            this.panelPostagem.Controls.Add(this.txtNomeServico);
+            this.panelPostagem.Controls.Add(this.label7);
+            this.panelPostagem.Location = new System.Drawing.Point(54, 267);
+            this.panelPostagem.Name = "panelPostagem";
+            this.panelPostagem.Size = new System.Drawing.Size(375, 493);
+            this.panelPostagem.TabIndex = 29;
+            this.panelPostagem.Visible = false;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 20.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.IndianRed;
-            label1.Location = new Point(340, 1);
-            label1.Name = "label1";
-            label1.Size = new Size(35, 38);
-            label1.TabIndex = 35;
-            label1.Text = "X";
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.IndianRed;
+            this.label1.Location = new System.Drawing.Point(340, 1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 38);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "X";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // btnEnviar
+            // 
+            this.btnEnviar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnEnviar.ForeColor = System.Drawing.Color.White;
+            this.btnEnviar.Location = new System.Drawing.Point(146, 465);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(75, 23);
+            this.btnEnviar.TabIndex = 47;
+            this.btnEnviar.Text = "Enviar";
+            this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
+            // 
+            // txtImagem3
+            // 
+            this.txtImagem3.Location = new System.Drawing.Point(34, 437);
+            this.txtImagem3.Name = "txtImagem3";
+            this.txtImagem3.Size = new System.Drawing.Size(320, 23);
+            this.txtImagem3.TabIndex = 46;
+            // 
+            // txtImagem2
+            // 
+            this.txtImagem2.Location = new System.Drawing.Point(34, 398);
+            this.txtImagem2.Name = "txtImagem2";
+            this.txtImagem2.Size = new System.Drawing.Size(320, 23);
+            this.txtImagem2.TabIndex = 45;
+            // 
+            // txtImagem1
+            // 
+            this.txtImagem1.Location = new System.Drawing.Point(34, 360);
+            this.txtImagem1.Name = "txtImagem1";
+            this.txtImagem1.Size = new System.Drawing.Size(320, 23);
+            this.txtImagem1.TabIndex = 44;
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(35, 291);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(290, 66);
+            this.label19.TabIndex = 43;
+            this.label19.Text = "Insira o Endereço de três imagens (utilize o imgur):";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(34, 257);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(70, 30);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "Valor:";
+            // 
+            // numericValor
+            // 
+            this.numericValor.Location = new System.Drawing.Point(114, 264);
+            this.numericValor.Name = "numericValor";
+            this.numericValor.Size = new System.Drawing.Size(120, 23);
+            this.numericValor.TabIndex = 41;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.rbDesktop);
+            this.panel2.Controls.Add(this.rbFullStack);
+            this.panel2.Controls.Add(this.rbFrontEnd);
+            this.panel2.Controls.Add(this.rbBackEnd);
+            this.panel2.Controls.Add(this.rbBancoDeDados);
+            this.panel2.Controls.Add(this.rbGames);
+            this.panel2.Controls.Add(this.rbWeb);
+            this.panel2.Controls.Add(this.rbMobile);
+            this.panel2.Controls.Add(this.rbTemplates);
+            this.panel2.Location = new System.Drawing.Point(25, 150);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(300, 106);
+            this.panel2.TabIndex = 40;
+            // 
+            // rbDesktop
+            // 
+            this.rbDesktop.AutoSize = true;
+            this.rbDesktop.ForeColor = System.Drawing.Color.White;
+            this.rbDesktop.Location = new System.Drawing.Point(227, 9);
+            this.rbDesktop.Name = "rbDesktop";
+            this.rbDesktop.Size = new System.Drawing.Size(67, 19);
+            this.rbDesktop.TabIndex = 8;
+            this.rbDesktop.TabStop = true;
+            this.rbDesktop.Text = "desktop";
+            this.rbDesktop.UseVisualStyleBackColor = true;
+            // 
+            // rbFullStack
+            // 
+            this.rbFullStack.AutoSize = true;
+            this.rbFullStack.ForeColor = System.Drawing.Color.White;
+            this.rbFullStack.Location = new System.Drawing.Point(110, 83);
+            this.rbFullStack.Name = "rbFullStack";
+            this.rbFullStack.Size = new System.Drawing.Size(74, 19);
+            this.rbFullStack.TabIndex = 7;
+            this.rbFullStack.TabStop = true;
+            this.rbFullStack.Text = "full-stack";
+            this.rbFullStack.UseVisualStyleBackColor = true;
+            // 
+            // rbFrontEnd
+            // 
+            this.rbFrontEnd.AutoSize = true;
+            this.rbFrontEnd.ForeColor = System.Drawing.Color.White;
+            this.rbFrontEnd.Location = new System.Drawing.Point(111, 58);
+            this.rbFrontEnd.Name = "rbFrontEnd";
+            this.rbFrontEnd.Size = new System.Drawing.Size(76, 19);
+            this.rbFrontEnd.TabIndex = 6;
+            this.rbFrontEnd.TabStop = true;
+            this.rbFrontEnd.Text = "front-end";
+            this.rbFrontEnd.UseVisualStyleBackColor = true;
+            // 
+            // rbBackEnd
+            // 
+            this.rbBackEnd.AutoSize = true;
+            this.rbBackEnd.ForeColor = System.Drawing.Color.White;
+            this.rbBackEnd.Location = new System.Drawing.Point(111, 33);
+            this.rbBackEnd.Name = "rbBackEnd";
+            this.rbBackEnd.Size = new System.Drawing.Size(75, 19);
+            this.rbBackEnd.TabIndex = 5;
+            this.rbBackEnd.TabStop = true;
+            this.rbBackEnd.Text = "back-end";
+            this.rbBackEnd.UseVisualStyleBackColor = true;
+            // 
+            // rbBancoDeDados
+            // 
+            this.rbBancoDeDados.AutoSize = true;
+            this.rbBancoDeDados.ForeColor = System.Drawing.Color.White;
+            this.rbBancoDeDados.Location = new System.Drawing.Point(111, 8);
+            this.rbBancoDeDados.Name = "rbBancoDeDados";
+            this.rbBancoDeDados.Size = new System.Drawing.Size(109, 19);
+            this.rbBancoDeDados.TabIndex = 4;
+            this.rbBancoDeDados.TabStop = true;
+            this.rbBancoDeDados.Text = "banco de dados";
+            this.rbBancoDeDados.UseVisualStyleBackColor = true;
+            // 
+            // rbGames
+            // 
+            this.rbGames.AutoSize = true;
+            this.rbGames.ForeColor = System.Drawing.Color.White;
+            this.rbGames.Location = new System.Drawing.Point(18, 83);
+            this.rbGames.Name = "rbGames";
+            this.rbGames.Size = new System.Drawing.Size(60, 19);
+            this.rbGames.TabIndex = 3;
+            this.rbGames.TabStop = true;
+            this.rbGames.Text = "games";
+            this.rbGames.UseVisualStyleBackColor = true;
+            // 
+            // rbWeb
+            // 
+            this.rbWeb.AutoSize = true;
+            this.rbWeb.ForeColor = System.Drawing.Color.White;
+            this.rbWeb.Location = new System.Drawing.Point(18, 58);
+            this.rbWeb.Name = "rbWeb";
+            this.rbWeb.Size = new System.Drawing.Size(47, 19);
+            this.rbWeb.TabIndex = 2;
+            this.rbWeb.TabStop = true;
+            this.rbWeb.Text = "web";
+            this.rbWeb.UseVisualStyleBackColor = true;
+            // 
+            // rbMobile
+            // 
+            this.rbMobile.AutoSize = true;
+            this.rbMobile.ForeColor = System.Drawing.Color.White;
+            this.rbMobile.Location = new System.Drawing.Point(18, 32);
+            this.rbMobile.Name = "rbMobile";
+            this.rbMobile.Size = new System.Drawing.Size(62, 19);
+            this.rbMobile.TabIndex = 1;
+            this.rbMobile.TabStop = true;
+            this.rbMobile.Text = "mobile";
+            this.rbMobile.UseVisualStyleBackColor = true;
+            // 
+            // rbTemplates
+            // 
+            this.rbTemplates.AutoSize = true;
+            this.rbTemplates.ForeColor = System.Drawing.Color.White;
+            this.rbTemplates.Location = new System.Drawing.Point(18, 8);
+            this.rbTemplates.Name = "rbTemplates";
+            this.rbTemplates.Size = new System.Drawing.Size(77, 19);
+            this.rbTemplates.TabIndex = 0;
+            this.rbTemplates.TabStop = true;
+            this.rbTemplates.Text = "templates";
+            this.rbTemplates.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(25, 124);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 30);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Tipo:";
+            // 
+            // txtDescricaoServico
+            // 
+            this.txtDescricaoServico.Location = new System.Drawing.Point(25, 99);
+            this.txtDescricaoServico.Name = "txtDescricaoServico";
+            this.txtDescricaoServico.Size = new System.Drawing.Size(320, 23);
+            this.txtDescricaoServico.TabIndex = 38;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(25, 65);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(112, 30);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Descricao:";
+            // 
+            // txtNomeServico
+            // 
+            this.txtNomeServico.Location = new System.Drawing.Point(25, 42);
+            this.txtNomeServico.Name = "txtNomeServico";
+            this.txtNomeServico.Size = new System.Drawing.Size(320, 23);
+            this.txtNomeServico.TabIndex = 36;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(25, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(189, 30);
+            this.label7.TabIndex = 35;
+            this.label7.Text = "Nome do projeto:";
+            // 
+            // panelCompradosASS
+            // 
+            this.panelCompradosASS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.panelCompradosASS.Location = new System.Drawing.Point(461, 88);
+            this.panelCompradosASS.Name = "panelCompradosASS";
+            this.panelCompradosASS.Size = new System.Drawing.Size(729, 410);
+            this.panelCompradosASS.TabIndex = 30;
+            // 
+            // panelASS2
+            // 
+            this.panelASS2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.panelASS2.Location = new System.Drawing.Point(532, 537);
+            this.panelASS2.Name = "panelASS2";
+            this.panelASS2.Size = new System.Drawing.Size(686, 410);
+            this.panelASS2.TabIndex = 31;
             // 
             // PerfilAssinante
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(0, 0, 64);
-            ClientSize = new Size(819, 507);
-            Controls.Add(panelASS2);
-            Controls.Add(panelCompradosASS);
-            Controls.Add(panelPostagem);
-            Controls.Add(panelEditar);
-            Controls.Add(btnEditar);
-            Controls.Add(btnFechar);
-            Controls.Add(lblComprados);
-            Controls.Add(lblVendidos);
-            Controls.Add(label9);
-            Controls.Add(descricao);
-            Controls.Add(label4);
-            Controls.Add(lblNome);
-            Controls.Add(picturePerfil);
-            Controls.Add(btnADD);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "PerfilAssinante";
-            Text = "PerfilAssinante";
-            Load += PerfilAssinante_Load;
-            ((System.ComponentModel.ISupportInitialize)picturePerfil).EndInit();
-            panelEditar.ResumeLayout(false);
-            panelEditar.PerformLayout();
-            panelPostagem.ResumeLayout(false);
-            panelPostagem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numericValor).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(1202, 832);
+            this.Controls.Add(this.panelASS2);
+            this.Controls.Add(this.panelCompradosASS);
+            this.Controls.Add(this.panelPostagem);
+            this.Controls.Add(this.panelEditar);
+            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.lblComprados);
+            this.Controls.Add(this.lblVendidos);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.descricao);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.picturePerfil);
+            this.Controls.Add(this.btnADD);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "PerfilAssinante";
+            this.Text = "PerfilAssinante";
+            this.Load += new System.EventHandler(this.PerfilAssinante_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
+            this.panelEditar.ResumeLayout(false);
+            this.panelEditar.PerformLayout();
+            this.panelPostagem.ResumeLayout(false);
+            this.panelPostagem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericValor)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -208,5 +208,10 @@ namespace pi_serasa_LinkeDev
                 geraimagens(s);
             }
         }
+
+        private void wilBitButton2_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

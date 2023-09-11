@@ -17,11 +17,7 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            carregaImagens();
-        }
+       
 
         void novoAssinante()
         {
@@ -41,36 +37,9 @@ namespace pi_serasa_LinkeDev
             Program.assinante = assinante.retornaAssinante(Program.usuario.id);
         }
 
-        private void btnComprarSE_Click(object sender, EventArgs e)
-        {
-            novoAssinante();
-            this.Close();
+       
 
-            MessageBox.Show(""+Program.usuario.isAssinante);
-            Form1.CarregaBotoes(new trocaBotoes());
-            Form1.carregamenuESQ(new trocaMenuESQ());
-            carregaTemplates();
-        }
-
-        private void btnAssinarAnu_Click(object sender, EventArgs e)
-        {
-            novoAssinante();
-            this.Close();
-            MessageBox.Show("" + Program.usuario.isAssinante);
-            Form1.CarregaBotoes(new trocaBotoes());
-            Form1.carregamenuESQ(new trocaMenuESQ());
-            carregaTemplates();
-        }
-
-        private void btnAssinarMen_Click(object sender, EventArgs e)
-        {
-            novoAssinante();
-            this.Close();
-            MessageBox.Show("" + Program.usuario.isAssinante);
-            Form1.CarregaBotoes(new trocaBotoes());
-            Form1.carregamenuESQ(new trocaMenuESQ());
-            carregaTemplates();
-        }
+       
 
         //CARREGA TEMPLATES APOS ENTRAR NA TELA INICIAL DO SITE
 
@@ -116,29 +85,25 @@ namespace pi_serasa_LinkeDev
 
         //CARREGA IMAGENS DA TELA DE VISITANTE, APOS CLICAR NO BOTAO DE FECHAR
 
+
         void carregaImagens()
         {
-            for (int i = 22; i < 24; i++)
+            List<Servico> servicos = new List<Servico>();
+            Servico servico = new Servico();
+            servicos = servico.buscaImagens();
+
+            foreach (Servico s in servicos)
             {
-                List<string> imagens = new List<string>();
-                Servico servico = new Servico();
-                servico = servico.buscaImagensTelaVisitante(i);
-
-                imagens.Add(servico.getImagem_1);
-                imagens.Add(servico.getImagem_2);
-                imagens.Add(servico.getImagem_3);
-
-                foreach (string imagem in imagens)
-                {
-                    geraImagens(imagem);
-                }
+                geraImagens(s);
             }
+
         }
-        void geraImagens(string imagem)
+
+        void geraImagens(Servico servico)
         {
 
             PictureBox pic = new PictureBox();
-            pic.LoadAsync(imagem);
+            pic.LoadAsync(servico.imagem_1);
             pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pic.Size = new Size(350, 150);
             pic.Location = new Point(x, y);
@@ -158,5 +123,41 @@ namespace pi_serasa_LinkeDev
 
         }
 
+        private void btnComprarSE_Click_1(object sender, EventArgs e)
+        {
+            novoAssinante();
+            this.Close();
+
+            MessageBox.Show("" + Program.usuario.isAssinante);
+            Form1.CarregaBotoes(new trocaBotoes());
+            Form1.carregamenuESQ(new trocaMenuESQ());
+            carregaTemplates();
+        }
+
+        private void btnFechar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            carregaImagens();
+        }
+
+        private void btnAssinarAnu_Click_1(object sender, EventArgs e)
+        {
+            novoAssinante();
+            this.Close();
+            MessageBox.Show("" + Program.usuario.isAssinante);
+            Form1.CarregaBotoes(new trocaBotoes());
+            Form1.carregamenuESQ(new trocaMenuESQ());
+            carregaTemplates();
+        }
+
+        private void btnAssinarMen_Click_1(object sender, EventArgs e)
+        {
+            novoAssinante();
+            this.Close();
+            MessageBox.Show("" + Program.usuario.isAssinante);
+            Form1.CarregaBotoes(new trocaBotoes());
+            Form1.carregamenuESQ(new trocaMenuESQ());
+            carregaTemplates();
+        }
     }
 }

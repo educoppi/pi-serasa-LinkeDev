@@ -74,55 +74,13 @@ namespace pi_serasa_LinkeDev
             carregaPerfil();
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
-            panelEditar.Visible = true;
-            panelCompradosASS.Visible = false;
-            panelASS2.Visible = false;
-            lblComprados.Visible = false;
-            btnADD.Visible = false;
-        }
+        
 
         private void btnEditar2_Click(object sender, EventArgs e)
         {
         }
 
-        private void btnEditar2_Click_1(object sender, EventArgs e)
-        {
-            string editNome = txtEditNome.Text;
-            string editDescricao = txtEditDescricao.Text;
-            string editImagemicon = txtEditImagemIcon.Text;
-
-            if (editNome == "")
-            {
-                editNome = Program.assinante.nome;
-            }
-
-            if (editDescricao == "")
-            {
-                editDescricao = Program.assinante.descricao;
-            }
-
-            if (editImagemicon == "")
-            {
-                editImagemicon = Program.assinante.imagem_icon;
-            }
-
-
-            Assinante assinante = new Assinante();
-            Program.assinante = assinante.editaAssinante(editNome, editDescricao, editImagemicon, Program.assinante.id);
-            Servico servico = new Servico();
-            servico.editaNomeAssinante(Program.assinante.id, Program.assinante.nome);
-
-            carregaPerfil();
-            Form1.CarregaBotoes(new trocaBotoes());
-
-            panelEditar.Visible = false;
-            panelCompradosASS.Visible = true;
-            panelASS2.Visible = true;
-            lblComprados.Visible = true;
-            btnADD.Visible = true;
-        }
+       
 
         void carregaServicosFeitos()
         {
@@ -221,19 +179,7 @@ namespace pi_serasa_LinkeDev
             yvalor = yvalor + 250;
         }
 
-        private void lblFechar_Click(object sender, EventArgs e)
-        {
-            txtEditNome.Clear();
-            txtEditDescricao.Clear();
-            txtEditImagemIcon.Clear();
-
-            panelEditar.Visible = false;
-
-            panelCompradosASS.Visible = true;
-            panelASS2.Visible = true;
-            lblComprados.Visible = true;
-            btnADD.Visible = true;
-        }
+       
 
         //CARREGA TEMPLATES DA TELA INICIAL
         void carregaTemplates()
@@ -282,37 +228,8 @@ namespace pi_serasa_LinkeDev
         }
 
 
-        //BOTAO DE CRIAR SERVICO
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string nome = txtNomeServico.Text;
-            string descricao = txtDescricaoServico.Text;
-            string tipo = retornaTipo();
-
-            string valorNaoTratado = numericValor.Value.ToString();
-
-            double valor = double.Parse(valorNaoTratado);
-            string imagem1 = txtImagem1.Text;
-            string imagem2 = txtImagem2.Text;
-            string imagem3 = txtImagem3.Text;
-
-            if (nome == "" || descricao == "" || tipo == "" || valorNaoTratado == "" || imagem1 == "" || imagem2 == "" || imagem3 == "")
-            {
-                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                limpaCampos();
-                return;
-            }
-
-            Servico servico = new Servico();
-            servico.insereServico(Program.assinante.id, Program.assinante.nome, nome, descricao, tipo, valor, imagem1, imagem2, imagem3);
-            carregaPerfil();
-            MessageBox.Show("Postagem de Serviço efetuada com sucesso!");
-            limpaCampos();
-            panelPostagem.Visible = false;
-            panelASS2.Visible = true;
-            panelCompradosASS.Visible = true;
-
-        }
+       
+       
 
         public string retornaTipo()
         {
@@ -376,13 +293,7 @@ namespace pi_serasa_LinkeDev
             txtImagem3.Clear();
         }
 
-        private void btnADD_Click(object sender, EventArgs e)
-        {
-            panelPostagem.Visible = true;
-            panelASS2.Visible = false;
-            panelCompradosASS.Visible = false;
-            lblComprados.Visible = false;
-        }
+       
 
         //CARREGA SERVICOS COMPRADOS
 
@@ -471,14 +382,164 @@ namespace pi_serasa_LinkeDev
             yyvalor = yyvalor + 250;
         }
 
-        private void label1_Click(object sender, EventArgs e)
+       
+
+        private void PerfilAssinante_Load_1(object sender, EventArgs e)
         {
+            if (Program.usuario.id != Program.assinante.id)
+            {
+                btnEditar.Visible = false;
+                btnEditar.Enabled = false;
+
+                panelCompradosASS.Visible = false;
+                lblComprados.Visible = false;
+                btnADD.Visible = false;
+                btnADD.Enabled = false;
+            }
+
+            //label
+            lblComprados.Location = new Point(ClientSize.Width - 800, ClientSize.Height - 480);
+            lblNome.Location = new Point(ClientSize.Width - 860, ClientSize.Height - 780);
+
+            //botao
+            btnFechar.Location = new Point(ClientSize.Width - 80, ClientSize.Height - 890);
+            btnADD.Location = new Point(ClientSize.Width - 1600, ClientSize.Height - 525);
+            btnEditar.Location = new Point(ClientSize.Width - 76, ClientSize.Height - 845);
+            
+
+
+            //panel/perfil
+            panelCompradosASS.Location = new Point(ClientSize.Width - 800, ClientSize.Height - 450);
+            panelASS2.Location = new Point(ClientSize.Width - 1600, ClientSize.Height - 450);
+            picturePerfil.Location = new Point(ClientSize.Width - 900, ClientSize.Height - 890);
+            panelEditar.Location = new Point(ClientSize.Width - 985, ClientSize.Height - 600);
+            panelPostagem.Location = new Point(ClientSize.Width - 985, ClientSize.Height - 600);
+            //Conteudo
+            carregaPerfil();
+        }
+
+        private void btnFechar_Click_1(object sender, EventArgs e)
+        {
+            if (Program.usuario.id == Program.assinante.id)
+            {
+                this.Close();
+                carregaTemplates();
+                return;
+            }
+
+            this.Close();
+            Form1.CarregaEntreTELAS(new Templates());
+        }
+
+        private void btnEditar_Click_1(object sender, EventArgs e)
+        {
+
+            panelEditar.Visible = true;
+            panelCompradosASS.Visible = false;
+            panelASS2.Visible = false;
+            lblComprados.Visible = false;
+            btnADD.Visible = false;
+        }
+
+        private void btnADD_Click_1(object sender, EventArgs e)
+        {
+            panelPostagem.Visible = true;
+            panelASS2.Visible = false;
+            panelCompradosASS.Visible = false;
+            lblComprados.Visible = false;
+        }
+
+        private void btnEditar2_Click_2(object sender, EventArgs e)
+        {
+            string editNome = txtEditNome.Text;
+            string editDescricao = txtEditDescricao.Text;
+            string editImagemicon = txtEditImagemIcon.Text;
+
+            if (editNome == "")
+            {
+                editNome = Program.assinante.nome;
+            }
+
+            if (editDescricao == "")
+            {
+                editDescricao = Program.assinante.descricao;
+            }
+
+            if (editImagemicon == "")
+            {
+                editImagemicon = Program.assinante.imagem_icon;
+            }
+
+
+            Assinante assinante = new Assinante();
+            Program.assinante = assinante.editaAssinante(editNome, editDescricao, editImagemicon, Program.assinante.id);
+            Servico servico = new Servico();
+            servico.editaNomeAssinante(Program.assinante.id, Program.assinante.nome);
+
+            carregaPerfil();
+            Form1.CarregaBotoes(new trocaBotoes());
+
+            panelEditar.Visible = false;
+            panelCompradosASS.Visible = true;
+            panelASS2.Visible = true;
+            lblComprados.Visible = true;
+            btnADD.Visible = true;
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
             limpaCampos();
 
             panelPostagem.Visible = false;
             panelASS2.Visible = true;
             panelCompradosASS.Visible = true;
             lblComprados.Visible = true;
+        }
+
+        private void lblFechar_Click_1(object sender, EventArgs e)
+        {
+            txtEditNome.Clear();
+            txtEditDescricao.Clear();
+            txtEditImagemIcon.Clear();
+
+            panelEditar.Visible = false;
+
+            panelCompradosASS.Visible = true;
+            panelASS2.Visible = true;
+            lblComprados.Visible = true;
+            btnADD.Visible = true;
+        }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            string nome = txtNomeServico.Text;
+            string descricao = txtDescricaoServico.Text;
+            string tipo = retornaTipo();
+
+            string valorNaoTratado = numericValor.Value.ToString();
+
+            double valor = double.Parse(valorNaoTratado);
+            string imagem1 = txtImagem1.Text;
+            string imagem2 = txtImagem2.Text;
+            string imagem3 = txtImagem3.Text;
+
+            if (nome == "" || descricao == "" || tipo == "" || valorNaoTratado == "" || imagem1 == "" || imagem2 == "" || imagem3 == "")
+            {
+                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limpaCampos();
+                return;
+            }
+
+            Servico servico = new Servico();
+            servico.insereServico(Program.assinante.id, Program.assinante.nome, nome, descricao, tipo, valor, imagem1, imagem2, imagem3);
+            carregaPerfil();
+            MessageBox.Show("Postagem de Serviço efetuada com sucesso!");
+            limpaCampos();
+            panelPostagem.Visible = false;
+            panelASS2.Visible = true;
+            panelCompradosASS.Visible = true;
+
         }
     }
 }

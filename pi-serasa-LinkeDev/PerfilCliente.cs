@@ -28,31 +28,8 @@ namespace pi_serasa_LinkeDev
             carregaComprados();
         }
 
-        private void PerfilCliente_Load(object sender, EventArgs e)
-        {
 
-            ///LOCATION
-            //botao
-            btnFechar.Location = new Point(ClientSize.Width - 80, ClientSize.Height - 570);
 
-            //label
-            lblComprados.Location = new Point(ClientSize.Width - 520, ClientSize.Height - 430);
-            lblFavoritos.Location = new Point(ClientSize.Width - 1080, ClientSize.Height - 430);
-            labelNome.Location = new Point(ClientSize.Width - 620, ClientSize.Height - 470);
-            //panels/perfil
-            panelComprados.Location = new Point(ClientSize.Width - 520, ClientSize.Height - 400);
-            panelFavoritos.Location = new Point(ClientSize.Width - 1080, ClientSize.Height - 400);
-            picturePerfil.Location = new Point(ClientSize.Width - 650, ClientSize.Height - 580);
-
-            ///CONTEUDO
-            carregaPerfil();
-        }
-
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            carregaTemplates();
-        }
 
         private void btnFavoritos_Click(object sender, EventArgs e)
         {
@@ -80,11 +57,7 @@ namespace pi_serasa_LinkeDev
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            panelEditar.Visible = true;
-            panelComprados.Visible = false;
-            panelFavoritos.Visible = false;
-            lblComprados.Visible = false;
-            lblFavoritos.Visible = false;
+            
         }
 
 
@@ -103,40 +76,7 @@ namespace pi_serasa_LinkeDev
         }
 
         //EDITA INFORMAÇÕES DE CLIENTE
-        private void btnEditar2_Click_1(object sender, EventArgs e)
-        {
-            string editNome = txtEditNome.Text;
-            string editDescricao = txtEditDescricao.Text;
-            string editImagemicon = txtImagemIcone.Text;
-
-            if (editNome == "")
-            {
-                editNome = Program.cliente.nome;
-            }
-
-            if (editDescricao == "")
-            {
-                editDescricao = Program.cliente.descricao;
-            }
-
-            if (editImagemicon == "")
-            {
-                editImagemicon = Program.cliente.imagem_icon;
-            }
-
-
-            Cliente cliente = new Cliente();
-            Program.cliente = cliente.editaCliente(editNome, editDescricao, editImagemicon, Program.cliente.id);
-
-            carregaPerfil();
-            Form1.CarregaBotoes(new trocaBotoes());
-
-            panelEditar.Visible = false;
-            panelComprados.Visible = true;
-            panelFavoritos.Visible = true;
-            lblComprados.Visible = true;
-            lblFavoritos.Visible = true;
-        }
+       
 
         //CARREGA TEMPLATES APOS ENTRAR NA TELA INICIAL DO SITE
 
@@ -358,6 +298,49 @@ namespace pi_serasa_LinkeDev
             yvalor = yvalor + 250;
         }
 
+
+
+        private void PerfilCliente_Load_1(object sender, EventArgs e)
+        {
+
+            ///LOCATION
+            //botao
+            btnFechar.Location = new Point(ClientSize.Width - 80, ClientSize.Height -890);
+            btnEditar.Location = new Point(ClientSize.Width - 76, ClientSize.Height - 845);
+
+            //label
+            lblComprados.Location = new Point(ClientSize.Width - 770, ClientSize.Height - 430);
+            lblFavoritos.Location = new Point(ClientSize.Width - 1600, ClientSize.Height - 430);
+            labelNome.Location = new Point(ClientSize.Width - 860, ClientSize.Height - 780);
+            //panels/perfil
+            panelComprados.Location = new Point(ClientSize.Width - 770, ClientSize.Height - 400);
+            panelFavoritos.Location = new Point(ClientSize.Width - 1600, ClientSize.Height - 400);
+            picturePerfil.Location = new Point(ClientSize.Width - 900, ClientSize.Height - 890);
+            panelEditar.Location = new Point(ClientSize.Width - 1035, ClientSize.Height - 600);
+
+            ///CONTEUDO
+            carregaPerfil();
+        }
+
+        private void btnFechar_Click_1(object sender, EventArgs e)
+
+
+        {
+            this.Close();
+            carregaTemplates();
+           
+
+        }
+
+        private void btnEditar_Click_1(object sender, EventArgs e)
+        {
+            panelEditar.Visible = true;
+            panelComprados.Visible = false;
+            panelFavoritos.Visible = false;
+            lblComprados.Visible = false;
+            lblFavoritos.Visible = false;
+        }
+
         private void lblFechar_Click(object sender, EventArgs e)
         {
             txtEditNome.Clear();
@@ -370,7 +353,41 @@ namespace pi_serasa_LinkeDev
             panelFavoritos.Visible = true;
             lblComprados.Visible = true;
             lblFavoritos.Visible = true;
+        }
 
+        private void btnEditar2_Click_2(object sender, EventArgs e)
+        {
+            string editNome = txtEditNome.Text;
+            string editDescricao = txtEditDescricao.Text;
+            string editImagemicon = txtImagemIcone.Text;
+
+            if (editNome == "")
+            {
+                editNome = Program.cliente.nome;
+            }
+
+            if (editDescricao == "")
+            {
+                editDescricao = Program.cliente.descricao;
+            }
+
+            if (editImagemicon == "")
+            {
+                editImagemicon = Program.cliente.imagem_icon;
+            }
+
+
+            Cliente cliente = new Cliente();
+            Program.cliente = cliente.editaCliente(editNome, editDescricao, editImagemicon, Program.cliente.id);
+
+            carregaPerfil();
+            Form1.CarregaBotoes(new trocaBotoes());
+
+            panelEditar.Visible = false;
+            panelComprados.Visible = true;
+            panelFavoritos.Visible = true;
+            lblComprados.Visible = true;
+            lblFavoritos.Visible = true;
         }
     }
 }

@@ -23,55 +23,9 @@ namespace pi_serasa_LinkeDev
             txtSenha_LG.Texts = "";
         }
 
-        private void btnEntrar_LGClick(object sender, EventArgs e)
-        {
-            string email = txtEmail_LG.Texts;
-            string senha = txtSenha_LG.Texts;
+       
 
-            if (email == "" || senha == "")
-            {
-                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                limpaText();
-                return;
-            }
-
-            Usuario usuario = new Usuario();
-            usuario = usuario.login(email, senha);
-
-            if (usuario == null)
-            {
-                MessageBox.Show("Email ou senha incorretos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                limpaText();
-                return;
-            }
-
-            Program.usuario = usuario;
-
-            if (Program.usuario.isAssinante)
-            {
-                Assinante assinante = new Assinante();
-                Program.assinante = assinante.retornaAssinante(Program.usuario.id);
-            }
-            else
-            {
-                Cliente cliente = new Cliente();
-                Program.cliente = cliente.retornaCliente(Program.usuario.id);
-            }
-
-
-            Form1.CarregaBotoes(new trocaBotoes());
-            
-            Form1.carregamenuESQ(new trocaMenuESQ());
-            this.Close();
-
-            carregaTemplates();
-        }
-
-        private void EntrarC_Load(object sender, EventArgs e)
-        {
-            panelC.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 650);
-            imgLogoE.Location = new Point(ClientSize.Width - 120, ClientSize.Height - 890);
-        }
+       
 
         public void botaoEntrarAssinar_Click(object sender, EventArgs e)
         {
@@ -95,42 +49,33 @@ namespace pi_serasa_LinkeDev
 
 
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            carregaImagens();
-        }
+       
 
 
         //CARREGA IMAGENS DA TELA DE VISITANTE, APOS CLICAR NO BOTAO DE FECHAR
 
+
         void carregaImagens()
         {
-            for (int i = 22; i < 24; i++)
+            List<Servico> servicos = new List<Servico>();
+            Servico servico = new Servico();
+            servicos = servico.buscaImagens();
+
+            foreach (Servico s in servicos)
             {
-                List<string> imagens = new List<string>();
-                Servico servico = new Servico();
-                servico = servico.buscaImagensTelaVisitante(i);
-
-                imagens.Add(servico.getImagem_1);
-                imagens.Add(servico.getImagem_2);
-                imagens.Add(servico.getImagem_3);
-
-                foreach (string imagem in imagens)
-                {
-                    geraImagens(imagem);
-                }
+                geraImagens(s);
             }
+
         }
 
         int x = 50;
         int y = 30;
         int quebraLinha;
-        void geraImagens(string imagem)
+        void geraImagens(Servico servico)
         {
 
             PictureBox pic = new PictureBox();
-            pic.LoadAsync(imagem);
+            pic.LoadAsync(servico.imagem_1);
             pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pic.Size = new Size(350, 150);
             pic.Location = new Point(x, y);
@@ -187,6 +132,64 @@ namespace pi_serasa_LinkeDev
                 y = 300;
                 pic.Location = new Point(x, y);
             }
+        }
+
+        private void btnEntrar_LG_Click(object sender, EventArgs e)
+        {
+            string email = txtEmail_LG.Texts;
+            string senha = txtSenha_LG.Texts;
+
+            if (email == "" || senha == "")
+            {
+                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limpaText();
+                return;
+            }
+
+            Usuario usuario = new Usuario();
+            usuario = usuario.login(email, senha);
+
+            if (usuario == null)
+            {
+                MessageBox.Show("Email ou senha incorretos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limpaText();
+                return;
+            }
+
+            Program.usuario = usuario;
+
+            if (Program.usuario.isAssinante)
+            {
+                Assinante assinante = new Assinante();
+                Program.assinante = assinante.retornaAssinante(Program.usuario.id);
+            }
+            else
+            {
+                Cliente cliente = new Cliente();
+                Program.cliente = cliente.retornaCliente(Program.usuario.id);
+            }
+
+
+            Form1.CarregaBotoes(new trocaBotoes());
+            Form1.carregamenuESQ(new trocaMenuESQ());
+
+            this.Close();
+
+            carregaTemplates();
+        }
+
+        private void btnFechar_Click_1(object sender, EventArgs e)
+        {
+
+            this.Close();
+            carregaImagens();
+        }
+
+        private void EntrarC_Load_1(object sender, EventArgs e)
+        {
+           
+            panelC.Location = new Point(ClientSize.Width - 1050, ClientSize.Height - 650);
+            imgLogoE.Location = new Point(ClientSize.Width - 120, ClientSize.Height - 890);
         }
     }
 }

@@ -36,37 +36,10 @@ namespace pi_serasa_LinkeDev
 
         private void CriarC_Load(object sender, EventArgs e)
         {
-            panelC.Location = new Point(ClientSize.Width - 1400, ClientSize.Height - 750);
-
-            panelDES.Location = new Point(ClientSize.Width - 500, ClientSize.Height - 850);
-            imgLogo.Location = new Point(ClientSize.Width - 960, ClientSize.Height - 110);
         }
 
         private void wilBitButton21_Click(object sender, EventArgs e)
         {
-            string email = txtEmail_CR.Texts;
-            string senha = txtSenha_CR.Texts;
-            string nome = txtUsuario_CR.Texts;
-
-            if (email == "" || senha == "" || nome == "")
-            {
-                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                limpaText();
-                return;
-            }
-
-            Usuario usuario = new Usuario();
-            usuario.insereUsuario(email, senha, false);
-            Program.usuario = usuario.login(email, senha);
-            usuario.insereCliente(Program.usuario.id,nome);
-
-
-
-            Form1.CarregaBotoes(new trocaBotoes());
-
-            Form1.carregamenuESQ(new trocaMenuESQ());
-            this.Close();
-            carregaTemplates();
         }
 
         private void panelC_Paint(object sender, PaintEventArgs e)
@@ -74,33 +47,28 @@ namespace pi_serasa_LinkeDev
 
         }
 
+
         void carregaImagens()
         {
-            for (int i = 22; i < 24; i++)
+            List<Servico> servicos = new List<Servico>();
+            Servico servico = new Servico();
+            servicos = servico.buscaImagens();
+
+            foreach (Servico s in servicos)
             {
-                List<string> imagens = new List<string>();
-                Servico servico = new Servico();
-                servico = servico.buscaImagensTelaVisitante(i);
-
-                imagens.Add(servico.getImagem_1);
-                imagens.Add(servico.getImagem_2);
-                imagens.Add(servico.getImagem_3);
-
-                foreach (string imagem in imagens)
-                {
-                    geraImagens(imagem);
-                }
+                geraImagens(s);
             }
+
         }
 
         int x = 50;
         int y = 30;
         int quebraLinha;
-        void geraImagens(string imagem)
+        void geraImagens(Servico servico)
         {
 
             PictureBox pic = new PictureBox();
-            pic.LoadAsync(imagem);
+            pic.LoadAsync(servico.imagem_1);
             pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             pic.Size = new Size(350, 150);
             pic.Location = new Point(x, y);
@@ -122,8 +90,6 @@ namespace pi_serasa_LinkeDev
 
         private void btnFechar_Click(object sender, EventArgs e)
         {
-            this.Close();
-            carregaImagens();
         }
 
         //CARREGA TEMPLATES APOS ENTRAR NA TELA INICIAL DO SITE
@@ -164,6 +130,58 @@ namespace pi_serasa_LinkeDev
                 y = 300;
                 pic.Location = new Point(x, y);
             }
+        }
+
+        private void CriarC_Load_1(object sender, EventArgs e)
+        {
+            panelC.Location = new Point(ClientSize.Width - 1400, ClientSize.Height - 750);
+
+            panelDES.Location = new Point(ClientSize.Width - 500, ClientSize.Height - 850);
+            imgLogo.Location = new Point(ClientSize.Width - 960, ClientSize.Height - 110);
+        }
+
+        private void wilBitButton21_Click_1(object sender, EventArgs e)
+        {
+            string email = txtEmail_CR.Texts;
+            string senha = txtSenha_CR.Texts;
+            string nome = txtUsuario_CR.Texts;
+
+            if (email == "" || senha == "" || nome == "")
+            {
+                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                limpaText();
+                return;
+            }
+
+            Usuario usuario = new Usuario();
+            usuario.insereUsuario(email, senha, false);
+            Program.usuario = usuario.login(email, senha);
+            usuario.insereCliente(Program.usuario.id, nome);
+
+            Cliente cliente = new Cliente();
+            Program.cliente = cliente.retornaCliente(Program.usuario.id);
+
+            Form1.CarregaBotoes(new trocaBotoes());
+
+            Form1.carregamenuESQ(new trocaMenuESQ());
+            this.Close();
+            carregaTemplates();
+        }
+
+        private void btnFechar_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            carregaImagens();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1.CarregaEntreTELAS(new lkJatenho1());
+        }
+
+        private void wilBitButton22_Click(object sender, EventArgs e)
+        {
+            Form1.CarregaEntreTELAS(new Assinar());
         }
     }
 }

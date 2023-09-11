@@ -18,13 +18,7 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
-        private void btnFechar_Click(object sender, EventArgs e)
-        {
-            Program.idUsuarioCurtiu = 0;
-            this.Close();
-            Form1.panelCentral.Controls.Clear();
-            carregaTemplates();
-        }
+       
 
         void confereFavoritado()
         {
@@ -44,96 +38,11 @@ namespace pi_serasa_LinkeDev
             }
         }
 
-        private void Templates_Load(object sender, EventArgs e)
-        {
-            //botao
-            btnFechar.Location = new Point(ClientSize.Width - 80, ClientSize.Height - 570);
-            btnComprar.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 530);
-            btnCurtir.Location = new Point(ClientSize.Width - 430, ClientSize.Height - 330);
-            btnFavoritar.Location = new Point(ClientSize.Width - 430, ClientSize.Height - 250);
-
-            //label posições
-            lblPreco1.Location = new Point(ClientSize.Width - 110, ClientSize.Height - 480);
-            lblSifrao1.Location = new Point(ClientSize.Width - 140, ClientSize.Height - 478);
-            lblValor.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 476);
-            lblDescricao.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 380);
-            lblDescricaoTXT.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 350);
-
-            lblSifrao2.Location = new Point(ClientSize.Width - 180, ClientSize.Height - 210);
-            lblPreco2.Location = new Point(ClientSize.Width - 140, ClientSize.Height - 210);
-
-            lblNumeroVendido.Location = new Point(ClientSize.Width - 340, ClientSize.Height - 476);
-            lblNumeroCurtidas.Location = new Point(ClientSize.Width - 340, ClientSize.Height - 455);
-            lblNumeroFavoritados.Location = new Point(ClientSize.Width - 340, ClientSize.Height - 434);
-
-            lblVendido.Location = new Point(ClientSize.Width - 430, ClientSize.Height - 476);
-            lblCurtidas.Location = new Point(ClientSize.Width - 430, ClientSize.Height - 455);
-            lblFavoritados.Location = new Point(ClientSize.Width - 430, ClientSize.Height - 434);
-
-            lblDesfazerCurtida.Location = new Point(ClientSize.Width - 330, ClientSize.Height - 315);
-
-            lblPublicadoEm.Location = new Point(ClientSize.Width - 430, ClientSize.Height - 570);
-
-            //label conteúdo
-            lblProdutoTXT.Text = Program.servico.nome;
-            lblProgamadorTXT.Text = Program.servico.nome_assinante;
-            lblDescricaoTXT.Text = Program.servico.descricao;
-            lblNumeroVendido.Text = (Program.servico.vendidos).ToString();
-            lblPreco1.Text = (Program.servico.valor).ToString();
-            lblPreco2.Text = (Program.servico.valor).ToString();
-            lblNumeroCurtidas.Text = Program.servico.curtidas.ToString();
-            lblNumeroFavoritados.Text = Program.servico.qtd_favoritados.ToString();
-            lblPublicadoEm.Text = Program.servico.publicado_em;
-
-            //imagens
-            imagem1.LoadAsync(Program.servico.imagem_1);
-            imagem1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            imagem2.LoadAsync(Program.servico.imagem_2);
-            imagem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            imagem3.LoadAsync(Program.servico.imagem_3);
-            imagem3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-
-            //icone do programador
-            Assinante assinante = new Assinante();
-            Program.assinante = assinante.retornaAssinante(Program.servico.id_assinante);
-            imagemPerfil.LoadAsync(Program.assinante.imagem_icon);
-            imagemPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-
-            //Confere se o usuario que esta vendo o serviço ja favoritou esse serviço ou se é um assinante
-            confereFavoritado();
-        }
+      
 
 
         int compras = Program.servico.vendidos;
-        private void btnComprar_Click(object sender, EventArgs e)
-        {
-            Servico servico = new Servico();
-
-            Usuario usuario = new Usuario();
-            usuario = usuario.retornaEmailUsuario(Program.servico.id_assinante);
-
-            compras++;
-
-            servico.atualizaVendidos(compras, Program.servico.id);
-            servico = servico.retornaNumeros(Program.servico.id);
-            Program.servico.vendidos = servico.vendidos;
-
-            lblNumeroVendido.Text = Program.servico.vendidos.ToString();
-
-            Assinante assinante = new Assinante();
-
-            assinante.atualizaVendidos(Program.servico.id_assinante);
-
-            //Essa linha serve para mudar a cultura de execução, aqui no Brasil
-            //utiliza-se virgula para separar decimais, nos EUA é 
-            //utilizado ponto. Foi necessario fazer isso porque no banco se entende apenas
-            //ponto como separador de decimais.
-            CultureInfo.CurrentCulture = new CultureInfo("en-US"); // Para definir para cultura norte-americana.
-
-            ServicosComprados sc = new ServicosComprados();
-            sc.insere(Program.usuario.id, Program.servico.id, Program.servico.nome, Program.servico.tipo, Program.servico.imagem_1, Program.servico.valor);
-            MessageBox.Show("compra efetuada, entre em contato com o vendedor através do seguinte email: " + usuario.email);
-        }
+        
 
         private void imagemPerfil_Click(object sender, EventArgs e)
         {
@@ -190,7 +99,85 @@ namespace pi_serasa_LinkeDev
 
         //BOTAO CURTIR
         int numeroCurtidas = Program.servico.curtidas;
-        private void btnCurtir_Click(object sender, EventArgs e)
+       
+
+        
+
+        //BOTAO FAVORITAR
+        int numeroFavoritados = Program.servico.qtd_favoritados;
+        
+
+       
+
+        private void lblProgamadorTXT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Templates_Load_1(object sender, EventArgs e)
+        {
+            //botao
+            btnFechar.Location = new Point(ClientSize.Width - 65, ClientSize.Height - 890);
+            btnComprar.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 860);
+            btnCurtir.Location = new Point(ClientSize.Width - 980, ClientSize.Height - 560);
+            btnFavoritar.Location = new Point(ClientSize.Width - 720, ClientSize.Height - 885);
+
+            //label posições
+            lblPreco1.Location = new Point(ClientSize.Width - 110, ClientSize.Height - 806);//
+            lblSifrao1.Location = new Point(ClientSize.Width - 140, ClientSize.Height - 803);//
+            lblValor.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 800);//
+            lblDescricao.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 700);
+            lblDescricaoTXT.Location = new Point(ClientSize.Width - 190, ClientSize.Height - 660);
+
+            lblSifrao2.Location = new Point(ClientSize.Width - 180, ClientSize.Height - 210);
+            lblPreco2.Location = new Point(ClientSize.Width - 140, ClientSize.Height - 210);
+            
+            lblNumeroVendido.Location = new Point(ClientSize.Width - 1598, ClientSize.Height - 760);
+            lblNumeroCurtidas.Location = new Point(ClientSize.Width -1598, ClientSize.Height - 730);
+            lblNumeroFavoritados.Location = new Point(ClientSize.Width - 1580, ClientSize.Height - 700);
+
+            lblVendido.Location = new Point(ClientSize.Width - 1670, ClientSize.Height - 760);
+            lblCurtidas.Location = new Point(ClientSize.Width - 1670, ClientSize.Height - 730);
+            lblFavoritados.Location = new Point(ClientSize.Width - 1670, ClientSize.Height - 700);
+
+            lblDesfazerCurtida.Location = new Point(ClientSize.Width - 890, ClientSize.Height - 545);
+
+            lblPublicadoEm.Location = new Point(ClientSize.Width - 890, ClientSize.Height - 885);
+            //fotos
+            imagem1.Location = new Point(ClientSize.Width - 1635, ClientSize.Height - 600);
+            imagem2.Location = new Point(ClientSize.Width - 1635, ClientSize.Height - 370);
+            imagem3.Location = new Point(ClientSize.Width - 1250, ClientSize.Height - 500);
+
+            //label conteúdo
+            lblProdutoTXT.Text = Program.servico.nome;
+            lblProgamadorTXT.Text = Program.servico.nome_assinante;
+            lblDescricaoTXT.Text = Program.servico.descricao;
+            lblNumeroVendido.Text = (Program.servico.vendidos).ToString();
+            lblPreco1.Text = (Program.servico.valor).ToString();
+            lblPreco2.Text = (Program.servico.valor).ToString();
+            lblNumeroCurtidas.Text = Program.servico.curtidas.ToString();
+            lblNumeroFavoritados.Text = Program.servico.qtd_favoritados.ToString();
+            lblPublicadoEm.Text = Program.servico.publicado_em;
+
+            //imagens
+            imagem1.LoadAsync(Program.servico.imagem_1);
+            imagem1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            imagem2.LoadAsync(Program.servico.imagem_2);
+            imagem2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            imagem3.LoadAsync(Program.servico.imagem_3);
+            imagem3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+
+            //icone do programador
+            Assinante assinante = new Assinante();
+            Program.assinante = assinante.retornaAssinante(Program.servico.id_assinante);
+            imagemPerfil.LoadAsync(Program.assinante.imagem_icon);
+            imagemPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+
+            //Confere se o usuario que esta vendo o serviço ja favoritou esse serviço ou se é um assinante
+            confereFavoritado();
+        }
+
+        private void btnCurtir_Click_1(object sender, EventArgs e)
         {
             numeroCurtidas = Program.servico.curtidas;
 
@@ -214,24 +201,37 @@ namespace pi_serasa_LinkeDev
             lblDesfazerCurtida.Enabled = true;
         }
 
-        private void lblDesfazerCurtida_Click(object sender, EventArgs e)
+        private void btnComprar_Click_1(object sender, EventArgs e)
         {
             Servico servico = new Servico();
-            Program.servico.curtidas--;
-            servico.atualizaCurtida(Program.servico.curtidas, Program.servico.id);
+
+            Usuario usuario = new Usuario();
+            usuario = usuario.retornaEmailUsuario(Program.servico.id_assinante);
+
+            compras++;
+
+            servico.atualizaVendidos(compras, Program.servico.id);
             servico = servico.retornaNumeros(Program.servico.id);
-            Program.servico.curtidas = servico.curtidas;
-            lblNumeroCurtidas.Text = Program.servico.curtidas.ToString();
+            Program.servico.vendidos = servico.vendidos;
 
-            Program.idUsuarioCurtiu = 0;
+            lblNumeroVendido.Text = Program.servico.vendidos.ToString();
 
-            lblDesfazerCurtida.Visible = false;
-            lblDesfazerCurtida.Enabled = false;
+            Assinante assinante = new Assinante();
+
+            assinante.atualizaVendidos(Program.servico.id_assinante);
+
+            //Essa linha serve para mudar a cultura de execução, aqui no Brasil
+            //utiliza-se virgula para separar decimais, nos EUA é 
+            //utilizado ponto. Foi necessario fazer isso porque no banco se entende apenas
+            //ponto como separador de decimais.
+            CultureInfo.CurrentCulture = new CultureInfo("en-US"); // Para definir para cultura norte-americana.
+
+            ServicosComprados sc = new ServicosComprados();
+            sc.insere(Program.usuario.id, Program.servico.id, Program.servico.nome, Program.servico.tipo, Program.servico.imagem_1, Program.servico.valor);
+            MessageBox.Show("compra efetuada, entre em contato com o vendedor através do seguinte email: " + usuario.email);
         }
 
-        //BOTAO FAVORITAR
-        int numeroFavoritados = Program.servico.qtd_favoritados;
-        private void btnFavoritar_Click(object sender, EventArgs e)
+        private void btnFavoritar_Click_1(object sender, EventArgs e)
         {
             numeroFavoritados = Program.servico.qtd_favoritados;
 
@@ -253,8 +253,28 @@ namespace pi_serasa_LinkeDev
             confereFavoritado();
         }
 
-        private void lblDesfazerFavoritado_Click(object sender, EventArgs e)
+        private void lblDesfazerCurtida_Click_1(object sender, EventArgs e)
         {
+            Servico servico = new Servico();
+            Program.servico.curtidas--;
+            servico.atualizaCurtida(Program.servico.curtidas, Program.servico.id);
+            servico = servico.retornaNumeros(Program.servico.id);
+            Program.servico.curtidas = servico.curtidas;
+            lblNumeroCurtidas.Text = Program.servico.curtidas.ToString();
+
+            Program.idUsuarioCurtiu = 0;
+
+            lblDesfazerCurtida.Visible = false;
+            lblDesfazerCurtida.Enabled = false;
+        }
+
+        private void btnFechar_Click_1(object sender, EventArgs e)
+        {
+
+            Program.idUsuarioCurtiu = 0;
+            this.Close();
+            Form1.panelCentral.Controls.Clear();
+            carregaTemplates();
         }
     }
 }

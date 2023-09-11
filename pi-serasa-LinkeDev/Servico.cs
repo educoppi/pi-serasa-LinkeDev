@@ -257,18 +257,35 @@ namespace pi_serasa_LinkeDev
             return servicos;
         }
 
-
-        public Servico buscaImagensTelaVisitante(int id_postagem)
+ 
+        
+        public List<Servico> buscaImagens()
         {
-
-            string query = $"SELECT imagem_1, imagem_2, imagem_3 FROM servicos WHERE id = {id_postagem};";
+            string query = $"SELECT imagem_1, imagem_2, imagem_3 FROM servicos;";
 
             DataTable tabela = Conexao.executaQuery(query);
 
-            Servico servico = carregaImagens(tabela.Rows[0]);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDadosImagens(linha);
+                servicos.Add(servico);
+            }
+            return servicos;
+        }
+
+        public Servico carregaDadosImagens(DataRow linha)
+        {
+            string imagem_1 = linha["imagem_1"].ToString();
+            string imagem_2 = linha["imagem_2"].ToString();
+            string imagem_3 = linha["imagem_3"].ToString();
+
+            Servico servico = new Servico(imagem_1, imagem_2, imagem_3);
 
             return servico;
         }
+
 
         public Servico carregaDados(DataRow linha)
         {

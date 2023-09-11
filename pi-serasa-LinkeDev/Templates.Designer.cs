@@ -28,375 +28,376 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lblProduto = new Label();
-            lblProdutoTXT = new Label();
-            lblProgamador = new Label();
-            lblProgamadorTXT = new Label();
-            lblDescricao = new Label();
-            lblDescricaoTXT = new Label();
-            lblValor = new Label();
-            lblPreco1 = new Label();
-            btnComprar = new WiLBiT.WiLBiTButton();
-            lblVendido = new Label();
-            lblNumeroVendido = new Label();
-            lblPreco2 = new Label();
-            lblSifrao1 = new Label();
-            lblSifrao2 = new Label();
-            btnFechar = new WiLBiT.WiLBiTButton();
-            imagem1 = new PictureBox();
-            imagem2 = new PictureBox();
-            imagem3 = new PictureBox();
-            imagemPerfil = new PictureBox();
-            lblCurtidas = new Label();
-            lblNumeroCurtidas = new Label();
-            lblFavoritados = new Label();
-            lblNumeroFavoritados = new Label();
-            btnCurtir = new Button();
-            btnFavoritar = new Button();
-            lblDesfazerCurtida = new Label();
-            lblPublicadoEm = new Label();
-            ((System.ComponentModel.ISupportInitialize)imagem1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)imagem2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)imagem3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)imagemPerfil).BeginInit();
-            SuspendLayout();
+            this.lblProduto = new System.Windows.Forms.Label();
+            this.lblProdutoTXT = new System.Windows.Forms.Label();
+            this.lblProgamador = new System.Windows.Forms.Label();
+            this.lblProgamadorTXT = new System.Windows.Forms.Label();
+            this.lblDescricao = new System.Windows.Forms.Label();
+            this.lblDescricaoTXT = new System.Windows.Forms.Label();
+            this.lblValor = new System.Windows.Forms.Label();
+            this.lblPreco1 = new System.Windows.Forms.Label();
+            this.btnComprar = new WiLBiT.WiLBiTButton();
+            this.lblVendido = new System.Windows.Forms.Label();
+            this.lblNumeroVendido = new System.Windows.Forms.Label();
+            this.lblPreco2 = new System.Windows.Forms.Label();
+            this.lblSifrao1 = new System.Windows.Forms.Label();
+            this.lblSifrao2 = new System.Windows.Forms.Label();
+            this.btnFechar = new WiLBiT.WiLBiTButton();
+            this.imagem1 = new System.Windows.Forms.PictureBox();
+            this.imagem2 = new System.Windows.Forms.PictureBox();
+            this.imagem3 = new System.Windows.Forms.PictureBox();
+            this.imagemPerfil = new System.Windows.Forms.PictureBox();
+            this.lblCurtidas = new System.Windows.Forms.Label();
+            this.lblNumeroCurtidas = new System.Windows.Forms.Label();
+            this.lblFavoritados = new System.Windows.Forms.Label();
+            this.lblNumeroFavoritados = new System.Windows.Forms.Label();
+            this.btnCurtir = new System.Windows.Forms.Button();
+            this.btnFavoritar = new System.Windows.Forms.Button();
+            this.lblDesfazerCurtida = new System.Windows.Forms.Label();
+            this.lblPublicadoEm = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.imagem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemPerfil)).BeginInit();
+            this.SuspendLayout();
             // 
             // lblProduto
             // 
-            lblProduto.AutoSize = true;
-            lblProduto.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProduto.ForeColor = Color.White;
-            lblProduto.Location = new Point(355, 12);
-            lblProduto.Name = "lblProduto";
-            lblProduto.Size = new Size(92, 25);
-            lblProduto.TabIndex = 0;
-            lblProduto.Text = "Produto:";
+            this.lblProduto.AutoSize = true;
+            this.lblProduto.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblProduto.ForeColor = System.Drawing.Color.White;
+            this.lblProduto.Location = new System.Drawing.Point(355, 12);
+            this.lblProduto.Name = "lblProduto";
+            this.lblProduto.Size = new System.Drawing.Size(92, 25);
+            this.lblProduto.TabIndex = 0;
+            this.lblProduto.Text = "Produto:";
             // 
             // lblProdutoTXT
             // 
-            lblProdutoTXT.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProdutoTXT.ForeColor = Color.White;
-            lblProdutoTXT.Location = new Point(443, 12);
-            lblProdutoTXT.Name = "lblProdutoTXT";
-            lblProdutoTXT.Size = new Size(149, 63);
-            lblProdutoTXT.TabIndex = 1;
+            this.lblProdutoTXT.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblProdutoTXT.ForeColor = System.Drawing.Color.White;
+            this.lblProdutoTXT.Location = new System.Drawing.Point(443, 12);
+            this.lblProdutoTXT.Name = "lblProdutoTXT";
+            this.lblProdutoTXT.Size = new System.Drawing.Size(149, 63);
+            this.lblProdutoTXT.TabIndex = 1;
             // 
             // lblProgamador
             // 
-            lblProgamador.AutoSize = true;
-            lblProgamador.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProgamador.ForeColor = Color.White;
-            lblProgamador.Location = new Point(118, 9);
-            lblProgamador.Name = "lblProgamador";
-            lblProgamador.Size = new Size(131, 25);
-            lblProgamador.TabIndex = 2;
-            lblProgamador.Text = "Progamador:";
+            this.lblProgamador.AutoSize = true;
+            this.lblProgamador.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblProgamador.ForeColor = System.Drawing.Color.White;
+            this.lblProgamador.Location = new System.Drawing.Point(118, 9);
+            this.lblProgamador.Name = "lblProgamador";
+            this.lblProgamador.Size = new System.Drawing.Size(131, 25);
+            this.lblProgamador.TabIndex = 2;
+            this.lblProgamador.Text = "Progamador:";
             // 
             // lblProgamadorTXT
             // 
-            lblProgamadorTXT.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblProgamadorTXT.ForeColor = Color.White;
-            lblProgamadorTXT.Location = new Point(118, 36);
-            lblProgamadorTXT.Name = "lblProgamadorTXT";
-            lblProgamadorTXT.Size = new Size(231, 73);
-            lblProgamadorTXT.TabIndex = 3;
+            this.lblProgamadorTXT.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblProgamadorTXT.ForeColor = System.Drawing.Color.White;
+            this.lblProgamadorTXT.Location = new System.Drawing.Point(118, 36);
+            this.lblProgamadorTXT.Name = "lblProgamadorTXT";
+            this.lblProgamadorTXT.Size = new System.Drawing.Size(231, 73);
+            this.lblProgamadorTXT.TabIndex = 3;
+            this.lblProgamadorTXT.Click += new System.EventHandler(this.lblProgamadorTXT_Click);
             // 
             // lblDescricao
             // 
-            lblDescricao.AutoSize = true;
-            lblDescricao.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDescricao.ForeColor = Color.White;
-            lblDescricao.Location = new Point(807, 187);
-            lblDescricao.Name = "lblDescricao";
-            lblDescricao.Size = new Size(88, 21);
-            lblDescricao.TabIndex = 4;
-            lblDescricao.Text = "Descrição:";
+            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDescricao.ForeColor = System.Drawing.Color.White;
+            this.lblDescricao.Location = new System.Drawing.Point(756, 177);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(132, 32);
+            this.lblDescricao.TabIndex = 4;
+            this.lblDescricao.Text = "Descrição:";
             // 
             // lblDescricaoTXT
             // 
-            lblDescricaoTXT.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblDescricaoTXT.ForeColor = Color.White;
-            lblDescricaoTXT.Location = new Point(715, 222);
-            lblDescricaoTXT.Name = "lblDescricaoTXT";
-            lblDescricaoTXT.Size = new Size(173, 102);
-            lblDescricaoTXT.TabIndex = 5;
+            this.lblDescricaoTXT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblDescricaoTXT.ForeColor = System.Drawing.Color.White;
+            this.lblDescricaoTXT.Location = new System.Drawing.Point(715, 222);
+            this.lblDescricaoTXT.Name = "lblDescricaoTXT";
+            this.lblDescricaoTXT.Size = new System.Drawing.Size(173, 102);
+            this.lblDescricaoTXT.TabIndex = 5;
             // 
             // lblValor
             // 
-            lblValor.AutoSize = true;
-            lblValor.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblValor.ForeColor = Color.White;
-            lblValor.Location = new Point(612, 81);
-            lblValor.Name = "lblValor";
-            lblValor.Size = new Size(50, 20);
-            lblValor.TabIndex = 6;
-            lblValor.Text = "Valor:";
+            this.lblValor.AutoSize = true;
+            this.lblValor.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblValor.ForeColor = System.Drawing.Color.White;
+            this.lblValor.Location = new System.Drawing.Point(612, 81);
+            this.lblValor.Name = "lblValor";
+            this.lblValor.Size = new System.Drawing.Size(50, 20);
+            this.lblValor.TabIndex = 6;
+            this.lblValor.Text = "Valor:";
             // 
             // lblPreco1
             // 
-            lblPreco1.AutoSize = true;
-            lblPreco1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPreco1.ForeColor = Color.White;
-            lblPreco1.Location = new Point(682, 73);
-            lblPreco1.Name = "lblPreco1";
-            lblPreco1.Size = new Size(0, 30);
-            lblPreco1.TabIndex = 7;
+            this.lblPreco1.AutoSize = true;
+            this.lblPreco1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPreco1.ForeColor = System.Drawing.Color.White;
+            this.lblPreco1.Location = new System.Drawing.Point(682, 73);
+            this.lblPreco1.Name = "lblPreco1";
+            this.lblPreco1.Size = new System.Drawing.Size(0, 30);
+            this.lblPreco1.TabIndex = 7;
             // 
             // btnComprar
             // 
-            btnComprar.BackColor = Color.FromArgb(72, 116, 245);
-            btnComprar.BorderColor = Color.Black;
-            btnComprar.BorderRadius = 9;
-            btnComprar.BorderSize = 2;
-            btnComprar.FlatAppearance.BorderSize = 0;
-            btnComprar.FlatStyle = FlatStyle.Flat;
-            btnComprar.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnComprar.ForeColor = Color.White;
-            btnComprar.Location = new Point(612, 30);
-            btnComprar.Name = "btnComprar";
-            btnComprar.Size = new Size(98, 40);
-            btnComprar.TabIndex = 8;
-            btnComprar.Text = "Comprar";
-            btnComprar.UseVisualStyleBackColor = false;
-            btnComprar.Click += btnComprar_Click;
+            this.btnComprar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnComprar.BorderColor = System.Drawing.Color.Black;
+            this.btnComprar.BorderRadius = 9;
+            this.btnComprar.BorderSize = 2;
+            this.btnComprar.FlatAppearance.BorderSize = 0;
+            this.btnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnComprar.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnComprar.ForeColor = System.Drawing.Color.White;
+            this.btnComprar.Location = new System.Drawing.Point(612, 30);
+            this.btnComprar.Name = "btnComprar";
+            this.btnComprar.Size = new System.Drawing.Size(98, 40);
+            this.btnComprar.TabIndex = 8;
+            this.btnComprar.Text = "Comprar";
+            this.btnComprar.UseVisualStyleBackColor = false;
+            this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click_1);
             // 
             // lblVendido
             // 
-            lblVendido.AutoSize = true;
-            lblVendido.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblVendido.ForeColor = Color.White;
-            lblVendido.Location = new Point(431, 103);
-            lblVendido.Name = "lblVendido";
-            lblVendido.Size = new Size(77, 20);
-            lblVendido.TabIndex = 9;
-            lblVendido.Text = "Vendidos:";
+            this.lblVendido.AutoSize = true;
+            this.lblVendido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblVendido.ForeColor = System.Drawing.Color.White;
+            this.lblVendido.Location = new System.Drawing.Point(431, 103);
+            this.lblVendido.Name = "lblVendido";
+            this.lblVendido.Size = new System.Drawing.Size(77, 20);
+            this.lblVendido.TabIndex = 9;
+            this.lblVendido.Text = "Vendidos:";
             // 
             // lblNumeroVendido
             // 
-            lblNumeroVendido.AutoSize = true;
-            lblNumeroVendido.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNumeroVendido.ForeColor = Color.White;
-            lblNumeroVendido.Location = new Point(511, 104);
-            lblNumeroVendido.Name = "lblNumeroVendido";
-            lblNumeroVendido.Size = new Size(0, 20);
-            lblNumeroVendido.TabIndex = 11;
+            this.lblNumeroVendido.AutoSize = true;
+            this.lblNumeroVendido.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNumeroVendido.ForeColor = System.Drawing.Color.White;
+            this.lblNumeroVendido.Location = new System.Drawing.Point(511, 104);
+            this.lblNumeroVendido.Name = "lblNumeroVendido";
+            this.lblNumeroVendido.Size = new System.Drawing.Size(0, 20);
+            this.lblNumeroVendido.TabIndex = 11;
             // 
             // lblPreco2
             // 
-            lblPreco2.AutoSize = true;
-            lblPreco2.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPreco2.ForeColor = Color.White;
-            lblPreco2.Location = new Point(716, 401);
-            lblPreco2.Name = "lblPreco2";
-            lblPreco2.Size = new Size(0, 40);
-            lblPreco2.TabIndex = 12;
+            this.lblPreco2.AutoSize = true;
+            this.lblPreco2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPreco2.ForeColor = System.Drawing.Color.White;
+            this.lblPreco2.Location = new System.Drawing.Point(716, 401);
+            this.lblPreco2.Name = "lblPreco2";
+            this.lblPreco2.Size = new System.Drawing.Size(0, 40);
+            this.lblPreco2.TabIndex = 12;
             // 
             // lblSifrao1
             // 
-            lblSifrao1.AutoSize = true;
-            lblSifrao1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSifrao1.ForeColor = Color.White;
-            lblSifrao1.Location = new Point(656, 76);
-            lblSifrao1.Name = "lblSifrao1";
-            lblSifrao1.Size = new Size(33, 25);
-            lblSifrao1.TabIndex = 16;
-            lblSifrao1.Text = "R$";
+            this.lblSifrao1.AutoSize = true;
+            this.lblSifrao1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSifrao1.ForeColor = System.Drawing.Color.White;
+            this.lblSifrao1.Location = new System.Drawing.Point(656, 76);
+            this.lblSifrao1.Name = "lblSifrao1";
+            this.lblSifrao1.Size = new System.Drawing.Size(33, 25);
+            this.lblSifrao1.TabIndex = 16;
+            this.lblSifrao1.Text = "R$";
             // 
             // lblSifrao2
             // 
-            lblSifrao2.AutoSize = true;
-            lblSifrao2.Font = new Font("Segoe UI", 21.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSifrao2.ForeColor = Color.White;
-            lblSifrao2.Location = new Point(682, 401);
-            lblSifrao2.Name = "lblSifrao2";
-            lblSifrao2.Size = new Size(50, 40);
-            lblSifrao2.TabIndex = 17;
-            lblSifrao2.Text = "R$";
+            this.lblSifrao2.AutoSize = true;
+            this.lblSifrao2.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSifrao2.ForeColor = System.Drawing.Color.White;
+            this.lblSifrao2.Location = new System.Drawing.Point(682, 401);
+            this.lblSifrao2.Name = "lblSifrao2";
+            this.lblSifrao2.Size = new System.Drawing.Size(50, 40);
+            this.lblSifrao2.TabIndex = 17;
+            this.lblSifrao2.Text = "R$";
             // 
             // btnFechar
             // 
-            btnFechar.BackColor = Color.FromArgb(72, 116, 245);
-            btnFechar.BorderColor = Color.FromArgb(72, 116, 245);
-            btnFechar.BorderRadius = 6;
-            btnFechar.BorderSize = 0;
-            btnFechar.FlatAppearance.BorderSize = 0;
-            btnFechar.FlatStyle = FlatStyle.Flat;
-            btnFechar.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnFechar.ForeColor = Color.White;
-            btnFechar.Location = new Point(750, 9);
-            btnFechar.Name = "btnFechar";
-            btnFechar.Size = new Size(38, 30);
-            btnFechar.TabIndex = 22;
-            btnFechar.Text = " X";
-            btnFechar.UseVisualStyleBackColor = false;
-            btnFechar.Click += btnFechar_Click;
+            this.btnFechar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnFechar.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnFechar.BorderRadius = 6;
+            this.btnFechar.BorderSize = 0;
+            this.btnFechar.FlatAppearance.BorderSize = 0;
+            this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFechar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnFechar.ForeColor = System.Drawing.Color.White;
+            this.btnFechar.Location = new System.Drawing.Point(750, 9);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(38, 30);
+            this.btnFechar.TabIndex = 22;
+            this.btnFechar.Text = " X";
+            this.btnFechar.UseVisualStyleBackColor = false;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click_1);
             // 
             // imagem1
             // 
-            imagem1.Location = new Point(12, 122);
-            imagem1.Name = "imagem1";
-            imagem1.Size = new Size(296, 174);
-            imagem1.TabIndex = 24;
-            imagem1.TabStop = false;
+            this.imagem1.Location = new System.Drawing.Point(12, 122);
+            this.imagem1.Name = "imagem1";
+            this.imagem1.Size = new System.Drawing.Size(359, 202);
+            this.imagem1.TabIndex = 24;
+            this.imagem1.TabStop = false;
             // 
             // imagem2
             // 
-            imagem2.Location = new Point(12, 313);
-            imagem2.Name = "imagem2";
-            imagem2.Size = new Size(296, 174);
-            imagem2.TabIndex = 25;
-            imagem2.TabStop = false;
+            this.imagem2.Location = new System.Drawing.Point(12, 313);
+            this.imagem2.Name = "imagem2";
+            this.imagem2.Size = new System.Drawing.Size(359, 202);
+            this.imagem2.TabIndex = 25;
+            this.imagem2.TabStop = false;
             // 
             // imagem3
             // 
-            imagem3.Location = new Point(323, 222);
-            imagem3.Name = "imagem3";
-            imagem3.Size = new Size(301, 174);
-            imagem3.TabIndex = 26;
-            imagem3.TabStop = false;
+            this.imagem3.Location = new System.Drawing.Point(217, 239);
+            this.imagem3.Name = "imagem3";
+            this.imagem3.Size = new System.Drawing.Size(359, 202);
+            this.imagem3.TabIndex = 26;
+            this.imagem3.TabStop = false;
             // 
             // imagemPerfil
             // 
-            imagemPerfil.Location = new Point(12, 9);
-            imagemPerfil.Name = "imagemPerfil";
-            imagemPerfil.Size = new Size(100, 92);
-            imagemPerfil.TabIndex = 27;
-            imagemPerfil.TabStop = false;
-            imagemPerfil.Click += imagemPerfil_Click;
+            this.imagemPerfil.Location = new System.Drawing.Point(12, 9);
+            this.imagemPerfil.Name = "imagemPerfil";
+            this.imagemPerfil.Size = new System.Drawing.Size(100, 92);
+            this.imagemPerfil.TabIndex = 27;
+            this.imagemPerfil.TabStop = false;
             // 
             // lblCurtidas
             // 
-            lblCurtidas.AutoSize = true;
-            lblCurtidas.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCurtidas.ForeColor = Color.White;
-            lblCurtidas.Location = new Point(437, 138);
-            lblCurtidas.Name = "lblCurtidas";
-            lblCurtidas.Size = new Size(71, 20);
-            lblCurtidas.TabIndex = 28;
-            lblCurtidas.Text = "Curtidas:";
+            this.lblCurtidas.AutoSize = true;
+            this.lblCurtidas.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCurtidas.ForeColor = System.Drawing.Color.White;
+            this.lblCurtidas.Location = new System.Drawing.Point(437, 138);
+            this.lblCurtidas.Name = "lblCurtidas";
+            this.lblCurtidas.Size = new System.Drawing.Size(71, 20);
+            this.lblCurtidas.TabIndex = 28;
+            this.lblCurtidas.Text = "Curtidas:";
             // 
             // lblNumeroCurtidas
             // 
-            lblNumeroCurtidas.AutoSize = true;
-            lblNumeroCurtidas.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNumeroCurtidas.ForeColor = Color.White;
-            lblNumeroCurtidas.Location = new Point(504, 138);
-            lblNumeroCurtidas.Name = "lblNumeroCurtidas";
-            lblNumeroCurtidas.Size = new Size(0, 20);
-            lblNumeroCurtidas.TabIndex = 29;
+            this.lblNumeroCurtidas.AutoSize = true;
+            this.lblNumeroCurtidas.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNumeroCurtidas.ForeColor = System.Drawing.Color.White;
+            this.lblNumeroCurtidas.Location = new System.Drawing.Point(504, 138);
+            this.lblNumeroCurtidas.Name = "lblNumeroCurtidas";
+            this.lblNumeroCurtidas.Size = new System.Drawing.Size(0, 20);
+            this.lblNumeroCurtidas.TabIndex = 29;
             // 
             // lblFavoritados
             // 
-            lblFavoritados.AutoSize = true;
-            lblFavoritados.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblFavoritados.ForeColor = Color.White;
-            lblFavoritados.Location = new Point(409, 169);
-            lblFavoritados.Name = "lblFavoritados";
-            lblFavoritados.Size = new Size(95, 20);
-            lblFavoritados.TabIndex = 30;
-            lblFavoritados.Text = "Favoritados:";
+            this.lblFavoritados.AutoSize = true;
+            this.lblFavoritados.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblFavoritados.ForeColor = System.Drawing.Color.White;
+            this.lblFavoritados.Location = new System.Drawing.Point(409, 169);
+            this.lblFavoritados.Name = "lblFavoritados";
+            this.lblFavoritados.Size = new System.Drawing.Size(95, 20);
+            this.lblFavoritados.TabIndex = 30;
+            this.lblFavoritados.Text = "Favoritados:";
             // 
             // lblNumeroFavoritados
             // 
-            lblNumeroFavoritados.AutoSize = true;
-            lblNumeroFavoritados.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNumeroFavoritados.ForeColor = Color.White;
-            lblNumeroFavoritados.Location = new Point(500, 169);
-            lblNumeroFavoritados.Name = "lblNumeroFavoritados";
-            lblNumeroFavoritados.Size = new Size(0, 20);
-            lblNumeroFavoritados.TabIndex = 31;
+            this.lblNumeroFavoritados.AutoSize = true;
+            this.lblNumeroFavoritados.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNumeroFavoritados.ForeColor = System.Drawing.Color.White;
+            this.lblNumeroFavoritados.Location = new System.Drawing.Point(500, 169);
+            this.lblNumeroFavoritados.Name = "lblNumeroFavoritados";
+            this.lblNumeroFavoritados.Size = new System.Drawing.Size(0, 20);
+            this.lblNumeroFavoritados.TabIndex = 31;
             // 
             // btnCurtir
             // 
-            btnCurtir.BackColor = Color.FromArgb(72, 116, 245);
-            btnCurtir.ForeColor = Color.White;
-            btnCurtir.Location = new Point(612, 165);
-            btnCurtir.Name = "btnCurtir";
-            btnCurtir.Size = new Size(91, 43);
-            btnCurtir.TabIndex = 32;
-            btnCurtir.Text = "Curtir";
-            btnCurtir.UseVisualStyleBackColor = false;
-            btnCurtir.Click += btnCurtir_Click;
+            this.btnCurtir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnCurtir.ForeColor = System.Drawing.Color.White;
+            this.btnCurtir.Location = new System.Drawing.Point(612, 165);
+            this.btnCurtir.Name = "btnCurtir";
+            this.btnCurtir.Size = new System.Drawing.Size(91, 43);
+            this.btnCurtir.TabIndex = 32;
+            this.btnCurtir.Text = "Curtir";
+            this.btnCurtir.UseVisualStyleBackColor = false;
+            this.btnCurtir.Click += new System.EventHandler(this.btnCurtir_Click_1);
             // 
             // btnFavoritar
             // 
-            btnFavoritar.BackColor = Color.FromArgb(72, 116, 245);
-            btnFavoritar.ForeColor = Color.White;
-            btnFavoritar.Location = new Point(612, 235);
-            btnFavoritar.Name = "btnFavoritar";
-            btnFavoritar.Size = new Size(91, 43);
-            btnFavoritar.TabIndex = 33;
-            btnFavoritar.Text = "Favoritar";
-            btnFavoritar.UseVisualStyleBackColor = false;
-            btnFavoritar.Click += btnFavoritar_Click;
+            this.btnFavoritar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(116)))), ((int)(((byte)(245)))));
+            this.btnFavoritar.ForeColor = System.Drawing.Color.White;
+            this.btnFavoritar.Location = new System.Drawing.Point(612, 235);
+            this.btnFavoritar.Name = "btnFavoritar";
+            this.btnFavoritar.Size = new System.Drawing.Size(91, 43);
+            this.btnFavoritar.TabIndex = 33;
+            this.btnFavoritar.Text = "Favoritar";
+            this.btnFavoritar.UseVisualStyleBackColor = false;
+            this.btnFavoritar.Click += new System.EventHandler(this.btnFavoritar_Click_1);
             // 
             // lblDesfazerCurtida
             // 
-            lblDesfazerCurtida.AutoSize = true;
-            lblDesfazerCurtida.Enabled = false;
-            lblDesfazerCurtida.ForeColor = Color.White;
-            lblDesfazerCurtida.Location = new Point(723, 177);
-            lblDesfazerCurtida.Name = "lblDesfazerCurtida";
-            lblDesfazerCurtida.Size = new Size(51, 15);
-            lblDesfazerCurtida.TabIndex = 34;
-            lblDesfazerCurtida.Text = "Desfazer";
-            lblDesfazerCurtida.Visible = false;
-            lblDesfazerCurtida.Click += lblDesfazerCurtida_Click;
+            this.lblDesfazerCurtida.AutoSize = true;
+            this.lblDesfazerCurtida.Enabled = false;
+            this.lblDesfazerCurtida.ForeColor = System.Drawing.Color.White;
+            this.lblDesfazerCurtida.Location = new System.Drawing.Point(723, 177);
+            this.lblDesfazerCurtida.Name = "lblDesfazerCurtida";
+            this.lblDesfazerCurtida.Size = new System.Drawing.Size(51, 15);
+            this.lblDesfazerCurtida.TabIndex = 34;
+            this.lblDesfazerCurtida.Text = "Desfazer";
+            this.lblDesfazerCurtida.Visible = false;
+            this.lblDesfazerCurtida.Click += new System.EventHandler(this.lblDesfazerCurtida_Click_1);
             // 
             // lblPublicadoEm
             // 
-            lblPublicadoEm.AutoSize = true;
-            lblPublicadoEm.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPublicadoEm.ForeColor = Color.White;
-            lblPublicadoEm.Location = new Point(431, 55);
-            lblPublicadoEm.Name = "lblPublicadoEm";
-            lblPublicadoEm.Size = new Size(103, 20);
-            lblPublicadoEm.TabIndex = 35;
-            lblPublicadoEm.Text = "publicado em";
+            this.lblPublicadoEm.AutoSize = true;
+            this.lblPublicadoEm.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblPublicadoEm.ForeColor = System.Drawing.Color.White;
+            this.lblPublicadoEm.Location = new System.Drawing.Point(431, 55);
+            this.lblPublicadoEm.Name = "lblPublicadoEm";
+            this.lblPublicadoEm.Size = new System.Drawing.Size(103, 20);
+            this.lblPublicadoEm.TabIndex = 35;
+            this.lblPublicadoEm.Text = "publicado em";
             // 
             // Templates
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(0, 0, 64);
-            ClientSize = new Size(900, 552);
-            Controls.Add(lblPublicadoEm);
-            Controls.Add(lblDesfazerCurtida);
-            Controls.Add(btnFavoritar);
-            Controls.Add(btnCurtir);
-            Controls.Add(lblNumeroFavoritados);
-            Controls.Add(lblFavoritados);
-            Controls.Add(lblNumeroCurtidas);
-            Controls.Add(lblCurtidas);
-            Controls.Add(imagemPerfil);
-            Controls.Add(imagem3);
-            Controls.Add(imagem2);
-            Controls.Add(imagem1);
-            Controls.Add(btnFechar);
-            Controls.Add(lblSifrao2);
-            Controls.Add(lblSifrao1);
-            Controls.Add(lblPreco2);
-            Controls.Add(lblNumeroVendido);
-            Controls.Add(lblVendido);
-            Controls.Add(btnComprar);
-            Controls.Add(lblPreco1);
-            Controls.Add(lblValor);
-            Controls.Add(lblDescricaoTXT);
-            Controls.Add(lblDescricao);
-            Controls.Add(lblProgamadorTXT);
-            Controls.Add(lblProgamador);
-            Controls.Add(lblProdutoTXT);
-            Controls.Add(lblProduto);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Templates";
-            Text = "Templates";
-            Load += Templates_Load;
-            ((System.ComponentModel.ISupportInitialize)imagem1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)imagem2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)imagem3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)imagemPerfil).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(900, 552);
+            this.Controls.Add(this.lblPublicadoEm);
+            this.Controls.Add(this.lblDesfazerCurtida);
+            this.Controls.Add(this.btnFavoritar);
+            this.Controls.Add(this.btnCurtir);
+            this.Controls.Add(this.lblNumeroFavoritados);
+            this.Controls.Add(this.lblFavoritados);
+            this.Controls.Add(this.lblNumeroCurtidas);
+            this.Controls.Add(this.lblCurtidas);
+            this.Controls.Add(this.imagemPerfil);
+            this.Controls.Add(this.imagem3);
+            this.Controls.Add(this.imagem2);
+            this.Controls.Add(this.imagem1);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.lblSifrao2);
+            this.Controls.Add(this.lblSifrao1);
+            this.Controls.Add(this.lblPreco2);
+            this.Controls.Add(this.lblNumeroVendido);
+            this.Controls.Add(this.lblVendido);
+            this.Controls.Add(this.btnComprar);
+            this.Controls.Add(this.lblPreco1);
+            this.Controls.Add(this.lblValor);
+            this.Controls.Add(this.lblDescricaoTXT);
+            this.Controls.Add(this.lblDescricao);
+            this.Controls.Add(this.lblProgamadorTXT);
+            this.Controls.Add(this.lblProgamador);
+            this.Controls.Add(this.lblProdutoTXT);
+            this.Controls.Add(this.lblProduto);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Templates";
+            this.Text = "Templates";
+            this.Load += new System.EventHandler(this.Templates_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.imagem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagemPerfil)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

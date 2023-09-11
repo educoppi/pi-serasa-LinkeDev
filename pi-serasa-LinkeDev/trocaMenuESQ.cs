@@ -34,7 +34,16 @@ namespace pi_serasa_LinkeDev
 
         private void wilBitButton2_Click(object sender, EventArgs e)
         {
+            Form1.panelCentral.Controls.Clear();
+            atualizaCoordenadas();
             carregaTemplates();
+        }
+
+        void atualizaCoordenadas()
+        {
+            x = 50;
+            y = 30;
+            quebraLinha = 0;
         }
 
         void carregaTemplates()
@@ -86,6 +95,118 @@ namespace pi_serasa_LinkeDev
             form.Location = new Point(Form1.panelCentral.Location.X - 202, Form1.panelCentral.Location.Y - 109);
             form.Size = new Size(Form1.panelCentral.Width, Form1.panelCentral.Height);
             form.Show();
+        }
+
+        private void wilBitButton12_Click(object sender, EventArgs e)
+        {
+            atualizaCoordenadas();
+            Form1.panelCentral.Controls.Clear();
+            Servico servico = new Servico();
+            List<Servico> servicos = new List<Servico>();
+            servicos = servico.buscaImagensMobile();
+
+            foreach (Servico s in servicos)
+            {
+                geraimagens(s);
+            }
+        }
+
+        private void wilBitButton11_Click(object sender, EventArgs e)
+        {
+            atualizaCoordenadas();
+            Form1.panelCentral.Controls.Clear();
+            Servico servico = new Servico();
+            List<Servico> servicos = new List<Servico>();
+            servicos = servico.buscaImagensWeb();
+
+            foreach (Servico s in servicos)
+            {
+                geraimagens(s);
+            }
+        }
+
+        private void wilBitButton3_Click(object sender, EventArgs e)
+        {
+            atualizaCoordenadas();
+            Form1.panelCentral.Controls.Clear();
+            Servico servico = new Servico();
+            List<Servico> servicos = new List<Servico>();
+            servicos = servico.buscaImagensGames();
+
+            foreach (Servico s in servicos)
+            {
+                geraimagens(s);
+            }
+        }
+
+        private void wilBitButton5_Click(object sender, EventArgs e)
+        {
+            atualizaCoordenadas();
+            Form1.panelCentral.Controls.Clear();
+            Servico servico = new Servico();
+            List<Servico> servicos = new List<Servico>();
+            servicos = servico.buscaImagensBancoDeDados();
+
+            foreach (Servico s in servicos)
+            {
+                geraimagens(s);
+            }
+        }
+
+        private void wilBitButton1_Click(object sender, EventArgs e)
+        {
+            atualizaCoordenadas();
+            Form1.panelCentral.Controls.Clear();
+            Servico servico = new Servico();
+            List<Servico> servicos = new List<Servico>();
+            servicos = servico.buscaImagensBackEnd();
+
+            foreach (Servico s in servicos)
+            {
+                geraimagens(s);
+            }
+        }
+
+        private void wilBitButton4_Click(object sender, EventArgs e)
+        {
+            atualizaCoordenadas();
+            Form1.panelCentral.Controls.Clear();
+            Servico servico = new Servico();
+            List<Servico> servicos = new List<Servico>();
+            servicos = servico.buscaImagensFrontEnd();
+
+            foreach (Servico s in servicos)
+            {
+                geraimagens(s);
+            }
+        }
+
+        private void wilBitButton8_Click(object sender, EventArgs e)
+        {
+            atualizaCoordenadas();
+            Form1.panelCentral.Controls.Clear();
+            Servico servico = new Servico();
+            List<Servico> servicos = new List<Servico>();
+            servicos = servico.buscaImagensFullStack();
+
+            foreach (Servico s in servicos)
+            {
+                geraimagens(s);
+            }
+        }
+
+        private void wilBitButton9_Click(object sender, EventArgs e)
+        {
+            atualizaCoordenadas();
+            Form1.panelCentral.Controls.Clear();
+            Servico servico = new Servico();
+            List<Servico> servicos = new List<Servico>();
+            servicos = servico.buscaImagensDesktop();
+
+            foreach (Servico s in servicos)
+            {
+                geraimagens(s);
+            }
         }
     }
 }

@@ -25,8 +25,6 @@ namespace pi_serasa_LinkeDev
 
         private void btnEntrar_LGClick(object sender, EventArgs e)
         {
-
-
             string email = txtEmail_LG.Texts;
             string senha = txtSenha_LG.Texts;
 
@@ -59,6 +57,8 @@ namespace pi_serasa_LinkeDev
                 Cliente cliente = new Cliente();
                 Program.cliente = cliente.retornaCliente(Program.usuario.id);
             }
+
+
             Form1.CarregaBotoes(new trocaBotoes());
             
             Form1.carregamenuESQ(new trocaMenuESQ());

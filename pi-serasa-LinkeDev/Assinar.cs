@@ -23,27 +23,52 @@ namespace pi_serasa_LinkeDev
             carregaImagens();
         }
 
+        void novoAssinante()
+        {
+            if (Program.usuario.isAssinante)
+            {
+                Assinante assinant = new Assinante();
+                Program.assinante = assinant.retornaAssinante(Program.usuario.id);
+                return;
+            }
+
+            Program.usuario.alteraClienteParaAssinante(Program.usuario);
+
+            Cliente cliente = new Cliente();
+            Program.cliente = cliente;
+
+            Assinante assinante = new Assinante();
+            Program.assinante = assinante.retornaAssinante(Program.usuario.id);
+        }
+
         private void btnComprarSE_Click(object sender, EventArgs e)
         {
-            Form1.CarregaBotoes(new TrocaPerfil());
-            Form1.carregamenuESQ(new trocaMenuESQ());
+            novoAssinante();
             this.Close();
+
+            MessageBox.Show(""+Program.usuario.isAssinante);
+            Form1.CarregaBotoes(new trocaBotoes());
+            Form1.carregamenuESQ(new trocaMenuESQ());
             carregaTemplates();
         }
 
         private void btnAssinarAnu_Click(object sender, EventArgs e)
         {
-            Form1.CarregaBotoes(new TrocaPerfil());
-            Form1.carregamenuESQ(new trocaMenuESQ());
+            novoAssinante();
             this.Close();
+            MessageBox.Show("" + Program.usuario.isAssinante);
+            Form1.CarregaBotoes(new trocaBotoes());
+            Form1.carregamenuESQ(new trocaMenuESQ());
             carregaTemplates();
         }
 
         private void btnAssinarMen_Click(object sender, EventArgs e)
         {
-            Form1.CarregaBotoes(new TrocaPerfil());
-            Form1.carregamenuESQ(new trocaMenuESQ());
+            novoAssinante();
             this.Close();
+            MessageBox.Show("" + Program.usuario.isAssinante);
+            Form1.CarregaBotoes(new trocaBotoes());
+            Form1.carregamenuESQ(new trocaMenuESQ());
             carregaTemplates();
         }
 

@@ -63,5 +63,24 @@ namespace pi_serasa_LinkeDev
             Assinante assinante = carregaDados(tabela.Rows[0]);
             return assinante;
         }
+
+        public void atualizaVendidos(int id)
+        {
+            string query1 = $"SELECT SUM(vendidos) FROM servicos WHERE id_assinante = {id};";
+            DataTable tabela = Conexao.executaQuery(query1);
+
+            int vendidos = carregaDadosVendidos(tabela.Rows[0]);
+
+            string query2 = $"UPDATE assinante SET itens_vendidos = {vendidos} WHERE id = {id};";
+            Conexao.executaQuery(query2);
+
+        }
+
+        public int carregaDadosVendidos(DataRow linha)
+        {
+            int itens_vendidos = int.Parse(linha["SUM(vendidos)"].ToString());
+
+            return itens_vendidos;
+        }
     }
 }

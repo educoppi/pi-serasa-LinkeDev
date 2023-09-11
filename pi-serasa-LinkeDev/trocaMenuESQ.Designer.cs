@@ -79,6 +79,7 @@
             wilBitButton12.TabIndex = 16;
             wilBitButton12.Text = "Mobile";
             wilBitButton12.UseVisualStyleBackColor = false;
+            wilBitButton12.Click += wilBitButton12_Click;
             // 
             // wilBitButton11
             // 
@@ -96,6 +97,7 @@
             wilBitButton11.TabIndex = 15;
             wilBitButton11.Text = " Web";
             wilBitButton11.UseVisualStyleBackColor = false;
+            wilBitButton11.Click += wilBitButton11_Click;
             // 
             // wilBitButton9
             // 
@@ -113,6 +115,7 @@
             wilBitButton9.TabIndex = 12;
             wilBitButton9.Text = "Desktop";
             wilBitButton9.UseVisualStyleBackColor = false;
+            wilBitButton9.Click += wilBitButton9_Click;
             // 
             // wilBitButton8
             // 
@@ -128,8 +131,9 @@
             wilBitButton8.Name = "wilBitButton8";
             wilBitButton8.Size = new Size(163, 61);
             wilBitButton8.TabIndex = 11;
-            wilBitButton8.Text = "Full-strack";
+            wilBitButton8.Text = "Full-stack";
             wilBitButton8.UseVisualStyleBackColor = false;
+            wilBitButton8.Click += wilBitButton8_Click;
             // 
             // wilBitButton4
             // 
@@ -147,6 +151,7 @@
             wilBitButton4.TabIndex = 10;
             wilBitButton4.Text = "Front-end";
             wilBitButton4.UseVisualStyleBackColor = false;
+            wilBitButton4.Click += wilBitButton4_Click;
             // 
             // wilBitButton3
             // 
@@ -164,6 +169,7 @@
             wilBitButton3.TabIndex = 9;
             wilBitButton3.Text = "Games";
             wilBitButton3.UseVisualStyleBackColor = false;
+            wilBitButton3.Click += wilBitButton3_Click;
             // 
             // wilBitButton2
             // 
@@ -199,6 +205,7 @@
             wilBitButton1.TabIndex = 7;
             wilBitButton1.Text = "Back-end";
             wilBitButton1.UseVisualStyleBackColor = false;
+            wilBitButton1.Click += wilBitButton1_Click;
             // 
             // wilBitButton5
             // 
@@ -216,6 +223,7 @@
             wilBitButton5.TabIndex = 4;
             wilBitButton5.Text = "Banco de Dados";
             wilBitButton5.UseVisualStyleBackColor = false;
+            wilBitButton5.Click += wilBitButton5_Click;
             // 
             // trocaMenuESQ
             // 

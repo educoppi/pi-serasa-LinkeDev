@@ -35,22 +35,11 @@
             label4 = new Label();
             lblVendidos = new Label();
             label9 = new Label();
-            panelCompradosASS = new WiLBiT.WiLBiTPanel();
-            pictureBox1 = new PictureBox();
-            label2 = new Label();
-            pictureBox3 = new PictureBox();
-            label18 = new Label();
-            label17 = new Label();
-            label16 = new Label();
-            label15 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            label1 = new Label();
             lblComprados = new Label();
             btnFechar = new WiLBiT.WiLBiTButton();
             btnEditar = new WiLBiT.WiLBiTButton();
             panelEditar = new Panel();
+            lblFechar = new Label();
             btnEditar2 = new Button();
             txtEditImagemIcon = new TextBox();
             label6 = new Label();
@@ -59,11 +48,37 @@
             txtEditNome = new TextBox();
             label3 = new Label();
             panelASS = new Panel();
+            panelPostagem = new Panel();
+            btnEnviar = new Button();
+            txtImagem3 = new TextBox();
+            txtImagem2 = new TextBox();
+            txtImagem1 = new TextBox();
+            label19 = new Label();
+            label11 = new Label();
+            numericValor = new NumericUpDown();
+            panel2 = new Panel();
+            rbDesktop = new RadioButton();
+            rbFullStack = new RadioButton();
+            rbFrontEnd = new RadioButton();
+            rbBackEnd = new RadioButton();
+            rbBancoDeDados = new RadioButton();
+            rbGames = new RadioButton();
+            rbWeb = new RadioButton();
+            rbMobile = new RadioButton();
+            rbTemplates = new RadioButton();
+            label10 = new Label();
+            txtDescricaoServico = new TextBox();
+            label8 = new Label();
+            txtNomeServico = new TextBox();
+            label7 = new Label();
+            panelCompradosASS = new Panel();
+            panelASS2 = new Panel();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)picturePerfil).BeginInit();
-            panelCompradosASS.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panelEditar.SuspendLayout();
+            panelPostagem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)numericValor).BeginInit();
+            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // btnADD
@@ -82,6 +97,7 @@
             btnADD.TabIndex = 1;
             btnADD.Text = "+";
             btnADD.UseVisualStyleBackColor = false;
+            btnADD.Click += btnADD_Click;
             // 
             // picturePerfil
             // 
@@ -144,129 +160,6 @@
             label9.TabIndex = 21;
             label9.Text = "Vendidos:";
             // 
-            // panelCompradosASS
-            // 
-            panelCompradosASS.BackColor = Color.FromArgb(49, 57, 60);
-            panelCompradosASS.BorderColor = Color.PaleVioletRed;
-            panelCompradosASS.BorderRadius = 6;
-            panelCompradosASS.BorderSize = 0;
-            panelCompradosASS.Controls.Add(pictureBox1);
-            panelCompradosASS.Controls.Add(label2);
-            panelCompradosASS.Controls.Add(pictureBox3);
-            panelCompradosASS.Controls.Add(label18);
-            panelCompradosASS.Controls.Add(label17);
-            panelCompradosASS.Controls.Add(label16);
-            panelCompradosASS.Controls.Add(label15);
-            panelCompradosASS.Controls.Add(label14);
-            panelCompradosASS.Controls.Add(label13);
-            panelCompradosASS.Controls.Add(label12);
-            panelCompradosASS.Controls.Add(label1);
-            panelCompradosASS.ForeColor = Color.White;
-            panelCompradosASS.Location = new Point(375, 237);
-            panelCompradosASS.Name = "panelCompradosASS";
-            panelCompradosASS.Size = new Size(432, 244);
-            panelCompradosASS.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.FromArgb(192, 255, 255);
-            pictureBox1.Location = new Point(258, 126);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(156, 89);
-            pictureBox1.TabIndex = 30;
-            pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(12, 34);
-            label2.Name = "label2";
-            label2.Size = new Size(92, 25);
-            label2.TabIndex = 29;
-            label2.Text = "Produto:";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.FromArgb(192, 255, 255);
-            pictureBox3.Location = new Point(258, 8);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(156, 89);
-            pictureBox3.TabIndex = 27;
-            pictureBox3.TabStop = false;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label18.Location = new Point(117, 79);
-            label18.Name = "label18";
-            label18.Size = new Size(0, 17);
-            label18.TabIndex = 26;
-            // 
-            // label17
-            // 
-            label17.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.Location = new Point(110, 171);
-            label17.Name = "label17";
-            label17.Size = new Size(133, 62);
-            label17.TabIndex = 25;
-            label17.Text = "blablalblalvddfbdbbhbbgbgb";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label16.Location = new Point(12, 165);
-            label16.Name = "label16";
-            label16.Size = new Size(92, 25);
-            label16.TabIndex = 24;
-            label16.Text = "Produto:";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(98, 126);
-            label15.Name = "label15";
-            label15.Size = new Size(28, 15);
-            label15.TabIndex = 23;
-            label15.Text = "6:19";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Location = new Point(12, 126);
-            label14.Name = "label14";
-            label14.Size = new Size(53, 15);
-            label14.TabIndex = 22;
-            label14.Text = "25/09/23";
-            // 
-            // label13
-            // 
-            label13.Location = new Point(117, 42);
-            label13.Name = "label13";
-            label13.Size = new Size(126, 71);
-            label13.TabIndex = 19;
-            label13.Text = "blablalblalvddfbdbbhbbgbgb";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(98, 8);
-            label12.Name = "label12";
-            label12.Size = new Size(28, 15);
-            label12.TabIndex = 21;
-            label12.Text = "2:30";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(12, 8);
-            label1.Name = "label1";
-            label1.Size = new Size(53, 15);
-            label1.TabIndex = 20;
-            label1.Text = "12/03/23";
-            // 
             // lblComprados
             // 
             lblComprados.AutoSize = true;
@@ -315,6 +208,7 @@
             // panelEditar
             // 
             panelEditar.BackColor = Color.FromArgb(49, 57, 60);
+            panelEditar.Controls.Add(lblFechar);
             panelEditar.Controls.Add(btnEditar2);
             panelEditar.Controls.Add(txtEditImagemIcon);
             panelEditar.Controls.Add(label6);
@@ -322,11 +216,23 @@
             panelEditar.Controls.Add(label5);
             panelEditar.Controls.Add(txtEditNome);
             panelEditar.Controls.Add(label3);
-            panelEditar.Location = new Point(172, 166);
+            panelEditar.Location = new Point(407, 24);
             panelEditar.Name = "panelEditar";
             panelEditar.Size = new Size(329, 342);
             panelEditar.TabIndex = 27;
             panelEditar.Visible = false;
+            // 
+            // lblFechar
+            // 
+            lblFechar.AutoSize = true;
+            lblFechar.Font = new Font("Segoe UI", 20.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFechar.ForeColor = Color.IndianRed;
+            lblFechar.Location = new Point(289, 4);
+            lblFechar.Name = "lblFechar";
+            lblFechar.Size = new Size(35, 38);
+            lblFechar.TabIndex = 29;
+            lblFechar.Text = "X";
+            lblFechar.Click += lblFechar_Click;
             // 
             // btnEditar2
             // 
@@ -396,10 +302,294 @@
             // panelASS
             // 
             panelASS.BackColor = Color.FromArgb(49, 57, 60);
-            panelASS.Location = new Point(69, 237);
+            panelASS.Location = new Point(379, 208);
             panelASS.Name = "panelASS";
             panelASS.Size = new Size(549, 241);
             panelASS.TabIndex = 28;
+            // 
+            // panelPostagem
+            // 
+            panelPostagem.BackColor = Color.FromArgb(49, 57, 60);
+            panelPostagem.Controls.Add(label1);
+            panelPostagem.Controls.Add(btnEnviar);
+            panelPostagem.Controls.Add(panelASS);
+            panelPostagem.Controls.Add(txtImagem3);
+            panelPostagem.Controls.Add(txtImagem2);
+            panelPostagem.Controls.Add(txtImagem1);
+            panelPostagem.Controls.Add(label19);
+            panelPostagem.Controls.Add(label11);
+            panelPostagem.Controls.Add(numericValor);
+            panelPostagem.Controls.Add(panel2);
+            panelPostagem.Controls.Add(label10);
+            panelPostagem.Controls.Add(txtDescricaoServico);
+            panelPostagem.Controls.Add(label8);
+            panelPostagem.Controls.Add(txtNomeServico);
+            panelPostagem.Controls.Add(label7);
+            panelPostagem.Location = new Point(26, 50);
+            panelPostagem.Name = "panelPostagem";
+            panelPostagem.Size = new Size(375, 493);
+            panelPostagem.TabIndex = 29;
+            panelPostagem.Visible = false;
+            // 
+            // btnEnviar
+            // 
+            btnEnviar.BackColor = Color.FromArgb(72, 116, 245);
+            btnEnviar.ForeColor = Color.White;
+            btnEnviar.Location = new Point(146, 465);
+            btnEnviar.Name = "btnEnviar";
+            btnEnviar.Size = new Size(75, 23);
+            btnEnviar.TabIndex = 47;
+            btnEnviar.Text = "Enviar";
+            btnEnviar.UseVisualStyleBackColor = false;
+            btnEnviar.Click += button1_Click;
+            // 
+            // txtImagem3
+            // 
+            txtImagem3.Location = new Point(34, 437);
+            txtImagem3.Name = "txtImagem3";
+            txtImagem3.Size = new Size(320, 23);
+            txtImagem3.TabIndex = 46;
+            // 
+            // txtImagem2
+            // 
+            txtImagem2.Location = new Point(34, 398);
+            txtImagem2.Name = "txtImagem2";
+            txtImagem2.Size = new Size(320, 23);
+            txtImagem2.TabIndex = 45;
+            // 
+            // txtImagem1
+            // 
+            txtImagem1.Location = new Point(34, 360);
+            txtImagem1.Name = "txtImagem1";
+            txtImagem1.Size = new Size(320, 23);
+            txtImagem1.TabIndex = 44;
+            // 
+            // label19
+            // 
+            label19.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label19.ForeColor = Color.White;
+            label19.Location = new Point(35, 291);
+            label19.Name = "label19";
+            label19.Size = new Size(290, 66);
+            label19.TabIndex = 43;
+            label19.Text = "Insira o Endereço de três imagens (utilize o imgur):";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(34, 257);
+            label11.Name = "label11";
+            label11.Size = new Size(70, 30);
+            label11.TabIndex = 42;
+            label11.Text = "Valor:";
+            // 
+            // numericValor
+            // 
+            numericValor.Location = new Point(114, 264);
+            numericValor.Name = "numericValor";
+            numericValor.Size = new Size(120, 23);
+            numericValor.TabIndex = 41;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(rbDesktop);
+            panel2.Controls.Add(rbFullStack);
+            panel2.Controls.Add(rbFrontEnd);
+            panel2.Controls.Add(rbBackEnd);
+            panel2.Controls.Add(rbBancoDeDados);
+            panel2.Controls.Add(rbGames);
+            panel2.Controls.Add(rbWeb);
+            panel2.Controls.Add(rbMobile);
+            panel2.Controls.Add(rbTemplates);
+            panel2.Location = new Point(25, 150);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(300, 106);
+            panel2.TabIndex = 40;
+            // 
+            // rbDesktop
+            // 
+            rbDesktop.AutoSize = true;
+            rbDesktop.ForeColor = Color.White;
+            rbDesktop.Location = new Point(227, 9);
+            rbDesktop.Name = "rbDesktop";
+            rbDesktop.Size = new Size(67, 19);
+            rbDesktop.TabIndex = 8;
+            rbDesktop.TabStop = true;
+            rbDesktop.Text = "desktop";
+            rbDesktop.UseVisualStyleBackColor = true;
+            // 
+            // rbFullStack
+            // 
+            rbFullStack.AutoSize = true;
+            rbFullStack.ForeColor = Color.White;
+            rbFullStack.Location = new Point(110, 83);
+            rbFullStack.Name = "rbFullStack";
+            rbFullStack.Size = new Size(74, 19);
+            rbFullStack.TabIndex = 7;
+            rbFullStack.TabStop = true;
+            rbFullStack.Text = "full-stack";
+            rbFullStack.UseVisualStyleBackColor = true;
+            // 
+            // rbFrontEnd
+            // 
+            rbFrontEnd.AutoSize = true;
+            rbFrontEnd.ForeColor = Color.White;
+            rbFrontEnd.Location = new Point(111, 58);
+            rbFrontEnd.Name = "rbFrontEnd";
+            rbFrontEnd.Size = new Size(76, 19);
+            rbFrontEnd.TabIndex = 6;
+            rbFrontEnd.TabStop = true;
+            rbFrontEnd.Text = "front-end";
+            rbFrontEnd.UseVisualStyleBackColor = true;
+            // 
+            // rbBackEnd
+            // 
+            rbBackEnd.AutoSize = true;
+            rbBackEnd.ForeColor = Color.White;
+            rbBackEnd.Location = new Point(111, 33);
+            rbBackEnd.Name = "rbBackEnd";
+            rbBackEnd.Size = new Size(75, 19);
+            rbBackEnd.TabIndex = 5;
+            rbBackEnd.TabStop = true;
+            rbBackEnd.Text = "back-end";
+            rbBackEnd.UseVisualStyleBackColor = true;
+            // 
+            // rbBancoDeDados
+            // 
+            rbBancoDeDados.AutoSize = true;
+            rbBancoDeDados.ForeColor = Color.White;
+            rbBancoDeDados.Location = new Point(111, 8);
+            rbBancoDeDados.Name = "rbBancoDeDados";
+            rbBancoDeDados.Size = new Size(109, 19);
+            rbBancoDeDados.TabIndex = 4;
+            rbBancoDeDados.TabStop = true;
+            rbBancoDeDados.Text = "banco de dados";
+            rbBancoDeDados.UseVisualStyleBackColor = true;
+            // 
+            // rbGames
+            // 
+            rbGames.AutoSize = true;
+            rbGames.ForeColor = Color.White;
+            rbGames.Location = new Point(18, 83);
+            rbGames.Name = "rbGames";
+            rbGames.Size = new Size(60, 19);
+            rbGames.TabIndex = 3;
+            rbGames.TabStop = true;
+            rbGames.Text = "games";
+            rbGames.UseVisualStyleBackColor = true;
+            // 
+            // rbWeb
+            // 
+            rbWeb.AutoSize = true;
+            rbWeb.ForeColor = Color.White;
+            rbWeb.Location = new Point(18, 58);
+            rbWeb.Name = "rbWeb";
+            rbWeb.Size = new Size(47, 19);
+            rbWeb.TabIndex = 2;
+            rbWeb.TabStop = true;
+            rbWeb.Text = "web";
+            rbWeb.UseVisualStyleBackColor = true;
+            // 
+            // rbMobile
+            // 
+            rbMobile.AutoSize = true;
+            rbMobile.ForeColor = Color.White;
+            rbMobile.Location = new Point(18, 32);
+            rbMobile.Name = "rbMobile";
+            rbMobile.Size = new Size(62, 19);
+            rbMobile.TabIndex = 1;
+            rbMobile.TabStop = true;
+            rbMobile.Text = "mobile";
+            rbMobile.UseVisualStyleBackColor = true;
+            // 
+            // rbTemplates
+            // 
+            rbTemplates.AutoSize = true;
+            rbTemplates.ForeColor = Color.White;
+            rbTemplates.Location = new Point(18, 8);
+            rbTemplates.Name = "rbTemplates";
+            rbTemplates.Size = new Size(77, 19);
+            rbTemplates.TabIndex = 0;
+            rbTemplates.TabStop = true;
+            rbTemplates.Text = "templates";
+            rbTemplates.UseVisualStyleBackColor = true;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.White;
+            label10.Location = new Point(25, 124);
+            label10.Name = "label10";
+            label10.Size = new Size(63, 30);
+            label10.TabIndex = 39;
+            label10.Text = "Tipo:";
+            // 
+            // txtDescricaoServico
+            // 
+            txtDescricaoServico.Location = new Point(25, 99);
+            txtDescricaoServico.Name = "txtDescricaoServico";
+            txtDescricaoServico.Size = new Size(320, 23);
+            txtDescricaoServico.TabIndex = 38;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.White;
+            label8.Location = new Point(25, 65);
+            label8.Name = "label8";
+            label8.Size = new Size(112, 30);
+            label8.TabIndex = 37;
+            label8.Text = "Descricao:";
+            // 
+            // txtNomeServico
+            // 
+            txtNomeServico.Location = new Point(25, 42);
+            txtNomeServico.Name = "txtNomeServico";
+            txtNomeServico.Size = new Size(320, 23);
+            txtNomeServico.TabIndex = 36;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.White;
+            label7.Location = new Point(25, 9);
+            label7.Name = "label7";
+            label7.Size = new Size(189, 30);
+            label7.TabIndex = 35;
+            label7.Text = "Nome do projeto:";
+            // 
+            // panelCompradosASS
+            // 
+            panelCompradosASS.BackColor = Color.FromArgb(49, 57, 60);
+            panelCompradosASS.Location = new Point(393, 238);
+            panelCompradosASS.Name = "panelCompradosASS";
+            panelCompradosASS.Size = new Size(472, 261);
+            panelCompradosASS.TabIndex = 30;
+            // 
+            // panelASS2
+            // 
+            panelASS2.BackColor = Color.FromArgb(49, 57, 60);
+            panelASS2.Location = new Point(5, 234);
+            panelASS2.Name = "panelASS2";
+            panelASS2.Size = new Size(549, 265);
+            panelASS2.TabIndex = 31;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.IndianRed;
+            label1.Location = new Point(340, 1);
+            label1.Name = "label1";
+            label1.Size = new Size(35, 38);
+            label1.TabIndex = 35;
+            label1.Text = "X";
+            label1.Click += label1_Click;
             // 
             // PerfilAssinante
             // 
@@ -407,12 +597,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(819, 507);
-            Controls.Add(panelASS);
+            Controls.Add(panelASS2);
+            Controls.Add(panelCompradosASS);
+            Controls.Add(panelPostagem);
             Controls.Add(panelEditar);
             Controls.Add(btnEditar);
             Controls.Add(btnFechar);
             Controls.Add(lblComprados);
-            Controls.Add(panelCompradosASS);
             Controls.Add(lblVendidos);
             Controls.Add(label9);
             Controls.Add(descricao);
@@ -425,12 +616,13 @@
             Text = "PerfilAssinante";
             Load += PerfilAssinante_Load;
             ((System.ComponentModel.ISupportInitialize)picturePerfil).EndInit();
-            panelCompradosASS.ResumeLayout(false);
-            panelCompradosASS.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panelEditar.ResumeLayout(false);
             panelEditar.PerformLayout();
+            panelPostagem.ResumeLayout(false);
+            panelPostagem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)numericValor).EndInit();
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -443,20 +635,8 @@
         private Label label4;
         private Label lblVendidos;
         private Label label9;
-        private WiLBiT.WiLBiTPanel panelCompradosASS;
         private Label lblComprados;
         private WiLBiT.WiLBiTButton btnFechar;
-        private Label label2;
-        private PictureBox pictureBox3;
-        private Label label18;
-        private Label label17;
-        private Label label16;
-        private Label label15;
-        private Label label14;
-        private Label label13;
-        private Label label12;
-        private Label label1;
-        private PictureBox pictureBox1;
         private WiLBiT.WiLBiTButton btnEditar;
         private Panel panelEditar;
         private TextBox txtEditNome;
@@ -467,5 +647,32 @@
         private Button btnEditar2;
         private TextBox txtEditImagemIcon;
         private Panel panelASS;
+        private Label lblFechar;
+        private Panel panelPostagem;
+        private Label label10;
+        private TextBox txtDescricaoServico;
+        private Label label8;
+        private TextBox txtNomeServico;
+        private Label label7;
+        private Panel panel2;
+        private RadioButton rbTemplates;
+        private RadioButton rbBackEnd;
+        private RadioButton rbBancoDeDados;
+        private RadioButton rbGames;
+        private RadioButton rbWeb;
+        private RadioButton rbMobile;
+        private Label label11;
+        private NumericUpDown numericValor;
+        private RadioButton rbDesktop;
+        private RadioButton rbFullStack;
+        private RadioButton rbFrontEnd;
+        private TextBox txtImagem3;
+        private TextBox txtImagem2;
+        private TextBox txtImagem1;
+        private Label label19;
+        private Button btnEnviar;
+        private Panel panelCompradosASS;
+        private Panel panelASS2;
+        private Label label1;
     }
 }

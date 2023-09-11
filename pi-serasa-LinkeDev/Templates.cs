@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +22,7 @@ namespace pi_serasa_LinkeDev
         {
             Program.idUsuarioCurtiu = 0;
             this.Close();
+            Form1.panelCentral.Controls.Clear();
             carregaTemplates();
         }
 
@@ -118,6 +120,18 @@ namespace pi_serasa_LinkeDev
 
             lblNumeroVendido.Text = Program.servico.vendidos.ToString();
 
+            Assinante assinante = new Assinante();
+
+            assinante.atualizaVendidos(Program.servico.id_assinante);
+
+            //Essa linha serve para mudar a cultura de execução, aqui no Brasil
+            //utiliza-se virgula para separar decimais, nos EUA é 
+            //utilizado ponto. Foi necessario fazer isso porque no banco se entende apenas
+            //ponto como separador de decimais.
+            CultureInfo.CurrentCulture = new CultureInfo("en-US"); // Para definir para cultura norte-americana.
+
+            ServicosComprados sc = new ServicosComprados();
+            sc.insere(Program.usuario.id, Program.servico.id, Program.servico.nome, Program.servico.tipo, Program.servico.imagem_1, Program.servico.valor);
             MessageBox.Show("compra efetuada, entre em contato com o vendedor através do seguinte email: " + usuario.email);
         }
 
@@ -224,11 +238,6 @@ namespace pi_serasa_LinkeDev
             Servico servico = new Servico();
             int idUsuario = Program.usuario.id;
 
-            if (idUsuario == Program.idUsuarioFavoritou)
-            {
-                MessageBox.Show("Você ja favoritou essa postagem!");
-                return;
-            }
             numeroFavoritados++;
 
             Program.idUsuarioFavoritou = idUsuario;

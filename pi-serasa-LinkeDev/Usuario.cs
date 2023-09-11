@@ -67,7 +67,7 @@ namespace pi_serasa_LinkeDev
             int id = int.Parse(linha["id"].ToString());
             string email = linha["email"].ToString();
             string senha = linha["senha"].ToString();
-            bool assinante = linha["assinante"].ToString() == "1" ? true : false;
+            bool assinante = Convert.ToBoolean(linha["assinante"].ToString());
 
             Usuario usuario = new Usuario(id, email, senha, assinante);
 
@@ -120,6 +120,18 @@ namespace pi_serasa_LinkeDev
             Usuario usuario = carregaDadosLogin(tabela.Rows[0]);
             return usuario;
         }
+        public Usuario buscaPorId(int id)
+        {
+            string query = $"SELECT id, assinante FROM usuario WHERE id = {id};";
+
+            DataTable tabela = Conexao.executaQuery(query);
+
+            if (tabela.Rows.Count == 0)
+                return null;
+
+            Usuario usuario = carregaDadosLogin(tabela.Rows[0]);
+            return usuario;
+        }
 
         public Usuario carregaDadosLogin(DataRow linha)
         {
@@ -145,6 +157,9 @@ namespace pi_serasa_LinkeDev
 
             Conexao.executaQuery(query1);
             Conexao.executaQuery(query2);
+
+            Usuario u = new Usuario();
+            Program.usuario = u.buscaPorId(usuario.id);
         }
 
         public Usuario retornaEmailUsuario(int id)

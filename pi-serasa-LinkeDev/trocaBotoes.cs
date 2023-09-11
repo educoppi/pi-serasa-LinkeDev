@@ -39,10 +39,16 @@ namespace pi_serasa_LinkeDev
         {
             if (Program.usuario.isAssinante)
             {
+                Assinante assinante = new Assinante();
+                Program.assinante = assinante.retornaAssinante(Program.usuario.id);
+
                 Form1.CarregaEntreTELAS(new PerfilAssinante());
             }
             else
             {
+                Cliente cliente = new Cliente();
+                Program.cliente = cliente.retornaCliente(Program.usuario.id);
+
                 Form1.CarregaEntreTELAS(new PerfilCliente());
             }
 

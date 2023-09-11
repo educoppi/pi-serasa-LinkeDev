@@ -56,17 +56,31 @@ namespace pi_serasa_LinkeDev
             return sf;
         }
 
-        
+        public List<ServicosFavoritados> buscaServicosFavoritados(int id)
+        {
+            string query = $"SELECT * FROM servicos_favoritados WHERE id_usuario = {id} ORDER BY id DESC;";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<ServicosFavoritados> favoritados = new List<ServicosFavoritados>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                ServicosFavoritados sf = carregaDados(linha);
+                favoritados.Add(sf);
+            }
+            return favoritados;
+        }
+
         public ServicosFavoritados carregaDados(DataRow linha)
         {
-            int id = int.Parse(linha["id"].ToString());
+            int id = int.Parse(linha["id"].ToString()); 
             int id_usuario = int.Parse(linha["id_usuario"].ToString());
             int id_servico = int.Parse(linha["id_servico"].ToString());
             string nome_servico = linha["nome_servico"].ToString();
             string tipo = linha["tipo"].ToString();
             string imagem_1 = linha["imagem_1"].ToString();
 
-            ServicosFavoritados sf = new ServicosFavoritados(id, id_usuario, id_servico, nome_servico, tipo, imagem_1);
+            ServicosFavoritados sf = new ServicosFavoritados(id, id_usuario, id_servico, nome_servico, imagem_1, tipo);
 
             return sf;
         }

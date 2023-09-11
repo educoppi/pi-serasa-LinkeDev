@@ -68,7 +68,7 @@ namespace pi_serasa_LinkeDev
             this.imagem_2 = imagem_2;
             this.imagem_3 = imagem_3;
         }
-        public Servico (int curtidas, int vendidos, int qtd_favoritados)
+        public Servico(int curtidas, int vendidos, int qtd_favoritados)
         {
             this.curtidas = curtidas;
             this.vendidos = vendidos;
@@ -79,22 +79,24 @@ namespace pi_serasa_LinkeDev
         public string getImagem_2 { get { return imagem_2; } }
         public string getImagem_3 { get { return imagem_3; } }
 
+
         public List<Servico> buscaServicosDeAssinante(int id)
         {
-            string query = $"SELECT id, id_assinante, nome, tipo, publicado_em, valor, imagem_1, vendidos FROM servicos WHERE id_assinante = {id};";
+            string query = $"SELECT * FROM servicos WHERE id_assinante = {id} ORDER BY publicado_em DESC;";
 
             DataTable tabela = Conexao.executaQuery(query);
             List<Servico> servicos = new List<Servico>();
 
             foreach (DataRow linha in tabela.Rows)
             {
-                Servico servico = carregaDadosServicoDeAssinante(linha);
+                Servico servico = carregaDados(linha);
                 servicos.Add(servico);
             }
 
             return servicos;
         }
 
+        /*
         public Servico carregaDadosServicoDeAssinante(DataRow linha)
         {
             int id = int.Parse(linha["id"].ToString());
@@ -111,6 +113,7 @@ namespace pi_serasa_LinkeDev
 
             return servico;
         }
+        */
 
         public List<Servico> buscaImagensTemplates()
         {
@@ -121,12 +124,139 @@ namespace pi_serasa_LinkeDev
 
             foreach (DataRow linha in tabela.Rows)
             {
-                Servico servico = carregaDadosTelaInicial(linha);
+                Servico servico = carregaDados(linha);
                 servicos.Add(servico);
             }
 
             return servicos;
         }
+
+        public List<Servico> buscaImagensMobile()
+        {
+            string query = $"SELECT * FROM servicos WHERE tipo = 'mobile';";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDados(linha);
+                servicos.Add(servico);
+            }
+
+            return servicos;
+        }
+
+        public List<Servico> buscaImagensWeb()
+        {
+            string query = $"SELECT * FROM servicos WHERE tipo = 'web';";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDados(linha);
+                servicos.Add(servico);
+            }
+
+            return servicos;
+        }
+
+        public List<Servico> buscaImagensGames()
+        {
+            string query = $"SELECT * FROM servicos WHERE tipo = 'games';";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDados(linha);
+                servicos.Add(servico);
+            }
+
+            return servicos;
+        }
+
+        public List<Servico> buscaImagensBancoDeDados()
+        {
+            string query = $"SELECT * FROM servicos WHERE tipo = 'banco de dados';";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDados(linha);
+                servicos.Add(servico);
+            }
+
+            return servicos;
+        }
+
+        public List<Servico> buscaImagensBackEnd()
+        {
+            string query = $"SELECT * FROM servicos WHERE tipo = 'back-end';";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDados(linha);
+                servicos.Add(servico);
+            }
+
+            return servicos;
+        }
+
+        public List<Servico> buscaImagensFrontEnd()
+        {
+            string query = $"SELECT * FROM servicos WHERE tipo = 'front-end';";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDados(linha);
+                servicos.Add(servico);
+            }
+
+            return servicos;
+        }
+
+        public List<Servico> buscaImagensFullStack()
+        {
+            string query = $"SELECT * FROM servicos WHERE tipo = 'full-stack';";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDados(linha);
+                servicos.Add(servico);
+            }
+            return servicos;
+        }
+
+        public List<Servico> buscaImagensDesktop()
+        {
+            string query = $"SELECT * FROM servicos WHERE tipo = 'desktop';";
+
+            DataTable tabela = Conexao.executaQuery(query);
+            List<Servico> servicos = new List<Servico>();
+
+            foreach (DataRow linha in tabela.Rows)
+            {
+                Servico servico = carregaDados(linha);
+                servicos.Add(servico);
+            }
+            return servicos;
+        }
+
 
         public Servico buscaImagensTelaVisitante(int id_postagem)
         {
@@ -140,7 +270,7 @@ namespace pi_serasa_LinkeDev
             return servico;
         }
 
-        public Servico carregaDadosTelaInicial(DataRow linha)
+        public Servico carregaDados(DataRow linha)
         {
             int id = int.Parse(linha["id"].ToString());
             int id_assinante = int.Parse(linha["id_assinante"].ToString());
@@ -209,6 +339,32 @@ namespace pi_serasa_LinkeDev
 
             Servico servico = new Servico(curtidas, vendidos, qtd_favoritados);
 
+            return servico;
+        }
+
+        public void insereServico(int id_assinante, string nome_assinante, string nome, string descricao, string tipo, double valor, string imagem_1, string imagem_2, string imagem_3)
+        {
+            string query = $"INSERT INTO servicos (id_assinante, nome_assinante, nome, descricao, tipo, valor, imagem_1, imagem_2, imagem_3) VALUES ({id_assinante}, '{nome_assinante}', '{nome}','{descricao}', '{tipo}', {valor}, '{imagem_1}', '{imagem_2}', '{imagem_3}');";
+
+            Conexao.executaQuery(query);
+        }
+
+        public void editaNomeAssinante(int id, string novoNomeAssinante)
+        {
+            string query = $"UPDATE servicos SET nome_assinante = '{novoNomeAssinante}' WHERE id_assinante = {id};";
+
+            Conexao.executaQuery(query);
+        }
+
+        public Servico buscaPorId(int id)
+        {
+            string query = $"SELECT * FROM servicos WHERE id = {id};";
+
+            Conexao.executaQuery(query);
+
+            DataTable tabela = Conexao.executaQuery(query);
+
+            Servico servico = carregaDados(tabela.Rows[0]);
             return servico;
         }
     }

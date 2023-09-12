@@ -140,7 +140,7 @@
             this.txtSenha_LG.PlaceholderText = "";
             this.txtSenha_LG.Size = new System.Drawing.Size(250, 29);
             this.txtSenha_LG.TabIndex = 2;
-            this.txtSenha_LG.Texts = "adm2";
+            this.txtSenha_LG.Texts = "";
             this.txtSenha_LG.UnderlinedStyle = false;
             // 
             // txtEmail_LG
@@ -162,7 +162,7 @@
             this.txtEmail_LG.PlaceholderText = "";
             this.txtEmail_LG.Size = new System.Drawing.Size(250, 29);
             this.txtEmail_LG.TabIndex = 1;
-            this.txtEmail_LG.Texts = "adm2";
+            this.txtEmail_LG.Texts = "";
             this.txtEmail_LG.UnderlinedStyle = false;
             // 
             // label1

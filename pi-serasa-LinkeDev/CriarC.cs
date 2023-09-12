@@ -159,8 +159,9 @@ namespace pi_serasa_LinkeDev
             usuario.insereCliente(Program.usuario.id, nome);
 
             Cliente cliente = new Cliente();
-            Program.cliente = cliente.retornaCliente(Program.usuario.id);
+            cliente = cliente.retornaCliente(Program.usuario.id);
 
+            Program.cliente = cliente;
             Form1.CarregaBotoes(new trocaBotoes());
 
             Form1.carregamenuESQ(new trocaMenuESQ());

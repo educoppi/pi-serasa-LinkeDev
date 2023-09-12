@@ -32,6 +32,13 @@ namespace pi_serasa_LinkeDev
             this.senha = senha;
         }
 
+        public Usuario(string email, string senha, bool isAssinante)
+        {
+            this.email = email;
+            this.senha = senha;
+            this.isAssinante = isAssinante;
+        }
+
         public Usuario(int id, string email, string senha, bool isAssinante)
         {
             this.id = id;

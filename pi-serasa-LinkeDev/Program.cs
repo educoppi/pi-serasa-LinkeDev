@@ -26,7 +26,27 @@ namespace pi_serasa_LinkeDev
             return usuarioDeletou = true;
         }
 
-       
+        //Essas variaveis estaticas foram criadas para guardar o
+        //email, senha e nome inseridos, em detrimento dos forms de ASSINARBTN
+        //e Jatenho1 porque as ações de adicionar usuario, assinante ou alterar
+        //cliente devem ocorrer somente quando o usuario clicar em comprar(os
+        //botoes que estao na tela Assinar)
+        public static string GuardaEmail;
+        public static string GuardaSenha;
+        public static string GuardaNome;
+        /* 
+         * Disparador foi criado para eu saber de onde vem GuardaEmail e GuardaSenha
+         * ja que ele pode vir de assinarBtn como um novo usuario, ou de jatenho1
+         * como um usuario ja existente que busca deixar de ser cliente e se 
+         * tornar um assinante
+         * 
+         * True = assinarBTN
+         * False = jatenho1
+         * 
+         */
+        public static bool disparador;
+
+
 
         /// <summary>
         ///  The main entry point for the application.

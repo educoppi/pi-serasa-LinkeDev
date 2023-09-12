@@ -116,17 +116,19 @@ namespace pi_serasa_LinkeDev
             // o metodo | usuario.alteraClienteParaAssinante(usuario) | tenta encontrar um cliente 
             //na tabela de clientes, para transforma-lo em assinante, se não for encontrado
             //o metodo lança um erro, por isso utilizei o Try Catch.
-            try
-            {
-                usuario.alteraClienteParaAssinante(usuario);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Perfil não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                limparText();
-                return;
-            }
+            //try
+           // {
+           //     usuario.alteraClienteParaAssinante(usuario);
+         //   }
+          //  catch (Exception)
+          //  {
+          //      MessageBox.Show("Perfil não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+          //      limparText();
+         //       return;
+         //   }
             Program.usuario = usuario;
+
+            Program.disparador = false;
 
             Form1.CarregaEntreTELAS(new Assinar());
             this.Close();

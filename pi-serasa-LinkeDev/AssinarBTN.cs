@@ -139,10 +139,18 @@ namespace pi_serasa_LinkeDev
                 return;
             }
 
-            Usuario usuario = new Usuario();
-            usuario.insereUsuario(email, senha, true);
-            Program.usuario = usuario.login(email, senha);
-            usuario.insereAssinante(Program.usuario.id, nome);
+            Usuario usuario = new Usuario(email, senha, false);
+            Program.usuario = usuario;
+
+            Program.GuardaEmail = email;
+            Program.GuardaSenha = senha;
+            Program.GuardaNome = nome;
+            Program.disparador = true;
+
+            //Usuario usuario = new Usuario();
+            // usuario.insereUsuario(email, senha, true);
+            //  Program.usuario = usuario.login(email, senha);
+            // usuario.insereAssinante(Program.usuario.id, nome);
 
             Form1.CarregaEntreTELAS(new Assinar());
         }

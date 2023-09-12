@@ -19,6 +19,21 @@ namespace pi_serasa_LinkeDev
 
         private void trocaBotoes_Load(object sender, EventArgs e)
         {
+
+        }
+
+        public void picturePerfil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAssine_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void trocaBotoes_Load_1(object sender, EventArgs e)
+        {
             if (Program.usuario.isAssinante)
             {
                 btnAssine.Enabled = false;
@@ -35,7 +50,12 @@ namespace pi_serasa_LinkeDev
             }
         }
 
-        public void picturePerfil_Click(object sender, EventArgs e)
+        private void btnAssine_Click_1(object sender, EventArgs e)
+        {
+            Form1.CarregaEntreTELAS(new Assinar());
+        }
+
+        private void picturePerfil_Click_1(object sender, EventArgs e)
         {
             if (Program.usuario.isAssinante)
             {
@@ -51,12 +71,6 @@ namespace pi_serasa_LinkeDev
 
                 Form1.CarregaEntreTELAS(new PerfilCliente());
             }
-
-        }
-
-        private void btnAssine_Click(object sender, EventArgs e)
-        {
-            Form1.CarregaEntreTELAS(new Assinar());
         }
     }
 }

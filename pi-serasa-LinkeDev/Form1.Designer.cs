@@ -140,6 +140,7 @@
             // 
             // panelCentral
             // 
+            panelCentral.AutoSize = true;
             panelCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(252)))));
             panelCentral.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(252)))));
             panelCentral.BorderColor = System.Drawing.Color.Black;
@@ -210,7 +211,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 110);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Assine para poder divulgar seus trabalhos, e trabalhar atraves do LinkeDev.";
+            this.label1.Text = "Quantos trabalhos incríveis! Clique aqui para ter os seus exibidos também. ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 

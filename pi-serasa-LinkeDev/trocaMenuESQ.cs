@@ -19,24 +19,14 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
-        void carregaEstiloBotoes(WiLBiTButton button)
-        {
-            button.BackColor = Color.FromArgb(21, 154, 235);
-            button.ForeColor = Color.Black;
-            button.BorderColor = Color.White;
-            button.BorderSize = 2;
-        }
-
         private void panelEsquerdo2_Paint(object sender, PaintEventArgs e)
         {
-            carregaEstiloBotoes(wilBitButton2);
+            
         }
 
         private void wilBitButton2_Click(object sender, EventArgs e)
         {
-            Form1.panelCentral.Controls.Clear();
-            atualizaCoordenadas();
-            carregaTemplates();
+
         }
 
         void atualizaCoordenadas()
@@ -99,6 +89,62 @@ namespace pi_serasa_LinkeDev
 
         private void wilBitButton12_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void wilBitButton11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wilBitButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wilBitButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wilBitButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wilBitButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wilBitButton8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+        //NOVO LOAD
+
+        private void panelEsquerdo2_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        //NOVOS BOTOES
+
+        private void wilBitButton2_Click_1(object sender, EventArgs e)
+        {
+
+            Form1.panelCentral.Controls.Clear();
+            atualizaCoordenadas();
+            carregaTemplates();
+        }
+
+        private void wilBitButton12_Click_1(object sender, EventArgs e)
+        {
             atualizaCoordenadas();
             Form1.panelCentral.Controls.Clear();
             Servico servico = new Servico();
@@ -111,7 +157,7 @@ namespace pi_serasa_LinkeDev
             }
         }
 
-        private void wilBitButton11_Click(object sender, EventArgs e)
+        private void wilBitButton11_Click_1(object sender, EventArgs e)
         {
             atualizaCoordenadas();
             Form1.panelCentral.Controls.Clear();
@@ -125,7 +171,7 @@ namespace pi_serasa_LinkeDev
             }
         }
 
-        private void wilBitButton3_Click(object sender, EventArgs e)
+        private void wilBitButton3_Click_1(object sender, EventArgs e)
         {
             atualizaCoordenadas();
             Form1.panelCentral.Controls.Clear();
@@ -139,7 +185,7 @@ namespace pi_serasa_LinkeDev
             }
         }
 
-        private void wilBitButton5_Click(object sender, EventArgs e)
+        private void wilBitButton5_Click_1(object sender, EventArgs e)
         {
             atualizaCoordenadas();
             Form1.panelCentral.Controls.Clear();
@@ -153,7 +199,7 @@ namespace pi_serasa_LinkeDev
             }
         }
 
-        private void wilBitButton1_Click(object sender, EventArgs e)
+        private void wilBitButton1_Click_1(object sender, EventArgs e)
         {
             atualizaCoordenadas();
             Form1.panelCentral.Controls.Clear();
@@ -167,7 +213,7 @@ namespace pi_serasa_LinkeDev
             }
         }
 
-        private void wilBitButton4_Click(object sender, EventArgs e)
+        private void wilBitButton4_Click_1(object sender, EventArgs e)
         {
             atualizaCoordenadas();
             Form1.panelCentral.Controls.Clear();
@@ -181,7 +227,7 @@ namespace pi_serasa_LinkeDev
             }
         }
 
-        private void wilBitButton8_Click(object sender, EventArgs e)
+        private void wilBitButton8_Click_1(object sender, EventArgs e)
         {
             atualizaCoordenadas();
             Form1.panelCentral.Controls.Clear();
@@ -207,11 +253,6 @@ namespace pi_serasa_LinkeDev
             {
                 geraimagens(s);
             }
-        }
-
-        private void wilBitButton2_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

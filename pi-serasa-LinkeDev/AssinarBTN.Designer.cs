@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AssinarBTN));
             this.imgLogo = new System.Windows.Forms.PictureBox();
             this.panelDES = new WiLBiT.WiLBiTGradientPanel();
-            this.label7 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelC2 = new WiLBiT.WiLBiTGradientPanel();
@@ -67,36 +66,23 @@
             this.panelDES.BorderColor = System.Drawing.Color.Black;
             this.panelDES.BorderRadius = 6;
             this.panelDES.BorderSize = 2;
-            this.panelDES.Controls.Add(this.label7);
             this.panelDES.Controls.Add(this.label2);
             this.panelDES.Controls.Add(this.label1);
             this.panelDES.ForeColor = System.Drawing.Color.Black;
             this.panelDES.Location = new System.Drawing.Point(506, -164);
             this.panelDES.Name = "panelDES";
-            this.panelDES.Size = new System.Drawing.Size(442, 779);
+            this.panelDES.Size = new System.Drawing.Size(442, 607);
             this.panelDES.TabIndex = 4;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(16, 494);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(329, 267);
-            this.label7.TabIndex = 11;
-            this.label7.Text = resources.GetString("label7.Text");
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(16, 47);
+            this.label2.Location = new System.Drawing.Point(11, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(423, 404);
+            this.label2.Size = new System.Drawing.Size(423, 523);
             this.label2.TabIndex = 1;
-            this.label2.Text = "PARA QUEM BUSCA EVOLUIR   E  TRABALHAR.\r\n\r\nNossos site foi criado com a intençao " +
-    "de ajudar \r\no ramo de T.I a encontrar um caminho para \r\nentender aonde trabalhar" +
-    " e saber por onde começar .\r\n\r\n\r\n\r\n";
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // label1
             // 
@@ -106,7 +92,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 40);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Descriçao";
+            this.label1.Text = "Descrição";
             // 
             // panelC2
             // 
@@ -310,7 +296,6 @@
 
         private PictureBox imgLogo;
         private WiLBiT.WiLBiTGradientPanel panelDES;
-        private Label label7;
         private Label label2;
         private Label label1;
         private WiLBiT.WiLBiTGradientPanel panelC2;

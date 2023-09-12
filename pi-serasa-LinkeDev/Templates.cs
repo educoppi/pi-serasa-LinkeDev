@@ -46,12 +46,7 @@ namespace pi_serasa_LinkeDev
 
         private void imagemPerfil_Click(object sender, EventArgs e)
         {
-            Assinante assinante = new Assinante();
-            assinante = assinante.retornaAssinante(Program.servico.id_assinante);
 
-            Program.assinante = assinante;
-
-            Form1.CarregaEntreTELAS(new PerfilAssinante());
         }
 
         //CARREGA TEMPLATES APOS ENTRAR NA TELA INICIAL DO SITE
@@ -275,6 +270,16 @@ namespace pi_serasa_LinkeDev
             this.Close();
             Form1.panelCentral.Controls.Clear();
             carregaTemplates();
+        }
+
+        private void imagemPerfil_Click_1(object sender, EventArgs e)
+        {
+            Assinante assinante = new Assinante();
+            assinante = assinante.retornaAssinante(Program.servico.id_assinante);
+
+            Program.assinante = assinante;
+
+            Form1.CarregaEntreTELAS(new PerfilAssinante());
         }
     }
 }

@@ -263,6 +263,7 @@
             this.imagemPerfil.Size = new System.Drawing.Size(100, 92);
             this.imagemPerfil.TabIndex = 27;
             this.imagemPerfil.TabStop = false;
+            this.imagemPerfil.Click += new System.EventHandler(this.imagemPerfil_Click_1);
             // 
             // lblCurtidas
             // 

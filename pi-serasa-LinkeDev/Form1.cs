@@ -45,6 +45,7 @@ namespace pi_serasa_LinkeDev
                 x = 50;
                 y = 300;
                 pic.Location = new Point(x, y);
+                quebraLinha = 0;
             }
 
         }
@@ -69,7 +70,7 @@ namespace pi_serasa_LinkeDev
             imgLogo.Size = new Size(125, 115);
             imgLogo.Location = new Point(25, -9);
             imgLogoALO.Location = new Point(ClientSize.Width - 1120, 10);
-            imgLogo2.Location = new Point(ClientSize.Width - 1900, 650);
+            imgLogo2.Location = new Point(ClientSize.Width - 1880, 674);
         }
 
         public static void CarregaBotoes(Form form)

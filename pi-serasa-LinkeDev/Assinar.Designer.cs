@@ -41,9 +41,6 @@
             this.wilBitPanel2 = new WiLBiT.WiLBiTPanel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.btnComprarSE = new WiLBiT.WiLBiTButton();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -52,9 +49,6 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.btnAssinarAnu = new WiLBiT.WiLBiTButton();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -67,12 +61,15 @@
             this.wilBitPanel6 = new WiLBiT.WiLBiTPanel();
             this.wilBitButton2 = new WiLBiT.WiLBiTButton();
             this.label24 = new System.Windows.Forms.Label();
+            this.panelInformativo = new WiLBiT.WiLBiTPanel();
+            this.label4 = new System.Windows.Forms.Label();
             this.wilBitPanel1.SuspendLayout();
             this.wilBitPanel2.SuspendLayout();
             this.wilBitPanel3.SuspendLayout();
             this.wilBitPanel4.SuspendLayout();
             this.wilBitPanel5.SuspendLayout();
             this.wilBitPanel6.SuspendLayout();
+            this.panelInformativo.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -204,9 +201,6 @@
             this.wilBitPanel2.BorderSize = 0;
             this.wilBitPanel2.Controls.Add(this.radioButton2);
             this.wilBitPanel2.Controls.Add(this.radioButton1);
-            this.wilBitPanel2.Controls.Add(this.label14);
-            this.wilBitPanel2.Controls.Add(this.label13);
-            this.wilBitPanel2.Controls.Add(this.label12);
             this.wilBitPanel2.Controls.Add(this.btnComprarSE);
             this.wilBitPanel2.Controls.Add(this.label10);
             this.wilBitPanel2.Controls.Add(this.label11);
@@ -238,33 +232,6 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "2X";
             this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(130, 82);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(12, 15);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "?";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(112, 82);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(15, 15);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "?:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 82);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(99, 15);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "Valor dividido em";
             // 
             // btnComprarSE
             // 
@@ -313,9 +280,6 @@
             this.wilBitPanel3.Controls.Add(this.radioButton5);
             this.wilBitPanel3.Controls.Add(this.radioButton4);
             this.wilBitPanel3.Controls.Add(this.radioButton3);
-            this.wilBitPanel3.Controls.Add(this.label4);
-            this.wilBitPanel3.Controls.Add(this.label15);
-            this.wilBitPanel3.Controls.Add(this.label16);
             this.wilBitPanel3.Controls.Add(this.btnAssinarAnu);
             this.wilBitPanel3.Controls.Add(this.label17);
             this.wilBitPanel3.Controls.Add(this.label18);
@@ -369,33 +333,6 @@
             this.radioButton3.Text = "2X";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(130, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 15);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "?";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(112, 82);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(15, 15);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "?:";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(9, 82);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(99, 15);
-            this.label16.TabIndex = 6;
-            this.label16.Text = "Valor dividido em";
-            // 
             // btnAssinarAnu
             // 
             this.btnAssinarAnu.BackColor = System.Drawing.Color.Gray;
@@ -442,7 +379,7 @@
             this.btnFechar.FlatAppearance.BorderSize = 0;
             this.btnFechar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFechar.ForeColor = System.Drawing.Color.White;
-            this.btnFechar.Location = new System.Drawing.Point(775, 12);
+            this.btnFechar.Location = new System.Drawing.Point(1203, 12);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(60, 40);
             this.btnFechar.TabIndex = 21;
@@ -556,12 +493,37 @@
             this.label24.TabIndex = 1;
             this.label24.Text = "Anual";
             // 
+            // panelInformativo
+            // 
+            this.panelInformativo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(90)))), ((int)(((byte)(204)))));
+            this.panelInformativo.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.panelInformativo.BorderRadius = 6;
+            this.panelInformativo.BorderSize = 0;
+            this.panelInformativo.Controls.Add(this.label4);
+            this.panelInformativo.ForeColor = System.Drawing.Color.White;
+            this.panelInformativo.Location = new System.Drawing.Point(912, 64);
+            this.panelInformativo.Name = "panelInformativo";
+            this.panelInformativo.Size = new System.Drawing.Size(284, 351);
+            this.panelInformativo.TabIndex = 17;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(12, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(265, 336);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Concluindo sua assinatura no LinkeDev você já pode montar seu portifólio e exibi-" +
+    "lo para fazer vendas! \r\n\r\nJá é assinante? Renove seu vínculo conosco e volte a t" +
+    "er seu portifólio exibido :) ";
+            // 
             // Assinar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
-            this.ClientSize = new System.Drawing.Size(842, 507);
+            this.ClientSize = new System.Drawing.Size(1290, 507);
+            this.Controls.Add(this.panelInformativo);
             this.Controls.Add(this.wilBitPanel6);
             this.Controls.Add(this.wilBitPanel5);
             this.Controls.Add(this.wilBitPanel4);
@@ -575,6 +537,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Assinar";
             this.Text = "Assinar";
+            this.Load += new System.EventHandler(this.Assinar_Load);
             this.wilBitPanel1.ResumeLayout(false);
             this.wilBitPanel1.PerformLayout();
             this.wilBitPanel2.ResumeLayout(false);
@@ -587,6 +550,7 @@
             this.wilBitPanel5.PerformLayout();
             this.wilBitPanel6.ResumeLayout(false);
             this.wilBitPanel6.PerformLayout();
+            this.panelInformativo.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -604,16 +568,10 @@
         private Label label9;
         private Label label8;
         private WiLBiT.WiLBiTPanel wilBitPanel2;
-        private Label label13;
-        private Label label12;
         private WiLBiT.WiLBiTButton btnComprarSE;
         private Label label10;
         private Label label11;
-        private Label label14;
         private WiLBiT.WiLBiTPanel wilBitPanel3;
-        private Label label4;
-        private Label label15;
-        private Label label16;
         private WiLBiT.WiLBiTButton btnAssinarAnu;
         private Label label17;
         private Label label18;
@@ -632,5 +590,7 @@
         private RadioButton radioButton6;
         private RadioButton radioButton5;
         private RadioButton radioButton4;
+        private WiLBiT.WiLBiTPanel panelInformativo;
+        private Label label4;
     }
 }

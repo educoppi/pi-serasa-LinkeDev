@@ -28,9 +28,6 @@ namespace pi_serasa_LinkeDev
             carregaComprados();
         }
 
-
-
-
         private void btnFavoritos_Click(object sender, EventArgs e)
         {
             //   panelFavoritos.Visible = true;
@@ -169,7 +166,7 @@ namespace pi_serasa_LinkeDev
             PictureBox pic = new PictureBox();
             pic.LoadAsync(sf.imagem_1);
             pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            pic.Size = new Size(230, 150);
+            pic.Size = new Size(260, 170);
             pic.Location = new Point(30, ypicture);
 
             Servico servico = new Servico();
@@ -181,15 +178,15 @@ namespace pi_serasa_LinkeDev
             Label lblTipo = new Label();
             lblTipo.Text = sf.tipo;
             lblTipo.Location = new Point(300, ytipo);
-            lblTipo.Size = new Size(100, 40);
+            lblTipo.Size = new Size(130, 40);
             lblTipo.AutoSize = false;
-            lblTipo.Font = new Font("Segoe UI", 15);
+            lblTipo.Font = new Font("Segoe UI", 20);
 
             panelFavoritos.Controls.Add(lblTipo);
 
             Label lblDeletar = new Label();
             lblDeletar.Text = "X";
-            lblDeletar.Location = new Point(400, ytipo - 90);
+            lblDeletar.Location = new Point(530, ytipo - 90);
             lblDeletar.Size = new Size(50, 100);
             lblDeletar.AutoSize = false;
             lblDeletar.Font = new Font("Segoe UI", 25);
@@ -229,7 +226,7 @@ namespace pi_serasa_LinkeDev
         int ynome = 20;
         int xpicture = 10;
         int ypicture = 70;
-        int xpublicado = 350;
+        int xpublicado = 560;
         int ypublicado = 20;
         int xtipo = 320;
         int ytipo = 70;
@@ -250,7 +247,7 @@ namespace pi_serasa_LinkeDev
             PictureBox pic = new PictureBox();
             pic.LoadAsync(sc.imagem_1);
             pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            pic.Size = new Size(230, 150);
+            pic.Size = new Size(260, 170);
             pic.Location = new Point(xpicture, ypicture);
 
             Servico servico = new Servico();
@@ -261,27 +258,27 @@ namespace pi_serasa_LinkeDev
             Label lblPublicadoEm = new Label();
             lblPublicadoEm.Text = sc.comprado_em;
             lblPublicadoEm.Location = new Point(xpublicado, ypublicado);
-            lblPublicadoEm.Size = new Size(100, 20);
+            lblPublicadoEm.Size = new Size(120, 40);
             lblPublicadoEm.AutoSize = false;
-            lblPublicadoEm.Font = new Font("Segoe UI", 10);
+            lblPublicadoEm.Font = new Font("Segoe UI", 15);
 
             panelComprados.Controls.Add(lblPublicadoEm);
 
             Label lblTipo = new Label();
             lblTipo.Text = sc.tipo;
             lblTipo.Location = new Point(xtipo, ytipo);
-            lblTipo.Size = new Size(100, 40);
+            lblTipo.Size = new Size(130, 40);
             lblTipo.AutoSize = false;
-            lblTipo.Font = new Font("Segoe UI", 15);
+            lblTipo.Font = new Font("Segoe UI", 20);
 
             panelComprados.Controls.Add(lblTipo);
 
             Label lblValor = new Label();
             lblValor.Text = "R$" + sc.valor.ToString();
             lblValor.Location = new Point(xvalor, yvalor);
-            lblValor.Size = new Size(100, 60);
+            lblValor.Size = new Size(120, 60);
             lblValor.AutoSize = false;
-            lblValor.Font = new Font("Segoe UI", 20);
+            lblValor.Font = new Font("Segoe UI", 25);
             lblValor.ForeColor = Color.LightBlue;
 
             panelComprados.Controls.Add(lblValor);

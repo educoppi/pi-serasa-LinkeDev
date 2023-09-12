@@ -61,6 +61,7 @@
             this.panelEsquerdo2.Name = "panelEsquerdo2";
             this.panelEsquerdo2.Size = new System.Drawing.Size(179, 881);
             this.panelEsquerdo2.TabIndex = 3;
+            this.panelEsquerdo2.Paint += new System.Windows.Forms.PaintEventHandler(this.panelEsquerdo2_Paint_1);
             // 
             // wilBitButton12
             // 
@@ -78,6 +79,7 @@
             this.wilBitButton12.TabIndex = 16;
             this.wilBitButton12.Text = "Mobile";
             this.wilBitButton12.UseVisualStyleBackColor = false;
+            this.wilBitButton12.Click += new System.EventHandler(this.wilBitButton12_Click_1);
             // 
             // wilBitButton11
             // 
@@ -95,6 +97,7 @@
             this.wilBitButton11.TabIndex = 15;
             this.wilBitButton11.Text = " Web";
             this.wilBitButton11.UseVisualStyleBackColor = false;
+            this.wilBitButton11.Click += new System.EventHandler(this.wilBitButton11_Click_1);
             // 
             // wilBitButton9
             // 
@@ -130,6 +133,7 @@
             this.wilBitButton8.TabIndex = 11;
             this.wilBitButton8.Text = "Full-stack";
             this.wilBitButton8.UseVisualStyleBackColor = false;
+            this.wilBitButton8.Click += new System.EventHandler(this.wilBitButton8_Click_1);
             // 
             // wilBitButton4
             // 
@@ -147,6 +151,7 @@
             this.wilBitButton4.TabIndex = 10;
             this.wilBitButton4.Text = "Front-end";
             this.wilBitButton4.UseVisualStyleBackColor = false;
+            this.wilBitButton4.Click += new System.EventHandler(this.wilBitButton4_Click_1);
             // 
             // wilBitButton3
             // 
@@ -164,6 +169,7 @@
             this.wilBitButton3.TabIndex = 9;
             this.wilBitButton3.Text = "Games";
             this.wilBitButton3.UseVisualStyleBackColor = false;
+            this.wilBitButton3.Click += new System.EventHandler(this.wilBitButton3_Click_1);
             // 
             // wilBitButton2
             // 
@@ -199,6 +205,7 @@
             this.wilBitButton1.TabIndex = 7;
             this.wilBitButton1.Text = "Back-end";
             this.wilBitButton1.UseVisualStyleBackColor = false;
+            this.wilBitButton1.Click += new System.EventHandler(this.wilBitButton1_Click_1);
             // 
             // wilBitButton5
             // 
@@ -216,6 +223,7 @@
             this.wilBitButton5.TabIndex = 4;
             this.wilBitButton5.Text = "Banco de Dados";
             this.wilBitButton5.UseVisualStyleBackColor = false;
+            this.wilBitButton5.Click += new System.EventHandler(this.wilBitButton5_Click_1);
             // 
             // trocaMenuESQ
             // 

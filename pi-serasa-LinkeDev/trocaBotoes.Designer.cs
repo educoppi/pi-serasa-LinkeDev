@@ -28,53 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnAssine = new WiLBiT.WiLBiTButton();
-            picturePerfil = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)picturePerfil).BeginInit();
-            SuspendLayout();
+            this.btnAssine = new WiLBiT.WiLBiTButton();
+            this.picturePerfil = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
+            this.SuspendLayout();
             // 
             // btnAssine
             // 
-            btnAssine.BackColor = Color.FromArgb(49, 57, 60);
-            btnAssine.BorderColor = Color.Black;
-            btnAssine.BorderRadius = 20;
-            btnAssine.BorderSize = 2;
-            btnAssine.FlatAppearance.BorderSize = 0;
-            btnAssine.FlatStyle = FlatStyle.Flat;
-            btnAssine.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAssine.ForeColor = Color.White;
-            btnAssine.Location = new Point(38, 6);
-            btnAssine.Name = "btnAssine";
-            btnAssine.Size = new Size(119, 46);
-            btnAssine.TabIndex = 8;
-            btnAssine.Text = "Assine Já";
-            btnAssine.UseVisualStyleBackColor = false;
-            btnAssine.Click += btnAssine_Click;
+            this.btnAssine.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.btnAssine.BorderColor = System.Drawing.Color.Black;
+            this.btnAssine.BorderRadius = 20;
+            this.btnAssine.BorderSize = 2;
+            this.btnAssine.FlatAppearance.BorderSize = 0;
+            this.btnAssine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAssine.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAssine.ForeColor = System.Drawing.Color.White;
+            this.btnAssine.Location = new System.Drawing.Point(38, 6);
+            this.btnAssine.Name = "btnAssine";
+            this.btnAssine.Size = new System.Drawing.Size(119, 46);
+            this.btnAssine.TabIndex = 8;
+            this.btnAssine.Text = "Assine Já";
+            this.btnAssine.UseVisualStyleBackColor = false;
+            this.btnAssine.Click += new System.EventHandler(this.btnAssine_Click_1);
             // 
             // picturePerfil
             // 
-            picturePerfil.Location = new Point(163, -3);
-            picturePerfil.Name = "picturePerfil";
-            picturePerfil.Size = new Size(78, 71);
-            picturePerfil.SizeMode = PictureBoxSizeMode.StretchImage;
-            picturePerfil.TabIndex = 9;
-            picturePerfil.TabStop = false;
-            picturePerfil.Click += picturePerfil_Click;
+            this.picturePerfil.Location = new System.Drawing.Point(163, -3);
+            this.picturePerfil.Name = "picturePerfil";
+            this.picturePerfil.Size = new System.Drawing.Size(78, 71);
+            this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picturePerfil.TabIndex = 9;
+            this.picturePerfil.TabStop = false;
+            this.picturePerfil.Click += new System.EventHandler(this.picturePerfil_Click_1);
             // 
             // trocaBotoes
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(18, 112, 254);
-            ClientSize = new Size(326, 101);
-            Controls.Add(picturePerfil);
-            Controls.Add(btnAssine);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "trocaBotoes";
-            Text = "trocaBotoes";
-            Load += trocaBotoes_Load;
-            ((System.ComponentModel.ISupportInitialize)picturePerfil).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
+            this.ClientSize = new System.Drawing.Size(326, 101);
+            this.Controls.Add(this.picturePerfil);
+            this.Controls.Add(this.btnAssine);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "trocaBotoes";
+            this.Text = "trocaBotoes";
+            this.Load += new System.EventHandler(this.trocaBotoes_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

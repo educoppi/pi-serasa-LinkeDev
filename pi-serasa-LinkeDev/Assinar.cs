@@ -17,29 +17,45 @@ namespace pi_serasa_LinkeDev
             InitializeComponent();
         }
 
-       
+
 
         void novoAssinante()
         {
             if (Program.usuario.isAssinante)
             {
-                Assinante assinant = new Assinante();
-                Program.assinante = assinant.retornaAssinante(Program.usuario.id);
+                Assinante assinante = new Assinante();
+                Program.assinante = assinante.retornaAssinante(Program.usuario.id);
                 return;
             }
 
-            Program.usuario.alteraClienteParaAssinante(Program.usuario);
+            if (Program.disparador)
+            {
+                Usuario usuario = new Usuario();
+                usuario.insereUsuario(Program.GuardaEmail, Program.GuardaSenha, true);
+                usuario = usuario.login(Program.GuardaEmail, Program.GuardaSenha);
+                Program.usuario = usuario;
+                usuario.insereAssinante(Program.usuario.id, Program.GuardaNome);
 
-            Cliente cliente = new Cliente();
-            Program.cliente = cliente;
+                Assinante assinante = new Assinante();
+                assinante = assinante.retornaAssinante(Program.usuario.id);
 
-            Assinante assinante = new Assinante();
-            Program.assinante = assinante.retornaAssinante(Program.usuario.id);
+                Program.assinante = assinante;
+            }
+            else
+            {
+                Usuario usuario = new Usuario();
+                usuario.alteraClienteParaAssinante(Program.usuario);
+
+                Assinante assinante = new Assinante();
+                assinante = assinante.retornaAssinante(Program.usuario.id);
+
+                Program.assinante = assinante;
+            }
         }
 
-       
 
-       
+
+
 
         //CARREGA TEMPLATES APOS ENTRAR NA TELA INICIAL DO SITE
 
@@ -128,7 +144,7 @@ namespace pi_serasa_LinkeDev
             novoAssinante();
             this.Close();
 
-            MessageBox.Show("" + Program.usuario.isAssinante);
+
             Form1.CarregaBotoes(new trocaBotoes());
             Form1.carregamenuESQ(new trocaMenuESQ());
             carregaTemplates();
@@ -136,6 +152,9 @@ namespace pi_serasa_LinkeDev
 
         private void btnFechar_Click_1(object sender, EventArgs e)
         {
+            Program.GuardaEmail = null;
+            Program.GuardaSenha = null;
+            Program.GuardaNome = null;
             this.Close();
             carregaImagens();
         }
@@ -144,7 +163,7 @@ namespace pi_serasa_LinkeDev
         {
             novoAssinante();
             this.Close();
-            MessageBox.Show("" + Program.usuario.isAssinante);
+
             Form1.CarregaBotoes(new trocaBotoes());
             Form1.carregamenuESQ(new trocaMenuESQ());
             carregaTemplates();
@@ -154,10 +173,15 @@ namespace pi_serasa_LinkeDev
         {
             novoAssinante();
             this.Close();
-            MessageBox.Show("" + Program.usuario.isAssinante);
+
             Form1.CarregaBotoes(new trocaBotoes());
             Form1.carregamenuESQ(new trocaMenuESQ());
             carregaTemplates();
+        }
+
+        private void Assinar_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

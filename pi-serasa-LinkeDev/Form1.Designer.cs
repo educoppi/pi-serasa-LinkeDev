@@ -140,7 +140,7 @@
             // 
             // panelCentral
             // 
-            panelCentral.AutoSize = true;
+            panelCentral.AutoSize = false;
             panelCentral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(252)))));
             panelCentral.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(225)))), ((int)(((byte)(252)))));
             panelCentral.BorderColor = System.Drawing.Color.Black;
@@ -152,6 +152,7 @@
             panelCentral.Size = new System.Drawing.Size(573, 333);
             panelCentral.TabIndex = 2;
             panelCentral.Paint += new System.Windows.Forms.PaintEventHandler(this.wilBitGradientPanel1_Paint);
+            panelCentral.AutoScroll = true;
             // 
             // panelEsquerdo
             // 

@@ -217,8 +217,9 @@ namespace pi_serasa_LinkeDev
             if (quebraLinha == 5)
             {
                 x = 50;
-                y = 300;
+                y = y + 270;
                 pic.Location = new Point(x, y);
+                quebraLinha = 0;
             }
         }
 
@@ -313,7 +314,7 @@ namespace pi_serasa_LinkeDev
         int yynome = 20;
         int xxpicture = 10;
         int yypicture = 70;
-        int xxpublicado = 560;
+        int xxpublicado = 510;
         int yypublicado = 20;
         int xxtipo = 320;
         int yytipo = 70;

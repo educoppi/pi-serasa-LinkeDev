@@ -57,31 +57,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label7.Text" xml:space="preserve">
-    <value>PARA VOCE CLIENTE!
-Em nosso site voce encontra diversos tipos de 
-trabalhos melhore seu site,sistema ou sua
- imagem aqui fornecemos diversos tipos de
- trabalhos se cadastre e aproveite .
-COMPRE COM LINKEDEV
-</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>PARA QUEM BUSCA EVOLUIR   E  TRABALHAR.
-
-Nossos site foi criado com a intençao de ajudar 
-o ramo de T.I a encontrar um caminho para 
-entender aonde trabalhar e saber por onde começar .
-
-CLIQUE EM:
-
-</value>
+    <value>“O que vou assinar?”                      Um plano de utilização da nossa plataforma para oferecer seus serviços a clientes em potencial. Uma oportunidade para se colocar no mercado e expor suas habilidades!                                                              “E se eu não quiser fazer a assinatura?”                                        Você pode aproveitar os serviços oferecidos aqui por diversos especialistas! Separamos diferentes áreas que podem te interessar e atender suas necessidades.                                                                            Crie uma conta e aproveite ;)</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="imgLogo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAADx0RVh0Q29tbWVudAB4cjpkOkRBRnRQTjhuV3RROjMyLGo6MTEyMTc5ODM5MTkw
+        vQAADr0BR/uQrQAAADx0RVh0Q29tbWVudAB4cjpkOkRBRnRQTjhuV3RROjMyLGo6MTEyMTc5ODM5MTkw
         NDk4MTk3Nix0OjIzMDkwNjE3hZH2yAAAPiBJREFUeF7t3fefFVWe//Hv37BIkhwkp+/3+9jVIYfuBhqa
         nFMDTWgyIoqiKCAKChhAJIOCKIIgIkFABAQBM4hiDpPHdcYZZxzd2XW/59uf6/bQNJ/uvqduVd26p14/
         PB+7j+HWOaeqj/d9q+qE//W/f9HeAACAzEagAwDgAAIdAAAHEOgAADiAQAcAwAEEOgAADiDQAQBwAIEO

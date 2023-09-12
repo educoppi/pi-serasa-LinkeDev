@@ -89,8 +89,9 @@ namespace pi_serasa_LinkeDev
             if (quebraLinha == 5)
             {
                 x = 50;
-                y = 300;
+                y = y + 270;
                 pic.Location = new Point(x, y);
+                quebraLinha = 0;
             }
 
         }
@@ -129,8 +130,9 @@ namespace pi_serasa_LinkeDev
             if (quebraLinha == 5)
             {
                 x = 50;
-                y = 300;
+                y = y + 270;
                 pic.Location = new Point(x, y);
+                quebraLinha = 0;
             }
         }
 

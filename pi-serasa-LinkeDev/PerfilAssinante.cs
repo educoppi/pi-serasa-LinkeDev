@@ -55,6 +55,7 @@ namespace pi_serasa_LinkeDev
                 lblComprados.Visible = false;
                 btnADD.Visible = false;
                 btnADD.Enabled = false;
+                lblCriarPostagem.Visible = false;
             }
 
             //label
@@ -141,9 +142,9 @@ namespace pi_serasa_LinkeDev
             Label lblTipo = new Label();
             lblTipo.Text = servico.tipo;
             lblTipo.Location = new Point(xtipo, ytipo);
-            lblTipo.Size = new Size(150, 40);
+            lblTipo.Size = new Size(200, 40);
             lblTipo.AutoSize = false;
-            lblTipo.Font = new Font("Segoe UI", 20);
+            lblTipo.Font = new Font("Segoe UI", 19);
 
             panelASS2.Controls.Add(lblTipo);
 
@@ -356,9 +357,9 @@ namespace pi_serasa_LinkeDev
             Label lblTipo = new Label();
             lblTipo.Text = sc.tipo;
             lblTipo.Location = new Point(xxtipo, yytipo);
-            lblTipo.Size = new Size(130, 40);
+            lblTipo.Size = new Size(200, 60);
             lblTipo.AutoSize = false;
-            lblTipo.Font = new Font("Segoe UI", 20);
+            lblTipo.Font = new Font("Segoe UI", 19);
 
             panelCompradosASS.Controls.Add(lblTipo);
 

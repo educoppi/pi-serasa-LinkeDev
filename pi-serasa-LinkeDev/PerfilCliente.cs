@@ -268,9 +268,9 @@ namespace pi_serasa_LinkeDev
             Label lblTipo = new Label();
             lblTipo.Text = sc.tipo;
             lblTipo.Location = new Point(xtipo, ytipo);
-            lblTipo.Size = new Size(130, 40);
+            lblTipo.Size = new Size(200, 40);
             lblTipo.AutoSize = false;
-            lblTipo.Font = new Font("Segoe UI", 20);
+            lblTipo.Font = new Font("Segoe UI", 19);
 
             panelComprados.Controls.Add(lblTipo);
 

@@ -159,7 +159,7 @@ namespace pi_serasa_LinkeDev
             Label lblValor = new Label();
             lblValor.Text = "R$" + servico.valor.ToString();
             lblValor.Location = new Point(xvalor, yvalor);
-            lblValor.Size = new Size(120, 60);
+            lblValor.Size = new Size(150, 60);
             lblValor.AutoSize = false;
             lblValor.Font = new Font("Segoe UI", 25);
             lblValor.ForeColor = Color.LightBlue;
@@ -365,7 +365,7 @@ namespace pi_serasa_LinkeDev
             Label lblValor = new Label();
             lblValor.Text = "R$" + sc.valor.ToString();
             lblValor.Location = new Point(xxvalor, yyvalor);
-            lblValor.Size = new Size(120, 60);
+            lblValor.Size = new Size(150, 60);
             lblValor.AutoSize = false;
             lblValor.Font = new Font("Segoe UI", 25);
             lblValor.ForeColor = Color.LightBlue;

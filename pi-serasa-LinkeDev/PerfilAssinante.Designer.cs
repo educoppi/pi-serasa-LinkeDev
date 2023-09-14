@@ -49,6 +49,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panelASS = new System.Windows.Forms.Panel();
             this.panelPostagem = new System.Windows.Forms.Panel();
+            this.txtValor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.txtImagem3 = new System.Windows.Forms.TextBox();
@@ -56,7 +57,6 @@
             this.txtImagem1 = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.numericValor = new System.Windows.Forms.NumericUpDown();
             this.panel2 = new System.Windows.Forms.Panel();
             this.rbDesktop = new System.Windows.Forms.RadioButton();
             this.rbFullStack = new System.Windows.Forms.RadioButton();
@@ -74,10 +74,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.panelCompradosASS = new System.Windows.Forms.Panel();
             this.panelASS2 = new System.Windows.Forms.Panel();
+            this.lblCriarPostagem = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.panelEditar.SuspendLayout();
             this.panelPostagem.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericValor)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -310,6 +310,7 @@
             // panelPostagem
             // 
             this.panelPostagem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(57)))), ((int)(((byte)(60)))));
+            this.panelPostagem.Controls.Add(this.txtValor);
             this.panelPostagem.Controls.Add(this.label1);
             this.panelPostagem.Controls.Add(this.btnEnviar);
             this.panelPostagem.Controls.Add(this.panelASS);
@@ -318,7 +319,6 @@
             this.panelPostagem.Controls.Add(this.txtImagem1);
             this.panelPostagem.Controls.Add(this.label19);
             this.panelPostagem.Controls.Add(this.label11);
-            this.panelPostagem.Controls.Add(this.numericValor);
             this.panelPostagem.Controls.Add(this.panel2);
             this.panelPostagem.Controls.Add(this.label10);
             this.panelPostagem.Controls.Add(this.txtDescricaoServico);
@@ -330,6 +330,13 @@
             this.panelPostagem.Size = new System.Drawing.Size(375, 493);
             this.panelPostagem.TabIndex = 29;
             this.panelPostagem.Visible = false;
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(111, 264);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(75, 23);
+            this.txtValor.TabIndex = 48;
             // 
             // label1
             // 
@@ -396,13 +403,6 @@
             this.label11.Size = new System.Drawing.Size(70, 30);
             this.label11.TabIndex = 42;
             this.label11.Text = "Valor:";
-            // 
-            // numericValor
-            // 
-            this.numericValor.Location = new System.Drawing.Point(114, 264);
-            this.numericValor.Name = "numericValor";
-            this.numericValor.Size = new System.Drawing.Size(120, 23);
-            this.numericValor.TabIndex = 41;
             // 
             // panel2
             // 
@@ -591,12 +591,24 @@
             this.panelASS2.Size = new System.Drawing.Size(686, 410);
             this.panelASS2.TabIndex = 31;
             // 
+            // lblCriarPostagem
+            // 
+            this.lblCriarPostagem.AutoSize = true;
+            this.lblCriarPostagem.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblCriarPostagem.ForeColor = System.Drawing.Color.White;
+            this.lblCriarPostagem.Location = new System.Drawing.Point(123, 189);
+            this.lblCriarPostagem.Name = "lblCriarPostagem";
+            this.lblCriarPostagem.Size = new System.Drawing.Size(141, 25);
+            this.lblCriarPostagem.TabIndex = 32;
+            this.lblCriarPostagem.Text = "Criar postagem";
+            // 
             // PerfilAssinante
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1202, 832);
+            this.ClientSize = new System.Drawing.Size(1132, 550);
+            this.Controls.Add(this.lblCriarPostagem);
             this.Controls.Add(this.panelASS2);
             this.Controls.Add(this.panelCompradosASS);
             this.Controls.Add(this.panelPostagem);
@@ -620,7 +632,6 @@
             this.panelEditar.PerformLayout();
             this.panelPostagem.ResumeLayout(false);
             this.panelPostagem.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericValor)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -663,7 +674,6 @@
         private RadioButton rbWeb;
         private RadioButton rbMobile;
         private Label label11;
-        private NumericUpDown numericValor;
         private RadioButton rbDesktop;
         private RadioButton rbFullStack;
         private RadioButton rbFrontEnd;
@@ -675,5 +685,7 @@
         private Panel panelCompradosASS;
         private Panel panelASS2;
         private Label label1;
+        private TextBox txtValor;
+        private Label lblCriarPostagem;
     }
 }

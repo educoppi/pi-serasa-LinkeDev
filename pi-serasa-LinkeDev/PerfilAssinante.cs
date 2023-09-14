@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -98,7 +99,7 @@ namespace pi_serasa_LinkeDev
         int ynome = 20;
         int xpicture = 30;
         int ypicture = 70;
-        int xpublicado = 560;
+        int xpublicado = 520;
         int ypublicado = 20;
         int xtipo = 350;
         int ytipo = 70;
@@ -396,11 +397,13 @@ namespace pi_serasa_LinkeDev
                 lblComprados.Visible = false;
                 btnADD.Visible = false;
                 btnADD.Enabled = false;
+                lblComprados.Visible = false;
             }
 
             //label
             lblComprados.Location = new Point(ClientSize.Width - 800, ClientSize.Height - 480);
             lblNome.Location = new Point(ClientSize.Width - 860, ClientSize.Height - 780);
+            lblCriarPostagem.Location = new Point(ClientSize.Width - 1525, ClientSize.Height - 500);
 
             //botao
             btnFechar.Location = new Point(ClientSize.Width - 80, ClientSize.Height - 890);
@@ -440,6 +443,7 @@ namespace pi_serasa_LinkeDev
             panelASS2.Visible = false;
             lblComprados.Visible = false;
             btnADD.Visible = false;
+            lblCriarPostagem.Visible = false;
         }
 
         private void btnADD_Click_1(object sender, EventArgs e)
@@ -448,6 +452,8 @@ namespace pi_serasa_LinkeDev
             panelASS2.Visible = false;
             panelCompradosASS.Visible = false;
             lblComprados.Visible = false;
+            btnADD.Visible = false;
+            lblCriarPostagem.Visible = false;
         }
 
         private void btnEditar2_Click_2(object sender, EventArgs e)
@@ -485,6 +491,7 @@ namespace pi_serasa_LinkeDev
             panelASS2.Visible = true;
             lblComprados.Visible = true;
             btnADD.Visible = true;
+            lblCriarPostagem.Visible = true;
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -496,6 +503,8 @@ namespace pi_serasa_LinkeDev
             panelASS2.Visible = true;
             panelCompradosASS.Visible = true;
             lblComprados.Visible = true;
+            btnADD.Visible = true;
+            lblCriarPostagem.Visible = true;
         }
 
         private void lblFechar_Click_1(object sender, EventArgs e)
@@ -510,6 +519,7 @@ namespace pi_serasa_LinkeDev
             panelASS2.Visible = true;
             lblComprados.Visible = true;
             btnADD.Visible = true;
+            lblCriarPostagem.Visible=true;
         }
 
         private void btnEnviar_Click(object sender, EventArgs e)
@@ -517,15 +527,27 @@ namespace pi_serasa_LinkeDev
             string nome = txtNomeServico.Text;
             string descricao = txtDescricaoServico.Text;
             string tipo = retornaTipo();
+            double valor;
 
-            string valorNaoTratado = numericValor.Value.ToString();
 
-            double valor = double.Parse(valorNaoTratado);
+
+            CultureInfo.CurrentCulture = new CultureInfo("en-US");
+            try
+            {
+                string valorNaoTratado = txtValor.Text;
+                valor = double.Parse(txtValor.Text);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Insira apenas numeros no campo valor!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             string imagem1 = txtImagem1.Text;
             string imagem2 = txtImagem2.Text;
             string imagem3 = txtImagem3.Text;
 
-            if (nome == "" || descricao == "" || tipo == "" || valorNaoTratado == "" || imagem1 == "" || imagem2 == "" || imagem3 == "")
+            if (nome == "" || descricao == "" || tipo == "" || valor == null || imagem1 == "" || imagem2 == "" || imagem3 == "")
             {
                 MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
@@ -539,7 +561,9 @@ namespace pi_serasa_LinkeDev
             panelPostagem.Visible = false;
             panelASS2.Visible = true;
             panelCompradosASS.Visible = true;
-
+            lblComprados.Visible = true;
+            btnADD.Visible = true;
+            lblCriarPostagem.Visible = true;
         }
     }
 }

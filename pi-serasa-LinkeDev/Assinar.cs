@@ -157,7 +157,15 @@ namespace pi_serasa_LinkeDev
             Program.GuardaSenha = null;
             Program.GuardaNome = null;
             this.Close();
-            carregaImagens();
+
+            if (Program.sinalizador)
+            {
+                carregaTemplates();
+            }
+            else
+            {
+                carregaImagens();
+            }
         }
 
         private void btnAssinarAnu_Click_1(object sender, EventArgs e)

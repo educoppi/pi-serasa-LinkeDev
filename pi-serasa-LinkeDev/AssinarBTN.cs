@@ -147,6 +147,7 @@ namespace pi_serasa_LinkeDev
             Program.GuardaSenha = senha;
             Program.GuardaNome = nome;
             Program.disparador = true;
+            Program.sinalizador = false;
 
             //Usuario usuario = new Usuario();
             // usuario.insereUsuario(email, senha, true);

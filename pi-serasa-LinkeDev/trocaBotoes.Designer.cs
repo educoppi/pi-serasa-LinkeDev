@@ -30,6 +30,7 @@
         {
             this.btnAssine = new WiLBiT.WiLBiTButton();
             this.picturePerfil = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,7 @@
             this.btnAssine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAssine.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAssine.ForeColor = System.Drawing.Color.White;
-            this.btnAssine.Location = new System.Drawing.Point(38, 6);
+            this.btnAssine.Location = new System.Drawing.Point(32, 0);
             this.btnAssine.Name = "btnAssine";
             this.btnAssine.Size = new System.Drawing.Size(119, 46);
             this.btnAssine.TabIndex = 8;
@@ -53,7 +54,7 @@
             // 
             // picturePerfil
             // 
-            this.picturePerfil.Location = new System.Drawing.Point(163, -3);
+            this.picturePerfil.Location = new System.Drawing.Point(157, -3);
             this.picturePerfil.Name = "picturePerfil";
             this.picturePerfil.Size = new System.Drawing.Size(78, 71);
             this.picturePerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -61,12 +62,25 @@
             this.picturePerfil.TabStop = false;
             this.picturePerfil.Click += new System.EventHandler(this.picturePerfil_Click_1);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(61, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 23);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Perfil ➜";
+            // 
             // trocaBotoes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(112)))), ((int)(((byte)(254)))));
             this.ClientSize = new System.Drawing.Size(326, 101);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.picturePerfil);
             this.Controls.Add(this.btnAssine);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -75,6 +89,7 @@
             this.Load += new System.EventHandler(this.trocaBotoes_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.picturePerfil)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -82,5 +97,6 @@
 
         private WiLBiT.WiLBiTButton btnAssine;
         private PictureBox picturePerfil;
+        private Label label1;
     }
 }

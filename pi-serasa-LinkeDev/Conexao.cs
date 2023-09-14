@@ -10,10 +10,10 @@ namespace pi_serasa_LinkeDev
 {
     internal class Conexao
     {
-        const string host = "10.60.45.29";
-        const string banco = "bd_linkedev2";
-        const string usuario = "senac";
-        const string senha = "senac";
+        const string host = "srv793.hstgr.io";
+        const string banco = "u647084545_serasa_jee";
+        const string usuario = "u647084545_serasa_jee";
+        const string senha = "Serasa2023";
 
         const string dadosConexao = $"Server={host};Database={banco};Uid={usuario};Pwd={senha};";
         static MySqlConnection conexao = new MySqlConnection(dadosConexao);

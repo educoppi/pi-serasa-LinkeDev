@@ -47,6 +47,17 @@ namespace pi_serasa_LinkeDev
         public static bool disparador;
 
 
+        /**
+        * Sinalizador tem a utilidade de mudar a função do botao de fechar no form "Assinar", anteriormente
+        * esse mesmo botão apenas carregava as imagens da tela inicial, sendo assim se o usuario
+        * clicasse nesse botao, mesmo apos ter efetuado o login, o panelCentral receberia as imagens
+        * da tela de visitante e não as imagens da tela inicial (ou seja, os templates).
+        * 
+        * True = o usuario acessou pelo botão "Assine já".
+        * False = o usuario acessou apos entrar ou logar no site pela area de assinar da tela de visitante.
+        */
+        public static bool sinalizador;
+
 
         /// <summary>
         ///  The main entry point for the application.

@@ -52,6 +52,7 @@ namespace pi_serasa_LinkeDev
 
         private void btnAssine_Click_1(object sender, EventArgs e)
         {
+            Program.sinalizador = true;
             Form1.CarregaEntreTELAS(new Assinar());
         }
 

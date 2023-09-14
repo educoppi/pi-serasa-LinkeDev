@@ -130,6 +130,7 @@ namespace pi_serasa_LinkeDev
             Program.usuario = usuario;
 
             Program.disparador = false;
+            Program.sinalizador = false;
 
             Form1.CarregaEntreTELAS(new Assinar());
             this.Close();
